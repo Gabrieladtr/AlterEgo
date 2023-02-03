@@ -5,19 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void StartGameplay(string stageToPlay) 
+
+    public bool pauseActive = false;
+    
+
+    public void ClosePauseGame(string stageToClose)
     {
-        SceneManager.LoadScene("Essential", LoadSceneMode.Single);
-        SceneManager.LoadScene(stageToPlay, LoadSceneMode.Additive);
-        
+        SceneManager.UnloadSceneAsync(stageToClose, UnloadSceneOptions.None);
+        pauseActive = false;
     }
+
 
     public void selectScene(string stageToPlay)
     {
         SceneManager.LoadScene(stageToPlay);
     }
 
-  
-   
+    public void selectSceneAdditive(string stageToPlay)
+    {
+        SceneManager.LoadScene(stageToPlay, LoadSceneMode.Additive);
+    }
+
+
 
 }

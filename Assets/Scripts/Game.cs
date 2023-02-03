@@ -5,6 +5,7 @@ using TMPro;
 using System.Linq;
 using System;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class Game : MonoBehaviour
     string[,] escolhaDialogoArray = new string[3, 3];
 
     //define os botões que serão usados para fazermos escolhas
-    public Button escolhaN1, escolhaN2, escolhaN3;
+    public Button escolhaN1, escolhaN2, escolhaN3, voltarPause;
 
     //define os TMP dos botões que serão usados para fazermos escolhas
     public TMP_Text escolhaNUMtmp, escolhaNDOIStmp, escolhaNTREStmp;
@@ -52,10 +53,10 @@ public class Game : MonoBehaviour
     //Nao estou usando, mas serviria pra verificar o index do dialogo.
     public int currentDialogueIndex = 0;
 
-    
+    //Controla de o pause está ativado ou não
+    public bool pauseActive = false;
 
-
-
+    StartGame startGame;
 
 
     void Start()
@@ -129,6 +130,7 @@ public class Game : MonoBehaviour
         escolhaN1 = GameObject.Find("Botao_escolha1").GetComponent<Button>();
         escolhaN2 = GameObject.Find("Botao_escolha2").GetComponent<Button>();
         escolhaN3 = GameObject.Find("Botao_escolha3").GetComponent<Button>();
+        
 
         //Aqui eu instancio e encontro os TMP dos botoes dentro da cena
         escolhaNUMtmp = GameObject.Find("Botao_escolha1TMP").GetComponent<TMP_Text>();
@@ -164,12 +166,10 @@ public class Game : MonoBehaviour
 
     void Update()
     {
-
+        
         //Pega o componente de texto na tela e mostra a frase que eu atribuir dentro do TMP
         textMeshProTela = GameObject.Find("Diálogo").GetComponent<TMP_Text>();
 
-
-        
 
         //Rota acrescentando dialogo com o botao esquerdo do mouse
         if (Input.GetMouseButtonDown(0))
@@ -506,6 +506,28 @@ public class Game : MonoBehaviour
 
         }
 
+        
+
+        //controlamos se o pause está ativo ou nao
+
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false)
+        {
+            Debug.Log("O menu de pausa deve ser aberto.");
+            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+            pauseActive = true;
+
+        } else if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == true)
+        {
+
+            Debug.Log("O menu de pausa deve ser fechado.");
+            SceneManager.UnloadSceneAsync("PauseMenu", UnloadSceneOptions.None);
+            pauseActive = false;
+
+
+        }
+
+        
+
 
 
     }
@@ -579,6 +601,7 @@ public class Game : MonoBehaviour
         textMeshProTela.text = "Clique para continuar";
         contador = 0;
     }
+
 
     
 
