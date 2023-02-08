@@ -6,6 +6,7 @@ using System.Linq;
 using System;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
 
 public class Game : MonoBehaviour
 {
@@ -41,7 +42,9 @@ public class Game : MonoBehaviour
     //contador;
     private int contador = 0;
     //vai definir a escolha de rota que devemos inicializar/em que estamos atualmente (qual lista de frase devemos iniciar)
-    public string escolhaDialogica = "add algum valor aqui";
+    public string escolhaDialogica = "Sem valor definido";
+    public string faseAtual2 = null;
+
     //bool pra travar de iniciar pela msm lista de frases:
     public bool escolhaDialogicaBool = true;
     //serve pra verificar em qual dentro do metodo 'DecisaoDialogicaList' em qual lista estamos
@@ -56,8 +59,15 @@ public class Game : MonoBehaviour
     //Controla de o pause está ativado ou não
     public bool pauseActive = false;
 
-    StartGame startGame;
+    //Vai ser responsavel por salvar o progresso do jogador:
+    public string save1;
+    public TMP_Text saving1TMP, saving2TMP, saving3TMP, snTMP;
 
+    //chave que verifica se salvamos ou nao o jogo
+    public bool snBool = false;
+
+    //slot para salvamentos do jogo
+    public string slotSaveGame;
 
     void Start()
     {
@@ -137,6 +147,9 @@ public class Game : MonoBehaviour
         escolhaNDOIStmp = GameObject.Find("Botao_escolha2TMP").GetComponent<TMP_Text>();
         escolhaNTREStmp = GameObject.Find("Botao_escolha3TMP").GetComponent<TMP_Text>();
 
+
+
+
         //Inicialmente os botoes nao aparecem na cena
         ButtonsOnScreen(false);
 
@@ -152,13 +165,13 @@ public class Game : MonoBehaviour
         {
             Debug.Log("Nao tem nenhuma lista padrão. A variavel 'escolhaDialogicaBool' está: " + escolhaDialogicaBool);
         }
-        
 
-
+        //Traz os salvamentos do jogador para a tela de loading:
+        //LoadSavesToScreen();
 
     }
 
-
+    
 
 
 
@@ -200,7 +213,13 @@ public class Game : MonoBehaviour
 
             }
 
-            
+
+
+
+
+
+
+
 
 
             //Esse é o sistema de escolha de dialogo.
@@ -330,7 +349,7 @@ public class Game : MonoBehaviour
 
                 default:
                     //valor que sera atribuido de forma padrao
-                    Debug.Log("Nenhuma opção escolhida");
+                    Debug.Log("Estamos em 'switch (escolhaDialogica)', onde tomamos decisões dialógicas. Nenhuma opção do switch escolhida.");
                     break;
 
 
@@ -502,7 +521,7 @@ public class Game : MonoBehaviour
 
             }
 
-
+            
 
         }
 
@@ -526,8 +545,7 @@ public class Game : MonoBehaviour
 
         }
 
-        
-
+       
 
 
     }
@@ -622,8 +640,15 @@ public class Game : MonoBehaviour
         //para a variavel global da escolhaDialogica, instanciada globalmente no inicio do codigo.
         //Combinaremos esse metodo com o resultado dos botoes, criando um caminho definido pelo jogador
         escolhaDialogica = decisao;
-        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamo agora é: " + escolhaDialogica);
+        faseAtual2 = decisao;
+        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamos agora é: " + escolhaDialogica);
+
+        //Espaço do sistema de save.
+        SaveGame(decisao);
+
     }
+
+
 
     public List<string> DecisaoDialogicaList(string decisaoList)
     {
@@ -677,7 +702,7 @@ public class Game : MonoBehaviour
         {
             case "botao1":
 
-                DecisaoDialogica(rota1);
+                DecisaoDialogica(rota1);                
                 Debug.Log("A rota escolhida foi: " + rota1);
                 break;
 
@@ -698,6 +723,134 @@ public class Game : MonoBehaviour
         }
 
     }
+
+    //Sistema de save ------------------------------------
+
+
+    public void SimFoiPressionado()
+    {
+        snBool = true;
+    }
+
+    public void DefineSlot(string slotEscolhido) 
+    {
+        //vai definir em qual slot estamos salvando o jogo.
+        slotSaveGame = slotEscolhido;
+        Debug.Log("Slot para salvamento escolhido. Slot: " + slotEscolhido);
+        
+    }
+
+    public void SaveGame(string escolha) 
+    {
+        //esse metodo será capaz de entender em qual fase estamos e deve salvar o jogo de acordo com a fase.
+
+        Debug.Log("estamos em 'SaveGame e a escolhaDialogica é: '" + escolha);
+
+        
+            switch (escolha)
+            {
+                case "frasesUm":
+
+                    if (slotSaveGame != null)
+                    {
+                        Save1Progress(slotSaveGame, escolha);
+                        snBool = false;
+                    }
+                    else { Debug.Log("Estamos em 'SaveGame. O slot para salvar nao foi encontrado. Estamos na 'EscolhaDialogica': "+escolha); }
+                    
+                break;
+
+                case "frasesDois":
+
+                    if (slotSaveGame != null)
+                    {
+                        Save1Progress(slotSaveGame, escolha);
+                        snBool = false;
+                    }
+                    else { Debug.Log("Estamos em 'SaveGame. O slot para salvar nao foi encontrado. Estamos na 'EscolhaDialogica': " + escolha); }
+
+                break;
+
+                default:
+                    Debug.Log("Estamos em 'SaveGame' e nenhum save foi salvo. Escolha dialogica: " + escolha);
+                    break;
+
+            }
+
+        
+        
+    }
+
+
+    public void Save1Progress(string slot, string listaAtual)
+    {
+        //vai salvar o jogo se chaveYN for == true
+       
+        PlayerPrefs.SetString(slot, listaAtual);
+        PlayerPrefs.Save();
+     
+        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
+        saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado");
+        Debug.Log("Dados salvos no slot 1. Nome da lista salva: " + listaAtual);
+
+    }
+
+
+
+    public void LoadSave1()
+    {
+        //vai carregar o progresso do 1° save do jogador
+        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
+        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString(slotSaveGame, "Nenhum save encontrado");
+
+        //string save1 = PlayerPrefs.GetString("save_2");
+        //SceneManager.LoadScene("Game");
+        //DecisaoDialogica(save1);
+        
+
+    }
+    public void LoadSavesToScreen(string scene)
+    {
+        //Esse metodo apenas carrega os metodos para a tela de loading ao iniciar a tela.
+        //deve ser inicializado no start.
+
+        SceneManager.LoadScene(scene);
+        saving1TMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
+        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString("save_1", "Nenhum save encontrado");
+
+        saving2TMP = GameObject.Find("SaveLoading2_TMP").GetComponent<TMP_Text>();
+        saving2TMP.text = "Load 2: " + PlayerPrefs.GetString("save_2", "Nenhum save encontrado");
+
+        saving3TMP = GameObject.Find("SaveLoading3_TMP").GetComponent<TMP_Text>();
+        saving3TMP.text = "Load 3: " + PlayerPrefs.GetString("save_3", "Nenhum save encontrado");
+
+    }
+
+    public void ApagarSaves() 
+    {
+        //na teoria apaga todos os saves
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey(slotSaveGame);
+        PlayerPrefs.DeleteKey("save_1");
+        PlayerPrefs.DeleteKey("save_2");
+        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
+        saving1TMP.text = "Delete 1: " + PlayerPrefs.GetString("save_2", "Dados apagados");
+        Debug.Log("Saves apagados");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //Preciso de um metodo pra receber as rotas possiveis
     //E preciso de um metodo pra colocar dentro dos 'botao1Foipressionado' para receber as rotas dadas
     //E redirecionar para o caminho dela
@@ -739,7 +892,30 @@ public class Game : MonoBehaviour
 
     Após o jogo estar pronto, estarei lançando a plataforma online da saphire, o patreon, o itch.io e fazendo uma live pra comemorar 
     a construção da nova fase da saphire game studio. Em breve seremos fortes o bastante para crescermos e termos renda com o estúdio.
-     
+    
+    --------------------
+    onde parei:
+
+    Cara nao entendo o pq, mas o playerprefs fica mantendo o valor mesmo já tendo apagado e tendo apagado até a variável que o valor se encotrava
+    Ele não grava de forma alguma um valor que está dentro de uma variável, ele não permite sobreescrever. É como se ele gravasse uma vez e não permitisse
+    mais gravar. Vi coisas estranhas hoje: o debug informar 2 valores diferentes ao mesmo tempo para um único debug, ou seja bugadasso.
+    Não sei se vale a pena continuar tentando contruir sistemas para o playerprefs, talvez seja melhor tentar buscar outra forma de armazenar dados.
+    Pq sinceramente, depois de 2 dias trabalhando o que eu sinto é que essa função é incompleta, parece que tem falhas e grandes falhas.
+
+    Vou dar mais uma pesquisada sobre pra ver se consigo resolver e se tem problemas crônicos. E sim, pensei de tudo: limpar o cache, limpar os dados
+    salvos, reiniciar, apagar a variavel, tentar acessar em outra classe. Cara eu to exausto. Quando eu pensei que tinha conseguido,
+    pq teve uma única hora que funcionou e depois não funcionou mais. Em resumo, estou cansado e acabado de tanto tentar fazer isso funcionar.
+
+    Amanhã se der tempo pesquiso pra ver se consigo resolver, caso não... vou só tentar outra forma.
+
+    ----
+    Eu tenho usado a key 'save_1' para salvar os dados. De repente esse é o problema. Estou usando repetidamente o mesmo save.
+    Estou com algumas ideias novas. A primeira é tentar colocar o método de save dentro do método de carregar a fase atual e usar o playerprefs.save()
+    para tentar garantir que os dados foram salvos.
+
+
+
+
      */
 
 

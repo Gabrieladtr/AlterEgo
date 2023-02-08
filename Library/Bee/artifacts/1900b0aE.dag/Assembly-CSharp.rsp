@@ -345,7 +345,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/ExitButton.cs"
 "Assets/Scripts/Game.cs"
-"Assets/Scripts/SaveProgress.cs"
+"Assets/Scripts/SaveProgressClass.cs"
 "Assets/Scripts/StartGame.cs"
 -langversion:9.0
 

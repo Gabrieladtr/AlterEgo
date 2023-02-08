@@ -405,7 +405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActive: 0
 --- !u!1 &350865108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,7 +1383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActive: 0
 --- !u!1 &1194688921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,7 +1504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActive: 0
 --- !u!114 &1215406381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1748,7 +1745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActive: 0
 --- !u!1 &1314747269
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,7 +2263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseActive: 0
 --- !u!1 &2039246791
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2275,7 @@ GameObject:
   - component: {fileID: 2039246795}
   - component: {fileID: 2039246794}
   - component: {fileID: 2039246793}
+  - component: {fileID: 2039246797}
   - component: {fileID: 2039246796}
   m_Layer: 0
   m_Name: Carregar
@@ -2353,6 +2349,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2039246797}
+        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        m_MethodName: LoadSavesToScreen
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: MenuLoading
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2039246796}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: selectScene
@@ -2415,7 +2423,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2039246797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039246791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce03a9abd55af0845b4ba6fd11cd89b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frasesPadrao: []
+  frasesUm: []
+  frasesDois: []
+  frasesTres: []
+  rota1: 
+  rota2: 
+  rota3: 
+  escolhaN1: {fileID: 0}
+  escolhaN2: {fileID: 0}
+  escolhaN3: {fileID: 0}
+  voltarPause: {fileID: 0}
+  escolhaNUMtmp: {fileID: 0}
+  escolhaNDOIStmp: {fileID: 0}
+  escolhaNTREStmp: {fileID: 0}
+  escolhaDialogica: Sem valor definido
+  faseAtual: frasesPadrao
+  escolhaDialogicaBool: 1
+  escolhaDialogicaList: []
+  algumBotaoFoiPressionado: 
+  osBotoesEstaoAtivosNaTela: 0
+  currentDialogueIndex: 0
   pauseActive: 0
+  save1: 
+  saving1TMP: {fileID: 0}
+  saving2TMP: {fileID: 0}
+  saving3TMP: {fileID: 0}
+  snTMP: {fileID: 0}
+  snBool: 0
 --- !u!1 &2041920045
 GameObject:
   m_ObjectHideFlags: 0

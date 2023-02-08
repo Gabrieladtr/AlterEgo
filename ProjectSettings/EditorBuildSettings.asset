@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuExtras.unity
     guid: 5211bf93f6897404f945f18610451814
   - enabled: 1
-    path: Assets/Scenes/MenuLoading.unity
+    path: Assets/Scenes/MenuSaving.unity
     guid: 2fbe55d58805c4740bca629f77431107
   - enabled: 1
     path: Assets/Scenes/MenuOptions.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuerMesmoSair.unity
     guid: 35f0dc39c7b431746ae39555df9a13d3
+  - enabled: 1
+    path: Assets/Scenes/MenuLoading.unity
+    guid: b95c009486a414d4083bb20d702bac96
   m_configObjects: {}

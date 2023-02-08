@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
 
-    public bool pauseActive = false;
+    
     
 
-    public void ClosePauseGame(string stageToClose)
+    public void CloseScene(string stageToClose)
     {
         SceneManager.UnloadSceneAsync(stageToClose, UnloadSceneOptions.None);
-        pauseActive = false;
+        
     }
 
 
