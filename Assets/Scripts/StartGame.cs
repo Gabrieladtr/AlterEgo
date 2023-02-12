@@ -13,7 +13,7 @@ public class StartGame : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync(stageToClose, UnloadSceneOptions.None);
         
-    }
+    }   
 
 
     public void selectScene(string stageToPlay)

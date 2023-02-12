@@ -2449,9 +2449,9 @@ MonoBehaviour:
   escolhaNUMtmp: {fileID: 0}
   escolhaNDOIStmp: {fileID: 0}
   escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  faseAtual: frasesPadrao
-  escolhaDialogicaBool: 1
+  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
@@ -2462,7 +2462,7 @@ MonoBehaviour:
   saving2TMP: {fileID: 0}
   saving3TMP: {fileID: 0}
   snTMP: {fileID: 0}
-  snBool: 0
+  loadTMP: {fileID: 0}
 --- !u!1 &2041920045
 GameObject:
   m_ObjectHideFlags: 0

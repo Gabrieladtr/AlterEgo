@@ -82,7 +82,13 @@ ScriptsOnlyBuild:
     methodName: selectScene
   - assembly: Assembly-CSharp
     fullTypeName: Game
-    methodName: LoadSave1
+    methodName: DefineSlot
+  - assembly: Assembly-CSharp
+    fullTypeName: Game
+    methodName: LoadSave2
+  - assembly: Assembly-CSharp
+    fullTypeName: Game
+    methodName: DefineSlot
   - assembly: Assembly-CSharp
     fullTypeName: Game
     methodName: SimFoiPressionado
@@ -91,10 +97,13 @@ ScriptsOnlyBuild:
     methodName: selectScene
   - assembly: Assembly-CSharp
     fullTypeName: Game
-    methodName: Save1Progress
+    methodName: SaveGame
   - assembly: Assembly-CSharp
     fullTypeName: Game
     methodName: ApagarSaves
+  - assembly: Assembly-CSharp
+    fullTypeName: Game
+    methodName: DefineSlot
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
@@ -742,7 +751,7 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 664bd288048ff7681dea2a172a94000b
+      Hash: 5c9e4f631f35ca799b55a35889420941
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveProgressClass
@@ -1288,7 +1297,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 7052b684d894f386f0e5c9a1150c0fb9
+      Hash: 622195bba4d01f6b2e38242eea443395
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -1411,4 +1420,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/PauseMenu.unity
   - Assets/Scenes/QuerMesmoSair.unity
   - Assets/Scenes/MenuLoading.unity
-  playerPath: G:/Dev Softwares/Projetos Unity/Builds Alter Ego/v0.2/Alter Ego.exe
+  playerPath: C:/Projetos Unity/Builds Alter Ego/Alter Ego.exe
