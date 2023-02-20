@@ -5,8 +5,6 @@ ScriptsOnlyBuild:
     - Game
     - SaveProgressClass
     - StartGame
-    Unity.PlasticSCM.Editor.dll:
-    - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -15,6 +13,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -74,9 +74,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
-  - assembly: Assembly-CSharp
-    fullTypeName: Game
-    methodName: LoadSavesToScreen
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
@@ -751,7 +748,7 @@ ScriptsOnlyBuild:
     className: UnityMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 5c9e4f631f35ca799b55a35889420941
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SaveProgressClass
@@ -1297,7 +1294,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 622195bba4d01f6b2e38242eea443395
+      Hash: 4c90b16538cc3f8ea5b320cc6d79028d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -1420,4 +1417,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/PauseMenu.unity
   - Assets/Scenes/QuerMesmoSair.unity
   - Assets/Scenes/MenuLoading.unity
-  playerPath: C:/Projetos Unity/Builds Alter Ego/Alter Ego.exe
+  playerPath: C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v04 -
+    0.2/Alter Ego.exe

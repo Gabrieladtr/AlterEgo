@@ -656,7 +656,7 @@ GameObject:
   - component: {fileID: 388415940}
   - component: {fileID: 388415938}
   m_Layer: 5
-  m_Name: "Di\xE1logo"
+  m_Name: Dialogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,26 +798,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &399788634
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,26 +960,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &439720891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,26 +1544,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &920563617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,26 +2060,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &1118531303
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,26 +2695,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &1427347183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,26 +3401,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!222 &1597193785
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3677,26 +3605,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &1843234624
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,26 +3767,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
+  contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &1858186303
 GameObject:
   m_ObjectHideFlags: 0

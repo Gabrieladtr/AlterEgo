@@ -7,23 +7,22 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using JetBrains.Annotations;
-using UnityEditor.VersionControl;
 
 public class Game : MonoBehaviour
 {
 
     /*Nesse script vamos trabalhar em:
-     * -escolha de diálogo
-     * -escolha de decisões
+     * -escolha de di@logo
+     * -escolha de decis@es
      * -sistema de save
      * -sistema de loading
     
-    O sistema de gameplay é relativamente simples.*/
+    O sistema de gameplay @ relativamente simples.*/
 
 
     //Todas as minhas variaveis globais para os metodos:
 
-    //Define as listas que serão usadas para armazenar as frases
+    //Define as listas que ser@o usadas para armazenar as frases
     public List<string> frasesPadrao;
     public List<string> frasesUm;
     public List<string> frasesDois;
@@ -33,10 +32,10 @@ public class Game : MonoBehaviour
     public string rota1, rota2, rota3;
 
 
-    //define os botões que serão usados para fazermos escolhas
+    //define os bot@es que ser@o usados para fazermos escolhas
     public static Button escolhaN1, escolhaN2, escolhaN3, voltarPause;
 
-    //define os TMP dos botões que serão usados para fazermos escolhas
+    //define os TMP dos bot@es que ser@o usados para fazermos escolhas
     public static TMP_Text escolhaNUMtmp, escolhaNDOIStmp, escolhaNTREStmp;
     public static TMP_Text textMeshProTela;
 
@@ -59,7 +58,7 @@ public class Game : MonoBehaviour
     //Nao estou usando, mas serviria pra verificar o index do dialogo.
     public int currentDialogueIndex = 0;
 
-    //Controla de o pause está ativado ou não
+    //Controla de o pause est@ ativado ou n@o
     public bool pauseActive = false;
 
     //Vai ser responsavel por salvar o progresso do jogador:
@@ -127,7 +126,7 @@ public class Game : MonoBehaviour
 
 
 
-        // Esconder os botões de escolha inicialmente
+        // Esconder os bot@es de escolha inicialmente
 
         //Aqui eu instancio e encontro os botoes dentro da cena
 
@@ -149,27 +148,36 @@ public class Game : MonoBehaviour
             
         }
 
+        /*
+
+        //verifico se temos os botoes/tmp de saving na tela. Se sim carregamos os saves do jogador.
+
+        
+
+        */
+
+        //Vamos inputar o "frasesPadrao" como padrao para come@ar a calcular as frases e as rotas possiveis. 
+        //Ou seja, vamos come@ar o jogo com essa lista de frases.
 
 
-
-        //Vamos inputar o "frasesPadrao" como padrao para começar a calcular as frases e as rotas possiveis. 
-        //Ou seja, vamos começar o jogo com essa lista de frases.
+        
 
         if (escolhaDialogicaBool == true)
         {
             //vai add o valor 'frasesPadrao' em 'escolhaDialogica'
             DecisaoDialogica("frasesPadrao");
+            Debug.Log("Estamos dentro do primeiro IF, onde escolhemos o 'frasesPadrao'");
             //vai travar, nao permitindo que nada mais seja add em 'escolhaDialogica', funcionando apenas 1 vez.
             escolhaDialogicaBool = false;
         }
         else 
         {
-            Debug.Log("Nao tem nenhuma lista padrão. A variavel bool 'escolhaDialogicaBool' está: " + escolhaDialogicaBool +  
-                ". A EscolhaDialogica é: " + escolhaDialogica);
-            escolhaDialogicaBool = true;
+            //Debug.Log("Nao tem nenhuma lista padr@o. A variavel bool 'escolhaDialogicaBool' est@: " + escolhaDialogicaBool +  ". A EscolhaDialogica @: " + escolhaDialogica);
+            //escolhaDialogicaBool = true;
         }
 
     }
+
 
 
 
@@ -180,9 +188,9 @@ public class Game : MonoBehaviour
 
         //Pega o componente de texto na tela e mostra a frase que eu atribuir dentro do TMP
 
-        if (GameObject.Find("Diálogo") == true) 
+        if (GameObject.Find("Dialogo") == true) 
         {
-            textMeshProTela = GameObject.Find("Diálogo").GetComponent<TMP_Text>();
+            textMeshProTela = GameObject.Find("Dialogo").GetComponent<TMP_Text>();
         }
 
         //vai pegar a cena atual
@@ -193,28 +201,30 @@ public class Game : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && GameScene.name == "Game")
         {
 
-            contadorDeAcoes++;
-            Debug.Log("Nº de cliques: " + contadorDeAcoes);
+            
+            
 
 
             //Esse sistema vai impedir o jogador de ultrapassar/retroceder o numero de frases dentro de uma lista
-            //E vai começar a contar cada frase, permitindo a exibição na tela
+            //E vai come@ar a contar cada frase, permitindo a exibi@@o na tela
 
             if (contador > DecisaoDialogicaList(escolhaDialogica).Count)
             {
-                //verifica se o contador é maior que o numero de frases dentro da lista de frases
+                //verifica se o contador eh maior que o numero de frases dentro da lista de frases
                 //Se o contador for maior, entao deve parar de contar. Se for menor de 0 deve parar de contar tmb.    
-                //Isso significa que o jogador nao vai poder avançar ou retroceder o dialogo se nao tiver mais dialogo algum.
+                //Isso significa que o jogador nao vai poder avan@ar ou retroceder o dialogo se nao tiver mais dialogo algum.
 
                 //isso deve parar de acrescentar valores ao clicar com o botao do mouse esquerdo
                 contador = DecisaoDialogicaList(escolhaDialogica).Count;
-                Debug.Log("Estamos parados na ultima frase da lista e não podemos avançar mais diálogos. O contador atual é: " + contador);
+                //Debug.Log("Estamos parados na ultima frase da lista (Input.GetMouseButtonDown(0)) e nao podemos avancar mais dialogos. O contador atual eh: " + contador);
+                
                 
             }
             else 
             {
-                //caso contrário só acrescente valores no contador.
+                //caso contr@rio s@ acrescente valores no contador.
                 contador++;
+                //Debug.Log("Contador atual: " + contador);
                 //contador = contador + 1 == acrescenta valores
                 //contador = contador - 1== diminui valores
                 //contador = DecisaoDialogicaList(escolhaDialogica).Count == trava o contador na contagem final da frase.
@@ -230,8 +240,10 @@ public class Game : MonoBehaviour
 
 
 
-            //Esse é o sistema de escolha de dialogo.
-            //Estamos acrescentando dialogo
+            //Esse @ o sistema de escolha de dialogo.
+
+
+            //------------------------------------------Estamos acrescentando dialogo------------------------------------------
 
             switch (escolhaDialogica)
             {
@@ -264,7 +276,7 @@ public class Game : MonoBehaviour
                         //Vai definir quais rotas serao possiveis:
                         Rotas("frasesPadrao", "frasesDois", "frasesTres");
 
-                        //Zera o contador, sendo possível recomeçar a ver as frases.
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
                         //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
                         //Por isso precisamos zerar o contador.
@@ -273,7 +285,7 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesPadrao":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesPadrao.Count && contador != frasesPadrao.Count)
                     {
                         Debug.Log(frasesPadrao[contador]);
@@ -302,7 +314,7 @@ public class Game : MonoBehaviour
                         //Vai definir quais rotas serao possiveis:
                         Rotas("frasesUm", "frasesDois", "frasesTres");
 
-                        //Zera o contador, sendo possível recomeçar a ver as frases.
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
                         //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
                         //Por isso precisamos zerar o contador.
@@ -312,7 +324,7 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesDois":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesDois.Count && contador != frasesDois.Count)
                     {
                         Debug.Log(frasesDois[contador]);
@@ -334,7 +346,7 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesTres":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesTres.Count && contador != frasesTres.Count)
                     {
                         Debug.Log(frasesTres[contador]);
@@ -357,7 +369,7 @@ public class Game : MonoBehaviour
 
                 default:
                     //valor que sera atribuido de forma padrao
-                    Debug.Log("Estamos em 'switch (escolhaDialogica)', onde tomamos decisões dialógicas. Nenhuma opção do switch escolhida.");
+                    //Debug.Log("Estamos em 'switch (escolhaDialogica)', onde tomamos decisoes dialogicas. Nenhuma opcao do switch escolhida.");
                     break;
 
 
@@ -365,11 +377,10 @@ public class Game : MonoBehaviour
 
 
         }
-        //fim da rota acrescentando dialogo
 
-        //-----------------------------------------------------------------
+        //------------------------------------------fim da rota acrescentando dialogo------------------------------------------
+        //------------------------------------------Comecando a rota decrescendo o dialogo-------------------------------------
 
-        //Começando a rota decrescendo o dialogo
         if (Input.GetMouseButtonDown(1) && GameScene.name == "Game")
         {
 
@@ -378,19 +389,19 @@ public class Game : MonoBehaviour
 
             if (contador <= 0)
             {
-                //verifica se o contador é maior que o numero de frases dentro da lista de frases
+                //verifica se o contador @ maior que o numero de frases dentro da lista de frases
                 //Se o contador for maior, entao deve parar de contar. Se for menor de 0 deve parar de contar tmb.    
-                //Isso significa que o jogador nao vai poder avançar ou retroceder o dialogo se nao tiver mais dialogo algum.
+                //Isso significa que o jogador nao vai poder avan@ar ou retroceder o dialogo se nao tiver mais dialogo algum.
 
                 //isso deve parar de acrescentar valores ao clicar com o botao do mouse esquerdo
                 contador = 0;
-                Debug.Log("Estamos parados na primeira frase da lista e não podemos retroceder mais diálogos. O contador atual é: " + contador);
-
+                //Debug.Log("Estamos parados na primeira frase da lista e nao podemos retroceder mais dialogos. O contador atual eh: " + contador);
             }
             else
             {
-                //caso contrário só acrescente valores no contador.
+                //caso contr@rio s@ acrescente valores no contador.
                 contador--;
+                //Debug.Log("Numero de cliques: " + contador);
                 //contador = contador + 1 == acrescenta valores
                 //contador = contador - 1== diminui valores
                 //contador = DecisaoDialogicaList(escolhaDialogica).Count == trava o contador na contagem final da frase.
@@ -406,7 +417,7 @@ public class Game : MonoBehaviour
                     {
                         Debug.Log(frasesUm[contador]);
                         textMeshProTela.text = frasesUm[contador];
-                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
@@ -430,7 +441,7 @@ public class Game : MonoBehaviour
                         //Vai definir quais rotas serao possiveis:
                         Rotas("frasesPadrao", "frasesDois", "frasesTres");
 
-                        //Zera o contador, sendo possível recomeçar a ver as frases.
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
                         //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
                         //Por isso precisamos zerar o contador.
@@ -439,12 +450,12 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesPadrao":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesPadrao.Count && contador != frasesPadrao.Count)
                     {
                         Debug.Log(frasesPadrao[contador]);
                         textMeshProTela.text = frasesPadrao[contador];
-                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
@@ -468,7 +479,7 @@ public class Game : MonoBehaviour
                         //Vai definir quais rotas serao possiveis:
                         Rotas("frasesUm", "frasesDois", "frasesTres");
 
-                        //Zera o contador, sendo possível recomeçar a ver as frases.
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
                         //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
                         //Por isso precisamos zerar o contador.
@@ -478,12 +489,12 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesDois":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesDois.Count && contador != frasesDois.Count)
                     {
                         Debug.Log(frasesDois[contador]);
                         textMeshProTela.text = frasesDois[contador];
-                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
@@ -500,12 +511,12 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesTres":
-                    // Ações a serem executadas quando a opção 1 é selecionada
+                    // A@@es a serem executadas quando a op@@o 1 @ selecionada
                     if (contador < frasesTres.Count && contador != frasesTres.Count)
                     {
                         Debug.Log(frasesTres[contador]);
                         textMeshProTela.text = frasesTres[contador];
-                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
@@ -523,7 +534,7 @@ public class Game : MonoBehaviour
 
                 default:
                     //valor que sera atribuido de forma padrao
-                    Debug.Log("Nenhuma opção escolhida");
+                    //Debug.Log("Nenhuma opcao escolhida");
                     break;
 
 
@@ -533,9 +544,11 @@ public class Game : MonoBehaviour
 
         }
 
+
+        //------------------------------------------Fim do sistema de escolha dialogica------------------------------------------
         
 
-        //controlamos se o pause está ativo ou nao
+        //controlamos se o pause est@ ativo ou nao
 
         if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false)
         {
@@ -558,7 +571,7 @@ public class Game : MonoBehaviour
 
     }
 
-    //-----------------------Lista de metodos-----------------------
+    //--------------------------------------Lista de metodos-------------------------------------
 
     public void ButtonsOnScreen(bool enable)
     {
@@ -609,7 +622,7 @@ public class Game : MonoBehaviour
         //Verifica se o botao 1 foi pressionado            
         algumBotaoFoiPressionado = "botao1";
         Debug.Log("botao 1 foi pressionado.");
-        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' é: " + algumBotaoFoiPressionado);
+        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' eh: " + algumBotaoFoiPressionado);
         VerificaQualBotaoFoiPressinado();
         escolhaN1.gameObject.SetActive(false);
         escolhaN2.gameObject.SetActive(false);
@@ -624,7 +637,7 @@ public class Game : MonoBehaviour
         //Verifica se o botao 2 foi pressionado    
         algumBotaoFoiPressionado = "botao2";
         Debug.Log("botao 2 foi pressionado.");
-        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' é: " + algumBotaoFoiPressionado);
+        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' eh: " + algumBotaoFoiPressionado);
         VerificaQualBotaoFoiPressinado();
         escolhaN1.gameObject.SetActive(false);
         escolhaN2.gameObject.SetActive(false);
@@ -637,7 +650,7 @@ public class Game : MonoBehaviour
         //Verifica se o botao 3 foi pressionado    
         algumBotaoFoiPressionado = "botao3";
         Debug.Log("botao 3 foi pressionado.");
-        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' é: " + algumBotaoFoiPressionado);
+        Debug.Log("O valor da variavel 'algumBotaoFoiPressionado' eh: " + algumBotaoFoiPressionado);
         VerificaQualBotaoFoiPressinado();
         escolhaN1.gameObject.SetActive(false);
         escolhaN2.gameObject.SetActive(false);
@@ -662,14 +675,14 @@ public class Game : MonoBehaviour
     }
 
     public void DecisaoDialogica(string decisao) {
-        //Aqui instanciamos um valor que definirá para qual rota iremos, ou seja
+        //Aqui instanciamos um valor que definir@ para qual rota iremos, ou seja
         //para a variavel global da escolhaDialogica, instanciada globalmente no inicio do codigo.
         //Combinaremos esse metodo com o resultado dos botoes, criando um caminho definido pelo jogador
         escolhaDialogica = decisao;
         
-        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamos agora é: " + escolhaDialogica);
+        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamos agora eh: " + escolhaDialogica);
 
-        //Espaço do sistema de save.
+        //Espa@o do sistema de save.
         faseAtual2 = decisao;
         //SaveGame();
         
@@ -681,7 +694,7 @@ public class Game : MonoBehaviour
     public List<string> DecisaoDialogicaList(string decisaoList)
     {
         //Vai retornar em qual lista estamos atualmente
-        //Serve pra evitar avançar ou retroceder demais no diálogo, dependendo da qtd de frases na lista.
+        //Serve pra evitar avan@ar ou retroceder demais no di@logo, dependendo da qtd de frases na lista.
 
         switch (decisaoList) 
         {
@@ -702,7 +715,7 @@ public class Game : MonoBehaviour
                 break;
         }
 
-        //Debug.Log("Estamos verificando em qual lista estamos trabalhando. A lista atual é: " + escolhaDialogicaList);
+        //Debug.Log("Estamos verificando em qual lista estamos trabalhando. A lista atual @: " + escolhaDialogicaList);
         return escolhaDialogicaList;
     }
 
@@ -712,7 +725,7 @@ public class Game : MonoBehaviour
         rota1 = caminho1;
         rota2 = caminho2;
         rota3 = caminho3;
-        Debug.Log("Estamos dentro de: 'Rotas'. O valor das rotas atual é: Rota1: " + rota1 +" - Rota2: "+ rota2 + " - Rota3: " + rota3);
+        Debug.Log("Estamos dentro de: 'Rotas'. O valor das rotas atual eh: Rota1: " + rota1 +" - Rota2: "+ rota2 + " - Rota3: " + rota3);
 
     }
 
@@ -722,9 +735,9 @@ public class Game : MonoBehaviour
         //Esse metodo verifica qual botao foi pressionado e direciona pra qual rota devemos ir
         //Se algum botao foi pressioando, deve levar para a lista de frases desejada.
 
-        //Escreva o destino possivel nas rotas e o metodo "DecisaoDialogica" levará o jogador para ela.
+        //Escreva o destino possivel nas rotas e o metodo "DecisaoDialogica" levar@ o jogador para ela.
 
-        Debug.Log("Estamos dentro do metodo 'VerificaQualBotaoFoiPressinado'. O valor da variavel 'algumBotaoFoiPressionado' é: " + algumBotaoFoiPressionado);
+        Debug.Log("Estamos dentro do metodo 'VerificaQualBotaoFoiPressinado'. O valor da variavel 'algumBotaoFoiPressionado' eh: " + algumBotaoFoiPressionado);
 
         switch (algumBotaoFoiPressionado)
         {
@@ -752,18 +765,19 @@ public class Game : MonoBehaviour
 
     }
 
-    //Sistema de save ------------------------------------
+    //-------------------------------------Sistema de save ------------------------------------
 
 
     public void SimFoiPressionado(bool chave)
     {
         snBool = chave;
-        Debug.Log("Estamos em 'SimFoiPressionado' e o valor de 'snBool' é: " + snBool);
+        Debug.Log("Estamos em 'SimFoiPressionado' e o valor de 'snBool' eh: " + snBool);
     }
 
     public void DefineSlot(string slotEscolhido) 
     {
         //vai definir em qual slot estamos salvando o jogo.
+        //O jogador vai escolher o botao do slot e depois deve salvar automaticamente.
         slotSaveGame = slotEscolhido;
         Debug.Log("Slot para salvamento escolhido. Slot: " + slotEscolhido);
         
@@ -771,52 +785,42 @@ public class Game : MonoBehaviour
 
     public void SaveGame() 
     {
-        //removi a escolha rapidamente para fazer um teste.
+        
 
-        //esse metodo será capaz de entender em qual fase estamos e deve salvar o jogo de acordo com a fase/slot escolhido.
+        //esse metodo sera capaz de entender em qual fase estamos e deve salvar o jogo de acordo com a fase/slot escolhido.
 
-        //Aviso:
-        //Conseguimos salvar o jogo, mas ainda nao escrevi uma forma do jogador escolher o slot e de fato salvar nele.
-        //Mas está funcional.
-
-        //adicionar a data como complemento do salvamento.
-
-        Debug.Log("estamos em 'SaveGame' e a 'escolhaDialogica' é: " + " 'vazio' " + ". Nenhuma informação foi salva ainda. A fase atual é: " + faseAtual2);
-
-        //só precisamos de uma trava. Essa trava não vai deixar o jogador salvar o jogo enquanto ela estiver fechada.
-        //vai salvar o jogo se snBool for == true (serve pra controlar se o jogador quer ou nao salvar)
+        Debug.Log("estamos em 'SaveGame' e a 'escolhaDialogica' eh: " + faseAtual2 +" 'vazio' " + ". Nenhuma informacao foi salva ainda. A fase atual eh: " + faseAtual2);
 
 
-        //vai definir em qual slot devemos salvar o jogo.
-        //DefineSlot("teste1");
-
-        //salva o jogo automaticamente, se alguma frase listada aparecer nesse switch.
+        //salva o jogo automaticamente, se alguma frase listada aparecer nesse switch. Pois chama o @Save1Progress().
             switch (faseAtual2)
             {
                 case "frasesUm":
                 Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': "+ faseAtual2 + ". SimFoiPressionado: " + snBool);
+
                     if (snBool == true)
                     {
                         Save1Progress(slotSaveGame, faseAtual2);
                         
                 }
-                else { Debug.Log("Estamos em 'SaveGame/frasesUm'. O slot para salvar nao foi encontrado ou o snbool nao é true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
+                else { Debug.Log("Estamos em 'SaveGame/frasesUm'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
                     
                 break;
 
                 case "frasesDois":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': "+ faseAtual2 + ". SimFoiPressionado: " + snBool);
 
                     if (slotSaveGame != null && snBool == true)
                     {
                         Save1Progress(slotSaveGame, faseAtual2);
                         //SimFoiPressionado(false);
                 }
-                else { Debug.Log("Estamos em 'SaveGame/frasesDois'. O slot para salvar nao foi encontrado ou o snbool nao é true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
+                else { Debug.Log("Estamos em 'SaveGame/frasesDois'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
 
                 break;
 
                 default:
-                    Debug.Log("Estamos em 'SaveGame' e nenhum save foi salvo. Escolha dialogica: " + faseAtual2);
+                    Debug.Log("Estamos em 'SaveGame()' e nenhum save foi salvo. Escolha dialogica: " + faseAtual2);
                     break;
 
             }
@@ -828,12 +832,14 @@ public class Game : MonoBehaviour
 
     public void Save1Progress(string slot, string listaAtual)
     {
+        
+        //vai salvar o progresso do jogo e desativar a chave 'snBool', permitindo salvar em algum outro momento.
 
         //Vamos usar o 'slot' para o lugar de salvamento
         //Vamos usar o 'listaAtual' para salvar no slot.
 
         PlayerPrefs.SetString(slot, listaAtual);
-        //força o salvamento
+        //for@a o salvamento
         PlayerPrefs.Save();
      
         saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
@@ -842,23 +848,25 @@ public class Game : MonoBehaviour
         SimFoiPressionado(false);
     }
 
-
+    //---------------------------------------------Sistema de Loading--------------------------------------------
 
     public void LoadSave1()
     {
-        //vai carregar o progresso do 1° save do jogador
+        //vai carregar o progresso do 1@ save do jogador
         //Esse metodo deve ser usado na tela de loading.
+
+        
 
         //dados da tela de loading
         loadTMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
-        loadTMP.text = "Load 1: " + PlayerPrefs.GetString(slotSaveGame, "Nenhum save encontrado") + ". Slot: " + slotSaveGame;
+        loadTMP.text = "Load 1: " + PlayerPrefs.GetString("testeSlot", "Nenhum save encontrado") + ". Slot: " + "testeSlot";
 
 
     }
 
     public void LoadSave2()
     {
-        //vai carregar o progresso do 1° save do jogador
+        //vai carregar o progresso do 1@ save do jogador
         //Esse metodo vai ser usado na tela de 'Game', para testes.
 
         //dados da tela de game
@@ -869,23 +877,23 @@ public class Game : MonoBehaviour
     }
 
     /*
-    public void LoadSavesToScreen(string scene)
+    public void LoadSavesToScreen()
     {
         //Esse metodo apenas carrega os metodos para a tela de loading ao iniciar a tela.
         //deve ser inicializado no start.
 
-        SceneManager.LoadScene(scene);
         saving1TMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString("save_1", "Nenhum save encontrado");
+        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString("Espaco1", "Nenhum save encontrado ") + " - Slot: Espaco 1";
 
         saving2TMP = GameObject.Find("SaveLoading2_TMP").GetComponent<TMP_Text>();
-        saving2TMP.text = "Load 2: " + PlayerPrefs.GetString("save_2", "Nenhum save encontrado");
+        saving2TMP.text = "Load 2: " + PlayerPrefs.GetString("Espaco2", "Nenhum save encontrado ") + " - Slot: Espaco 2";
 
         saving3TMP = GameObject.Find("SaveLoading3_TMP").GetComponent<TMP_Text>();
-        saving3TMP.text = "Load 3: " + PlayerPrefs.GetString("save_3", "Nenhum save encontrado");
+        saving3TMP.text = "Load 3: " + PlayerPrefs.GetString("Espaco3", " Nenhum save encontrado ") + " - Slot: Espaco 3";
 
     }
     */
+
 
     public void ApagarSaves() 
     {
@@ -919,63 +927,63 @@ public class Game : MonoBehaviour
 
     /*Bugs para resolver:
     1-Esconder os botoes caso eu volte e eles ja tenham aparecido na tela. - ok
-    2-Tentar travar o avanço de dialogo apos acabar as frases dentro da lista de frases, pois
+    2-Tentar travar o avan@o de dialogo apos acabar as frases dentro da lista de frases, pois
     fica adicionando valores em um round que nao vai ser usado (o contador) e pra voltar eu tenho que ficar
     clicando varias vezes. ok
     3-Fazer o sistema de rota de lista de frases funcionar.
     
     Onde parei: estou tentando fazer o console me mostrar que os botoes foram precionados e que a variavel: algumBotaoFoiPressionado
-    Tem conteúdo. Se eu conseguir fazer essa variavel pegar o tipo de botao que tem nela, o metodo 'VerificaQualBotaoFoiPressinado'
+    Tem conte@do. Se eu conseguir fazer essa variavel pegar o tipo de botao que tem nela, o metodo 'VerificaQualBotaoFoiPressinado'
     vai funcionar, levando o jogador pra rota selecionada.
      
     ------------
 
     Atualmente eu to percebendo alguns probleminhas:
     1-Preciso pensar em uma forma de zerar o contador toda vez que uma rota for iniciada
-    Mas esse contador precisa ser zerado uma única vez.
+    Mas esse contador precisa ser zerado uma @nica vez.
 
-    2-O problema que estou enfrentando nas rotas é simples:
-    Antes os botoes estavam linkados com esse código, isso significa que toda vez que eu apertava os botoes as variaveis globais eram resetadas.
-    Isso quer dizer que o sistema de links que me leva para outra rota é cancelado, mesmo estando "tudo funcionando". Dessa forma, é necessário
+    2-O problema que estou enfrentando nas rotas @ simples:
+    Antes os botoes estavam linkados com esse c@digo, isso significa que toda vez que eu apertava os botoes as variaveis globais eram resetadas.
+    Isso quer dizer que o sistema de links que me leva para outra rota @ cancelado, mesmo estando "tudo funcionando". Dessa forma, @ necess@rio
     pensar em uma forma de linkar o resultado de 'VerificaQualBotaoFoiPressinado' e linkar com os botoes para nos enviar para as rotas desejadas.
 
     Para os botoes funcionarem creio eu que eu precise direcionar na cena o que cada botao vai fazer, mas eu nao poderei usar esse codigo.
-    Entao terei que criar outro script que reconhecera qual botao estamos clicando e para onde ele deve nos levar. É importante lembrar que nao
+    Entao terei que criar outro script que reconhecera qual botao estamos clicando e para onde ele deve nos levar. @ importante lembrar que nao
     devemos reiniciar a cena quando apertamos um botao, apenas linkar para um lista de frases diferente.
 
     ---------
 
-    Se isso der certo, o esqueleto do jogo estará pronto. Falta apenas isso pra fazer funcionar.
+    Se isso der certo, o esqueleto do jogo estar@ pronto. Falta apenas isso pra fazer funcionar.
     Depois disso, partirei pra construir um sistema de save, o menu de pausa, loading, trazer os assets para o game, 
-    construir um sistema que verifica em qual cenário e qual avatar deve aparecer na tela, construir um sistema de som,
-    integrar com a API do spotify e após colocar todo o diálogo, o jogo estará finalmente pronto. Não falta muita 
+    construir um sistema que verifica em qual cen@rio e qual avatar deve aparecer na tela, construir um sistema de som,
+    integrar com a API do spotify e ap@s colocar todo o di@logo, o jogo estar@ finalmente pronto. N@o falta muita 
     coisa, mas se tudo isso estiver pronto a tempo, significa que terei cumprido meu objetivo.
 
-    Após o jogo estar pronto, estarei lançando a plataforma online da saphire, o patreon, o itch.io e fazendo uma live pra comemorar 
-    a construção da nova fase da saphire game studio. Em breve seremos fortes o bastante para crescermos e termos renda com o estúdio.
+    Ap@s o jogo estar pronto, estarei lan@ando a plataforma online da saphire, o patreon, o itch.io e fazendo uma live pra comemorar 
+    a constru@@o da nova fase da saphire game studio. Em breve seremos fortes o bastante para crescermos e termos renda com o est@dio.
     
     --------------------
     onde parei:
 
-    Cara nao entendo o pq, mas o playerprefs fica mantendo o valor mesmo já tendo apagado e tendo apagado até a variável que o valor se encotrava
-    Ele não grava de forma alguma um valor que está dentro de uma variável, ele não permite sobreescrever. É como se ele gravasse uma vez e não permitisse
-    mais gravar. Vi coisas estranhas hoje: o debug informar 2 valores diferentes ao mesmo tempo para um único debug, ou seja bugadasso.
-    Não sei se vale a pena continuar tentando contruir sistemas para o playerprefs, talvez seja melhor tentar buscar outra forma de armazenar dados.
-    Pq sinceramente, depois de 2 dias trabalhando o que eu sinto é que essa função é incompleta, parece que tem falhas e grandes falhas.
+    Cara nao entendo o pq, mas o playerprefs fica mantendo o valor mesmo j@ tendo apagado e tendo apagado at@ a vari@vel que o valor se encotrava
+    Ele n@o grava de forma alguma um valor que est@ dentro de uma vari@vel, ele n@o permite sobreescrever. @ como se ele gravasse uma vez e n@o permitisse
+    mais gravar. Vi coisas estranhas hoje: o debug informar 2 valores diferentes ao mesmo tempo para um @nico debug, ou seja bugadasso.
+    N@o sei se vale a pena continuar tentando contruir sistemas para o playerprefs, talvez seja melhor tentar buscar outra forma de armazenar dados.
+    Pq sinceramente, depois de 2 dias trabalhando o que eu sinto @ que essa fun@@o @ incompleta, parece que tem falhas e grandes falhas.
 
-    Vou dar mais uma pesquisada sobre pra ver se consigo resolver e se tem problemas crônicos. E sim, pensei de tudo: limpar o cache, limpar os dados
+    Vou dar mais uma pesquisada sobre pra ver se consigo resolver e se tem problemas cr@nicos. E sim, pensei de tudo: limpar o cache, limpar os dados
     salvos, reiniciar, apagar a variavel, tentar acessar em outra classe. Cara eu to exausto. Quando eu pensei que tinha conseguido,
-    pq teve uma única hora que funcionou e depois não funcionou mais. Em resumo, estou cansado e acabado de tanto tentar fazer isso funcionar.
+    pq teve uma @nica hora que funcionou e depois n@o funcionou mais. Em resumo, estou cansado e acabado de tanto tentar fazer isso funcionar.
 
-    Amanhã se der tempo pesquiso pra ver se consigo resolver, caso não... vou só tentar outra forma.
+    Amanh@ se der tempo pesquiso pra ver se consigo resolver, caso n@o... vou s@ tentar outra forma.
 
     ----
-    Eu tenho usado a key 'save_1' para salvar os dados. De repente esse é o problema. Estou usando repetidamente o mesmo save.
-    Estou com algumas ideias novas. A primeira é tentar colocar o método de save dentro do método de carregar a fase atual e usar o playerprefs.save()
+    Eu tenho usado a key 'save_1' para salvar os dados. De repente esse @ o problema. Estou usando repetidamente o mesmo save.
+    Estou com algumas ideias novas. A primeira @ tentar colocar o m@todo de save dentro do m@todo de carregar a fase atual e usar o playerprefs.save()
     para tentar garantir que os dados foram salvos.
 
     -----------------
-    o metodo savegame esta quase pronto. Só linkar o snbool com o botao de sim e criar botoes para os slots
+    o metodo savegame esta quase pronto. S@ linkar o snbool com o botao de sim e criar botoes para os slots
     e na teoria vai estar pronto. Criar uma forma de apagar os saves tmb, colocar o simbolo de uma lixeira.
 
 

@@ -2349,18 +2349,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2039246797}
-        m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: LoadSavesToScreen
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MenuLoading
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2039246796}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: selectScene
@@ -2371,6 +2359,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MenuLoading
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2039246797}
+        m_TargetAssemblyTypeName: Game, Assembly-CSharp
+        m_MethodName: LoadSavesToScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2039246794
@@ -2442,27 +2442,14 @@ MonoBehaviour:
   rota1: 
   rota2: 
   rota3: 
-  escolhaN1: {fileID: 0}
-  escolhaN2: {fileID: 0}
-  escolhaN3: {fileID: 0}
-  voltarPause: {fileID: 0}
-  escolhaNUMtmp: {fileID: 0}
-  escolhaNDOIStmp: {fileID: 0}
-  escolhaNTREStmp: {fileID: 0}
   contador: 0
   escolhaDialogica: Sem valor definido
-  teste: 
   escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
   pauseActive: 0
   save1: 
-  saving1TMP: {fileID: 0}
-  saving2TMP: {fileID: 0}
-  saving3TMP: {fileID: 0}
-  snTMP: {fileID: 0}
-  loadTMP: {fileID: 0}
 --- !u!1 &2041920045
 GameObject:
   m_ObjectHideFlags: 0
