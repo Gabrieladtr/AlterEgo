@@ -25,4 +25,4 @@ Se tudo der certo, vc já vai poder commitar e dar o push no github.
 
 Bônus: (Caso vc precise):
 # converte de CRLF para LF:
-find . -type f -exec dos2unix.exe {} \;
+find . -type f -exec dos2unix.exe {} \; 

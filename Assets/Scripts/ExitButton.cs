@@ -21,7 +21,7 @@ public class ExitButton : MonoBehaviour
 
     public void QuitApplication() 
     {
-        //sai da aplicação
+        //sai da aplicacao
         Debug.Log("Application quit");
         Application.Quit();
     }
@@ -29,13 +29,20 @@ public class ExitButton : MonoBehaviour
     private void Start()
     {
         //inicializa os elementos da tela
-        SairMesmoButton = GameObject.Find("SimMesmo").GetComponent<Button>();
-        ficarButton = GameObject.Find("Ficar").GetComponent<Button>();
-        sairBackground = GameObject.Find("SairBackground").GetComponent<Image>();
-        tituloGame = GameObject.Find("TituloSair").GetComponent<TMP_Text>();
+
+        if(GameObject.Find("SimMesmo") || GameObject.Find("Ficar") || GameObject.Find("SairBackground") || GameObject.Find("TituloSair"))
+        {
+            
+            SairMesmoButton = GameObject.Find("SimMesmo").GetComponent<Button>();
+            ficarButton = GameObject.Find("Ficar").GetComponent<Button>();
+            sairBackground = GameObject.Find("SairBackground").GetComponent<Image>();
+            tituloGame = GameObject.Find("TituloSair").GetComponent<TMP_Text>();
+            
+            //ativa ou desativa os elementos na tela
+            inicialiarTelaSair(true);
+
+        }
         
-        //ativa ou desativa os elementos na tela
-        inicialiarTelaSair(true);
     }
 
 
@@ -43,7 +50,7 @@ public class ExitButton : MonoBehaviour
 
     public void inicialiarTelaSair(bool ligadoOuNao)
     {
-        //Por padrão vai inicializar a cena com os botoes desligados
+        //Por padrï¿½o vai inicializar a cena com os botoes desligados
         sairBackground.gameObject.SetActive(ligadoOuNao);
         SairMesmoButton.gameObject.SetActive(ligadoOuNao);
         ficarButton.gameObject.SetActive(ligadoOuNao);
@@ -58,11 +65,11 @@ public class ExitButton : MonoBehaviour
         //define um estado para verificar se os botoes ficam ou nao na tela
         stateOfSair = state;
 
-        //Vai ter 3 funções: sair, sair mesmo ou ficar.
+        //Vai ter 3 funï¿½ï¿½es: sair, sair mesmo ou ficar.
         switch (stateOfSair)
         {
             case "SairMesmo":
-                //Se o jogador clicar me 'desconectar', sairá do aplicativo
+                //Se o jogador clicar me 'desconectar', sairï¿½ do aplicativo
                 QuitApplication();
                 break;
 

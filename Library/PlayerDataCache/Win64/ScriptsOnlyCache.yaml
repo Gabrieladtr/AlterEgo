@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ExitButton
     - Game
+    - Inicialize
+    - PauseGame
     - SaveProgressClass
     - StartGame
     Unity.Rider.Editor.dll:
@@ -13,8 +15,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -78,35 +78,47 @@ ScriptsOnlyBuild:
     fullTypeName: StartGame
     methodName: selectScene
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: DefineSlot
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: LoadSave2
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
+    methodName: SaveGame
+  - assembly: Assembly-CSharp
+    fullTypeName: SaveProgressClass
     methodName: DefineSlot
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: SimFoiPressionado
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: SaveGame
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: ApagarSaves
   - assembly: Assembly-CSharp
-    fullTypeName: Game
+    fullTypeName: SaveProgressClass
     methodName: DefineSlot
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
   - assembly: Assembly-CSharp
+    fullTypeName: SaveProgressClass
+    methodName: SaveGame
+  - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: CloseScene
+  - assembly: Assembly-CSharp
+    fullTypeName: SaveProgressClass
+    methodName: SaveGame
+  - assembly: Assembly-CSharp
+    fullTypeName: SaveProgressClass
+    methodName: SaveGame
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
@@ -140,9 +152,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: StartGame
     methodName: selectScene
-  - assembly: Assembly-CSharp
-    fullTypeName: Game
-    methodName: LoadSave1
   sceneClasses:
     Assets/Scenes/ComoJogar.unity:
     - Class: 1
@@ -162,23 +171,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -211,25 +220,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2718}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6938}
+      Script: {instanceID: 6500}
+    - Class: 114
+      Script: {instanceID: 6946}
+    - Class: 114
+      Script: {instanceID: 33040}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -266,31 +279,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2182}
+      Script: {instanceID: 2188}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 4118}
+      Script: {instanceID: 4124}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 4392}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6500}
     - Class: 114
-      Script: {instanceID: 6938}
+      Script: {instanceID: 6946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -325,23 +338,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -374,25 +387,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6052}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6938}
+      Script: {instanceID: 6500}
+    - Class: 114
+      Script: {instanceID: 6946}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -425,23 +440,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -469,31 +484,27 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2718}
     - Class: 114
-      Script: {instanceID: 2712}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 5846}
-    - Class: 114
-      Script: {instanceID: 6170}
-    - Class: 114
-      Script: {instanceID: 6492}
+      Script: {instanceID: 6500}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -520,30 +531,24 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 6500}
     - Class: 114
-      Script: {instanceID: 6170}
-    - Class: 114
-      Script: {instanceID: 6492}
-    - Class: 114
-      Script: {instanceID: 7142}
+      Script: {instanceID: 7150}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -576,23 +581,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1596}
+      Script: {instanceID: 1602}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2816}
+      Script: {instanceID: 2822}
     - Class: 114
-      Script: {instanceID: 3106}
+      Script: {instanceID: 3112}
     - Class: 114
-      Script: {instanceID: 5110}
+      Script: {instanceID: 5116}
     - Class: 114
-      Script: {instanceID: 5694}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 5846}
+      Script: {instanceID: 5852}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6178}
     - Class: 114
-      Script: {instanceID: 7142}
+      Script: {instanceID: 7150}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1168,6 +1173,12 @@ ScriptsOnlyBuild:
     className: UnityOnMouseUpAsButtonMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inicialize
+  - hash:
+      serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1294,7 +1305,7 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: 4c90b16538cc3f8ea5b320cc6d79028d
+      Hash: 12ec52082a85114aa7587729769382e8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
@@ -1406,6 +1417,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f2ff80d468197d2238fe61b6be53125b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseGame
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
@@ -1418,4 +1435,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/QuerMesmoSair.unity
   - Assets/Scenes/MenuLoading.unity
   playerPath: C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v04 -
-    0.2/Alter Ego.exe
+    0.3/Alter Ego.exe

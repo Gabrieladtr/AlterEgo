@@ -58,19 +58,6 @@ public class Game : MonoBehaviour
     //Nao estou usando, mas serviria pra verificar o index do dialogo.
     public int currentDialogueIndex = 0;
 
-    //Controla de o pause est@ ativado ou n@o
-    public bool pauseActive = false;
-
-    //Vai ser responsavel por salvar o progresso do jogador:
-    public string save1;
-    public static TMP_Text saving1TMP, saving2TMP, saving3TMP, snTMP, loadTMP;
-
-    //chave que verifica se salvamos ou nao o jogo
-    public static bool snBool = false;
-
-    //slot para salvamentos do jogo
-    public static string slotSaveGame;
-
     public static bool enableButtonsOnScreen;
 
     void Start()
@@ -547,25 +534,6 @@ public class Game : MonoBehaviour
 
         //------------------------------------------Fim do sistema de escolha dialogica------------------------------------------
         
-
-        //controlamos se o pause est@ ativo ou nao
-
-        if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false)
-        {
-            Debug.Log("O menu de pausa deve ser aberto.");
-            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-            pauseActive = true;
-
-        } else if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == true)
-        {
-
-            Debug.Log("O menu de pausa deve ser fechado.");
-            SceneManager.UnloadSceneAsync("PauseMenu", UnloadSceneOptions.None);
-            pauseActive = false;
-
-
-        }
-
        
 
 
@@ -674,6 +642,8 @@ public class Game : MonoBehaviour
 
     }
 
+    //-------------------------------Escolha Dialogica-------------------------------
+
     public void DecisaoDialogica(string decisao) {
         //Aqui instanciamos um valor que definir@ para qual rota iremos, ou seja
         //para a variavel global da escolhaDialogica, instanciada globalmente no inicio do codigo.
@@ -765,230 +735,9 @@ public class Game : MonoBehaviour
 
     }
 
-    //-------------------------------------Sistema de save ------------------------------------
-
-
-    public void SimFoiPressionado(bool chave)
-    {
-        snBool = chave;
-        Debug.Log("Estamos em 'SimFoiPressionado' e o valor de 'snBool' eh: " + snBool);
-    }
-
-    public void DefineSlot(string slotEscolhido) 
-    {
-        //vai definir em qual slot estamos salvando o jogo.
-        //O jogador vai escolher o botao do slot e depois deve salvar automaticamente.
-        slotSaveGame = slotEscolhido;
-        Debug.Log("Slot para salvamento escolhido. Slot: " + slotEscolhido);
-        
-    }
-
-    public void SaveGame() 
-    {
-        
-
-        //esse metodo sera capaz de entender em qual fase estamos e deve salvar o jogo de acordo com a fase/slot escolhido.
-
-        Debug.Log("estamos em 'SaveGame' e a 'escolhaDialogica' eh: " + faseAtual2 +" 'vazio' " + ". Nenhuma informacao foi salva ainda. A fase atual eh: " + faseAtual2);
-
-
-        //salva o jogo automaticamente, se alguma frase listada aparecer nesse switch. Pois chama o @Save1Progress().
-            switch (faseAtual2)
-            {
-                case "frasesUm":
-                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': "+ faseAtual2 + ". SimFoiPressionado: " + snBool);
-
-                    if (snBool == true)
-                    {
-                        Save1Progress(slotSaveGame, faseAtual2);
-                        
-                }
-                else { Debug.Log("Estamos em 'SaveGame/frasesUm'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
-                    
-                break;
-
-                case "frasesDois":
-                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': "+ faseAtual2 + ". SimFoiPressionado: " + snBool);
-
-                    if (slotSaveGame != null && snBool == true)
-                    {
-                        Save1Progress(slotSaveGame, faseAtual2);
-                        //SimFoiPressionado(false);
-                }
-                else { Debug.Log("Estamos em 'SaveGame/frasesDois'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + faseAtual2); }
-
-                break;
-
-                default:
-                    Debug.Log("Estamos em 'SaveGame()' e nenhum save foi salvo. Escolha dialogica: " + faseAtual2);
-                    break;
-
-            }
-        
-
-
-    }
-
-
-    public void Save1Progress(string slot, string listaAtual)
-    {
-        
-        //vai salvar o progresso do jogo e desativar a chave 'snBool', permitindo salvar em algum outro momento.
-
-        //Vamos usar o 'slot' para o lugar de salvamento
-        //Vamos usar o 'listaAtual' para salvar no slot.
-
-        PlayerPrefs.SetString(slot, listaAtual);
-        //for@a o salvamento
-        PlayerPrefs.Save();
-     
-        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
-        Debug.Log("Dados salvos no slot: " + slot+". Nome da lista salva: " + listaAtual);
-        SimFoiPressionado(false);
-    }
-
-    //---------------------------------------------Sistema de Loading--------------------------------------------
-
-    public void LoadSave1()
-    {
-        //vai carregar o progresso do 1@ save do jogador
-        //Esse metodo deve ser usado na tela de loading.
-
-        
-
-        //dados da tela de loading
-        loadTMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
-        loadTMP.text = "Load 1: " + PlayerPrefs.GetString("testeSlot", "Nenhum save encontrado") + ". Slot: " + "testeSlot";
-
-
-    }
-
-    public void LoadSave2()
-    {
-        //vai carregar o progresso do 1@ save do jogador
-        //Esse metodo vai ser usado na tela de 'Game', para testes.
-
-        //dados da tela de game
-        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString(slotSaveGame, "Nenhum save encontrado") + ". Slot: " + slotSaveGame;
-
-
-    }
-
-    /*
-    public void LoadSavesToScreen()
-    {
-        //Esse metodo apenas carrega os metodos para a tela de loading ao iniciar a tela.
-        //deve ser inicializado no start.
-
-        saving1TMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Load 1: " + PlayerPrefs.GetString("Espaco1", "Nenhum save encontrado ") + " - Slot: Espaco 1";
-
-        saving2TMP = GameObject.Find("SaveLoading2_TMP").GetComponent<TMP_Text>();
-        saving2TMP.text = "Load 2: " + PlayerPrefs.GetString("Espaco2", "Nenhum save encontrado ") + " - Slot: Espaco 2";
-
-        saving3TMP = GameObject.Find("SaveLoading3_TMP").GetComponent<TMP_Text>();
-        saving3TMP.text = "Load 3: " + PlayerPrefs.GetString("Espaco3", " Nenhum save encontrado ") + " - Slot: Espaco 3";
-
-    }
-    */
-
-
-    public void ApagarSaves() 
-    {
-        //na teoria, apaga todos os saves
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.DeleteKey(slotSaveGame);
-        PlayerPrefs.DeleteKey("save_1");
-        PlayerPrefs.DeleteKey("save_2");
-        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Delete 1: " + PlayerPrefs.GetString("save_2", "Dados apagados");
-        Debug.Log("Saves apagados");
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Preciso de um metodo pra receber as rotas possiveis
-    //E preciso de um metodo pra colocar dentro dos 'botao1Foipressionado' para receber as rotas dadas
-    //E redirecionar para o caminho dela
-
-
-    /*Bugs para resolver:
-    1-Esconder os botoes caso eu volte e eles ja tenham aparecido na tela. - ok
-    2-Tentar travar o avan@o de dialogo apos acabar as frases dentro da lista de frases, pois
-    fica adicionando valores em um round que nao vai ser usado (o contador) e pra voltar eu tenho que ficar
-    clicando varias vezes. ok
-    3-Fazer o sistema de rota de lista de frases funcionar.
     
-    Onde parei: estou tentando fazer o console me mostrar que os botoes foram precionados e que a variavel: algumBotaoFoiPressionado
-    Tem conte@do. Se eu conseguir fazer essa variavel pegar o tipo de botao que tem nela, o metodo 'VerificaQualBotaoFoiPressinado'
-    vai funcionar, levando o jogador pra rota selecionada.
-     
-    ------------
-
-    Atualmente eu to percebendo alguns probleminhas:
-    1-Preciso pensar em uma forma de zerar o contador toda vez que uma rota for iniciada
-    Mas esse contador precisa ser zerado uma @nica vez.
-
-    2-O problema que estou enfrentando nas rotas @ simples:
-    Antes os botoes estavam linkados com esse c@digo, isso significa que toda vez que eu apertava os botoes as variaveis globais eram resetadas.
-    Isso quer dizer que o sistema de links que me leva para outra rota @ cancelado, mesmo estando "tudo funcionando". Dessa forma, @ necess@rio
-    pensar em uma forma de linkar o resultado de 'VerificaQualBotaoFoiPressinado' e linkar com os botoes para nos enviar para as rotas desejadas.
-
-    Para os botoes funcionarem creio eu que eu precise direcionar na cena o que cada botao vai fazer, mas eu nao poderei usar esse codigo.
-    Entao terei que criar outro script que reconhecera qual botao estamos clicando e para onde ele deve nos levar. @ importante lembrar que nao
-    devemos reiniciar a cena quando apertamos um botao, apenas linkar para um lista de frases diferente.
-
-    ---------
-
-    Se isso der certo, o esqueleto do jogo estar@ pronto. Falta apenas isso pra fazer funcionar.
-    Depois disso, partirei pra construir um sistema de save, o menu de pausa, loading, trazer os assets para o game, 
-    construir um sistema que verifica em qual cen@rio e qual avatar deve aparecer na tela, construir um sistema de som,
-    integrar com a API do spotify e ap@s colocar todo o di@logo, o jogo estar@ finalmente pronto. N@o falta muita 
-    coisa, mas se tudo isso estiver pronto a tempo, significa que terei cumprido meu objetivo.
-
-    Ap@s o jogo estar pronto, estarei lan@ando a plataforma online da saphire, o patreon, o itch.io e fazendo uma live pra comemorar 
-    a constru@@o da nova fase da saphire game studio. Em breve seremos fortes o bastante para crescermos e termos renda com o est@dio.
-    
-    --------------------
-    onde parei:
-
-    Cara nao entendo o pq, mas o playerprefs fica mantendo o valor mesmo j@ tendo apagado e tendo apagado at@ a vari@vel que o valor se encotrava
-    Ele n@o grava de forma alguma um valor que est@ dentro de uma vari@vel, ele n@o permite sobreescrever. @ como se ele gravasse uma vez e n@o permitisse
-    mais gravar. Vi coisas estranhas hoje: o debug informar 2 valores diferentes ao mesmo tempo para um @nico debug, ou seja bugadasso.
-    N@o sei se vale a pena continuar tentando contruir sistemas para o playerprefs, talvez seja melhor tentar buscar outra forma de armazenar dados.
-    Pq sinceramente, depois de 2 dias trabalhando o que eu sinto @ que essa fun@@o @ incompleta, parece que tem falhas e grandes falhas.
-
-    Vou dar mais uma pesquisada sobre pra ver se consigo resolver e se tem problemas cr@nicos. E sim, pensei de tudo: limpar o cache, limpar os dados
-    salvos, reiniciar, apagar a variavel, tentar acessar em outra classe. Cara eu to exausto. Quando eu pensei que tinha conseguido,
-    pq teve uma @nica hora que funcionou e depois n@o funcionou mais. Em resumo, estou cansado e acabado de tanto tentar fazer isso funcionar.
-
-    Amanh@ se der tempo pesquiso pra ver se consigo resolver, caso n@o... vou s@ tentar outra forma.
-
-    ----
-    Eu tenho usado a key 'save_1' para salvar os dados. De repente esse @ o problema. Estou usando repetidamente o mesmo save.
-    Estou com algumas ideias novas. A primeira @ tentar colocar o m@todo de save dentro do m@todo de carregar a fase atual e usar o playerprefs.save()
-    para tentar garantir que os dados foram salvos.
-
-    -----------------
-    o metodo savegame esta quase pronto. S@ linkar o snbool com o botao de sim e criar botoes para os slots
-    e na teoria vai estar pronto. Criar uma forma de apagar os saves tmb, colocar o simbolo de uma lixeira.
 
 
-
-     */
 
 
 }

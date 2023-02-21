@@ -307,6 +307,8 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/ExitButton.cs"
 "Assets/Scripts/Game.cs"
+"Assets/Scripts/Inicialize.cs"
+"Assets/Scripts/PauseGame.cs"
 "Assets/Scripts/SaveProgressClass.cs"
 "Assets/Scripts/StartGame.cs"
 -langversion:9.0

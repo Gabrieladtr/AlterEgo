@@ -18,8 +18,8 @@ public class Inicialize : MonoBehaviour
 
     void Start()
     {
-        //Verifica se os componentes estao na tela. Se sim, ele carrega os saves. Caso nao, ele nao carrega.
-
+        //Essa classe verifica se os componentes de loading estao na tela. Se sim, ele carrega os saves. Caso nao, ele nao carrega.
+        
 
 
         if(GameObject.Find("Save1") == true && GameObject.Find("Save2") == true && GameObject.Find("Save3") == true
