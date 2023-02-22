@@ -42,7 +42,7 @@ public static TMP_Text saving1TMP, saving2TMP, saving3TMP, snTMP, loadTMP;
         //esse metodo sera capaz de entender em qual fase estamos e deve salvar o jogo de acordo com a fase/slot escolhido.
 
         SimFoiPressionado(true);
-        //vai destravar para salvr, com o snBool com true.
+        //vai destravar para salvar, com o snBool com true.
         DefineSlot(slot);
         //Vai definir em qual o slot de salvamento vai salvar o game.
 
@@ -121,8 +121,8 @@ public static TMP_Text saving1TMP, saving2TMP, saving3TMP, snTMP, loadTMP;
         
         
 
-        //preciso criar um controle de qual botao foi pressionado para ai sim mandar a msg no tmp dos
-        //se slotSaveGame for igual Espaco1, entao TMP == tal.
+        //preciso criar um controle de qual botao foi pressionado para ai sim mandar a msg no tmp dos botoes
+        //se slotSaveGame for igual Espaco1, entao TMP == mostre a msg nesse botao.
 
         if(slotSaveGame == "Espaco1")
         {
@@ -192,6 +192,35 @@ public static TMP_Text saving1TMP, saving2TMP, saving3TMP, snTMP, loadTMP;
         saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
         saving1TMP.text = "Delete 1: " + PlayerPrefs.GetString("save_2", "Dados apagados");
         Debug.Log("Saves apagados");
+    }
+    
+    public void ApagarSavesPorSlot(string slot) 
+    {
+        //na teoria, apaga o save escolhido.
+        //Deve ser inicializado dentro de MenuSaving.
+
+        PlayerPrefs.DeleteKey(slot);
+
+        if(slot == "Espaco1")
+        {
+            saving2TMP = GameObject.Find("SavingUm_TMP").GetComponent<TMP_Text>();
+            saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+            Debug.Log("Save apagado do slot 1");
+        }
+        else if(slot == "Espaco2")
+        {
+            saving2TMP = GameObject.Find("Saving2TMP").GetComponent<TMP_Text>();
+            saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+            Debug.Log("Save apagado do slot 2");
+        }
+        else if(slot == "Espaco3")
+        {
+            saving2TMP = GameObject.Find("Saving3TMP").GetComponent<TMP_Text>();
+            saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+            Debug.Log("Save apagado do slot 3");
+        }
+
+        
     }
 
 
