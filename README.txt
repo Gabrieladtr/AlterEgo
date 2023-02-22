@@ -13,16 +13,24 @@ Acesse o terminal do git bash;
 Acesse o diretório onde está os arquivos do projeto:
 cd /c/Saphire Game Studio/Projetos Unity/AlterEgoClone/AlterEgo
 
-Dps solte esse comando no terminal:
-git config --global core.autocrlf true
+
 
 E dps converta os arquivos do terminal de LF (linux) para CRL (windows):
 converte de LF para CRLF:
 
 find . -type f -exec unix2dos.exe {} \;
 
+Dps solte esse comando no terminal:
+git config --global core.autocrlf true
+
 Se tudo der certo, vc já vai poder commitar e dar o push no github.
 
 Bônus: (Caso vc precise):
 # converte de CRLF para LF:
 find . -type f -exec dos2unix.exe {} \; 
+
+
+Lembre-se de fechar o unity para commitar!! Se nao os arquivos meta dados podem ferrar o projeto.
+
+
+
