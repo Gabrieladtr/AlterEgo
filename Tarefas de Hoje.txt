@@ -1,0 +1,68 @@
+---------------------Tarefas de Hoje---------------------
+
+Resumo: Hoje consegui resolver todos os problemas que tive nos links. Agora todos os botões estão levando o jogador para a cena certa, sem haver problemas. Tmb consegui resolver o problema do Esc que quando era apertado em qualquer outro momento (tela aditivas), ele ativava. Agora não mais. Então, nem os links e nem o menu de pause estão problemáticos. A única coisa que me incomoda é o flood que é gerado no console quando eu invoco cenas aditivas pelo menu de pause, mas infelizmente eu preciso de um componente que gera esse flood que é o event system. Sem ele os links não funcionam, então eh uma mão pela outra. Enfim, consegui ser produtivo hoje!. Faltam poucas coisas para a interface ficar 100%. Assim que eu acabar isso, pretendo começar o sistema de resolução.
+
+-> Commit v06.2
+
+-> Resolver o problema dos links dos botões do pause. Se eu estiver dentro do pause, e clicar em algum dos outros botoes que leva para outra página, nao posso deixar o link delas me levar para o menu inicial. Quando eu aperto em voltar, elas devem me levar para a cena aberta anteriormente (se for menu inicial, volta para o menu inicial e se for o pause, deve voltar para o pause). Ou seja, preciso de um sistem que identifica em qual cena estamos e para qual devemos retornar. (Resolvido)
+
+->Se eu apertar o esc dentro da tela de saving, ele pausa. E isso não deve acontecer. Tenho que criar um sistema que identifica em qual cena estamos e para qual vamos. Se essa lógica der certo, vamos poder controlar o sistema de pause e links de uma forma que não vai dar bugs. Isso é um problema de quando vc abre uma tela aditiva. Sempre que uma tela aditiva for aberta, ela é ignorada e a gente pensa que o código está funcionando mas nem... Se eu conseguir identificar qual cena aditiva está ativa eu consigo resolver esse problema. Eu preciso de um método que verifica se temos alguma cena aditiva criada. (Resolvido)
+
+
+
+---------------------Problemas de hoje---------------------
+
+->Estou criando um metodo que consegue verificar qual a cena anterior e qual a proxima. Dessa forma, conseguirei resolver o problema dos links. Eu já consigo saber quais as cenas que são anteriores e quais as que são as próximas. O problema? O método 'SceneManager.GetActiveScene().name' não retorna as cenas que foram abertas de forma aditiva. Sim, que B.O. do kct. (resolvido)
+
+
+
+---------------------Pendentes de hoje---------------------
+
+->Criar um botao que volta para o menu principal e verifica se o jogador salvou os dados. Se sim, volta caso não ele apenas faz uma verificação se o jogador quer salvar ou não. Já criei o botão e o link, mas ele ainda não verifica os dados salvos do jogador.
+
+->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause.
+
+-> Após o sistema de save e load estiverem 100% funcionais e sem bugs, quero começar a construir o sistema de resolução do jogo. A partir desse sistema eu quero identificar automaticamente qual a resolução do jogador, para ele não se preocupar com isso.
+
+-> Criar uma forma de carregar os dados do jogador no jogo, dentro da UI de Load.
+
+-----------------Comandos para converter LF em CRLF---------
+Acesse o terminal do git bash;
+
+Acesse o diretório onde está os arquivos do projeto:
+cd "/c/Saphire Game Studio/Projetos Unity/AlterEgoClone/AlterEgo"
+
+Dps solte esse comando no terminal:
+git config --global core.autocrlf true
+
+E dps converta os arquivos do terminal de LF (linux) para CRL (windows):
+converte de LF para CRLF:
+
+find . -type f -exec unix2dos.exe {} \;
+
+Se tudo der certo, vc já vai poder commitar e dar o push no github.
+
+Bônus: (Caso vc precise):
+# converte de CRLF para LF:
+find . -type f -exec dos2unix.exe {} \;
+
+-----------------Configurações-------------
+
+-Tela/resolução (diria que é bem mais complicado)
+-Audio/Spotify (relativamente fácil)
+-Idioma - ptbr-ing (bem mais difícil)
+
+----------------Input de assets-------------
+-Sistema de avatares (relativamente tranquilo)
+-Listas de diálogo (relativamente tranquilo)
+
+-Porte para android
+-Ajustes finais
+
+
+
+
+
+
+
+

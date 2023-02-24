@@ -2448,8 +2448,6 @@ MonoBehaviour:
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
-  pauseActive: 0
-  save1: 
 --- !u!1 &2041920045
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,6 +2458,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2041920046}
   - component: {fileID: 2041920048}
+  - component: {fileID: 2041920050}
+  - component: {fileID: 2041920049}
   - component: {fileID: 2041920047}
   m_Layer: 5
   m_Name: Background
@@ -2526,3 +2526,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2041920045}
   m_CullTransparentMesh: 1
+--- !u!114 &2041920049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041920045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62573482ee7e69a4a85613c783e587dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2041920050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041920045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62573482ee7e69a4a85613c783e587dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
