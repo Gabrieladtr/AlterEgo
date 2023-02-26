@@ -346,6 +346,7 @@
 "Assets/Scripts/ExitButton.cs"
 "Assets/Scripts/Game.cs"
 "Assets/Scripts/Inicialize.cs"
+"Assets/Scripts/Notificacoes.cs"
 "Assets/Scripts/PauseGame.cs"
 "Assets/Scripts/SaveProgressClass.cs"
 "Assets/Scripts/StartGame.cs"

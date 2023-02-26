@@ -163,6 +163,11 @@ public class Game : MonoBehaviour
             //escolhaDialogicaBool = true;
         }
 
+
+        //PauseGame.pauseActive = false;//vamos dizer para o sistema de pause que ele sempre podera ser ativo, toda vez que essa cena for ativada.
+
+
+
     }
 
 

@@ -1,30 +1,34 @@
 ---------------------Tarefas de Hoje---------------------
 
-Resumo: Hoje consegui resolver todos os problemas que tive nos links. Agora todos os botões estão levando o jogador para a cena certa, sem haver problemas. Tmb consegui resolver o problema do Esc que quando era apertado em qualquer outro momento (tela aditivas), ele ativava. Agora não mais. Então, nem os links e nem o menu de pause estão problemáticos. A única coisa que me incomoda é o flood que é gerado no console quando eu invoco cenas aditivas pelo menu de pause, mas infelizmente eu preciso de um componente que gera esse flood que é o event system. Sem ele os links não funcionam, então eh uma mão pela outra. Enfim, consegui ser produtivo hoje!. Faltam poucas coisas para a interface ficar 100%. Assim que eu acabar isso, pretendo começar o sistema de resolução.
 
--> Commit v06.2
+->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause. Pra resolver isso, tenho que adicionar a clausula que nao deixa eu clicar se o estiver fora de qualque cena que nao seja game desde que o o pause esteja ativado
 
--> Resolver o problema dos links dos botões do pause. Se eu estiver dentro do pause, e clicar em algum dos outros botoes que leva para outra página, nao posso deixar o link delas me levar para o menu inicial. Quando eu aperto em voltar, elas devem me levar para a cena aberta anteriormente (se for menu inicial, volta para o menu inicial e se for o pause, deve voltar para o pause). Ou seja, preciso de um sistem que identifica em qual cena estamos e para qual devemos retornar. (Resolvido)
+-> Criar uma forma de carregar os dados do jogador no jogo, dentro da UI de Load.
 
-->Se eu apertar o esc dentro da tela de saving, ele pausa. E isso não deve acontecer. Tenho que criar um sistema que identifica em qual cena estamos e para qual vamos. Se essa lógica der certo, vamos poder controlar o sistema de pause e links de uma forma que não vai dar bugs. Isso é um problema de quando vc abre uma tela aditiva. Sempre que uma tela aditiva for aberta, ela é ignorada e a gente pensa que o código está funcionando mas nem... Se eu conseguir identificar qual cena aditiva está ativa eu consigo resolver esse problema. Eu preciso de um método que verifica se temos alguma cena aditiva criada. (Resolvido)
-
+->Quando eu decidir clicar em voltar para o menu principal, abrir uma tela perguntando se ele quer salvar o jogo antes de entrar na tela de menu. Igual a outra tela.
 
 
----------------------Problemas de hoje---------------------
+-------------------------Concluídos de hoje----------------------
 
-->Estou criando um metodo que consegue verificar qual a cena anterior e qual a proxima. Dessa forma, conseguirei resolver o problema dos links. Eu já consigo saber quais as cenas que são anteriores e quais as que são as próximas. O problema? O método 'SceneManager.GetActiveScene().name' não retorna as cenas que foram abertas de forma aditiva. Sim, que B.O. do kct. (resolvido)
+->Preciso de um metodo que verifica se o jogador salvou os dados dele em um período de tempo.
+Criar um botao que volta para o menu principal e verifica se o jogador salvou os dados. Se sim, volta caso não ele apenas faz uma verificação se o jogador quer salvar ou não. Já criei o botão e o link, mas ele ainda não verifica os dados salvos do jogador. Mostrar a data e o hora de salvamento em loading e saving. Preciso verificar o horário do save mais recente e perguntar se o jogador deseja salvar o jogo caso o horario desse ultimo save seja < 3 minutos. Caso seja maior e tenha algum save, entao pode fechar o game. Depois de umas 8 horas, consegui terminar esse sistema. Ele verifica se os dados foram salvos recentemente (< 3 minutos), consegue entender a diferença entre um save apagado e um save novo, mostra a notificação de que os dados devem ser salvos se ele está a muito tempo sem salvar e usando a mesma cena, ativa ou não essa notificação se for necessário. (Resolvido)
 
+->Preciso trazer os saves do jogador para a tela de save quando ele inicia ela. (Resolvido)
+
+->Quando eu clico em salvar no slot 3, o texto vai para o botao de delete. (resolvido)
+
+->Identifiquei que quando eu aperto o botao de ficar conectado na tela de sair, se eu decidir começar o jogo de novo o pause nao vai estar funcionando. Verificar o pq disso acontecer. Somente nesse tela ao sair do menu principal que acontece isso, no menu de pausa nao acontece. (resolvido)
+
+->Por algum motivo, o botao que deve voltar para o pause parou de funcionar no botao de loading. (resolvido)
 
 
 ---------------------Pendentes de hoje---------------------
 
-->Criar um botao que volta para o menu principal e verifica se o jogador salvou os dados. Se sim, volta caso não ele apenas faz uma verificação se o jogador quer salvar ou não. Já criei o botão e o link, mas ele ainda não verifica os dados salvos do jogador.
-
-->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause.
 
 -> Após o sistema de save e load estiverem 100% funcionais e sem bugs, quero começar a construir o sistema de resolução do jogo. A partir desse sistema eu quero identificar automaticamente qual a resolução do jogador, para ele não se preocupar com isso.
 
--> Criar uma forma de carregar os dados do jogador no jogo, dentro da UI de Load.
+
+
 
 -----------------Comandos para converter LF em CRLF---------
 Acesse o terminal do git bash;
@@ -51,6 +55,11 @@ find . -type f -exec dos2unix.exe {} \;
 -Tela/resolução (diria que é bem mais complicado)
 -Audio/Spotify (relativamente fácil)
 -Idioma - ptbr-ing (bem mais difícil)
+-ideia de sistema de idioma: criar uma classe que será um selecionador de idioma.
+Se o idioma escolhido for português, todas as variaveis TMP devem ser português.
+Isso significa que esse método deve conseguir traduzir tudo o que estiver de texto para o idioma escolhido. Já adianto que esse idioma provavelmente deverá ser inicializado em todas as cenas, no background ou até mesmo dentro dos outros scripts. De repente ele pode entender em qual cena ou scrip estamos e já traduzir de acordo com o scrip escolhido. 
+
+Posso colocar esse script em cada canto que seja inputado um text em algum TMP. E esse método se comunicaria com uma variável static que diria se o jogo deve ser português ou outro idioma definido a partir do menu de configurações ou
 
 ----------------Input de assets-------------
 -Sistema de avatares (relativamente tranquilo)
@@ -59,10 +68,49 @@ find . -type f -exec dos2unix.exe {} \;
 -Porte para android
 -Ajustes finais
 
+----------------Ideias de softwares para criar-----------------
+Criar uma versao do snake para o console, esrito em c#.
+
+--------------------Escolhas----------------------
+Eu preciso de uma forma de controle das "escolhas do jogador", para que seja listada em uma espécie de "menu das escolhas realizadas", dessa forma será possível saber quais escolhas o jogador tomou. E ao mesmo tempo, criar um controle geral do progresso do jogador, para saber quais conquistas ele já desbloqueou e quais dados. Devo criar uma espécie de "controle de zeradas", onde eu saiba quantas vezes o jogador zerou o jogo e a partir das escolhas que ele fez, integrar com o sistema de "escolhas do jogador".
+
+Esse sistema será usado para listar quais 
+
+
+--------------------Achievements------------------
+Criar um sistema onde seja possível desbloquear conquistas a partir da gameplay.
+
+--------------------Efeitos especiais----------------------
+
+Integrar efeitos especiais em um sistema de camadas. poderá chover ou nevar, e isso interferirá na interface do jogador.
+
+--------------------Novos puzzles----------------------
+Criar mais puzzles para a gameplay.
 
 
 
 
+
+
+    /*
+    public void VerificaUltimoSave()
+    {
+        //Verifica se existe algum save novo criado nos ultimos minutos.
+        //Se sim, deve retornar true.
+        horaDataAtual = DateTime.Now;
+
+        DateTime horaDataAtualLoading1 = DateTime.Parse(PlayerPrefs.GetString("Espaco1")); // vai converter a string da data em DateTime.
+        DateTime horaDataAtualLoading2 = DateTime.Parse(PlayerPrefs.GetString("Espaco2"));
+        DateTime horaDataAtualLoading3 = DateTime.Parse(PlayerPrefs.GetString("Espaco3"));
+
+        if(horaDataAtual > horaDataAtualLoading1){
+            Debug.Log("A hora atual eh maior que a hora horaDataLoading1");
+
+        }else{
+            Debug.Log("Deu pau, verificar esse");
+        }
+
+    */
 
 
 

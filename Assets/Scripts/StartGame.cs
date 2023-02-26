@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    
+    //Essa classe serve pra controlar os processos de links, abertura de cenas e fechamento de cenas.
+
     public static string CenaAtual;
     public static string cenaAnteriorString, CenaAtualString;
     public static bool DeveRetornarAoPause = false;
@@ -93,7 +94,7 @@ public class StartGame : MonoBehaviour
 
     }
 
-    public void RetornarCenaAnterior(string cenaVoltar)
+    public void RetornarCenaAnterior(string cenaPadraoVoltar)
     {
         //Esse metodo recebe uma cena como padrao, para onde ela deva ir normalmente.
         //Mas se por acaso o pause menu for aberto nesse caminho, ela deve retornar para essa cena.
@@ -110,7 +111,8 @@ public class StartGame : MonoBehaviour
             //se eu tiver que retonar ao pause, devo apenas fechar a janela atual aberta de forma aditiva
             //Assim automaticamente ja estaremos dentro de Pause. Pq eh a cena anterior.
             SceneManager.UnloadSceneAsync(CenaAtualString, UnloadSceneOptions.None);
-
+            
+            
             
             //Enquanto essa variavel tiver valor, toda vez que uma tela for carregada de forma aditiva o pause nao podera ser invocado.
             //Atribuo para o 'CenaAditivaAtual' o valor null, pq dessa forma sendo ele null vai permitir que o menu de pause seja ativado.
@@ -119,7 +121,11 @@ public class StartGame : MonoBehaviour
         }else if(PauseGame.pauseActive == false)
         {
             //Se o pause nao esta ativo, nos devemos apenas carregar a cena anterior.
-            SceneManager.LoadScene(cenaVoltar);
+            SceneManager.LoadScene(cenaPadraoVoltar);
+            //vai permitir que eu volte a usar o pause menu, ao clicar no botao 'ficar logado' ao tentar sair do menu principal
+            
+            CenaAditivaAtual = null;
+            
         }else{
             Debug.Log("Verifique o metodo RetornarCenaAnterior().");
         }

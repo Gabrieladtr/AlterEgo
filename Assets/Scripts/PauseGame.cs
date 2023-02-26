@@ -40,10 +40,13 @@ public class PauseGame : MonoBehaviour
 
 
 
-    public void DesativaPauseNoMenuPrincipal()
+    public static void DesativaPauseNoMenuPrincipal()
     {
         //Quando vamos para o menu principal a partir do menu de pause, vai ser ativado esse metodo
         //dentro do background do menu principal que desativa o pauseActive permitindo que o jogador possa apertar Esc quantas vezes quiser.
+
+        //vai desativar o pause em todas as cenas onde nao seja a cena de game. Entao nenhuam cena podera chamar o pause se 
+        //esse metodo for chamadado. Isso inclui o menu principal.
         if(pauseActive == true && SceneManager.GetActiveScene().name != "Game")
         {
 
