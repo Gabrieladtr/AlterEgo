@@ -217,16 +217,19 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
     public static void VerificaUltimoSave()
     {
         //Verifica se existe algum save novo criado nos ultimos minutos.
-        //Se sim, deve retornar true.
+        //Se sim, deve retornar true na variavel 'mostrarMsgNaTelaDesejaSalvar'.
         
         //pego a dataHora atual pra comparar
         horaDataAtual = DateTime.Now;
 
 
         //Pego a dataHoras salvas nos slots de salvamentos.
-        string dataStringSalva1 = PlayerPrefs.GetString("DataHora1");
-        string dataStringSalva2 = PlayerPrefs.GetString("DataHora2");
-        string dataStringSalva3 = PlayerPrefs.GetString("DataHora3");
+        //Se nao houver nenhuma informacao salva, caso seja o primeiro gameplay do jogador
+        //ou ele tenha decidido apagar todos os saves,coloquei um save "padrao" para nao atrapalhar os calculos
+        //de data e hora.
+        string dataStringSalva1 = PlayerPrefs.GetString("DataHora1","01/01/2000 12:05:05");
+        string dataStringSalva2 = PlayerPrefs.GetString("DataHora2","01/01/2000 12:05:05");
+        string dataStringSalva3 = PlayerPrefs.GetString("DataHora3","01/01/2000 12:05:05");
 
         //Imprimo das datas salvas
         //Debug.Log("A Data1 salva: "+ dataStringSalva1 + ". A Data2 salva: "+ dataStringSalva2 + ". A Data3 salva: "+ dataStringSalva3);
@@ -234,7 +237,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
         string formatoDataSalva = "dd/MM/yyyy HH:mm:ss";
 
         //Preciso converter a string no formato brasileiro de data para o formato padrao do DateTime,
-        // para internamente ele converter de novo para podermos usá-lo nas comparacoes.
+        // para internamente ele converter de novo para podermos usa-lo nas comparacoes.
         //O DateTime.Parse apenas nao funciona, preciso repassar toda a formatacao usada.
         DateTime horaDataAtualLoading1 = DateTime.ParseExact(dataStringSalva1, formatoDataSalva, CultureInfo.InvariantCulture);
         DateTime horaDataAtualLoading2 = DateTime.ParseExact(dataStringSalva2, formatoDataSalva, CultureInfo.InvariantCulture);
@@ -244,7 +247,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
 
         
         //vamos verificar se a hora atual eh maior ou menor que o tempo salvo em algum save do jogador.
-        //Se a hora atual for maior do que 5 minutos de algum save, uma mensagem aparecerá quando o jogador quiser sair do jogo ou voltar ao menu principal.
+        //Se a hora atual for maior do que 3 minutos de algum save, uma mensagem aparecerá quando o jogador quiser sair do jogo ou voltar ao menu principal.
         //Informando que talvez ele nao tenha salvo o jogo dele e que pode perder o progresso. 
 
         //---------------verifica os dados de tempo do save 1------------------------
@@ -261,11 +264,11 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
             restoData1 = horaDataAtual.Subtract(horaDataAtualLoading1);
             //converte o TimeSpan para string, podendo imprimir na tela com o formato certo
             string tempoRestoData = restoData1.ToString(@"hh\:mm");
-            Debug.Log("O slot 1 foi salvo com seu progresso em: "+tempoRestoData + " horas/minutos...");
+            Debug.Log("O slot 1 foi o seu ultimo jogo  salvo com seu progresso em: "+ tempoRestoData + " horas/minutos...");
         }
         else
         {
-            Debug.Log("horaDataAtual é igual a horaDataAtualLoading1");
+            Debug.Log("horaDataAtual eh igual a horaDataAtualLoading1");
         }
 
         //---------------verifica os dados de tempo do save 2------------------------
@@ -282,7 +285,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
             restoData2 = horaDataAtual.Subtract(horaDataAtualLoading2);
             //converte o TimeSpan para string, podendo imprimir na tela com o formato certo
             string tempoRestoData = restoData2.ToString(@"hh\:mm");
-            Debug.Log("O slot 2 foi salvo com seu progresso em: "+tempoRestoData + " horas/minutos...");
+            Debug.Log("O slot 2 foi o seu ultimo jogo  salvo com seu progresso em: "+tempoRestoData + " horas/minutos...");
         }
         else
         {
@@ -303,7 +306,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
             restoData3 = horaDataAtual.Subtract(horaDataAtualLoading3);
             //converte o TimeSpan para string, podendo imprimir na tela com o formato certo
             string tempoRestoData = restoData3.ToString(@"hh\:mm");
-            Debug.Log("O slot 3 foi salvo com seu progresso em: "+tempoRestoData + " horas/minutos...");
+            Debug.Log("O slot 3 foi o seu ultimo jogo salvo com seu progresso em: "+tempoRestoData + " horas/minutos...");
         }
         else
         {
@@ -324,10 +327,13 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
             Debug.Log("Nao deve mostrar a msg. Algum dos saves foi salvo recentemente. 'mostrarMsgNaTelaDesejaSalvar': " + mostrarMsgNaTelaDesejaSalvar);
             
 
-        }else{
+        }else if (restoData1 > tempoNecessarioParaMsg || restoData2 > tempoNecessarioParaMsg || restoData3 >  tempoNecessarioParaMsg ){
             mostrarMsgNaTelaDesejaSalvar = true;
             Debug.Log("Voce nao salvou o jogo nos ultimos 3 minutos. Deseja salvar? 'mostrarMsgNaTelaDesejaSalvar': " + mostrarMsgNaTelaDesejaSalvar);
             
+        }else{
+            //se o if pegar qualquer situacao a parte do que descrevi, nao deve mostrar msg nenhuma para o player
+            //mostrarMsgNaTelaDesejaSalvar = false;
         }
 
         
@@ -366,18 +372,21 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
         //atualiza na tela se foi ou nao apagado.
         if(slot == "Espaco1")
         {
+            PlayerPrefs.DeleteKey("DataHora1");//apaga a hora do save
             saving2TMP = GameObject.Find("SavingUm_TMP").GetComponent<TMP_Text>();
             saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
             Debug.Log("Save apagado do slot 1");
         }
         else if(slot == "Espaco2")
         {
+            PlayerPrefs.DeleteKey("DataHora2");//apaga a hora do save
             saving2TMP = GameObject.Find("Saving2TMP").GetComponent<TMP_Text>();
             saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
             Debug.Log("Save apagado do slot 2");
         }
         else if(slot == "Espaco3")
         {
+            PlayerPrefs.DeleteKey("DataHora3");//apaga a hora do save
             saving2TMP = GameObject.Find("Saving3TMP").GetComponent<TMP_Text>();
             saving2TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
             Debug.Log("Save apagado do slot 3");

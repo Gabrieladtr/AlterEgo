@@ -26,26 +26,28 @@ public class Notificacoes : MonoBehaviour
     {
         //Esse metodo devera mostrar uma notificacao na tela, informando o estado de save.
 
+
         //Verifica se existe algum save novo criado nos ultimos minutos.
         SaveProgressClass.VerificaUltimoSave();
 
-        //pega o componente de texto da cena 'QuerMesmoSair1'
+        //pega o componente de texto da cena 'QuerMesmoSair'
         textoNotificacao = GameObject.Find("NotificacaoTMP").GetComponent<TMP_Text>();
 
         
         //faz a verificacao e mostra a msg na tela.
+        //caso a bool que de define se a msg deve ser mostrada for = a true e o pause atvo, faca
         if(SaveProgressClass.mostrarMsgNaTelaDesejaSalvar == true && PauseGame.pauseActive == true)
         {
             //textoNotificacao.gameObject.SetActive(true);
             textoNotificacao.text = "Aviso: vc nao salvou os dados do jogo nos ultimos 3 minutos...";
 
-
+        //faz a verificacao e nao deve mostrar msg na tela.
         }else if (SaveProgressClass.mostrarMsgNaTelaDesejaSalvar == false && PauseGame.pauseActive == true)
         {
             //textoNotificacao.SetActive(false);
             textoNotificacao.gameObject.SetActive(false);
-            textoNotificacao.text = "Teste nao deve mostrar msg na tela";    
-
+            textoNotificacao.text = "Teste nao deve mostrar msg na tela";
+            
         }else if (SceneManager.GetActiveScene().name == "MainMenu"){
             textoNotificacao.gameObject.SetActive(false);
 

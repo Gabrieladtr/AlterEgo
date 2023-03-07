@@ -1204,7 +1204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Notificacao
+  m_text: Notificacao_padrao
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f355a742c89d3fa41a4a6b14d68d4791, type: 2}
   m_sharedMaterial: {fileID: 5518740263988403348, guid: f355a742c89d3fa41a4a6b14d68d4791, type: 2}

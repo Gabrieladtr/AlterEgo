@@ -1,25 +1,22 @@
 ---------------------Tarefas de Hoje---------------------
 
+->A minha verificação de dados salvos não funciona na build, mas funciona dentro da Unity. Na vdd ela funciona, mas ela precisa de alguma informação salva para mostrar as notificações, preciso pegar essa situação dentro do IF, de caso nao tenha nenhuma informacao salva e deixa travado em false a notificacao. Acontece nos seguintes cenários: caso os meus saves sejam apagados ou nenhum save tenha sido salvo, ele mostra apenas a msg padrao.
+-Se algum dos 3 saves for escrito a menos de 3 minutos o código consegue entender
+-Se algum dos 3 saves for maior do que 3 minutos, ele entende
+-Ele nao entende que se algum dos saves for excluido, ele tem que fazer o calculo mesmo assim
+-Se nao houver nenhum save salvo, ele tmb nao entende. (Resolvido)
+
 
 ->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause. Pra resolver isso, tenho que adicionar a clausula que nao deixa eu clicar se o estiver fora de qualque cena que nao seja game desde que o o pause esteja ativado
 
--> Criar uma forma de carregar os dados do jogador no jogo, dentro da UI de Load.
+-> Criar uma forma de carregar os dados do jogador no jogo, de dentro da UI de Load.
 
 ->Quando eu decidir clicar em voltar para o menu principal, abrir uma tela perguntando se ele quer salvar o jogo antes de entrar na tela de menu. Igual a outra tela.
 
 
 -------------------------Concluídos de hoje----------------------
 
-->Preciso de um metodo que verifica se o jogador salvou os dados dele em um período de tempo.
-Criar um botao que volta para o menu principal e verifica se o jogador salvou os dados. Se sim, volta caso não ele apenas faz uma verificação se o jogador quer salvar ou não. Já criei o botão e o link, mas ele ainda não verifica os dados salvos do jogador. Mostrar a data e o hora de salvamento em loading e saving. Preciso verificar o horário do save mais recente e perguntar se o jogador deseja salvar o jogo caso o horario desse ultimo save seja < 3 minutos. Caso seja maior e tenha algum save, entao pode fechar o game. Depois de umas 8 horas, consegui terminar esse sistema. Ele verifica se os dados foram salvos recentemente (< 3 minutos), consegue entender a diferença entre um save apagado e um save novo, mostra a notificação de que os dados devem ser salvos se ele está a muito tempo sem salvar e usando a mesma cena, ativa ou não essa notificação se for necessário. (Resolvido)
 
-->Preciso trazer os saves do jogador para a tela de save quando ele inicia ela. (Resolvido)
-
-->Quando eu clico em salvar no slot 3, o texto vai para o botao de delete. (resolvido)
-
-->Identifiquei que quando eu aperto o botao de ficar conectado na tela de sair, se eu decidir começar o jogo de novo o pause nao vai estar funcionando. Verificar o pq disso acontecer. Somente nesse tela ao sair do menu principal que acontece isso, no menu de pausa nao acontece. (resolvido)
-
-->Por algum motivo, o botao que deve voltar para o pause parou de funcionar no botao de loading. (resolvido)
 
 
 ---------------------Pendentes de hoje---------------------
