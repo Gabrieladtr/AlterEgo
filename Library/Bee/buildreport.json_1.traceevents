@@ -1,406 +1,407 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1677454731078249, "dur": 225359, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1677454731078313, "dur": 3381, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1677454731081696, "dur": 210004, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1677454731291703, "dur": 11904, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1677454731304960, "dur": 17, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297879929727, "dur": 459154, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297879930307, "dur": 12996, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297879943307, "dur": 430306, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297880373617, "dur": 15263, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297880390883, "dur": 17, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1677454731149845, "dur":17414, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731167282, "dur":431, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1677454731167805, "dur":62, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1677454731167868, "dur":670, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1677454731168651, "dur":1893, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731170544, "dur":3, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266220, "dur":297, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266518, "dur":25, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266543, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266549, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266563, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266567, "dur":19, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266586, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266590, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266607, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266650, "dur":6, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731266859, "dur":6120, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1677454731170012, "dur":550, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731170567, "dur":14866, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731185462, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1677454731185469, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731185655, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1677454731185659, "dur":268, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731185929, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186073, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186222, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186359, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186507, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186636, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186773, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731186918, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187051, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego.exe" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187193, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187329, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187489, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187620, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187768, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731187886, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188034, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188166, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188296, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188432, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188569, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188698, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188832, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731188963, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189097, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189233, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189383, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189508, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189649, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189783, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731189921, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190055, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190183, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190309, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190443, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190565, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190705, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190828, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731190955, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191077, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191203, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191323, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191456, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191577, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191702, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731191823, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192052, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192187, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192320, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192449, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192577, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192703, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192834, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731192954, "dur":32019, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":1, "ts":1677454731224975, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731225158, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731225313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731225330, "dur":6306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731231807, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731231953, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731231973, "dur":2951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731235057, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731235198, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731235279, "dur":3489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731238913, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731239060, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731239080, "dur":3493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":1, "ts":1677454731242762, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level8" }}
-,{ "pid":12345, "tid":1, "ts":1677454731242932, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731242953, "dur":3116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level8" }}
-,{ "pid":12345, "tid":1, "ts":1677454731246238, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level3" }}
-,{ "pid":12345, "tid":1, "ts":1677454731246428, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731246442, "dur":2583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level3" }}
-,{ "pid":12345, "tid":1, "ts":1677454731249155, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1677454731249296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731249308, "dur":4399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level0" }}
-,{ "pid":12345, "tid":1, "ts":1677454731253884, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/boot.config" }}
-,{ "pid":12345, "tid":1, "ts":1677454731254529, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1677454731254665, "dur":11526, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731170082, "dur":494, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731170576, "dur":14867, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731185462, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1677454731185643, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731185780, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1677454731185940, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186055, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186200, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186319, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186462, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186593, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186733, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731186866, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187053, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187191, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187327, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187463, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187610, "dur":141, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187752, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731187895, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188032, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188166, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188295, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188432, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188567, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188699, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731188832, "dur":18491, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731207324, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731207463, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731207600, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731207726, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731207882, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208041, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208200, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208329, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208460, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208582, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208723, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208851, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731208981, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209108, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209235, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209362, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209495, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209618, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731209749, "dur":395, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731210147, "dur":615, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1677454731210762, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731210912, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1677454731211169, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731215140, "dur":7531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1677454731222814, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731222954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731222966, "dur":6683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731229800, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1677454731229954, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731229974, "dur":3249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1677454731233352, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":2, "ts":1677454731233491, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731233506, "dur":2931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":2, "ts":1677454731236580, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731236738, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731236756, "dur":5906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731242820, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level7" }}
-,{ "pid":12345, "tid":2, "ts":1677454731242983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731243013, "dur":3049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level7" }}
-,{ "pid":12345, "tid":2, "ts":1677454731246194, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level4" }}
-,{ "pid":12345, "tid":2, "ts":1677454731246432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731246443, "dur":2934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level4" }}
-,{ "pid":12345, "tid":2, "ts":1677454731249502, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731249676, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1677454731249687, "dur":16370, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1677454731266161, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":2, "ts":1677454731266166, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731170150, "dur":438, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731170589, "dur":14852, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731185462, "dur":184, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":3, "ts":1677454731185647, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731185790, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1677454731185920, "dur":134, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186055, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186189, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186320, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186470, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186593, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186732, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731186865, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187009, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187190, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187328, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187462, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187603, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187741, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731187885, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188020, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188174, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188305, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188447, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188587, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188732, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188856, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731188991, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189123, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189253, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189380, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189508, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189625, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189781, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731189912, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190174, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190361, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190518, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190643, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190774, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731190895, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191020, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191143, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191269, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191392, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191528, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191651, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731191789, "dur":249, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192040, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192178, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192311, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192451, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192588, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192726, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192857, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731192994, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731193134, "dur":1314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731194449, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731194660, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731194798, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731194923, "dur":741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731195665, "dur":152, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731195821, "dur":1296, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731197118, "dur":241, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731197365, "dur":539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731197905, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731198072, "dur":593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731198665, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731198818, "dur":474, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731199292, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731199437, "dur":477, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731199915, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731200096, "dur":874, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731200972, "dur":258, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731201236, "dur":721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731201959, "dur":395, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731202360, "dur":666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731203027, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731203204, "dur":485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731203690, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731203848, "dur":530, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731204380, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731204527, "dur":515, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731205043, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731205257, "dur":468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731205725, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731205871, "dur":430, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731206301, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731206491, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731206642, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731206777, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731206914, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207055, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207191, "dur":123, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207316, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207450, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207574, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207704, "dur":151, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731207857, "dur":278, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208136, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208269, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208402, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208568, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208701, "dur":119, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208822, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731208946, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209049, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209177, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209310, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209412, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209520, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731209650, "dur":434, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731210087, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":3, "ts":1677454731210248, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731210375, "dur":418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":3, "ts":1677454731210794, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731210933, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731211159, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731213871, "dur":8380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731222385, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731222526, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731222543, "dur":3947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731226684, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1677454731226850, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731226871, "dur":6673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1677454731233670, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1677454731233809, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731233822, "dur":5109, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets.resS" }}
-,{ "pid":12345, "tid":3, "ts":1677454731239048, "dur":433, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":3, "ts":1677454731239482, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731239615, "dur":427, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":3, "ts":1677454731240043, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731240161, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731240294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731240306, "dur":4220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731244664, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level6" }}
-,{ "pid":12345, "tid":3, "ts":1677454731244814, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731244840, "dur":2516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level6" }}
-,{ "pid":12345, "tid":3, "ts":1677454731247481, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1677454731247622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731247636, "dur":2601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1677454731250377, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731250516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1677454731250530, "dur":4854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":3, "ts":1677454731255560, "dur":10630, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731170214, "dur":390, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731170604, "dur":14841, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731185462, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1677454731185665, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731185780, "dur":155, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1677454731185936, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186075, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186228, "dur":128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186358, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186503, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186636, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186773, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731186911, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187052, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187186, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187331, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187482, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187628, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187769, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731187895, "dur":410, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188306, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188447, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188586, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188723, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188856, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731188996, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189113, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189237, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189373, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189514, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189649, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189795, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731189919, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190073, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190196, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190323, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190447, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190591, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190718, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190862, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731190986, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191120, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191243, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191373, "dur":122, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191497, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191626, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191748, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731191878, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192055, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192179, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192310, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192451, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192588, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192726, "dur":130, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192858, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731192993, "dur":143, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731193137, "dur":42873, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1677454731236012, "dur":167, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731236183, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1677454731236325, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731236343, "dur":3485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":4, "ts":1677454731239982, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1677454731240149, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731240165, "dur":5844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1677454731246138, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level5" }}
-,{ "pid":12345, "tid":4, "ts":1677454731246279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731246292, "dur":2494, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level5" }}
-,{ "pid":12345, "tid":4, "ts":1677454731248916, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1677454731249057, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731249071, "dur":4526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level1" }}
-,{ "pid":12345, "tid":4, "ts":1677454731253735, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1677454731253901, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1677454731253923, "dur":4045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":4, "ts":1677454731258261, "dur":7925, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1677454731277490, "dur":3661, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1677454731305148, "dur": 37986, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1677454731304939, "dur": 38323, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1678297880057602, "dur":3651, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880061274, "dur":414, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1678297880061762, "dur":61, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1678297880061823, "dur":686, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1678297880062613, "dur":1725, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880064339, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880327445, "dur":444, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880327889, "dur":21, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880327910, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880327916, "dur":21, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880327937, "dur":70, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328008, "dur":15, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328023, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328028, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328039, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328076, "dur":109, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880328253, "dur":7213, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1678297880063664, "dur":737, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880064402, "dur":14752, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880079177, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1678297880079497, "dur":1301, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880080800, "dur":1894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1678297880082694, "dur":266, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880082964, "dur":1820, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1678297880084785, "dur":214, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880085001, "dur":655, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1678297880085657, "dur":503, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880086162, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1678297880086430, "dur":1027, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880087461, "dur":239626, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1678297880327089, "dur":297, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1678297880327394, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1678297880327396, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880063667, "dur":704, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880064382, "dur":14760, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880079177, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1678297880079184, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880079480, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/app.info" }}
+,{ "pid":12345, "tid":2, "ts":1678297880079485, "dur":1008, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880080495, "dur":270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1678297880080766, "dur":566, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880081334, "dur":438, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1678297880081772, "dur":441, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880082215, "dur":276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1678297880082492, "dur":1128, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880083623, "dur":277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1678297880083901, "dur":661, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880084564, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1678297880084771, "dur":1356, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880086132, "dur":288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":2, "ts":1678297880086421, "dur":207, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880086630, "dur":91346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880177976, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880178200, "dur":424, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880178625, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880178780, "dur":3293, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880182075, "dur":2428, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880184509, "dur":616, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880185125, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880185312, "dur":395, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880185707, "dur":1356, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880187066, "dur":1560, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880188627, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880188821, "dur":432, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880189254, "dur":811, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880190067, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880190442, "dur":209, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880190653, "dur":509, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880191163, "dur":198, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880191363, "dur":448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880191812, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880191997, "dur":328, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880192325, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880192514, "dur":386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880192900, "dur":808, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880193711, "dur":497, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880194208, "dur":220, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880194431, "dur":1094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880195526, "dur":843, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880196374, "dur":679, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880197054, "dur":282, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880197340, "dur":536, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880197877, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880198077, "dur":838, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880198916, "dur":260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880199179, "dur":1547, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880200727, "dur":311, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880201042, "dur":610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880201653, "dur":1720, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880203379, "dur":2762, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880206142, "dur":218, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880206363, "dur":1894, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880208258, "dur":293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880208555, "dur":504, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880209169, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880211961, "dur":12873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1678297880224992, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880225194, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880225215, "dur":3271, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880228636, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880228781, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880228800, "dur":4345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880233324, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880233463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880233479, "dur":3803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880237409, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880237547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880237558, "dur":3230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880240913, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1678297880241021, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880241034, "dur":5366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1678297880246528, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level6" }}
+,{ "pid":12345, "tid":2, "ts":1678297880246673, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880246684, "dur":3267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level6" }}
+,{ "pid":12345, "tid":2, "ts":1678297880250098, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1678297880250223, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880250234, "dur":2864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level3" }}
+,{ "pid":12345, "tid":2, "ts":1678297880253226, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1678297880253364, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880253527, "dur":3371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1678297880257055, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880257229, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1678297880257248, "dur":9377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":2, "ts":1678297880266767, "dur":60696, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880063772, "dur":654, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880064427, "dur":14725, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880079177, "dur":2073, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1678297880081250, "dur":223, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880081475, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1678297880081726, "dur":1934, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880083663, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1678297880083917, "dur":1068, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880084987, "dur":2264, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1678297880087252, "dur":284, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880087538, "dur":20037, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1678297880107576, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880107738, "dur":346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880108084, "dur":898, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880108985, "dur":1576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880110562, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880110754, "dur":460, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880111214, "dur":1289, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880112505, "dur":411, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880112917, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880113083, "dur":382, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880113465, "dur":2525, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880115994, "dur":562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880116557, "dur":235, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880116794, "dur":450, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880117245, "dur":1256, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880118504, "dur":376, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880118881, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880119066, "dur":338, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880119404, "dur":947, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880120353, "dur":2449, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880122802, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880122994, "dur":740, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880123734, "dur":1327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880125064, "dur":402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880125467, "dur":1720, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880127190, "dur":4637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880131828, "dur":1976, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880133810, "dur":1723, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880135534, "dur":233, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880135770, "dur":4016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880139787, "dur":393, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880140183, "dur":1906, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880142090, "dur":229, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880142321, "dur":3576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880145898, "dur":1081, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880146981, "dur":393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880147375, "dur":213, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880147590, "dur":324, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880147914, "dur":928, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880148843, "dur":575, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880149418, "dur":185, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880149606, "dur":404, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880150011, "dur":2321, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880152335, "dur":3016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880155352, "dur":188, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880155543, "dur":440, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880155983, "dur":1426, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880157412, "dur":1744, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880159157, "dur":173, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880159333, "dur":354, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880159687, "dur":330, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880160019, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880160429, "dur":240, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880160671, "dur":3842, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880164513, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880164674, "dur":604, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880165279, "dur":1034, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880166316, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880166693, "dur":186, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880166881, "dur":329, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880167211, "dur":1430, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880168643, "dur":2634, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880171278, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880171436, "dur":16512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880187948, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880188125, "dur":464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880188590, "dur":1311, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880189904, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880190339, "dur":193, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880190534, "dur":347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880190882, "dur":259, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880191143, "dur":312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880191456, "dur":453, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880191911, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880192223, "dur":486, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880192711, "dur":6932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880199644, "dur":219, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880199866, "dur":4409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880204276, "dur":262, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880204543, "dur":760, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880205304, "dur":1318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880206625, "dur":10022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1678297880216649, "dur":306, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880216961, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":3, "ts":1678297880217125, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880217152, "dur":3178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":3, "ts":1678297880220481, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":3, "ts":1678297880220623, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880220640, "dur":4215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":3, "ts":1678297880225036, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880225222, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880225236, "dur":6520, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880231871, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880231986, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880232047, "dur":5164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880237314, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880237429, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880237442, "dur":5145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880242713, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level8" }}
+,{ "pid":12345, "tid":3, "ts":1678297880242899, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880242930, "dur":3654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level8" }}
+,{ "pid":12345, "tid":3, "ts":1678297880246706, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level5" }}
+,{ "pid":12345, "tid":3, "ts":1678297880246965, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880246979, "dur":3677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level5" }}
+,{ "pid":12345, "tid":3, "ts":1678297880250778, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1678297880250915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880250927, "dur":2416, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1678297880253436, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880253547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1678297880253555, "dur":17771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1678297880271471, "dur":55986, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880063896, "dur":560, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880064457, "dur":14699, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880079177, "dur":2082, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1678297880081259, "dur":329, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880081590, "dur":1728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1678297880083318, "dur":599, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880083919, "dur":1988, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1678297880085908, "dur":497, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880086407, "dur":10741, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880097149, "dur":303, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880097458, "dur":1824, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego.exe" }}
+,{ "pid":12345, "tid":4, "ts":1678297880099284, "dur":230, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880099520, "dur":301, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":4, "ts":1678297880099822, "dur":1700, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880101528, "dur":2642, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880104172, "dur":3318, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880107495, "dur":452, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880107948, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880108098, "dur":1602, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880109701, "dur":210, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880109913, "dur":384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880110298, "dur":179, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880110479, "dur":496, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880110975, "dur":1424, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880112401, "dur":402, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880112803, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880113032, "dur":439, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880113471, "dur":3208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880116682, "dur":562, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880117245, "dur":300, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880117548, "dur":401, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880117950, "dur":1086, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880119038, "dur":2771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880121810, "dur":177, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880121989, "dur":464, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880122454, "dur":178, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880122634, "dur":18875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880141510, "dur":199, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880141712, "dur":480, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880142193, "dur":208, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880142403, "dur":2537, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880144941, "dur":1496, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880146441, "dur":410, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880146852, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880147077, "dur":400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880147477, "dur":1331, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880148810, "dur":590, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880149401, "dur":204, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880149607, "dur":415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880150023, "dur":2459, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880152484, "dur":3637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880156122, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880156297, "dur":2890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880159188, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880159355, "dur":331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880159687, "dur":932, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880160622, "dur":1486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880162109, "dur":183, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880162295, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880162634, "dur":1891, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880164527, "dur":365, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880164893, "dur":1445, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880166340, "dur":1771, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880168111, "dur":1538, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880169652, "dur":384, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880170037, "dur":192, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880170231, "dur":510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880170741, "dur":1094, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880171837, "dur":383, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880172221, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880172381, "dur":462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880172843, "dur":352, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880173197, "dur":359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880173557, "dur":1721, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880175280, "dur":2255, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880177536, "dur":336, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880177875, "dur":2108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880179984, "dur":171, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880180158, "dur":3151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880183310, "dur":1345, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880184657, "dur":467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880185124, "dur":260, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880185386, "dur":927, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880186313, "dur":1293, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880187609, "dur":675, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880188285, "dur":227, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880188514, "dur":1147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880189662, "dur":665, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880190329, "dur":487, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880190817, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880191131, "dur":425, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880191557, "dur":1056, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880192615, "dur":595, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880193210, "dur":499, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880193711, "dur":758, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880194470, "dur":224, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880194696, "dur":2389, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880197086, "dur":274, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880197362, "dur":441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880197804, "dur":558, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880198364, "dur":696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880199061, "dur":206, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880199269, "dur":6048, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880205318, "dur":250, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880205572, "dur":777, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880206349, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880206577, "dur":483, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880207060, "dur":158, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880207220, "dur":815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":4, "ts":1678297880208036, "dur":682, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880208720, "dur":292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":4, "ts":1678297880209013, "dur":1371, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880210389, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1678297880210564, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880213263, "dur":7722, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":4, "ts":1678297880221082, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1678297880221214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880221228, "dur":5679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1678297880227039, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880227184, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880227201, "dur":4321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880231657, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880231795, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880231812, "dur":3565, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880235486, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880235594, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880235609, "dur":3078, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880238813, "dur":455, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":4, "ts":1678297880239269, "dur":606, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880239882, "dur":652, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":4, "ts":1678297880240536, "dur":927, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880241467, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880241609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880241622, "dur":4255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1678297880246020, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level7" }}
+,{ "pid":12345, "tid":4, "ts":1678297880246169, "dur":11, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880246197, "dur":3763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level7" }}
+,{ "pid":12345, "tid":4, "ts":1678297880250082, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level4" }}
+,{ "pid":12345, "tid":4, "ts":1678297880250188, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880250202, "dur":2964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level4" }}
+,{ "pid":12345, "tid":4, "ts":1678297880253286, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1678297880253525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880253536, "dur":3589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1678297880257221, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1678297880257340, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880257349, "dur":5836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1678297880263336, "dur":2481, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Saphire Game Studio/Projetos Unity/Builds Alter Ego/Builds v06.2- 0.4/Alter Ego_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1678297880265819, "dur":361, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1678297880266186, "dur":61261, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1678297880339464, "dur":3438, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1678297880391175, "dur": 14597, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1678297880390860, "dur": 15055, "ph": "X", "name": "Write chrome-trace events", "args": {} },

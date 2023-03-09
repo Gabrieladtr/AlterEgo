@@ -1,17 +1,12 @@
 ---------------------Tarefas de Hoje---------------------
 
-->A minha verificação de dados salvos não funciona na build, mas funciona dentro da Unity. Na vdd ela funciona, mas ela precisa de alguma informação salva para mostrar as notificações, preciso pegar essa situação dentro do IF, de caso nao tenha nenhuma informacao salva e deixa travado em false a notificacao. Acontece nos seguintes cenários: caso os meus saves sejam apagados ou nenhum save tenha sido salvo, ele mostra apenas a msg padrao.
--Se algum dos 3 saves for escrito a menos de 3 minutos o código consegue entender
--Se algum dos 3 saves for maior do que 3 minutos, ele entende
--Ele nao entende que se algum dos saves for excluido, ele tem que fazer o calculo mesmo assim
--Se nao houver nenhum save salvo, ele tmb nao entende. (Resolvido)
+->Quando eu decidir clicar em voltar para o menu principal, abrir uma tela perguntando se ele quer salvar o jogo antes de entrar na tela de menu. Igual a outra tela de sair do jogo, do menu. Eu preciso criar uma cena nova apenas para esse processo, pq ficar modificando a cena que já estou usando 2 vezes pra 3,vai complicar muito. É muito melhor eu apenas criar outra cena e o botao "desconectar" ficar setado para voltar para o menu principal. (Resolvido)
 
 
 ->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause. Pra resolver isso, tenho que adicionar a clausula que nao deixa eu clicar se o estiver fora de qualque cena que nao seja game desde que o o pause esteja ativado
 
 -> Criar uma forma de carregar os dados do jogador no jogo, de dentro da UI de Load.
 
-->Quando eu decidir clicar em voltar para o menu principal, abrir uma tela perguntando se ele quer salvar o jogo antes de entrar na tela de menu. Igual a outra tela.
 
 
 -------------------------Concluídos de hoje----------------------
@@ -88,26 +83,6 @@ Criar mais puzzles para a gameplay.
 
 
 
-
-    /*
-    public void VerificaUltimoSave()
-    {
-        //Verifica se existe algum save novo criado nos ultimos minutos.
-        //Se sim, deve retornar true.
-        horaDataAtual = DateTime.Now;
-
-        DateTime horaDataAtualLoading1 = DateTime.Parse(PlayerPrefs.GetString("Espaco1")); // vai converter a string da data em DateTime.
-        DateTime horaDataAtualLoading2 = DateTime.Parse(PlayerPrefs.GetString("Espaco2"));
-        DateTime horaDataAtualLoading3 = DateTime.Parse(PlayerPrefs.GetString("Espaco3"));
-
-        if(horaDataAtual > horaDataAtualLoading1){
-            Debug.Log("A hora atual eh maior que a hora horaDataLoading1");
-
-        }else{
-            Debug.Log("Deu pau, verificar esse");
-        }
-
-    */
 
 
 

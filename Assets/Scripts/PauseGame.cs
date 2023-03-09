@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseGame : MonoBehaviour
 {
     //Essa classe controla se o pause esta ativado ou nao
-    //Eu ativei essa classe dentro do background da cena do game. Dessa forma, o pause so funcina dentro do jogo.
+    //Eu ativei essa classe dentro do background da cena do game/main menu. Dessa forma, o pause so funcina dentro do jogo.
 
     public static bool pauseActive = false;    
 
@@ -16,7 +16,9 @@ public class PauseGame : MonoBehaviour
     {
 
         //controlamos se o pause esta ativo ou nao
+        DesativaPauseNoMenuPrincipal();
 
+        //Controla o sistema de pause na tela de "Game"
         if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false && SceneManager.GetActiveScene().name == "Game" && StartGame.CenaAditivaAtual == null)
         {
             Debug.Log("O menu de pausa deve ser aberto.");
@@ -29,12 +31,13 @@ public class PauseGame : MonoBehaviour
 
             Debug.Log("O menu de pausa deve ser fechado.");
             SceneManager.UnloadSceneAsync("PauseMenu", UnloadSceneOptions.None);
+            
             pauseActive = false;
 
 
         }
 
-        DesativaPauseNoMenuPrincipal();
+        
 
     }
 
@@ -47,11 +50,12 @@ public class PauseGame : MonoBehaviour
 
         //vai desativar o pause em todas as cenas onde nao seja a cena de game. Entao nenhuam cena podera chamar o pause se 
         //esse metodo for chamadado. Isso inclui o menu principal.
-        if(pauseActive == true && SceneManager.GetActiveScene().name != "Game")
+        if(pauseActive == true && SceneManager.GetActiveScene().name == "MainMenu")
         {
-
-            Debug.Log("O menu de pausa deve ser fechado a partir do menu principal.");
+            StartGame.CenaAditivaAtual = null;
             pauseActive = false;
+            Debug.Log("O menu de pausa deve ser fechado a partir do menu principal. pauseActive =" + pauseActive);
+            
 
         }
     }
