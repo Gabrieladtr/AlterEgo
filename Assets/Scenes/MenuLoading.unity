@@ -953,6 +953,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1079237016}
+  - component: {fileID: 1079237022}
   - component: {fileID: 1079237020}
   - component: {fileID: 1079237019}
   - component: {fileID: 1079237021}
@@ -1029,16 +1030,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1079237021}
-        m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: LoadSave1
-        m_Mode: 1
+      - m_Target: {fileID: 1079237022}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: selectSceneParaLoadSave
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: slot1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1079237019
@@ -1104,6 +1105,18 @@ MonoBehaviour:
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
+--- !u!114 &1079237022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079237015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1248012323
 GameObject:
   m_ObjectHideFlags: 0

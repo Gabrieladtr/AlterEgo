@@ -192,7 +192,6 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
     {
         //vai carregar o progresso do 1@ save do jogador
         //Esse metodo deve ser usado na tela de loading.
-
     
         //dados da tela de loading
         loadTMP = GameObject.Find("SaveLoading1_TMP").GetComponent<TMP_Text>();
@@ -212,6 +211,9 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
 
 
     }
+
+    
+
 
     
     public static void VerificaUltimoSave()

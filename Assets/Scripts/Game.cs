@@ -45,7 +45,7 @@ public class Game : MonoBehaviour
 
     //vai definir a escolha de rota que devemos inicializar/em que estamos atualmente (qual lista de frase devemos iniciar)
     public string escolhaDialogica = "Sem valor definido";
-    public static string faseAtual2;
+    public static string faseAtual2, faseAtual3LoadGame;
 
     //bool pra travar de iniciar pela msm lista de frases:
     public static bool escolhaDialogicaBool = true;
