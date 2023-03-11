@@ -24,6 +24,12 @@ public class StartGame : MonoBehaviour
 
     public void selectScene(string stageToPlay)
     {
+        //Sera usado para carregar uma cena.
+        //Nao deve ser usado para carregar loads do jogador, apenas cenas comuns.
+        //Para evitar problemas, setamos um valor padrao em escolhaDialogicaBool.
+
+
+
         //identifica a cena atual e a anterior e se o pause esta ativo
         identificaCenaAtualEAnterior(stageToPlay);
         //vai transportar o jogador para a proxima cena.
@@ -43,6 +49,49 @@ public class StartGame : MonoBehaviour
         }
 
     }
+
+    public void selectSceneParaLoadSave(string slotParaCarramento)
+    {
+        //Sera usado para carregar uma cena nova para a cena de load
+        //e poder mexer na escolhaDialogica, setando o valor salvo.
+        //Dessa forma vamos poder iniciar o Game com a escolhaDialogica salva no slot selecionado.
+        //Vai identificar qual o slot foi selecionado e qual cena deve ser carregada.
+
+        string cenaDestino = "Game";
+
+
+
+        //Deve chamar a classe Game e inputar true no bool 'escolhaDialogicaBool' que adiciona um valor padrao em 'escolhaDialogica'
+        //Isso significa que toda vez que o jogador iniciar o jogo no botao 'iniciar', ele vai iniciar com uma frase padrao
+        //Sem gerar exceptions, multiplicar as frases que devem aparecer ou flodar o console.
+
+        //Se o jogador iniciar dando um loadgame, toda essa funcao eh ignorada.
+
+        switch(slotParaCarramento)
+        {
+            
+
+            case "slot1":
+                
+                //identifica a cena atual e a anterior e se o pause esta ativo, para evitar problemas no pause.
+                identificaCenaAtualEAnterior(cenaDestino);
+                //Vai carregar a cena 
+                SceneManager.LoadScene(cenaDestino);
+                
+                //vai carregar a escolhaDialogica salva no PlayerPrefs.
+                Game.faseAtual3LoadGame = PlayerPrefs.GetString("Espaco1","Verificar linha 78/StartGame");
+                Debug.Log("O slot 1 carregado. EscolhaDialogica atual:" + Game.faseAtual3LoadGame);
+
+                
+            break;
+
+        }
+
+    }
+
+
+
+
 
     public void selectSceneAdditive(string stageToPlay)
     {
