@@ -1,7 +1,17 @@
----------------------Tarefas de Hoje---------------------
+-----------------------------------Tarefas de Hoje----------------------------
 
--> Criar uma forma de carregar os dados do jogador no jogo, de dentro da UI de Load. Estou enfrentando problemas na construção dessa função, pois duas coisas param de funcionar: o pause e o sistema de clicks, que nao permite que eu avance diálogos. Eu consigo linkar para a outra cena, mas ainda nao consigo usar o pause direito. Pelo o que parece, tem haver com o meu sistema de pause. O meu sistema de pause precisa identificar qual a cena atual e qual a proxima cena, quando isso acontece ele nao permite que o meu pause funcione, apenas quando sao cenas diferentes. O outro problema é nos clicks, mas esse eu ainda nao identifiquei. Um outro problema que vou enfrentar é conseguir encontrar uma forma de levar a escolhaDialogica salva no playerPrefs para a EscolhaDialogica que define para qual lista de frases que iremos. A forma como construí esse método tem pilares fracos e problemáticos, embora funcione. Pensei em colocar um switch que identifica quando ela está nula e quando tem valores, para definir uma order de prioridade e conseguir executar sem maiores problemas.
+->Problemas na construção do sistema de LoadGame:
+	--> Criar uma forma de carregar os dados do jogador no jogo, de dentro da UI de Load. Linkar para a cena de game(Resolvido);
+	 -->O outro problema é nos clicks, mas esse eu ainda nao identifiquei.(coloquei o sceneManager certo, resolvido);
+	-->Pause parou de funcionar quando carrego o save. Mas somente se eu carregar de dentro da tela de pause, todas as outras possibilidades estao mostrando o pause corretamente.(Era um momento mt específico que travava o uso do menu, resolvido dentro do StartGame.SelectScene(). Resolvido. );
+	-->Se eu clicar em inicar pelo menu principal, e anteriormente carregado um save, então ele vai continuar com essa informação na memória oq nao pode acontecer.(Era um caso especifico que resolvi em StartGame.IdentificaCenaAtualEAnterior(). Resolvido.)
+	-->Os botoes das escolhasDialogicas pararam de funcionar. O erro pode estar na linha 649, em DecisaoDialogica(). Percebi que iniciar pelo load quando a frase 1 está carregada, mas nao nos outras funcoes. Na vdd, isso era um erro meu. Estava faltando o direcionamento das rotas nas opções de direcionamento pelos botoes. Nao sei como estava funcionando sem elas, mas estava kkk. Ai quando carregava, dava pau. Mas está consertado. (Resolvido).
 
+	-->Um outro problema que vou enfrentar é conseguir encontrar uma forma de levar a escolhaDialogica salva no playerPrefs para a EscolhaDialogica que define para qual lista de frases que iremos. A forma como construí esse método tem pilares fracos e problemáticos, embora funcione. Pensei em colocar um switch que identifica quando ela está nula e quando tem valores, para definir uma order de prioridade e conseguir executar sem maiores problemas. (Resolvido).
+
+
+
+--------------------------------------------------------
 
 ->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause. Pra resolver isso, tenho que adicionar a clausula que nao deixa eu clicar se o estiver fora de qualque cena que nao seja game desde que o o pause esteja ativado
 
@@ -9,6 +19,10 @@
 
 ->Começar a construir a nova Demo
 
+->A meta hoje é entregar o sistema de save, load, pause e notificação prontos no commit 7.
+Dps disso, vou começar a trabalhar dentro do sistema de avatares. E quando esse sistema estiver pronto, aí poderei começar a trazer os meus assets para dentro do Alter Ego e aí, construir a primeira Demo. Se hoje eu não conseguir fazer o commit 7, então deixo essas tarefas para amanhã.
+
+->Se eu começar a trazer os assets e construir o sistema de avatares, entao eu devo mexer com resoluções. Acho que a forma mais fácil e simples de fazer isso é criando interruptores que dizem em qual resolução deve ser jogado e um outro sistema que identifica automaticamente a resolução para o jogador não ter dor de cabeça com a tela quebrada.
 
 -------------------------Concluídos de hoje----------------------
 

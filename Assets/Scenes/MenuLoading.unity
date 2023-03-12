@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 139691854}
   - component: {fileID: 139691858}
+  - component: {fileID: 139691859}
   - component: {fileID: 139691857}
   - component: {fileID: 139691855}
   m_Layer: 5
@@ -207,16 +208,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 139691859}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 139691859}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: LoadEscolhaDialogicaPorSlot
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: slot3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &139691857
@@ -257,6 +270,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139691853}
   m_CullTransparentMesh: 1
+--- !u!114 &139691859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139691853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &529395786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1057,19 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1079237022}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneParaLoadSave
+        m_MethodName: SelectScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1079237022}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: LoadEscolhaDialogicaPorSlot
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1127,6 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1248012324}
   - component: {fileID: 1248012328}
+  - component: {fileID: 1248012329}
   - component: {fileID: 1248012327}
   - component: {fileID: 1248012325}
   m_Layer: 5
@@ -1201,16 +1239,28 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1248012329}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MainMenu
+          m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1248012329}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
+        m_MethodName: LoadEscolhaDialogicaPorSlot
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: slot2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1248012327
@@ -1251,6 +1301,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248012323}
   m_CullTransparentMesh: 1
+--- !u!114 &1248012329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248012323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c0e0fddd15ae2499112b0c5a5cfbfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1412318640
 GameObject:
   m_ObjectHideFlags: 0

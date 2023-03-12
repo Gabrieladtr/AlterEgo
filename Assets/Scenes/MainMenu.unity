@@ -345,7 +345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 135504174}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1323,7 +1323,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1176847955}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1550,7 +1550,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1215406380}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1685,7 +1685,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1285360552}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2203,7 +2203,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2022898991}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2351,7 +2351,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2039246796}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2359,18 +2359,6 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MenuLoading
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2039246797}
-        m_TargetAssemblyTypeName: Game, Assembly-CSharp
-        m_MethodName: LoadSavesToScreen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2039246794

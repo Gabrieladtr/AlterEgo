@@ -22,7 +22,7 @@ public class StartGame : MonoBehaviour
     }
   
 
-    public void selectScene(string stageToPlay)
+    public void SelectScene(string stageToPlay)
     {
         //Sera usado para carregar uma cena.
         //Nao deve ser usado para carregar loads do jogador, apenas cenas comuns.
@@ -31,7 +31,7 @@ public class StartGame : MonoBehaviour
 
 
         //identifica a cena atual e a anterior e se o pause esta ativo
-        identificaCenaAtualEAnterior(stageToPlay);
+        IdentificaCenaAtualEAnterior(stageToPlay);
         //vai transportar o jogador para a proxima cena.
         SceneManager.LoadScene(stageToPlay);
         
@@ -48,43 +48,67 @@ public class StartGame : MonoBehaviour
                 
         }
 
+        //Vamos verificar quando estamos linkando para qualquer cena (em especial dentro do 'pause', em 'loading' para 'Game')
+        //Pq nesse caso especifico, na 'cenaAditivaAtual' pode ser atribuido um valor inutil, que acaba nao permitindo que eu acesse o menu
+        //de pausa quando inicio o game por esse caminho, apenas quando entro pelo menu inicial.
+        //Por isso vou zerar o 'cenaAditivaAtual', permitindo o acesso ao menu de pause.
+        
+        //Se vc for analisar, dentro do PauseGame, o sistema de pause so funciona quando o ''cenaAditivaAtual' esta nulo.
+        //Entao se estivermos dentro de 'game', com 'PauseGame.pauseActive == true', entao devemos atribuir nulo aqui para o menu voltar a funfar.
+        if (PauseGame.pauseActive == true && SceneManager.GetActiveScene().name == "Game" && CenaAditivaAtual != null)
+        {
+            //desligamos o pause, para ele poder ser acessado
+            PauseGame.pauseActive = false;
+            CenaAditivaAtual = null;
+        }
+
+
     }
 
-    public void selectSceneParaLoadSave(string slotParaCarramento)
+
+
+    
+
+
+
+
+    public void LoadEscolhaDialogicaPorSlot(string slotParaCarramento)
     {
-        //Sera usado para carregar uma cena nova para a cena de load
-        //e poder mexer na escolhaDialogica, setando o valor salvo.
-        //Dessa forma vamos poder iniciar o Game com a escolhaDialogica salva no slot selecionado.
-        //Vai identificar qual o slot foi selecionado e qual cena deve ser carregada.
-
-        string cenaDestino = "Game";
+        //Esse metodo sera usado apenas para trazer a informacao salva no PlayerPrefs da escolhaDialogica
+        //Justamente para Game.EscolhaDialogica. Dessa forma, vamos unir o metodo de loadScene com esse metodo
+        //Fazendo com que a cena seja carregada com a escolhaDialogica escolhida.
 
 
-
-        //Deve chamar a classe Game e inputar true no bool 'escolhaDialogicaBool' que adiciona um valor padrao em 'escolhaDialogica'
-        //Isso significa que toda vez que o jogador iniciar o jogo no botao 'iniciar', ele vai iniciar com uma frase padrao
-        //Sem gerar exceptions, multiplicar as frases que devem aparecer ou flodar o console.
-
-        //Se o jogador iniciar dando um loadgame, toda essa funcao eh ignorada.
-
+        //vamos receber um slot e dependendo do Slot, o metodo vai carregar para a cena de Game a escolhaDialogica salva.
         switch(slotParaCarramento)
         {
-            
-
             case "slot1":
-                
-                //identifica a cena atual e a anterior e se o pause esta ativo, para evitar problemas no pause.
-                identificaCenaAtualEAnterior(cenaDestino);
-                //Vai carregar a cena 
-                SceneManager.LoadScene(cenaDestino);
-                
                 //vai carregar a escolhaDialogica salva no PlayerPrefs.
-                Game.faseAtual3LoadGame = PlayerPrefs.GetString("Espaco1","Verificar linha 78/StartGame");
-                Debug.Log("O slot 1 carregado. EscolhaDialogica atual:" + Game.faseAtual3LoadGame);
-
                 
+                Game.faseAtual3LoadGame = PlayerPrefs.GetString("Espaco1","Verificar StartGame");
+                Debug.Log("O slot 1 carregado. EscolhaDialogica atual/(Game.faseAtual3LoadGame): " + Game.faseAtual3LoadGame);
+                
+
+
             break;
 
+            case "slot2":
+                //vai carregar a escolhaDialogica salva no PlayerPrefs.
+
+                Game.faseAtual3LoadGame = PlayerPrefs.GetString("Espaco2", "Verificar StartGame");
+                Debug.Log("O slot 2 carregado. EscolhaDialogica atual/(Game.faseAtual3LoadGame):" + Game.faseAtual3LoadGame);
+                
+
+                break;
+
+            case "slot3":
+                //vai carregar a escolhaDialogica salva no PlayerPrefs.
+
+                Game.faseAtual3LoadGame = PlayerPrefs.GetString("Espaco3", "Verificar StartGame");
+                Debug.Log("O slot 3 carregado. EscolhaDialogica atual/(Game.faseAtual3LoadGame):" + Game.faseAtual3LoadGame);
+                
+
+                break;
         }
 
     }
@@ -93,17 +117,26 @@ public class StartGame : MonoBehaviour
 
 
 
-    public void selectSceneAdditive(string stageToPlay)
+    public void SelectSceneAdditive(string stageToPlay)
     {
         //vai abrir uma cena em cima de outra.
 
         //identifica a cena atual, a anterior e se o pause esta ativo
-        identificaCenaAtualEAnterior(stageToPlay);
+        IdentificaCenaAtualEAnterior(stageToPlay);
         //carrega a proxima cena de forma aditiva (por cima)
         SceneManager.LoadScene(stageToPlay, LoadSceneMode.Additive);
-        //Vai dizer para a variavel de instancia qual cena aditiva foi carregada no momento.
-        CenaAditivaAtual = stageToPlay;
 
+
+        //Vai dizer para a variavel de instancia qual cena aditiva foi carregada no momento.
+
+        /*if (PauseGame.pauseActive == true)
+        {
+            CenaAditivaAtual = null;
+        }
+        else {
+            
+        }*/
+        CenaAditivaAtual = stageToPlay;
 
     }
 
@@ -115,7 +148,7 @@ public class StartGame : MonoBehaviour
     //se a cena que estou eh diferente da cena que vamos ir, entao a cena atual sera a cena anterior
     //e a cena que vamos ir sera a cena atual.
 
-    public void identificaCenaAtualEAnterior(string proximaCena)
+    public void IdentificaCenaAtualEAnterior(string proximaCena)
     {
         cenaAnteriorString = SceneManager.GetActiveScene().name;
         CenaAtualString = proximaCena;
@@ -140,6 +173,22 @@ public class StartGame : MonoBehaviour
         {
             Debug.Log("A cena atual eh totalmente diferente da proxima cena. Verificar.");
         }
+
+
+        //Nesse caso especifico, devemos inputar um valor padrao em "Game.escolhaDialogica" atraves do 'Game.escolhaDialogicaBool = true'
+        if (cenaAnteriorString == "MenuLoading" && CenaAtualString == "Game" && Game.escolhaDialogicaBool == false && Game.faseAtual3LoadGame != null)
+        {
+            //Nesse caso especifico, quando carregamos uma escolhaDialogica salva no playerPrefs, e inputamos dentro de
+            //'Game.escolhaDialogica', e viemos da tela de 'loading' para 'Game', precisamos reiniciar somente nesse caso o 'Game.faseAtual3LoadGame'.
+            //Pq ai, se eu resolver sair para o menu principal e querer inicar um game novo, vou poder fazer isso sem ficar
+            //com a minha escolhaDialogica salva. Dessa forma, vamos comecar o jogo com o valor padrao, alocado dentro do Game.Start().
+            Game.escolhaDialogicaBool = true;
+
+            //Reinicia o valor de 'faseAtual3LoadGame', para nao atrapalhar quando o jogador quiser iniciar por 'MenuInicial\InicarGame'.
+            Game.faseAtual3LoadGame = null;
+
+        }
+
 
     }
 

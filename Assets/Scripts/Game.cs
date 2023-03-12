@@ -45,7 +45,8 @@ public class Game : MonoBehaviour
 
     //vai definir a escolha de rota que devemos inicializar/em que estamos atualmente (qual lista de frase devemos iniciar)
     public string escolhaDialogica = "Sem valor definido";
-    public static string faseAtual2, faseAtual3LoadGame;
+    public static string faseAtual2;
+    public static string faseAtual3LoadGame;
 
     //bool pra travar de iniciar pela msm lista de frases:
     public static bool escolhaDialogicaBool = true;
@@ -135,31 +136,26 @@ public class Game : MonoBehaviour
             
         }
 
-        /*
 
-        //verifico se temos os botoes/tmp de saving na tela. Se sim carregamos os saves do jogador.
-
-        
-
-        */
 
         //Vamos inputar o "frasesPadrao" como padrao para come@ar a calcular as frases e as rotas possiveis. 
         //Ou seja, vamos come@ar o jogo com essa lista de frases.
-
-
-        
+        //Se o meu 'escolhaDialogicaBool == true', entao deve inputar o um 'DecisaoDialogica("frasesPadrao")'
+        //Caso contrário, nao faz nada.
 
         if (escolhaDialogicaBool == true)
         {
             //vai add o valor 'frasesPadrao' em 'escolhaDialogica'
             DecisaoDialogica("frasesPadrao");
-            Debug.Log("Estamos dentro do primeiro IF, onde escolhemos o 'frasesPadrao'");
+            
             //vai travar, nao permitindo que nada mais seja add em 'escolhaDialogica', funcionando apenas 1 vez.
             escolhaDialogicaBool = false;
+
+            Debug.Log("Estamos dentro do primeiro IF, onde escolhemos o 'frasesPadrao', Game.escolhaDialogicaBool: " + escolhaDialogicaBool);
         }
-        else 
+        else if(escolhaDialogicaBool == false) 
         {
-            //Debug.Log("Nao tem nenhuma lista padr@o. A variavel bool 'escolhaDialogicaBool' est@: " + escolhaDialogicaBool +  ". A EscolhaDialogica @: " + escolhaDialogica);
+            //Debug.Log("Nao tem nenhuma lista padrao. A variavel bool 'escolhaDialogicaBool' esta: " + escolhaDialogicaBool +  "." + " A EscolhaDialogica eh: " + escolhaDialogica);
             //escolhaDialogicaBool = true;
         }
 
@@ -177,6 +173,8 @@ public class Game : MonoBehaviour
 
     void Update()
     {
+
+        
 
         //Pega o componente de texto na tela e mostra a frase que eu atribuir dentro do TMP
 
@@ -216,6 +214,7 @@ public class Game : MonoBehaviour
             {
                 //caso contr@rio s@ acrescente valores no contador.
                 contador++;
+                //Debug.Log("Numero de cliques: " + contador);
                 //Debug.Log("Contador atual: " + contador);
                 //contador = contador + 1 == acrescenta valores
                 //contador = contador - 1== diminui valores
@@ -253,7 +252,7 @@ public class Game : MonoBehaviour
                         //decisao dialogica aqui
 
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
 
@@ -329,10 +328,27 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesDois.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
-                        ButtonsMessages("Gabriel", "Joao", "teste");
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        //contador = 0;
 
                     }
                     break;
@@ -351,10 +367,27 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesTres.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
-                        ButtonsMessages("Gabriel", "Joao", "teste");
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        //contador = 0;
 
                     }
                     break;
@@ -418,7 +451,7 @@ public class Game : MonoBehaviour
                         //decisao dialogica aqui
 
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
 
@@ -456,7 +489,7 @@ public class Game : MonoBehaviour
                         //decisao dialogica aqui
 
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
 
@@ -494,10 +527,27 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesDois.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
-                        ButtonsMessages("Gabriel", "Joao", "teste");
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        //contador = 0;
 
                     }
                     break;
@@ -516,10 +566,27 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesTres.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
-                        ButtonsMessages("Gabriel", "Joao", "teste");
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        //contador = 0;
 
                     }
                     break;
@@ -653,14 +720,25 @@ public class Game : MonoBehaviour
         //Aqui instanciamos um valor que definir@ para qual rota iremos, ou seja
         //para a variavel global da escolhaDialogica, instanciada globalmente no inicio do codigo.
         //Combinaremos esse metodo com o resultado dos botoes, criando um caminho definido pelo jogador
-        escolhaDialogica = decisao;
-        
-        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamos agora eh: " + escolhaDialogica);
 
-        //Espa@o do sistema de save.
-        faseAtual2 = decisao;
-        //SaveGame();
-        
+
+
+        //Se 'faseAtual3LoadGame == null', entao significa que nao atribuimos nenhum valor de load, para a 
+        //EscolhaDialogica. Entao isso significa uma ordem de prioridade para quem sera carregado com a escolha dialogica.
+
+        if (faseAtual3LoadGame == null)
+        {
+            escolhaDialogica = decisao;
+            faseAtual2 = decisao;
+        }
+        else {
+            escolhaDialogica = faseAtual3LoadGame;
+            faseAtual3LoadGame = null;
+        }
+
+        Debug.Log("Estamos em 'DecisaoDialogica' e a rota que estamos agora eh: " + escolhaDialogica );
+
+
 
     }
 

@@ -18,6 +18,11 @@ public class PauseGame : MonoBehaviour
         //controlamos se o pause esta ativo ou nao
         DesativaPauseNoMenuPrincipal();
 
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            Debug.Log("O Esc foi pressionado, pauseActive: " + pauseActive + ", Cena atual: " + SceneManager.GetActiveScene().name +
+                ", StartGame.CenaAditivaAtual: " + StartGame.CenaAditivaAtual);
+        }
+
         //Controla o sistema de pause na tela de "Game"
         if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false && SceneManager.GetActiveScene().name == "Game" && StartGame.CenaAditivaAtual == null)
         {

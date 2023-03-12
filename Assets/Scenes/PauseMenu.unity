@@ -345,7 +345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 135504174}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -774,7 +774,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 453704353}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -921,7 +921,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 463315422}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1609,7 +1609,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1144828504}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1768,7 +1768,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1215406380}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2409,7 +2409,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2022898991}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2556,7 +2556,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2039246796}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectSceneAdditive
+        m_MethodName: SelectSceneAdditive
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -658,7 +658,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1102395500}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: selectScene
+        m_MethodName: SelectScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

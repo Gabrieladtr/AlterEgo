@@ -37,9 +37,9 @@ public class ExitButton : MonoBehaviour
             ficarButton = GameObject.Find("Ficar").GetComponent<Button>();
             sairBackground = GameObject.Find("SairBackground").GetComponent<Image>();
             tituloGame = GameObject.Find("TituloSair").GetComponent<TMP_Text>();
-            
+
             //ativa ou desativa os elementos na tela
-            inicialiarTelaSair(true);
+            InicialiarTelaSair(true);
 
         }
         
@@ -48,7 +48,7 @@ public class ExitButton : MonoBehaviour
 
 
 
-    public void inicialiarTelaSair(bool ligadoOuNao)
+    public void InicialiarTelaSair(bool ligadoOuNao)
     {
         //Por padr�o vai inicializar a cena com os botoes desligados
         sairBackground.gameObject.SetActive(ligadoOuNao);
