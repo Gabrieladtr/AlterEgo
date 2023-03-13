@@ -28,6 +28,8 @@ public class Game : MonoBehaviour
     public List<string> frasesDois;
     public List<string> frasesTres;
 
+    public ListasDialogicas listasDialogicasObject;
+
     //Rotas possiveis:
     public string rota1, rota2, rota3;
 
@@ -65,6 +67,7 @@ public class Game : MonoBehaviour
     {
 
         // listas de frases para combinar com as escolhas
+        /*
         frasesPadrao.Add("frasesPadrao - teste de frase 0");
         frasesPadrao.Add("frasesPadrao - teste de frase 1");
         frasesPadrao.Add("frasesPadrao - teste de frase 2");
@@ -78,6 +81,21 @@ public class Game : MonoBehaviour
         frasesPadrao.Add("frasesPadrao - Escolha 1");
         frasesPadrao.Add("frasesPadrao - teste de frase 10");
         frasesPadrao.Add("frasesPadrao - Escolha 2");
+        */
+
+        frasesPadrao.Add("Cliquei novamente para iniciar");
+        frasesPadrao.Add("CyberCity... a cidade dos sonhos.");
+        frasesPadrao.Add("A cidade onde você não morre, não possui doenças, pobreza, guerra ou qualquer outro problema que há na realidade. ");
+        frasesPadrao.Add("Tudo isso graças ao SOV – Sistema Operacional Virtual e seu complemento, o Amotine. ");
+        frasesPadrao.Add("Ambas as tecnologias da corporação LIFE.");
+        frasesPadrao.Add("Dentro do SOV, na CyberCity as pessoas podem viver em paz.");
+        frasesPadrao.Add("Enquanto estava a caminho de seu trabalho, como engenheiro de computação, Yael passa por uma máquina de refrigerantes e vê ela dando glitch.");
+        frasesPadrao.Add("Yael decide ir verificar a máquina e acaba descobrindo uma forma de sair do SOV.");
+        frasesPadrao.Add("Ao digitar um valor menor do que qualquer produto, ele acorda fora da CyberCity na cidade de Omskvi, na antiga Petrov, país que ficava localizado no leste europeu e vê toda a mata tomando conta da cidade. ");
+        frasesPadrao.Add("Tinha descoberto pela primeira vez, que houve uma guerra nuclear, pois havia sido uma das primeiras cobaias a ser imputada dentro do SOV, pois havia sido um prisioneiro americo-cairano no Leste Europeu.");
+        frasesPadrao.Add("Antes de desmaiar, devido seu debilitado corpo, vê um homem com uma máscara de pássaro e apaga.");
+        frasesPadrao.Add("Acorda em um acampamento desconhecido e frio, começa então a buscar respostas para todas as suas dúvidas.");
+
 
         frasesUm.Add("D1E1 - teste de frase 0");
         frasesUm.Add("D1E1 - teste de frase 1");
@@ -163,6 +181,9 @@ public class Game : MonoBehaviour
         //PauseGame.pauseActive = false;//vamos dizer para o sistema de pause que ele sempre podera ser ativo, toda vez que essa cena for ativada.
 
 
+        
+
+
 
     }
 
@@ -173,8 +194,15 @@ public class Game : MonoBehaviour
 
     void Update()
     {
+        //-----------------------Criando o objeto das ListasDialogicas-------------------------
+        listasDialogicasObject = new ListasDialogicas();
 
-        
+
+
+
+
+
+        //ListasDialogicas listasDialogicasClasse = new ListasDialogicas();
 
         //Pega o componente de texto na tela e mostra a frase que eu atribuir dentro do TMP
 
@@ -276,16 +304,17 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesPadrao":
+
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesPadrao.Count && contador != frasesPadrao.Count)
+                    if (contador < listasDialogicasObject.GetListaDialogos().Count && contador != listasDialogicasObject.GetListaDialogos().Count)
                     {
-                        Debug.Log(frasesPadrao[contador]);
-                        textMeshProTela.text = frasesPadrao[contador];
+                        Debug.Log(listasDialogicasObject.GetListaDialogos()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetListaDialogos()[contador];
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
-
+                        
                     }
-                    else if (contador == frasesPadrao.Count)
+                    else if (contador == listasDialogicasObject.GetListaDialogos().Count)
                     {
                         //decisao dialogica aqui
 
@@ -316,15 +345,18 @@ public class Game : MonoBehaviour
 
                 case "frasesDois":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesDois.Count && contador != frasesDois.Count)
+                    //listasDialogicasObject
+
+                    
+                    if (contador < listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count && contador != listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
                     {
-                        Debug.Log(frasesDois[contador]);
-                        textMeshProTela.text = frasesDois[contador];
+                        Debug.Log(listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador];
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == frasesDois.Count)
+                    else if (contador == listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
                     {
                         //decisao dialogica aqui
 
@@ -475,16 +507,17 @@ public class Game : MonoBehaviour
                     break;
 
                 case "frasesPadrao":
+
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesPadrao.Count && contador != frasesPadrao.Count)
+                    if (contador < listasDialogicasObject.GetListaDialogos().Count && contador != listasDialogicasObject.GetListaDialogos().Count)
                     {
-                        Debug.Log(frasesPadrao[contador]);
-                        textMeshProTela.text = frasesPadrao[contador];
-                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
+                        Debug.Log(listasDialogicasObject.GetListaDialogos()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetListaDialogos()[contador];
+                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == frasesPadrao.Count)
+                    else if (contador == listasDialogicasObject.GetListaDialogos().Count)
                     {
                         //decisao dialogica aqui
 
@@ -515,15 +548,18 @@ public class Game : MonoBehaviour
 
                 case "frasesDois":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesDois.Count && contador != frasesDois.Count)
+                    //listasDialogicasObject
+
+
+                    if (contador < listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count && contador != listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
                     {
-                        Debug.Log(frasesDois[contador]);
-                        textMeshProTela.text = frasesDois[contador];
-                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
+                        Debug.Log(listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador];
+                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == frasesDois.Count)
+                    else if (contador == listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
                     {
                         //decisao dialogica aqui
 

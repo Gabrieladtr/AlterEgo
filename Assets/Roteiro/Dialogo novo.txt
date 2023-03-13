@@ -1,0 +1,35 @@
+
+
+
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Ei ei, não precisa se levantar agora, seu corpo precisa de mais algumas horas até se adaptar novamente à realidade.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Eu... eu não sei o que houve...");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Você acordou, é isso que houve.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Eu estava em um sonho?");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Não, você estava no SOV. É uma realidade virtual, já está lá a tanto tempo que nem lembra direito que existe outra realidade né?!");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Eu acredito que sim... não entendo o que aconteceu, eu entrei em contato com uma máquina de refri...");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Refrigerantes! Quem diria não é mesmo? Foi o mesmo comigo e com o meu irmão, tem uma falha de cenografia dentro do SOV que te permite sair do sistema operacional através dessas máquinas. ");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – hum... mas como?");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Meu irmão é engenheiro de software, ele criou uma falha na máquina de refrigerantes para que pudéssemos sair de lá, assim como outras pessoas que acharem a máquina.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Vocês conseguiram criar uma falha no sistema e conseguiram escapar? Genial...");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Nós estamos apenas sobrevivendo.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Vocês são quantos? Você e seu irmão... tem mais alguém?");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Somos apenas três, contado comigo. Nós nos viramos para sobreviver nessa cidade, evitando radioatividade e usando as máscaras como disfarce contra os drones da LIFE.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Isso explica aquela máscara estranha de pássaro? A propósito, qual o seu nome?");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Aquela máscara estranha me mante vivo, exalta quem eu tenho que ser para sobreviver. Sugiro você construir a sua quando estiver pronto! E meu nome é Wing, prazer em conhecê-lo. Agora, qual o seu nome?");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – Meu nome é Yael. Bem, vou pensar sobre isso, obrigado pela ajuda! Sem você eu já teria morrido.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Pássaro – Não se preocupe, estamos precisando de mais membros. Mas se quiser ficar, vai ter que convencer os outros. Você precisa conhecer eles e apresentar a todos. Dizer quem é e o que busca. Quando estiver pronto, me chame.");
+CAPITULO_1_A_SAIDA_D_SOV.Add("Yael – vou chamar, obrigado por tudo de novo.");
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
