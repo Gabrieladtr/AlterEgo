@@ -788,6 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 388415937}
+  - component: {fileID: 388415941}
   - component: {fileID: 388415939}
   - component: {fileID: 388415940}
   - component: {fileID: 388415938}
@@ -931,8 +932,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -942,6 +942,21 @@ MonoBehaviour:
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
+--- !u!114 &388415941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388415936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e31922b8887cfde47a7ae95419d4dd6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frasesPadrao: []
+  CAPITULO_1_A_SAIDA_D_SOV: []
+  frasesTres: []
 --- !u!1 &399788634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,8 +1109,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -1691,8 +1705,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -2224,8 +2237,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -2395,8 +2407,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -3055,8 +3066,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -3951,8 +3961,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
@@ -4126,8 +4135,7 @@ MonoBehaviour:
   frasesUm: []
   frasesDois: []
   frasesTres: []
-  listasDialogicasTeste: {fileID: 0}
-  listasDialogicasTesteDeLista: []
+  listasDialogicasObject: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 

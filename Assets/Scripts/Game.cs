@@ -81,21 +81,21 @@ public class Game : MonoBehaviour
         frasesPadrao.Add("frasesPadrao - Escolha 1");
         frasesPadrao.Add("frasesPadrao - teste de frase 10");
         frasesPadrao.Add("frasesPadrao - Escolha 2");
-        */
+        
 
         frasesPadrao.Add("Cliquei novamente para iniciar");
         frasesPadrao.Add("CyberCity... a cidade dos sonhos.");
-        frasesPadrao.Add("A cidade onde você não morre, não possui doenças, pobreza, guerra ou qualquer outro problema que há na realidade. ");
-        frasesPadrao.Add("Tudo isso graças ao SOV – Sistema Operacional Virtual e seu complemento, o Amotine. ");
-        frasesPadrao.Add("Ambas as tecnologias da corporação LIFE.");
+        frasesPadrao.Add("A cidade onde vocï¿½ nï¿½o morre, nï¿½o possui doenï¿½as, pobreza, guerra ou qualquer outro problema que hï¿½ na realidade. ");
+        frasesPadrao.Add("Tudo isso graï¿½as ao SOV ï¿½ Sistema Operacional Virtual e seu complemento, o Amotine. ");
+        frasesPadrao.Add("Ambas as tecnologias da corporaï¿½ï¿½o LIFE.");
         frasesPadrao.Add("Dentro do SOV, na CyberCity as pessoas podem viver em paz.");
-        frasesPadrao.Add("Enquanto estava a caminho de seu trabalho, como engenheiro de computação, Yael passa por uma máquina de refrigerantes e vê ela dando glitch.");
-        frasesPadrao.Add("Yael decide ir verificar a máquina e acaba descobrindo uma forma de sair do SOV.");
-        frasesPadrao.Add("Ao digitar um valor menor do que qualquer produto, ele acorda fora da CyberCity na cidade de Omskvi, na antiga Petrov, país que ficava localizado no leste europeu e vê toda a mata tomando conta da cidade. ");
+        frasesPadrao.Add("Enquanto estava a caminho de seu trabalho, como engenheiro de computaï¿½ï¿½o, Yael passa por uma mï¿½quina de refrigerantes e vï¿½ ela dando glitch.");
+        frasesPadrao.Add("Yael decide ir verificar a mï¿½quina e acaba descobrindo uma forma de sair do SOV.");
+        frasesPadrao.Add("Ao digitar um valor menor do que qualquer produto, ele acorda fora da CyberCity na cidade de Omskvi, na antiga Petrov, paï¿½s que ficava localizado no leste europeu e vï¿½ toda a mata tomando conta da cidade. ");
         frasesPadrao.Add("Tinha descoberto pela primeira vez, que houve uma guerra nuclear, pois havia sido uma das primeiras cobaias a ser imputada dentro do SOV, pois havia sido um prisioneiro americo-cairano no Leste Europeu.");
-        frasesPadrao.Add("Antes de desmaiar, devido seu debilitado corpo, vê um homem com uma máscara de pássaro e apaga.");
-        frasesPadrao.Add("Acorda em um acampamento desconhecido e frio, começa então a buscar respostas para todas as suas dúvidas.");
-
+        frasesPadrao.Add("Antes de desmaiar, devido seu debilitado corpo, vï¿½ um homem com uma mï¿½scara de pï¿½ssaro e apaga.");
+        frasesPadrao.Add("Acorda em um acampamento desconhecido e frio, comeï¿½a entï¿½o a buscar respostas para todas as suas dï¿½vidas.");
+        */
 
         frasesUm.Add("D1E1 - teste de frase 0");
         frasesUm.Add("D1E1 - teste de frase 1");
@@ -107,7 +107,7 @@ public class Game : MonoBehaviour
         frasesUm.Add("D1E1 - teste de frase 7");
         frasesUm.Add("D1E1 - teste de frase 8");
         frasesUm.Add("D1E1 - teste de frase 9");
-
+    
         frasesDois.Add("D1E2 - teste de frase 0");
         frasesDois.Add("D1E2 - teste de frase 1");
         frasesDois.Add("D1E2 - teste de frase 2");
@@ -129,6 +129,32 @@ public class Game : MonoBehaviour
         frasesTres.Add("D1E3 - teste de frase 7");
         frasesTres.Add("D1E3 - teste de frase 8");
         frasesTres.Add("D1E3 - teste de frase 9");
+        frasesTres.Add("D1E3 - teste de frase 10");
+        frasesTres.Add("D1E3 - teste de frase 11");
+        frasesTres.Add("D1E3 - teste de frase 12");
+        frasesTres.Add("D1E3 - teste de frase 13");
+        frasesTres.Add("D1E3 - teste de frase 14");
+        frasesTres.Add("D1E3 - teste de frase 15");
+        /*
+        frasesTres.Add("D1E3 - teste de frase 16");
+        frasesTres.Add("D1E3 - teste de frase 17");
+        frasesTres.Add("D1E3 - teste de frase 18");
+        frasesTres.Add("D1E3 - teste de frase 19");
+        frasesTres.Add("D1E3 - teste de frase 20");
+        frasesTres.Add("D1E3 - teste de frase 21");
+        frasesTres.Add("D1E3 - teste de frase 22");
+        frasesTres.Add("D1E3 - teste de frase 23");
+        frasesTres.Add("D1E3 - teste de frase 24");
+        frasesTres.Add("D1E3 - teste de frase 25");
+        frasesTres.Add("D1E3 - teste de frase 26");
+        frasesTres.Add("D1E3 - teste de frase 27");
+        frasesTres.Add("D1E3 - teste de frase 28");
+        frasesTres.Add("D1E3 - teste de frase 29");
+        frasesTres.Add("D1E3 - teste de frase 30");
+        */
+
+
+
 
 
 
@@ -159,7 +185,7 @@ public class Game : MonoBehaviour
         //Vamos inputar o "frasesPadrao" como padrao para come@ar a calcular as frases e as rotas possiveis. 
         //Ou seja, vamos come@ar o jogo com essa lista de frases.
         //Se o meu 'escolhaDialogicaBool == true', entao deve inputar o um 'DecisaoDialogica("frasesPadrao")'
-        //Caso contrário, nao faz nada.
+        //Caso contrï¿½rio, nao faz nada.
 
         if (escolhaDialogicaBool == true)
         {
@@ -343,21 +369,19 @@ public class Game : MonoBehaviour
 
                     break;
 
-                case "frasesDois":
+                    case "frasesDois":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    //listasDialogicasObject
-
-                    
-                    if (contador < listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count && contador != listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
+                    if (contador < listasDialogicasObject.GetfrasesTres().Count && contador != listasDialogicasObject.GetfrasesTres().Count)
                     {
-                        Debug.Log(listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador]);
-                        textMeshProTela.text = listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador];
+                        Debug.Log(listasDialogicasObject.GetfrasesTres()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetfrasesTres()[contador];
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
+                    else if (contador == listasDialogicasObject.GetfrasesTres().Count)
                     {
+
                         //decisao dialogica aqui
 
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
@@ -387,15 +411,15 @@ public class Game : MonoBehaviour
 
                 case "frasesTres":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesTres.Count && contador != frasesTres.Count)
+                    if (contador < listasDialogicasObject.GetfrasesTres().Count && contador != listasDialogicasObject.GetfrasesTres().Count)
                     {
-                        Debug.Log(frasesTres[contador]);
-                        textMeshProTela.text = frasesTres[contador];
+                        Debug.Log(listasDialogicasObject.GetfrasesTres()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetfrasesTres()[contador];
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == frasesTres.Count)
+                    else if (contador == listasDialogicasObject.GetfrasesTres().Count)
                     {
                         //decisao dialogica aqui
 
@@ -546,20 +570,17 @@ public class Game : MonoBehaviour
 
                     break;
 
-                case "frasesDois":
+                    case "frasesDois":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    //listasDialogicasObject
-
-
-                    if (contador < listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count && contador != listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
+                    if (contador < listasDialogicasObject.GetfrasesTres().Count && contador != listasDialogicasObject.GetfrasesTres().Count)
                     {
-                        Debug.Log(listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador]);
-                        textMeshProTela.text = listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV()[contador];
+                        Debug.Log(listasDialogicasObject.GetfrasesTres()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetfrasesTres()[contador];
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == listasDialogicasObject.GetListaCAPITULO_1_A_SAIDA_D_SOV().Count)
+                    else if (contador == listasDialogicasObject.GetfrasesTres().Count)
                     {
                         //decisao dialogica aqui
 
@@ -588,17 +609,17 @@ public class Game : MonoBehaviour
                     }
                     break;
 
-                case "frasesTres":
+                    case "frasesTres":
                     // A@@es a serem executadas quando a op@@o 1 @ selecionada
-                    if (contador < frasesTres.Count && contador != frasesTres.Count)
+                    if (contador < listasDialogicasObject.GetfrasesTres().Count && contador != listasDialogicasObject.GetfrasesTres().Count)
                     {
-                        Debug.Log(frasesTres[contador]);
-                        textMeshProTela.text = frasesTres[contador];
-                        Debug.Log("Estamos no contador-- e os botoes devem desaparecer");
+                        Debug.Log(listasDialogicasObject.GetfrasesTres()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetfrasesTres()[contador];
+                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
                     }
-                    else if (contador == frasesTres.Count)
+                    else if (contador == listasDialogicasObject.GetfrasesTres().Count)
                     {
                         //decisao dialogica aqui
 
@@ -784,11 +805,13 @@ public class Game : MonoBehaviour
     {
         //Vai retornar em qual lista estamos atualmente
         //Serve pra evitar avan@ar ou retroceder demais no di@logo, dependendo da qtd de frases na lista.
-
+        listasDialogicasObject = new ListasDialogicas();
+        
         switch (decisaoList) 
         {
             case "frasesPadrao":
-                escolhaDialogicaList = frasesPadrao;
+                escolhaDialogicaList = listasDialogicasObject.GetListaDialogos();
+                
                 break;
 
             case "frasesUm":
@@ -800,7 +823,7 @@ public class Game : MonoBehaviour
                 break;
 
             case "frasesTres":
-                escolhaDialogicaList = frasesTres;
+                escolhaDialogicaList = listasDialogicasObject.GetfrasesTres();;
                 break;
         }
 

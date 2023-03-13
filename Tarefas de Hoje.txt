@@ -1,6 +1,34 @@
 -----------------------------------Tarefas de Hoje----------------------------
 
 ->Comecei a trazer todos os diálogos para o sistema. Criei um método que armazena todas as listas de frases e cria um método de acesso para todas elas. Dessa forma, consigo acessar todos os diálogos de forma simples. 
+	-->Como antes eu usava as listas na classe Game e agora eu acesso elas por ListasDialogicas, acontece um problema. Para que eu automatizasse a contagem de quantas linhas possuem na lista que estamos atualmete, escrevi o método "DecisaoDialogicaList(string nomeDaLista)" que retorna uma lista com o nome	passado como parâmetro (que é a decisão dialógica). Então, fazíamos o seguinte: 
+	
+            if (contador > DecisaoDialogicaList(escolhaDialogica).Count)
+	    {
+                contador = DecisaoDialogicaList(escolhaDialogica).Count;
+                //Paro na última ou a primeira frase da lista.
+            }
+            else 
+            {
+                contador++;
+		//Inicialmente o contador é zero. E vamos percorrer exatamente a quantidade
+		//de valores dentro da lista repassada.
+            }
+
+Isso funciona muito bem, se estivermo usando as listas dentro de Game mas agora não podemos fazer mais isso. Se eu tentar acessar as listas dentro de ListasDialogicas, vamos estar limitados à qtd de valores adicionados na lista local (que ainda existe, por causa de testes.) Então em um cenário sem esses valores, daria erro. Então, posso reutilizar o mesmo método DecisaoDialogicaList(), repassando o nome das listas possíveis juntamente com as rotas e a EscolhaDialogica. Dessa forma, acredito eu que vamos conseguir transportar o jogador para todas as rotas possíves.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ->Ideia de tradução do Idioma: quando eu conseguir corrigir e inputar todos os diálogos na classe de ListasDialogicas, tudo já vai estar no padrão correto. Dessa forma, pra eu conseguir traduzir tudo é muito mais rápido e fácil. E aí, com um switch no início do código eu consigo selecionar para qual idioma devemos entrar e utilizamos exatamente os mesmos nomes de métodos, mudamos apenas o objeto da classe para acesso. Dessa forma, o sistema de idiomas estará completo.
 
