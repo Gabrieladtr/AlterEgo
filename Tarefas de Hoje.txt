@@ -18,6 +18,12 @@
 Isso funciona muito bem, se estivermo usando as listas dentro de Game mas agora não podemos fazer mais isso. Se eu tentar acessar as listas dentro de ListasDialogicas, vamos estar limitados à qtd de valores adicionados na lista local (que ainda existe, por causa de testes.) Então em um cenário sem esses valores, daria erro. Então, posso reutilizar o mesmo método DecisaoDialogicaList(), repassando o nome das listas possíveis juntamente com as rotas e a EscolhaDialogica. Dessa forma, acredito eu que vamos conseguir transportar o jogador para todas as rotas possíves.
 
 
+Resumindo. 
+->A escolhaDialogica precisa ter uma lista dentro de DecisaoDialogicaList().Dessa forma, consigo utilizar a mesma lógica mudando apenas os valores utilizados.
+->Preciso colocar a opcao de escolhaDialogica dentro da minha lógica de escolha de capítulos.
+->Preciso colocar uma vez acrescentando diálogo e outra vez decrescendo o diálogo.
+->Para salvamentos, preciso colocar essa opcao de escolhaDialogica dentro dele tmb.
+
 
 
 
