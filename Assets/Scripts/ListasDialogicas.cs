@@ -672,12 +672,58 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3 = new List<string>();
 
+        //Cenário: Estação 14-7.
+        Capitulo_3.Add("CAPÍTULO 3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
+        Capitulo_3.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
+        Capitulo_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3.Add("Raposa (Melinda) – Acredite, ela sabe onde estamos. Tenho certeza de que temos muitas chances de encontrarmos ela aqui mesmo nessa estação.");
+        Capitulo_3.Add("Coruja (Jones) – Sorte que temos os drones, programei eles para que consigam atirar e causar dano mesmo dentro do SOV. Então, estamos seguros.");
+        Capitulo_3.Add("Cão (Yael) – Vamos apreciar a viagem então!");
+        Capitulo_3.Add("Cão (Yael) – ... Espera!");
+        Capitulo_3.Add("Cão (Yael) – Vocês também estão ouvindo um som estranho... acho que o trem bateu em alguma coisa!");
+        Capitulo_3.Add("Raposa (Melinda) – Acho que sei o que está acontecendo... Linda, ela chegou.");
+        Capitulo_3.Add("Coruja (Jones) – Estamos preparados para o que vier...");
+        Capitulo_3.Add("Wing (Pássaro) – Linda! Temos um assunto para resolver, e sim, é pessoal!");
+        Capitulo_3.Add("Linda – Vocês falam demais... Hahaha!");
+        Capitulo_3.Add("Linda – Nem parecem que sabem que vão morrer...");
+        Capitulo_3.Add("Raposa (Melinda) – Podemos resolver isso de outras formas Linda... ");
+        Capitulo_3.Add("Linda – Minha irmãzinha... de pais diferentes... Desde que a L.I.A. me contou que vocês haviam entrado no SOV, não precisei fazer muito... Só localizei vocês pelo rastreador SystemSoft. ");
+        Capitulo_3.Add("Linda – Naquele momento eu coloquei você em primeiro lugar na minha lista de mortes... O projeto Me-Linda só pode ter uma Linda, eu.");
+        Capitulo_3.Add("Raposa (Melinda) – Você é quem sabe...");
+        Capitulo_3.Add("Coruja (Jones) – Drones! Atirem!!");
+        Capitulo_3.Add("Drones – Atirando");
+        Capitulo_3.Add("Linda – (Suspirando, muito debilitada) – Não... Como vocês conseguiram fazer isso?... Eu sou indestrutível...");
+        Capitulo_3.Add("Wing (Pássaro) – Jones, acabe com ela! Faça-a pagar!");
+        Capitulo_3.Add("Raposa (Melinda) – Espera, Cão, o você quer?");
+
+        Capitulo_3.Add("Decisão:");
+        
+        //Escolha A: Usar o Código: 7898 (extraído do diário de Asimovitsky)
+        //Escolha B: Usar o Código: 7562 (código aleatório)
+
         return Capitulo_3;
     }
 
     public List<string> GetCapitulo_3_1_1()
     {
         Capitulo_3_1_1 = new List<string>();
+
+        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
+
+        //Cenário: Estação 14-7.
+        Capitulo_3_1_1.Add("Cão (Yael) – Eu li o diário, sei o que estou fazendo... Linda, ativar código 7898.");
+        Capitulo_3_1_1.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
+        Capitulo_3_1_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
+        Capitulo_3_1_1.Add("Raposa (Melinda) – (feliz) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Finalmente posso te abraçar. Conseguimos te salvar.");
+        Capitulo_3_1_1.Add("Wing (Pássaro) – Nem acredito que conseguimos salvar a “temida assassina” haha.");
+        Capitulo_3_1_1.Add("Coruja (Jones) – Conseguimos! Graças a Yael, o nosso Cão!");
+        Capitulo_3_1_1.Add("Linda (confusa) – Obrigada Yael ou Cão, como quiser... Eu estava surtada. Agora sou uma pessoa normal. Quero ajudar vocês no que for preciso. ");
+        Capitulo_3_1_1.Add("Raposa (Melinda) – Estamos a caminho da LIFE. Vamos derrotar Malev, o seu criador e vamos restaurar as baterias dos Amotines... As pessoas devem poder escolher qual caminho devem seguir. Mas serem escravizadas, isso é demais.");
+        Capitulo_3_1_1.Add("Linda – Podem contar comigo. Vamos salvar a humanidade e destruir a LIFE.");
+        Capitulo_3_1_1.Add("Coruja (Jones) – Chegamos na Estação 25-6. Aqui descemos, a LIFE fica logo adiante.");
+
 
         return Capitulo_3_1_1;
     }
@@ -686,12 +732,63 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3_1_2 = new List<string>();
 
+        Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
+
+        //Cenário: Estação 14-7.
+        Capitulo_3_1_2.Add("Cão (Yael) – Eu não li o diário, mas sei o que estou fazendo... Linda, ativar código 7562.");
+        Capitulo_3_1_2.Add("Linda – (L.I.A): Projeto Me-Linda sendo autodestruído. Iniciando contagem regressiva para destruição total... 5... 4... 3... 2... 1...");
+        Capitulo_3_1_2.Add("Linda – (L.I.A): Destruindo sistema.");
+        Capitulo_3_1_2.Add("Linda – (L.I.A): ... Puffff");
+        Capitulo_3_1_2.Add("Raposa (Melinda) – Ela era minha irmã, mas sei que tomou a melhor decisão para os Animals Cão. Confio na sua decisão. Sei que fará sentido...");
+        Capitulo_3_1_2.Add("Coruja (Jones) – Conseguimos vencer a Linda... Sinto muito por isso Raposinha.");
+        Capitulo_3_1_2.Add("Wing (Pássaro) – Estamos quase concluindo nosso objetivo. Falta pouco para salvarmos toda a humanidade. Estamos meio caminho andado.");
+        Capitulo_3_1_2.Add("Coruja (Jones) – Chegamos na Estação 25-6. Aqui descemos, a LIFE fica logo adiante.");
+
+
+
         return Capitulo_3_1_2;
     }
 
     public List<string> GetCapitulo_3_2()
     {
         Capitulo_3_2 = new List<string>();
+
+
+        Capitulo_3_2.Add("CAPÍTULO 3.2 FINAL 5– CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 2 (MELINDA MORRE DEVIDO UM DOS DRONES SER ALERTADO DURANTE O HACKEAMENTO. JONES, WING E YAEL PERMANECEM VIVOS. ELES NÃO CONSEGUEM A AJUDA DOS DRONES.)");
+
+        //Cenário: Estação 14-7.
+        Capitulo_3_2.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3_2.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3_2.Add("Cão (Yael) – Pode ser que encontremos perigo?");
+        Capitulo_3_2.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3_2.Add("Cão (Yael) – Vocês também estão ouvindo esse barulho? Parece que o trem bateu em alguma coisa...");
+        Capitulo_3_2.Add("Wing (Pássaro) – Acho que a Linda nos encontrou!");
+        Capitulo_3_2.Add("Wing (Pássaro) –...");
+        Capitulo_3_2.Add("Linda – Vocês falam muito pouco... Hahaha!");
+        Capitulo_3_2.Add("Linda – Ué, onde está minha irmãzinha?");
+        Capitulo_3_2.Add("Coruja (Jones) – Chegou tarde, a raposinha se foi... ");
+        Capitulo_3_2.Add("Linda – É assim que vocês chamam Melinda? Raposa? Por quê? Aliás, por que vocês estão usando máscara de animais??");
+        Capitulo_3_2.Add("Wing (Pássaro) – Nós usamos máscaras para despistar os drones da LIFE, dessa forma eles não nos atacam e conseguimos domesticá-los. Ela escolheu o Alter Ego dela, como sendo uma raposa. Raposa porque era um animal que ela admirava.");
+        Capitulo_3_2.Add("Linda – Parece que não deu muito certo o plano de vocês... Melinda deveria ver isso, a morte de vocês. Quem sabe em outra vida, não é?!");
+        Capitulo_3_2.Add("Linda – Quem irá morrer primeiro? O Cãozinho? Ou a Corujinha?");
+        Capitulo_3_2.Add("Wing (Pássaro) – Você vai pagar por tudo!!!!");
+        Capitulo_3_2.Add("Wing (Pássaro) (Wing tenta golpear Linda, mas é atingido no coração, caindo automaticamente)");
+        Capitulo_3_2.Add("Coruja (Jones) – Meu irmão!! Você o matou!!! Você me paga!!");
+        Capitulo_3_2.Add("Coruja (Jones) (Jones tenta dar uma investida na Linda, porém com suas mãos de aço, ela o mata com apenas um golpe).");
+        Capitulo_3_2.Add("Cão (Yael) (chocado) – Você... você matou meus amigos, quem me salvaram.");
+        Capitulo_3_2.Add("Cão (Yael) – Você conseguiu, você venceu. Nós, a Animals não é nada. Vocês conseguiram vencer...");
+        Capitulo_3_2.Add("Linda – Quais são as suas últimas palavras Cão?");
+        Capitulo_3_2.Add("Cão (Yael) – Quando eu vi que todos os meus objetivos na vida já haviam se tornado pó e que nada mais importava, me perguntei: E agora? O que faço?");
+        Capitulo_3_2.Add("Cão (Yael) – Nunca mais soube responder essa pergunta e os meus dias começaram a se tornar como cinzas novamente.");
+        Capitulo_3_2.Add("Cão (Yael) – Sempre me vi no futuro como alguém bem-sucedido, mas no fim o que me tornei foi apenas um homem que sobreviveu. Se sobreviver significa fortaleza, onde está minha força agora?");
+        Capitulo_3_2.Add("Cão (Yael) – Eu sempre me achei especial, mesmo sem um bom motivo aparente. Mas sempre tem um momento na vida que perdemos todas as esperanças, todas as nossas ambições, nossa vontade de fazer acontecer.");
+        Capitulo_3_2.Add("Cão (Yael) – Eu não tenho mais nada, não sou nada...");
+        Capitulo_3_2.Add("Cão (Yael) – Nesse deserto, pude olhar para mim e ver que o que resta é apenas esperar a morte.");
+        Capitulo_3_2.Add("Linda – Muito bem, agora chega de lamentações...");
+        Capitulo_3_2.Add("Linda (Mata Yael, o Cão com um golpe em seu coração, enquanto Yael se ajoelhava).");
+
+        //Final 5
+
 
         return Capitulo_3_2;
     }
@@ -700,12 +797,59 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3_3 = new List<string>();
 
+        Capitulo_3_3.Add("CAPÍTULO 3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)");
+        //Cenário: Estação 14-7.
+
+        Capitulo_3_3.Add("Coruja (Jones) – Devemos pegar esse trem para a Estação 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
+        Capitulo_3_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3_3.Add("Raposa (Melinda) – Acho que estou ouvindo algum barulho... Pode ser que o trem tenha batido em algo ou...");
+        Capitulo_3_3.Add("Coruja (Jones) – Ou ela chegou... Linda deve estar nos caçando...");
+        Capitulo_3_3.Add("Cão (Yael) – Eu não duvido dessa possibilidade.");
+        Capitulo_3_3.Add("Linda – Vocês parecem estar tímidos comigo aqui... Hahaha.");
+        Capitulo_3_3.Add("Cão (Yael) – Então você é Linda...");
+        Capitulo_3_3.Add("Linda – Sim... E vocês devem ser os invasores do SOV, não é?");
+        Capitulo_3_3.Add("Raposa (Melinda) – Nós viemos aqui resolver assuntos não tratados.");
+        Capitulo_3_3.Add("Linda – Melinda... Minha irmãzinha... Que bom te ver...");
+        Capitulo_3_3.Add("Raposa (Melinda) – Você está fora de si Linda...");
+        Capitulo_3_3.Add("Linda – Sim... E você veio me matar? Por que EU vou te matar! Ordens de meu criador, Malev.");
+        Capitulo_3_3.Add("Linda (Golpeia Coruja e Pássaro, os dois caem no chão.)");
+        Capitulo_3_3.Add("Raposa (Melinda) – Yael, faça alguma coisa!");
+        Capitulo_3_3.Add("Raposa (Melinda) - ...");
+        Capitulo_3_3.Add("Cão (Yael) – L.I.A.! Ativar código!");
+        Capitulo_3_3.Add("Linda (L.I.A.) – Qual código você deseja ativar?");
+        Capitulo_3_3.Add("Linda – Como isso é possível?");
+
+        Capitulo_3_3.Add("Decisão:");
+
+        //Escolha A: Usar o Código: 7594 (Jones Morre (Linda sobrevive))
+        //Escolha B: Usar o Código: 7491 (Wing Morre (Linda sobrevive))
+        //Escolha C: Usar o Código: 5897 (Wing e Jones morrem (Linda morre))
+
         return Capitulo_3_3;
     }
 
     public List<string> GetCapitulo_3_3_1()
     {
         Capitulo_3_3_1 = new List<string>();
+
+        Capitulo_3_3_1.Add("CAPÍTULO 3.3.1 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA C - JONES MORRE (LINDA SOBREVIVE)");
+        //Cenário: Estação 14-7.
+        Capitulo_3_3_1.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
+        Capitulo_3_3_1.Add("Cão (Yael) – L.I.A.! Ativar código 7594!");
+        Capitulo_3_3_1.Add("Linda (Desnorteada ataca Jones com um golpe em seu coração)");
+        Capitulo_3_3_1.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
+        Capitulo_3_3_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
+        Capitulo_3_3_1.Add("Raposa (Melinda) – (feliz e confusa) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Conseguimos te salvar.");
+        Capitulo_3_3_1.Add("Wing (Pássaro) -...");
+        Capitulo_3_3_1.Add("Coruja (Jones) (Últimos suspiros) – Wing, missão cumprida meu irmão... Você é o melhor!");
+        Capitulo_3_3_1.Add("Wing (Pássaro) – Mas a que custo? Jones morreu...");
+        Capitulo_3_3_1.Add("Cão (Yael) – Sinto muito Wing, fiz o meu melhor...");
+        Capitulo_3_3_1.Add("Wing (Pássaro) – Eu vou te vingar irmão... Malev pagará.");
+
+
+
 
         return Capitulo_3_3_1;
     }
@@ -715,6 +859,20 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3_3_2 = new List<string>();
 
+        Capitulo_3_3_2.Add("CAPÍTULO 3.3.2 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA D - WING MORRE (LINDA SOBREVIVE)");
+        //Cenário: Estação 14-7.
+        Capitulo_3_3_2.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
+        Capitulo_3_3_2.Add("Cão (Yael) – L.I.A.! Ativar código 7491!");
+        Capitulo_3_3_2.Add("Linda (Desnorteada ataca Wing com um golpe em seu coração)");
+        Capitulo_3_3_2.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
+        Capitulo_3_3_2.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
+        Capitulo_3_3_2.Add("Coruja (Jones) (desesperado)– Wing!!! Meu irmão...");
+        Capitulo_3_3_2.Add("Wing (Pássaro) (Últimos suspiros) – Jones... Me escuta, projeta os outros... Você deve cuidar dos Animals, nossa missão ainda não terminou... Você é meu irmãozinho, eu te amo.");
+        Capitulo_3_3_2.Add("Raposa (Melinda) – O Cão fez o que pôde para salvar a todos nós Jones. Wing lutou como um guerreiro, desde a guerra nuclear até agora lutou para ajudar as pessoas. Devemos nossas vidas a ele. Ele é um grande herói. Os Asas de Águia e os Animals serão eternamente gratos à ele.");
+        Capitulo_3_3_2.Add("Cão (Yael) – Wing lutou bravamente Jones, agora ele deve descansar.");
+        Capitulo_3_3_2.Add("Linda – Eu devo desculpas por isso Jones, agora eu estou do lado dos Animals... Derrotaremos a LIFE juntos.");
+        Capitulo_3_3_2.Add("Coruja (Jones) – Vamos derrotar a LIFE.");
+
         return Capitulo_3_3_2;
     }
 
@@ -722,6 +880,27 @@ public class ListasDialogicas : MonoBehaviour
     public List<string> GetCapitulo_3_3_3()
     {
         Capitulo_3_3_3 = new List<string>();
+
+        //Cenário: Estação 14-7.
+
+        Capitulo_3_3_3.Add("CAPÍTULO 3.3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – SEM DRONES) - ESCOLHA E- WING E JONES MORREM (LINDA MORRE)");
+        Capitulo_3_3_3.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
+        Capitulo_3_3_3.Add("Cão (Yael) – L.I.A.! Ativar código 5897!");
+        Capitulo_3_3_3.Add("Linda (Desnorteada, ataca Wing e Jones ao mesmo tempo, com dois golpes em seus corações)");
+        Capitulo_3_3_3.Add("Coruja (Jones) (suspiro final) -...");
+        Capitulo_3_3_3.Add("Wing (Pássaro) (suspiro final) -...");
+        Capitulo_3_3_3.Add("Cão (Yael) – Nãoooo!!! ");
+        Capitulo_3_3_3.Add("Linda (L.I.A.) – Sistema sendo destruído em 3... 2... 1...");
+        Capitulo_3_3_3.Add("Linda (L.I.A.) – puff...");
+        Capitulo_3_3_3.Add("Raposa (Melinda) – Nãooo!!!");
+        Capitulo_3_3_3.Add("Raposa (Melinda) - ...");
+        Capitulo_3_3_3.Add("Raposa (Melinda) – Não acredito... Wing e Jones, eles se foram...");
+        Capitulo_3_3_3.Add("Cão (Yael) - ...");
+        Capitulo_3_3_3.Add("Cão (Yael) – Eles se foram, Linda também... fizemos o que podíamos...");
+        Capitulo_3_3_3.Add("Raposa (Melinda) – Vamos enfrentar Malev... Não temos tempo para luto Raposa.");
+        Capitulo_3_3_3.Add("Cão (Yael) – Vamos enfrenta-lo.");
+
+
 
         return Capitulo_3_3_3;
     }
@@ -731,13 +910,55 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_4_A = new List<string>();
 
+        //Cenário: Edifício da LIFE.
+        Capitulo_4_A.Add("CAPÍTULO 4 (FINAL 2 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA A – COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA SE TORNA ALIADA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
+        Capitulo_4_A.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
+        Capitulo_4_A.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
+        Capitulo_4_A.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
+        Capitulo_4_A.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
+        Capitulo_4_A.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_A.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
+        Capitulo_4_A.Add("Linda – Você me obrigou a matar pessoas inocentes, para criar o caos no mundo... ");
+        Capitulo_4_A.Add("Coruja (Jones) – Seu plano falhou Malev. Os amotines estão sendo descarregados, as pessoas precisam acordar do SOV antes que seja tarde, antes que elas morram. Não se pode prender ninguém contra sua vontade. ");
+        Capitulo_4_A.Add("Coruja (Jones) – Conseguimos escapar do SOV graças a uma falha no sistema, ele não é perfeito.");
+        Capitulo_4_A.Add("Malev – Vocês lutaram para chegar até aqui, saíram do meio do mato para tentar ajudar a humanidade. Foi o que eu fiz para proteger meu povo na época.");
+        Capitulo_4_A.Add("Malev – Eu não sou um vilão, só queria que o mundo soubesse o que é o sofrimento que vivi.");
+        Capitulo_4_A.Add("Malev – O sofrimento que o próprio mundo me causou.");
+        Capitulo_4_A.Add("Malev – E meu povo, conseguiria sobreviver independente do que acontecesse. O SOV é um mundo novo, onde podemos ser melhores, livres das limitações humanas...");
+        Capitulo_4_A.Add("Malev – Eu não sou um Deus, sou apenas um homem comum...");
+        Capitulo_4_A.Add("Malev – Vocês devem recomeçar, a partir daqui... Vocês devem reiniciar os amotines, acordar todas as pessoas antes da morte. Elas devem sim serem questionadas se querem ou não viver nesse mundo virtual.");
+        Capitulo_4_A.Add("Malev – Mas eu... eu ficarei online, porque a Terra nunca foi um lugar pra mim. ");
+        Capitulo_4_A.Add("Malev - Eu pertenço ao meu próprio mundo....");
+
         return Capitulo_4_A;
     }
 
 
-    public List<string> GetCapitulo_4_B2()
+    public List<string> GetCapitulo_4_B()
     {
         Capitulo_4_B = new List<string>();
+
+        //Cenário: Edifício da LIFE.
+
+        Capitulo_4_B.Add("CAPÍTULO 4 (FINAL 2 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA B - COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA É DESTRUÍDA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
+        Capitulo_4_B.Add("Coruja (Jones) - Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
+        Capitulo_4_B.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
+        Capitulo_4_B.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
+        Capitulo_4_B.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
+        Capitulo_4_B.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_B.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
+        Capitulo_4_B.Add("Coruja (Jones) – Seu plano falhou Malev. Os amotines estão sendo descarregados, as pessoas precisam acordar do SOV antes que seja tarde, antes que elas morram. Não se pode prender ninguém contra sua vontade. ");
+        Capitulo_4_B.Add("Coruja (Jones) – Conseguimos escapar do SOV graças a uma falha no sistema, ele não é perfeito.");
+        Capitulo_4_B.Add("Malev – Uma pena saber que Melinda não está aqui, mas estou feliz em te ver Melinda. Você é como se fosse uma filha...");
+        Capitulo_4_B.Add("Malev – Vocês lutaram para chegar até aqui, saíram do meio do mato para tentar ajudar a humanidade. Foi o que eu fiz para proteger meu povo na época.");
+        Capitulo_4_B.Add("Malev – Eu não sou um vilão, só queria que o mundo soubesse o que é o sofrimento que vivi.");
+        Capitulo_4_B.Add("Malev – O sofrimento que o próprio mundo me causou.");
+        Capitulo_4_B.Add("Malev – E meu povo, conseguiria sobreviver independente do que acontecesse. O SOV é um mundo novo, onde podemos ser melhores, livres das limitações humanas...");
+        Capitulo_4_B.Add("Malev – Eu não sou um Deus, sou apenas um homem comum...");
+        Capitulo_4_B.Add("Malev – Vocês devem recomeçar, a partir daqui... Vocês devem reiniciar os amotines, acordar todas as pessoas antes da morte. Elas devem sim serem questionadas se querem ou não viver nesse mundo virtual.");
+        Capitulo_4_B.Add("Malev – Mas eu... eu ficarei online, porque a Terra nunca foi um lugar pra mim. ");
+        Capitulo_4_B.Add("Malev - Eu pertenço ao meu próprio mundo....");
+
 
         return Capitulo_4_B;
     }
@@ -745,6 +966,29 @@ public class ListasDialogicas : MonoBehaviour
     public List<string> GetCapitulo_4_C()
     {
         Capitulo_4_C = new List<string>();
+
+        Capitulo_4_C.Add("CAPÍTULO 4 (FINAL 3 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA C - SEM OS DRONES MELINDA E WING SOBREVIVEM, JONES MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
+        //Cenário: Edifício da LIFE.
+        Capitulo_4_C.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
+        Capitulo_4_C.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
+        Capitulo_4_C.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
+        Capitulo_4_C.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
+        Capitulo_4_C.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_C.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
+        Capitulo_4_C.Add("Linda – Você me obrigou a matar pessoas inocentes, para criar o caos no mundo... Eu mesma vou te matar Malev. Vou vingar a morte de Jones, das pessoas inocentes.");
+        Capitulo_4_C.Add("Malev – Vocês lutaram para chegar até aqui, saíram do meio do mato para tentar ajudar a humanidade. Foi o que eu fiz para proteger meu povo na época.");
+        Capitulo_4_C.Add("Malev – Linda, agora você tem acesso ao controle dos amotines. Salve a todos.");
+        Capitulo_4_C.Add("Raposa (Melinda) – Linda, termine com isso.");
+        Capitulo_4_C.Add("Linda (Com apenas um golpe, Linda mata Malev)");
+        Capitulo_4_C.Add("Malev (Suspiro final) -...");
+        Capitulo_4_C.Add("Wing (Pássaro) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
+        Capitulo_4_C.Add("Raposa (Melinda) – Estão sendo restaurados agora.");
+        Capitulo_4_C.Add("Linda – É isso? ");
+        Capitulo_4_C.Add("Raposa (Melinda) – Acho que terminamos... Que jornada. ");
+        Capitulo_4_C.Add("Wing (Pássaro) – Perdemos Jones, mas conseguimos cumprir nosso dever.");
+        Capitulo_4_C.Add("Raposa (Melinda) – Então, até a próxima Animals... ");
+
+
 
         return Capitulo_4_C;
     }
@@ -754,6 +998,27 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_4_D = new List<string>();
 
+
+        Capitulo_4_D.Add("CAPÍTULO 4 (FINAL 3 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA D - SEM OS DRONES MELINDA E JONES SOBREVIVEM, WING MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
+        //Cenário: Edifício da LIFE.
+        Capitulo_4_D.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
+        Capitulo_4_D.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
+        Capitulo_4_D.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
+        Capitulo_4_D.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
+        Capitulo_4_D.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
+        Capitulo_4_D.Add("Linda – Você me obrigou a matar pessoas inocentes, para criar o caos no mundo... Eu mesma vou te matar Malev. Vou vingar a morte de Jones, das pessoas inocentes.");
+        Capitulo_4_D.Add("Malev – Vocês lutaram para chegar até aqui, saíram do meio do mato para tentar ajudar a humanidade. Foi o que eu fiz para proteger meu povo na época.");
+        Capitulo_4_D.Add("Malev – Linda, agora você tem acesso ao controle dos amotines. Salve a todos.");
+        Capitulo_4_D.Add("Raposa (Melinda) – Linda, termine com isso.");
+        Capitulo_4_D.Add("Linda (Com apenas um golpe, Linda mata Malev)");
+        Capitulo_4_D.Add("Malev (Suspiro final) -...");
+        Capitulo_4_D.Add("Coruja (Jones) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
+        Capitulo_4_D.Add("Raposa (Melinda) – Estão sendo restaurados agora.");
+        Capitulo_4_D.Add("Linda – É isso? ");
+        Capitulo_4_D.Add("Raposa (Melinda) – Acho que terminamos... Que jornada. ");
+        Capitulo_4_D.Add("Coruja (Jones) - Perdemos Wing, mas conseguimos cumprir nosso dever.");
+        Capitulo_4_D.Add("Raposa (Melinda) – Então, até a próxima Animals... ");
+
         return Capitulo_4_D;
     }
 
@@ -762,6 +1027,32 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_4_E = new List<string>();
 
+        Capitulo_4_E.Add("CAPÍTULO 4 (FINAL 4) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA E - SEM OS DRONES MELINDA SOBREVIVE, WING E JONES MORREM, LINDA MORRE E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA MAS NÃO CONSEGUEM SALVAR A HUMANIDADE.");
+        //Cenário: Edifício da LIFE.
+        Capitulo_4_E.Add("Raposa (Melinda) – Chegamos.");
+        Capitulo_4_E.Add("Malev – Animals... Finalmente posso conhecê-los pessoalmente...");
+        Capitulo_4_E.Add("Cão (Yael) – Linda conseguiu cumprir a missão dela.");
+        Capitulo_4_E.Add("Malev – Ela serviu a esse país como uma heroína. Fez o que pôde para salvar o SOV de invasores...");
+        Capitulo_4_E.Add("Raposa (Melinda) – Malev, você vai pagar pelo que fez a meu pai, aos Animals, a toda humanidade... Você não merece continuar a viver...");
+        Capitulo_4_E.Add("Cão (Yael) – Chega de mais palavras Malev, você deve morrer.");
+        Capitulo_4_E.Add("Raposa (Melinda) (Golpeia Malev em seu coração)");
+        Capitulo_4_E.Add("Malev – Ahhh... você... você sabe bem o que está fazendo.");
+        Capitulo_4_E.Add("Malev – Eu sei que não fui o melhor, mas sei que dei o meu melhor para salvar a todos de algo ainda pior: eles mesmos.");
+        Capitulo_4_E.Add("Malev – Eu dei a vida eterna, livre do mal... seguros... E agora terão a morte digna.");
+        Capitulo_4_E.Add("Raposa (Melinda) – O que quer dizer com isso?");
+        Capitulo_4_E.Add("Malev – Eu desliguei os amotines assim que descobri que Linda tinha sido destruída. Isso significa que toda a humanidade foi destruída. ");
+        Capitulo_4_E.Add("Cão (Yael) (Assustado e surpreso) – O quê??!!! Você matou todos!!");
+        Capitulo_4_E.Add("Malev (Últimos suspiros) – Acabou Animals... Acabou Melinda e Cão...");
+        Capitulo_4_E.Add("Raposa (Melinda) – Seu maldito... você... você conseguiu o que queria, mas a que custo? Seu psicopata! Eu não sou humana, mas minhas atitudes são mais humanas que as suas!");
+        Capitulo_4_E.Add("Malev – Vocês podem dar um jeito nisso...");
+        Capitulo_4_E.Add("Cão (Yael) – Há uma salvação?");
+        Capitulo_4_E.Add("Malev – Sim...");
+        Capitulo_4_E.Add("Cão (Yael) – Qual?");
+        Capitulo_4_E.Add("Malev – Vocês devem se reproduzir, como uma nova espécie... Apenas assim teremos a continuidade do que foi a humanidade, em uma espécie fortalecida... Com tudo para serem uma civilização melhor e maior..., Mas isso não é eu quem decido.");
+        Capitulo_4_E.Add("Malev – Adeus...");
+        Capitulo_4_E.Add("Malev –...");
+
+
         return Capitulo_4_E;
     }
 
@@ -769,6 +1060,40 @@ public class ListasDialogicas : MonoBehaviour
     public List<string> GetCapitulo_5_Creditos()
     {
         Capitulo_5_Creditos = new List<string>();
+
+        //Cenário: créditos
+
+        Capitulo_5_Creditos.Add("Muito obrigado por jogar! Sem você não conseguiríamos! Foram quase 2 anos" +
+            " escrevendo o roteiro até desenvolver todos os personagens, a ideia em si. E depois decidi " +
+            "reconstruir o jogo inteiro e melhorado na engine Unity o que me gerou mais alguns meses de estudo e de muito trabalho.");
+        Capitulo_5_Creditos.Add("Você pode continuar apoiando a Saphire Game Studio " +
+            "nos seguindo no instagram e vendo as novidades no nosso site, nos apoiando no Patreon, " +
+            "nos enviando donates (doações) e é claro, jogando sempre os nossos jogos!");
+
+        Capitulo_5_Creditos.Add("Agradecimentos especiais a:");
+        Capitulo_5_Creditos.Add("Franciele Rocha (Tatinha) & Vitor");
+        Capitulo_5_Creditos.Add("Mari Rocha");
+        Capitulo_5_Creditos.Add("Luan Pereira");
+        Capitulo_5_Creditos.Add("Italo Lopes");
+        Capitulo_5_Creditos.Add("Luisa Lopes");
+        Capitulo_5_Creditos.Add("Lucas Debone");
+        Capitulo_5_Creditos.Add("Santos Reis");
+
+        Capitulo_5_Creditos.Add("Desenvolvedores: (Primeira versão entre na Universidade, demo do Renpy) " +
+            "Game Designer/roteirista/artista: Gabriel Rocha, Programador: Lucas Debone, Artista/sonoplasta: Santos Reis ");
+
+        Capitulo_5_Creditos.Add("Desenvolvedores: (Unity, versão final)");
+        Capitulo_5_Creditos.Add("Gabriel Rocha: Programador Unity (C#), UI Designer, Roteirista e Artista.");
+
+        Capitulo_5_Creditos.Add("Softwares utilizados:");
+        Capitulo_5_Creditos.Add("Visual Studio, VS Code, .net SDK, Unity Engine, Krita, Photoshop e Premiere!.");
+
+        Capitulo_5_Creditos.Add("Siga-nos no instagram:");
+        Capitulo_5_Creditos.Add("@Saphire_game_studio.");
+
+
+        Capitulo_5_Creditos.Add("Obrigado por tudo!");
+
 
         return Capitulo_5_Creditos;
     }
