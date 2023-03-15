@@ -816,8 +816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -305}
-  m_SizeDelta: {x: 1037.2124, y: 400.3058}
+  m_AnchoredPosition: {x: -0.00002861, y: -304.88}
+  m_SizeDelta: {x: 1749.8699, y: 382.2384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388415938
 MonoBehaviour:
@@ -933,12 +933,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -954,9 +954,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e31922b8887cfde47a7ae95419d4dd6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frasesPadrao: []
-  CAPITULO_1_A_SAIDA_D_SOV: []
-  frasesTres: []
+  prologo: []
+  Capitulo_1: []
+  Capitulo_1_1: []
+  Capitulo_1_2: []
+  Capitulo_1_3: []
+  Capitulo_1_4: []
+  Capitulo_2: []
+  Capitulo_2_1: []
+  Capitulo_2_2: []
+  Capitulo_2_3_1: []
+  Capitulo_2_3_2: []
+  Capitulo_2_3_3: []
+  Capitulo_2_4: []
+  Capitulo_2_4_1: []
+  Capitulo_3: []
+  Capitulo_3_1_1: []
+  Capitulo_3_1_2: []
+  Capitulo_3_2: []
+  Capitulo_3_3: []
+  Capitulo_3_3_1: []
+  Capitulo_3_3_2: []
+  Capitulo_3_3_3: []
+  Capitulo_4_A: []
+  Capitulo_4_B: []
+  Capitulo_4_C: []
+  Capitulo_4_D: []
+  Capitulo_4_E: []
+  Capitulo_5_Creditos: []
 --- !u!1 &399788634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,12 +1135,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -1706,12 +1731,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -2238,12 +2263,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -2408,12 +2433,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -3067,12 +3092,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -3962,12 +3987,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
@@ -4136,12 +4161,12 @@ MonoBehaviour:
   frasesDois: []
   frasesTres: []
   listasDialogicasObject: {fileID: 0}
+  listasDialogicasObject2: {fileID: 0}
   rota1: 
   rota2: 
   rota3: 
   contador: 0
   escolhaDialogica: Sem valor definido
-  escolhaDialogicaList: []
   algumBotaoFoiPressionado: 
   osBotoesEstaoAtivosNaTela: 0
   currentDialogueIndex: 0
