@@ -787,7 +787,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_3_2.Add("Linda – Muito bem, agora chega de lamentações...");
         Capitulo_3_2.Add("Linda (Mata Yael, o Cão com um golpe em seu coração, enquanto Yael se ajoelhava).");
 
-        //Final 5
+        //Final 5 - Malev Sobrevive.
 
 
         return Capitulo_3_2;
@@ -931,6 +931,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_4_A.Add("Malev - Eu pertenço ao meu próprio mundo....");
 
         return Capitulo_4_A;
+        //Final 2 v1
     }
 
 
@@ -961,6 +962,7 @@ public class ListasDialogicas : MonoBehaviour
 
 
         return Capitulo_4_B;
+        //final 2 v2
     }
 
     public List<string> GetCapitulo_4_C()
@@ -991,6 +993,7 @@ public class ListasDialogicas : MonoBehaviour
 
 
         return Capitulo_4_C;
+        //Final 3 v1
     }
 
 
@@ -1020,6 +1023,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_4_D.Add("Raposa (Melinda) – Então, até a próxima Animals... ");
 
         return Capitulo_4_D;
+        //Final 3 v1
     }
 
 
@@ -1054,6 +1058,7 @@ public class ListasDialogicas : MonoBehaviour
 
 
         return Capitulo_4_E;
+        //Final 4
     }
 
 

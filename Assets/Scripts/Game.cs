@@ -292,6 +292,45 @@ public class Game : MonoBehaviour
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
+                        //ButtonsOnScreen(true);
+                        ButtonUM_OnScreen(true);
+                        
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("Capitulo_1_2", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("Capitulo_1_2", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        //contador = 0;
+                    } 
+                    break;
+
+                case "Capitulo_1_2":
+
+                    if (contador < listasDialogicasObject.GetCapitulo_1_2().Count && contador != listasDialogicasObject.GetCapitulo_1_2().Count)
+                    {
+                        Debug.Log(listasDialogicasObject.GetCapitulo_1_2()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetCapitulo_1_2()[contador];
+                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        ButtonsOnScreen(false);
+
+                    } else if (contador == listasDialogicasObject.GetCapitulo_1_2().Count)
+                    {
+                        //decisao dialogica aqui
+
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
@@ -309,8 +348,8 @@ public class Game : MonoBehaviour
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
                         //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
                         //Por isso precisamos zerar o contador.
-                        //contador = 0;
-                    } 
+                        
+                    }
                     break;
 
                 case "frasesPadrao":
@@ -331,7 +370,8 @@ public class Game : MonoBehaviour
                         textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
                         Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
-                        ButtonsOnScreen(true);
+                        //ButtonsOnScreen(true);
+                        ButtonUM_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
                         ButtonsMessages("Capitulo_1", "frasesDois", "frasesTres");
@@ -512,6 +552,44 @@ public class Game : MonoBehaviour
                         
                     }
                     break;
+
+                case "Capitulo_1_2":
+
+                    if (contador < listasDialogicasObject.GetCapitulo_1_2().Count && contador != listasDialogicasObject.GetCapitulo_1_2().Count)
+                    {
+                        Debug.Log(listasDialogicasObject.GetCapitulo_1_2()[contador]);
+                        textMeshProTela.text = listasDialogicasObject.GetCapitulo_1_2()[contador];
+                        Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
+                        ButtonsOnScreen(false);
+
+                    } else if (contador == listasDialogicasObject.GetCapitulo_1_2().Count)
+                    {
+                        //decisao dialogica aqui
+
+                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
+                        //Vai mostrar os botoes na tela
+                        ButtonsOnScreen(true);
+
+                        //Vai definir uma mensagem para cada botao na tela.
+                        ButtonsMessages("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Deve retornar qual botao foi pressionado
+                        escolhaN1.onClick.AddListener(Botao1Foipressionado);
+                        escolhaN2.onClick.AddListener(Botao2Foipressionado);
+                        escolhaN3.onClick.AddListener(Botao3Foipressionado);
+
+                        //Vai definir quais rotas serao possiveis:
+                        Rotas("frasesPadrao", "frasesDois", "frasesTres");
+
+                        //Zera o contador, sendo poss@vel recome@ar a ver as frases.
+                        //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
+                        //Pq quando redirecionamos para outra lista de frases, o contador deve ser 0
+                        //Por isso precisamos zerar o contador.
+                        
+                    }
+                    break;
+
 
                 case "frasesPadrao":
 
@@ -694,6 +772,59 @@ public class Game : MonoBehaviour
     }
 
 
+    public void ButtonUM_OnScreen(bool enable)
+    {
+        if (enable == true) 
+        {
+            escolhaN1.gameObject.SetActive(true);
+        }
+        else if (enable == false)
+        {
+            escolhaN1.gameObject.SetActive(false);
+        }
+        else if (enable != false && enable != true)
+        {
+            escolhaN1.gameObject.SetActive(false);
+
+        }
+    }
+
+    public void ButtonDOIS_OnScreen(bool enable)
+    {
+        if (enable == true) 
+        {
+            escolhaN1.gameObject.SetActive(true);
+        }
+        else if (enable == false)
+        {
+            escolhaN1.gameObject.SetActive(false);
+        }
+        else if (enable != false && enable != true)
+        {
+            escolhaN1.gameObject.SetActive(false);
+
+        }
+    }
+
+        public void ButtonTRES_OnScreen(bool enable)
+    {
+        if (enable == true) 
+        {
+            escolhaN1.gameObject.SetActive(true);
+        }
+        else if (enable == false)
+        {
+            escolhaN1.gameObject.SetActive(false);
+        }
+        else if (enable != false && enable != true)
+        {
+            escolhaN1.gameObject.SetActive(false);
+
+        }
+    }
+
+
+
 
     //Os proximos 3 metodos verificam se algum dos botoes foi pressionado de forma individual.
 
@@ -799,6 +930,10 @@ public class Game : MonoBehaviour
 
             case "Capitulo_1":
             escolhaDialogicaList = listasDialogicasObject2.GetCapitulo_1();
+                break;
+
+            case "Capitulo_1_2":
+            escolhaDialogicaList = listasDialogicasObject2.GetCapitulo_1_2();
                 break;
 
             case "frasesUm":

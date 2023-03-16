@@ -20,7 +20,7 @@ Isso funciona muito bem, se estivermo usando as listas dentro de Game mas agora 
 
 Resumindo. 
 ->A escolhaDialogica precisa ter uma lista dentro de DecisaoDialogicaList().Dessa forma, consigo utilizar a mesma lógica mudando apenas os valores utilizados.
-->Preciso colocar a opcao de escolhaDialogica dentro da minha lógica de escolha de capítulos.
+->Preciso colocar a opcao de escolhaDialogica dentro da minha lógica de escolha de capítulos, no meu switch
 ->Preciso colocar uma vez acrescentando diálogo e outra vez decrescendo o diálogo.
 ->Para salvamentos, preciso colocar essa opcao de escolhaDialogica dentro dele tmb.
 
