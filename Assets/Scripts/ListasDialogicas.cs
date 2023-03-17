@@ -7,6 +7,72 @@ public class ListasDialogicas : MonoBehaviour
 
     //28 capitulos
 
+    /*
+    
+    Capítulo 1
+Capítulo 1.1
+Capítulo 1.2
+	->Escolha 1: Fazer parte dos Animals, com o Alter Ego “Cão”.
+		->Capitulo_1_3_1
+		->CAPÍTULO 1-4
+		->CAPÍTULO 2
+		->Capitulo_2_1
+			->Escolha 1.1 – Hackear os drones e conectá-los ao SOV (mais segurança no SOV) = puzzle
+				->Conseguiu passar o puzzle: (Melinda viva e com drones)
+					->Capitulo_2_3_1
+					->Capitulo_2_4_1
+						->Ler livro ou não?
+
+					->Capitulo_3
+						->//Escolha A: Usar o Código: 7898 (extraído do diário de Asimovitsky)
+							->Capitulo_3_1_1 - Linda se torna aliada.
+							->Capitulo_4_A
+							->////Final 2 v1
+							->Capitulo_5_Creditos
+
+					        ->//Escolha B: Usar o Código: 7562 (código aleatório)
+							->Capitulo_3_1_2: Linda morre.
+							->Capitulo_4_B
+							->//final 2 v2
+							->Capitulo_5_Creditos
+
+				->Não conseguiu passar o puzzle: 
+					->Capitulo_2_3_2 (Melinda morre/Sem drones)
+					->Capitulo_2_4_1
+						->Ler livro ou não?
+					->Capitulo_3_2
+						->//Final 5 - Malev Sobrevive.
+					->Capitulo_5_Creditos
+
+			->Escolha 1.2 – Não hackear os drones e não conectá-los ao SOV (menos segurança no SOV)
+				->Não fez o puzzle: (todos os personagens vivos, sem os drones)
+					->Capitulo_2_3_3
+					->Capitulo_2_4_1
+						->Ler livro ou não?
+									
+					->Capitulo_3_3
+						//Escolha C: Usar o Código: 7594 (Jones Morre (Linda sobrevive))
+							->Capitulo_4_C
+								->//Final 3 v1							
+							->Capitulo_5_Creditos
+
+					        //Escolha D: Usar o Código: 7491 (Wing Morre (Linda sobrevive))
+							->Capitulo_4_D
+								->//Final 3 v2
+							->Capitulo_5_Creditos
+
+					        //Escolha E: Usar o Código: 5897 (Wing e Jones morrem (Linda morre))
+							->Capitulo_4_E
+								->//Final 4
+							->Capitulo_5_Creditos
+							
+
+	->Escolha 2: Escolha 2: Não fazer parte dos Animals
+		->Capitulo_1_3_2: (Final 1)
+		->Capitulo_5_Creditos
+
+    */
+
     
     public List<string> prologo;
     public List<string> Capitulo_1, Capitulo_1_1, Capitulo_1_2, Capitulo_1_3_1, Capitulo_1_3_2, Capitulo_1_4, Capitulo_2;
@@ -172,7 +238,6 @@ public class ListasDialogicas : MonoBehaviour
         //Escolha 1: Fazer parte dos Animals, com o Alter Ego “Cão”.
         //Escolha 2: Não fazer parte dos Animals, decidir apenas seguir seu caminho em busca dos cacos de vidro que um dia foram a vidraça de sua vida. Lutar contra os fantasmas do passado e lidar com o mundo caótico que se vive. Viver com o peso nas suas costas que é saber, que você deixou de lado salvar a humanidade por querer descobrir quem é você e qual é seu papel nesse mundo, sozinho.
 
-
         return Capitulo_1_2;
     }
 
@@ -188,14 +253,14 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_1_3_1.Add("Wing – Em breve quero mostrar meu plano de ataque à LIFE, ajudará muito a sua força. Agora, vamos voltar para o acampamento.");
         Capitulo_1_3_1.Add("Cão (Yael) – Vamos voltar.");
 
+        //Yael decide fazer parte dos Animals
         //Proximo capitulo: 3.6	CAPÍTULO 1-4 
-
         return Capitulo_1_3_1;
     }
 
     public List<string> GetCapitulo_1_3_2()
     {
-        //Final 1
+        //Final 1 - Yael decide NÃO fazer parte dos Animals
         Capitulo_1_3_2 = new List<string>();
 
         Capitulo_1_3_2.Add("CAPÍTULO 1-3-2 'FINAL 1' – O CÃO SE DECIDIU – ESCOLHA 2 (NÃO FAZER PARTE DOS ANIMALS)");
@@ -212,7 +277,7 @@ public class ListasDialogicas : MonoBehaviour
     public List<string> GetCapitulo_1_4()
     {
         Capitulo_1_4 = new List<string>();
-
+        //Yeal decide fazer parte dos Animals.
         Capitulo_1_4.Add("CAPÍTULO 1-4 – DE VOLTA AO ACAMPAMENTO – ESCOLHA 1");
 
         Capitulo_1_4.Add("Wing - Pessoal, Yael já possui a máscara dele. E ele decidiu ficar conosco e lutar contra a LIFE. Ele comentou que quer retribuir o favor que fizemos a ele, por salvá-lo. ");
@@ -318,6 +383,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_2_3_1 = new List<string>();
 
         //Cenário: Dentro do Distrito de Testes.
+        Capitulo_2_3_1.Add("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
 
         Capitulo_2_3_1.Add("Coruja (Jones) – Boa Yael! Quero dizer, agora você é um de nós! Então devemos te chamar de Cão. Boa Cão! Você conseguiu hackear o sistema dos drones, agora eles estão programados para nos ajudar em caso de conflito!");
         Capitulo_2_3_1.Add("Wing (Pássaro) – Ainda bem que Yael conseguiu hackeá-los, nem imagino o que poderia acontecer se ele errasse o código.");
@@ -711,6 +777,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_3_1_1 = new List<string>();
 
         Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
+        //Código 7898 usado, Linda entra para os Animals.
 
         //Cenário: Estação 14-7.
         Capitulo_3_1_1.Add("Cão (Yael) – Eu li o diário, sei o que estou fazendo... Linda, ativar código 7898.");
@@ -731,7 +798,7 @@ public class ListasDialogicas : MonoBehaviour
     public List<string> GetCapitulo_3_1_2()
     {
         Capitulo_3_1_2 = new List<string>();
-
+        //Código 7562 usado, Linda entra para os Animals.
         Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
 
         //Cenário: Estação 14-7.
@@ -823,9 +890,9 @@ public class ListasDialogicas : MonoBehaviour
 
         Capitulo_3_3.Add("Decisão:");
 
-        //Escolha A: Usar o Código: 7594 (Jones Morre (Linda sobrevive))
-        //Escolha B: Usar o Código: 7491 (Wing Morre (Linda sobrevive))
-        //Escolha C: Usar o Código: 5897 (Wing e Jones morrem (Linda morre))
+        //Escolha C: Usar o Código: 7594 (Jones Morre (Linda sobrevive))
+        //Escolha D: Usar o Código: 7491 (Wing Morre (Linda sobrevive))
+        //Escolha E: Usar o Código: 5897 (Wing e Jones morrem (Linda morre))
 
         return Capitulo_3_3;
     }
@@ -834,6 +901,7 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3_3_1 = new List<string>();
 
+        //Escolha C
         Capitulo_3_3_1.Add("CAPÍTULO 3.3.1 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA C - JONES MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
         Capitulo_3_3_1.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
@@ -859,6 +927,7 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_3_3_2 = new List<string>();
 
+        //Escolha D
         Capitulo_3_3_2.Add("CAPÍTULO 3.3.2 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA D - WING MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
         Capitulo_3_3_2.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
@@ -883,6 +952,7 @@ public class ListasDialogicas : MonoBehaviour
 
         //Cenário: Estação 14-7.
 
+        //Escolha E
         Capitulo_3_3_3.Add("CAPÍTULO 3.3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – SEM DRONES) - ESCOLHA E- WING E JONES MORREM (LINDA MORRE)");
         Capitulo_3_3_3.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
         Capitulo_3_3_3.Add("Cão (Yael) – L.I.A.! Ativar código 5897!");
@@ -910,6 +980,7 @@ public class ListasDialogicas : MonoBehaviour
     {
         Capitulo_4_A = new List<string>();
 
+        //Escolha A
         //Cenário: Edifício da LIFE.
         Capitulo_4_A.Add("CAPÍTULO 4 (FINAL 2 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA A – COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA SE TORNA ALIADA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
         Capitulo_4_A.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
@@ -937,6 +1008,25 @@ public class ListasDialogicas : MonoBehaviour
 
     public List<string> GetCapitulo_4_B()
     {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         Capitulo_4_B = new List<string>();
 
         //Cenário: Edifício da LIFE.
@@ -1023,7 +1113,7 @@ public class ListasDialogicas : MonoBehaviour
         Capitulo_4_D.Add("Raposa (Melinda) – Então, até a próxima Animals... ");
 
         return Capitulo_4_D;
-        //Final 3 v1
+        //Final 3 v2
     }
 
 
