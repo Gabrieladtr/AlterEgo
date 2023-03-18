@@ -16,17 +16,18 @@ Capítulo 1.2
 						->//Escolha A: Usar o Código: 7898 (extraído do diário de Asimovitsky)
 							->Capitulo_3_1_1 - Linda se torna aliada.
 							->Capitulo_4_A
-							->////Final 2 v1
+								->////Final 2 v1
 							->Capitulo_5_Creditos
 
 					        ->//Escolha B: Usar o Código: 7562 (código aleatório)
 							->Capitulo_3_1_2: Linda morre.
 							->Capitulo_4_B
+								->//final 2 v2
 							->Capitulo_5_Creditos
 
 				->Não conseguiu passar o puzzle: 
 					->Capitulo_2_3_2 (Melinda morre/Sem drones)
-					->Capitulo_2_4_1
+					->Capitulo_2_4_1_v2
 						->Ler livro ou não?
 					->Capitulo_3_2
 						->//Final 5 - Malev Sobrevive.
@@ -35,7 +36,7 @@ Capítulo 1.2
 			->Escolha 1.2 – Não hackear os drones e não conectá-los ao SOV (menos segurança no SOV)
 				->Não fez o puzzle: (todos os personagens vivos, sem os drones)
 					->Capitulo_2_3_3
-					->Capitulo_2_4_1
+					->Capitulo_2_4_1_V3
 						->Ler livro ou não?
 									
 					->Capitulo_3_3
@@ -58,3 +59,7 @@ Capítulo 1.2
 	->Escolha 2: Escolha 2: Não fazer parte dos Animals
 		->Capitulo_1_3_2: (Final 1)
 		->Capitulo_5_Creditos
+
+
+
+Capitulo_2_4_1_v2
