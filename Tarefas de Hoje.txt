@@ -23,6 +23,17 @@ Resumindo.
 ->Preciso colocar a opcao de escolhaDialogica dentro da minha lógica de escolha de capítulos, no meu switch
 ->Preciso colocar uma vez acrescentando diálogo e outra vez decrescendo o diálogo.
 ->Para salvamentos, preciso colocar essa opcao de escolhaDialogica dentro dele tmb.
+Resolvido.
+
+
+->Bug que continuava rodando os diálogos dentro dos menus (Resolvido).
+->Todas as escolhas possíveis e todos os diálogos do jogo adicionados (Resolvido).
+->Todos os capítulos do jogo adicionados em SaveProgress, agora podemos salvar o jogo de qualquer capítulo (resolvido).
+->Prólogo do jogo adicionado
+->Menu Debug escondido do jogador (resolvido)
+->Adicionei o ctrl direito e o backspace para avançar ou retroceder o diálogo(resolvido)
+
+->Comecei a criar o sistema de Avatares;
 
 
 
@@ -32,9 +43,11 @@ Resumindo.
 
 
 
+-------------------------Concluídos de hoje----------------------
 
 
 
+---------------------Pendentes de hoje---------------------
 
 ->Ideia de tradução do Idioma: quando eu conseguir corrigir e inputar todos os diálogos na classe de ListasDialogicas, tudo já vai estar no padrão correto. Dessa forma, pra eu conseguir traduzir tudo é muito mais rápido e fácil. E aí, com um switch no início do código eu consigo selecionar para qual idioma devemos entrar e utilizamos exatamente os mesmos nomes de métodos, mudamos apenas o objeto da classe para acesso. Dessa forma, o sistema de idiomas estará completo.
 
@@ -51,13 +64,6 @@ Resumindo.
 Dps disso, vou começar a trabalhar dentro do sistema de avatares. E quando esse sistema estiver pronto, aí poderei começar a trazer os meus assets para dentro do Alter Ego e aí, construir a primeira Demo. Se hoje eu não conseguir fazer o commit 7, então deixo essas tarefas para amanhã.
 
 ->Se eu começar a trazer os assets e construir o sistema de avatares, entao eu devo mexer com resoluções. Acho que a forma mais fácil e simples de fazer isso é criando interruptores que dizem em qual resolução deve ser jogado e um outro sistema que identifica automaticamente a resolução para o jogador não ter dor de cabeça com a tela quebrada.
-
--------------------------Concluídos de hoje----------------------
-
-
-
----------------------Pendentes de hoje---------------------
-
 
 
 

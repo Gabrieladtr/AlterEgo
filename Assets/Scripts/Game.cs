@@ -7,7 +7,8 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
 using JetBrains.Annotations;
-using static UnityEditor.Experimental.GraphView.GraphView;
+//using static UnityEditor.Experimental.GraphView.GraphView;
+//using UnityEngine.EventSystems;
 
 public class Game : MonoBehaviour
 {
@@ -36,10 +37,10 @@ public class Game : MonoBehaviour
 
 
     //define os bot@es que ser@o usados para fazermos escolhas
-    public static Button escolhaN1, escolhaN2, escolhaN3, voltarPause;
+    public static Button escolhaN1, escolhaN2, escolhaN3, voltarPause, salvar2, DesejaSalvar, Slot1, Slot2, Slot3, Load1, ApagarSaves, VerificaUltimoSave;
 
     //define os TMP dos bot@es que ser@o usados para fazermos escolhas
-    public static TMP_Text escolhaNUMtmp, escolhaNDOIStmp, escolhaNTREStmp;
+    public static TMP_Text escolhaNUMtmp, escolhaNDOIStmp, escolhaNTREStmp, SN_tmp, SalvarProgressoGameTMP;
     public static TMP_Text textMeshProTela;
 
     //contador;
@@ -59,6 +60,7 @@ public class Game : MonoBehaviour
     public string algumBotaoFoiPressionado;
     //serve pra ver se os botoes estao na tela
     public bool osBotoesEstaoAtivosNaTela;
+    public static bool menuDeSaveDebug = false;
     //Nao estou usando, mas serviria pra verificar o index do dialogo.
     public int currentDialogueIndex = 0;
 
@@ -160,6 +162,38 @@ public class Game : MonoBehaviour
             escolhaNDOIStmp = GameObject.Find("Botao_escolha2TMP").GetComponent<TMP_Text>();
             escolhaNTREStmp = GameObject.Find("Botao_escolha3TMP").GetComponent<TMP_Text>();
 
+
+            //Pega os componentes do Menu Debug
+            //salvar2, DesejaSalvar, Slot1, Slot2, Slot3, Load1, ApagarSaves, VerificaUltimoSave, SN_tmp, SalvarProgressoGameTMP
+
+            salvar2 = GameObject.Find("salvar2 (1)").GetComponent<Button>();
+            DesejaSalvar = GameObject.Find("DesejaSalvar").GetComponent<Button>();
+            Slot1 = GameObject.Find("Slot1").GetComponent<Button>();
+            Slot2 = GameObject.Find("Slot2").GetComponent<Button>();
+            Slot3 = GameObject.Find("Slot3").GetComponent<Button>();
+            Load1 = GameObject.Find("Load1").GetComponent<Button>();
+            ApagarSaves = GameObject.Find("ApagarSaves").GetComponent<Button>();
+            VerificaUltimoSave = GameObject.Find("VerificaUltimoSave").GetComponent<Button>();
+            SN_tmp = GameObject.Find("SN_tmp").GetComponent<TMP_Text>();
+            SalvarProgressoGameTMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
+
+            //Pega os componentes do Menu Debug de save e esconde ele.
+            salvar2.gameObject.SetActive(menuDeSaveDebug);
+            DesejaSalvar.gameObject.SetActive(menuDeSaveDebug);
+            Slot1.gameObject.SetActive(menuDeSaveDebug);
+            Slot2.gameObject.SetActive(menuDeSaveDebug);
+            Slot3.gameObject.SetActive(menuDeSaveDebug);
+            Load1.gameObject.SetActive(menuDeSaveDebug);
+            ApagarSaves.gameObject.SetActive(menuDeSaveDebug);
+            VerificaUltimoSave.gameObject.SetActive(menuDeSaveDebug);
+            SN_tmp.gameObject.SetActive(menuDeSaveDebug);
+            SalvarProgressoGameTMP.gameObject.SetActive(menuDeSaveDebug);
+
+
+
+
+
+
             //Inicialmente os botoes nao aparecem na cena
             ButtonsOnScreen(false);
             
@@ -175,12 +209,12 @@ public class Game : MonoBehaviour
         if (escolhaDialogicaBool == true)
         {
             //vai add o valor 'frasesPadrao' em 'escolhaDialogica'
-            DecisaoDialogica("prologo");
+            DecisaoDialogica("Prologo");
             
             //vai travar, nao permitindo que nada mais seja add em 'escolhaDialogica', funcionando apenas 1 vez.
             escolhaDialogicaBool = false;
 
-            Debug.Log("Estamos dentro do primeiro IF, onde escolhemos o 'prologo', Game.escolhaDialogicaBool: " + escolhaDialogicaBool);
+            Debug.Log("Estamos dentro do primeiro IF, onde escolhemos o 'Prologo', Game.escolhaDialogicaBool: " + escolhaDialogicaBool);
         }
         else if(escolhaDialogicaBool == false) 
         {
@@ -196,6 +230,13 @@ public class Game : MonoBehaviour
 
 
 
+
+
+
+
+
+
+
     }
 
 
@@ -208,7 +249,7 @@ public class Game : MonoBehaviour
         //-----------------------Criando o objeto das ListasDialogicas-------------------------
         listasDialogicasObject = new ListasDialogicas();
 
-
+        
 
 
 
@@ -224,14 +265,15 @@ public class Game : MonoBehaviour
 
         //vai pegar a cena atual
         Scene GameScene = SceneManager.GetActiveScene();
+
+
+        //Vai controlar o sistema de avatares na tela
+        AvatarSystem.AvatarsOnScreen();
+
         
-
         //Rota acrescentando dialogo com o botao esquerdo do mouse
-        if (Input.GetMouseButtonDown(0) && GameScene.name == "Game")
+        if (PauseGame.pauseActive == false && Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.RightControl) && GameScene.name == "Game")
         {
-
-            
-            
 
 
             //Esse sistema vai impedir o jogador de ultrapassar/retroceder o numero de frases dentro de uma lista
@@ -262,8 +304,7 @@ public class Game : MonoBehaviour
             }
 
 
-
-
+            
 
 
 
@@ -277,7 +318,7 @@ public class Game : MonoBehaviour
 
             switch (escolhaDialogica)
             {
-                case "prologo":
+                case "Prologo":
 
                     if (contador < listasDialogicasObject.GetPrologo().Count && contador != listasDialogicasObject.GetPrologo().Count)
                     {
@@ -286,12 +327,13 @@ public class Game : MonoBehaviour
                         Debug.Log("Estamos no contador++ e os botoes devem desaparecer");
                         ButtonsOnScreen(false);
 
+
                     }
                     else if (contador == listasDialogicasObject.GetPrologo().Count)
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -330,7 +372,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -369,7 +411,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -408,7 +450,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -453,8 +495,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -495,8 +537,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -536,8 +578,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -577,8 +619,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -618,8 +660,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -660,8 +702,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -702,12 +744,12 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
-                        ButtonsOnScreen(true);
-                        //ButtonUM_OnScreen(true);
-                        //ButtonDOIS_OnScreen(true);
+                        //ButtonsOnScreen(true);
+                        ButtonUM_OnScreen(true);
+                        ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
                         ButtonsMessages("Ler o diário de Asimovitsky (trecho grande, cerca de 5 páginas de conteúdo)", "Não ler o diário de Asimovitsky (você pode precisar de alguma informação útil do livro...)", "");
@@ -730,7 +772,7 @@ public class Game : MonoBehaviour
                     break;
 
                 case "Capitulo_2_3_3":
-                    //Pulou o Puzzle dos drones
+                    //Pulou o Puzzle dos drones vx
 
                     if (contador < listasDialogicasObject.GetCapitulo_2_3_3().Count && contador != listasDialogicasObject.GetCapitulo_2_3_3().Count)
                     {
@@ -744,12 +786,12 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
-                        //ButtonDOIS_OnScreen(true);
+                        ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
                         ButtonsMessages("Ler o diário de Asimovitsky (trecho grande, cerca de 5 páginas de conteúdo)", "Não ler o diário de Asimovitsky (você pode precisar de alguma informação útil do livro...)", "");
@@ -760,7 +802,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis:
-                        Rotas("Capitulo_2_4_1_v3", "Capitulo_2_3_3", "frasesTres");
+                        Rotas("Capitulo_2_4_1_v3", "Capitulo_3_3", "frasesTres");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -786,8 +828,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -802,7 +844,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis: (a primeira eh a certa e a segunda e a terceira as erradas.)
-                        Rotas("Capitulo_2_4_1_v2", "Capitulo_3_2", "Capitulo_2_3_2");
+                        Rotas("Capitulo_2_4_1_v2", "Capitulo_3_2", "");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -828,8 +870,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -870,8 +912,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -886,7 +928,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis:
-                        Rotas("Capitulo_3", "Capitulo_2_3_3", "frasesTres");
+                        Rotas("Capitulo_3", "", "");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -912,15 +954,15 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
                         //ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
-                        ButtonsMessages("Capitulo_3_2", "", "frasesTres");
+                        ButtonsMessages("Capitulo_3_2", "", "");
 
                         //Deve retornar qual botao foi pressionado
                         escolhaN1.onClick.AddListener(Botao1Foipressionado);
@@ -928,7 +970,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis:
-                        Rotas("Capitulo_3_2", "Capitulo_2_3_3", "frasesTres");
+                        Rotas("Capitulo_3_2", "", "");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -954,15 +996,15 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
                         //ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
-                        ButtonsMessages("Capitulo_3_2", "", "frasesTres");
+                        ButtonsMessages("Capitulo_3_3", "", "");
 
                         //Deve retornar qual botao foi pressionado
                         escolhaN1.onClick.AddListener(Botao1Foipressionado);
@@ -970,7 +1012,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis:
-                        Rotas("Capitulo_3_3", "Capitulo_2_3_3", "frasesTres");
+                        Rotas("Capitulo_3_3", "", "");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -996,8 +1038,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1039,8 +1081,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -1081,8 +1123,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -1123,8 +1165,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1165,8 +1207,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1207,8 +1249,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1249,8 +1291,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1291,8 +1333,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1333,8 +1375,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1375,8 +1417,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1418,8 +1460,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -1459,8 +1501,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1500,7 +1542,7 @@ public class Game : MonoBehaviour
 
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
@@ -1539,7 +1581,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
@@ -1578,7 +1620,7 @@ public class Game : MonoBehaviour
         //------------------------------------------fim da rota acrescentando dialogo------------------------------------------
         //------------------------------------------Comecando a rota decrescendo o dialogo-------------------------------------
 
-        if (Input.GetMouseButtonDown(1) && GameScene.name == "Game")
+        if (PauseGame.pauseActive == false && Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Backspace) && GameScene.name == "Game")
         {
 
             
@@ -1605,10 +1647,13 @@ public class Game : MonoBehaviour
 
             }
 
-//---------------------------------------EscolhaDialogica-------------------------------------
+            //Vai controlar o sistema de avatares na tela
+            //AvatarSystem.AvatarsOnScreen();
+
+            //---------------------------------------EscolhaDialogica-------------------------------------
             switch (escolhaDialogica)
             {
-                case "prologo":
+                case "Prologo":
 
                     if (contador < listasDialogicasObject.GetPrologo().Count && contador != listasDialogicasObject.GetPrologo().Count)
                     {
@@ -1622,7 +1667,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -1662,7 +1707,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -1702,7 +1747,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -1742,7 +1787,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
@@ -1787,8 +1832,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1829,8 +1874,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1870,8 +1915,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1911,8 +1956,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1952,8 +1997,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -1994,8 +2039,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -2036,12 +2081,12 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
-                        ButtonsOnScreen(true);
-                        //ButtonUM_OnScreen(true);
-                        //ButtonDOIS_OnScreen(true);
+                        //ButtonsOnScreen(true);
+                        ButtonUM_OnScreen(true);
+                        ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
                         ButtonsMessages("Ler o diário de Asimovitsky (trecho grande, cerca de 5 páginas de conteúdo)", "Não ler o diário de Asimovitsky (você pode precisar de alguma informação útil do livro...)", "");
@@ -2078,12 +2123,12 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
-                        //ButtonDOIS_OnScreen(true);
+                        ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
                         ButtonsMessages("Ler o diário de Asimovitsky (trecho grande, cerca de 5 páginas de conteúdo)", "Não ler o diário de Asimovitsky (você pode precisar de alguma informação útil do livro...)", "");
@@ -2094,7 +2139,7 @@ public class Game : MonoBehaviour
                         escolhaN3.onClick.AddListener(Botao3Foipressionado);
 
                         //Vai definir quais rotas serao possiveis:
-                        Rotas("Capitulo_2_4_1_v3", "Capitulo_2_3_3", "frasesTres");
+                        Rotas("Capitulo_2_4_1_v3", "Capitulo_3_3", "frasesTres");
 
                         //Zera o contador, sendo poss@vel recome@ar a ver as frases.
                         //Precisamos disso aqui, pq se nao vamos misturar a contagem de outra lista de frases
@@ -2120,8 +2165,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2162,8 +2207,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2204,8 +2249,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2246,8 +2291,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2288,15 +2333,15 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
                         //ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
-                        ButtonsMessages("Capitulo_3_2", "", "frasesTres");
+                        ButtonsMessages("Capitulo_3_3", "", "frasesTres");
 
                         //Deve retornar qual botao foi pressionado
                         escolhaN1.onClick.AddListener(Botao1Foipressionado);
@@ -2330,8 +2375,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2373,8 +2418,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -2415,8 +2460,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -2457,8 +2502,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2499,8 +2544,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2541,8 +2586,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2583,8 +2628,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2625,8 +2670,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2667,8 +2712,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2709,8 +2754,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2752,8 +2797,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         //ButtonUM_OnScreen(true);
@@ -2793,8 +2838,8 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesPadrao.Count";
-                        Debug.Log("Estanos no contador == frases.Count e os botoes devem aparecer");
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
+                        Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         //ButtonsOnScreen(true);
                         ButtonUM_OnScreen(true);
@@ -2834,7 +2879,7 @@ public class Game : MonoBehaviour
 
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
@@ -2873,7 +2918,7 @@ public class Game : MonoBehaviour
                     {
                         //decisao dialogica aqui
 
-                        textMeshProTela.text = "Nesse momento estamos na msm contagem do contador e frasesUm.Count";
+                        textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
                         ButtonsOnScreen(true);
@@ -3116,7 +3161,7 @@ public class Game : MonoBehaviour
             /*
 
             //Todas as listas:
-    public List<string> prologo;
+    public List<string> Prologo;
     public List<string> Capitulo_1, Capitulo_1_1, Capitulo_1_2, Capitulo_1_3_1, Capitulo_1_3_2, Capitulo_1_4, Capitulo_2;
     public List<string> Capitulo_2_1, Capitulo_2_2, Capitulo_2_3_1, Capitulo_2_3_2, Capitulo_2_3_3, Capitulo_2_4;
     public List<string> Capitulo_2_4_1, Capitulo_3, Capitulo_3_1_1, Capitulo_3_1_2, Capitulo_3_2, Capitulo_3_3, Capitulo_3_3_1, Capitulo_3_3_2;
@@ -3126,7 +3171,7 @@ public class Game : MonoBehaviour
             */
 
             //Prologo
-            case "prologo":
+            case "Prologo":
                 escolhaDialogicaList = listasDialogicasObject2.GetPrologo();
                 break;
 

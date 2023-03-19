@@ -34,10 +34,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
 
 
 
-
-
-
-//-------------------------------------Sistema de save ------------------------------------
+    //-------------------------------------Sistema de save ------------------------------------
 
 
     public void SimFoiPressionado(bool chave)
@@ -72,6 +69,7 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
         //salva o jogo automaticamente, se alguma frase listada aparecer nesse switch. Pois chama o @Save1Progress().
             switch (Game.faseAtual2)
             {
+                //Listas de frases de teste:
                 case "frasesUm":
                 Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': "+ Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
 
@@ -96,7 +94,343 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
 
                 break;
 
-                default:
+            //Listas de frases de ListasDialogicas.class
+
+            case "Prologo":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'faseAtual2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Prologo'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1_3_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1_3_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1_3_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1_3_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1_3_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1_3_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_1_4":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_1_4': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_1_4'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            
+            case "Capitulo_2_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2_3_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_3_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_3_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2_3_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_3_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_3_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2_3_3":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_3_3': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_3_3'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_2_4":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_4': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_4'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+
+            case "Capitulo_2_4_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_2_4_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_2_4_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+
+            case "Capitulo_3":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_1_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_1_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_1_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_1_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_1_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_1_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_3":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_3': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_3'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+
+            case "Capitulo_3_3_1":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_3_1': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_3_1'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_3_2":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_3_2': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_3_2'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_3_3_3":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_3_3_3': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_3_3_3'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_4_A":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_4_A': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_4_A'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_4_B":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_4_B': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_4_B'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_4_C":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_4_C': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_4_C'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_4_D":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_4_D': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_4_D'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_4_E":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_4_E': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_4_E'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+            case "Capitulo_5_Creditos":
+                Debug.Log("Estamos em SaveGame/FrasesUm/Switch. 'slotSaveGame': " + slotSaveGame + " 'Capitulo_5_Creditos': " + Game.faseAtual2 + ". SimFoiPressionado: " + snBool);
+
+                if (slotSaveGame != null && snBool == true)
+                {
+                    Save1Progress(slotSaveGame, Game.faseAtual2);
+                    //SimFoiPressionado(false);
+                }
+                else { Debug.Log("Estamos em 'SaveGame/Capitulo_5_Creditos'. O slot para salvar nao foi encontrado ou o snbool nao eh true. Estamos na 'EscolhaDialogica': " + Game.faseAtual2); }
+
+                break;
+
+
+
+
+
+
+
+
+
+
+
+            default:
                     Debug.Log("Estamos em 'SaveGame()' e nenhum save foi salvo. Escolha dialogica: " + Game.faseAtual2);
                     break;
 
@@ -127,18 +461,28 @@ public static bool mostrarMsgNaTelaDesejaSalvar = false;
         
         //forca o salvamento
         PlayerPrefs.Save();
+
+
+
+        if (Game.menuDeSaveDebug == true)
+        {
+            //se estivermos dentro da tela de game, vai fazer isso. (menu debug de save)
+            //Se eu ativar o menu de save debug, ele deve mostrar os componentes na tela:
+            saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
+            saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+            Debug.Log("Dados salvos no slot: " + slot + ". Nome da lista salva: " + listaAtual);
+            saving1TMP.gameObject.SetActive(true);
+
+            //se estivermos dentro da tela de saving, vai mostrar os dados salvos dentro do botao salvo.
+            //saving1TMP = GameObject.Find("TMPteste").GetComponent<TMP_Text>();
+            //saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+            //saving1TMP.gameObject.SetActive(true);
+        }
         
-     
-       
-        //se estivermos dentro da tela de game, vai fazer isso.
-        saving1TMP = GameObject.Find("SalvarProgressoGameTMP").GetComponent<TMP_Text>();
-        saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
-        Debug.Log("Dados salvos no slot: " + slot+". Nome da lista salva: " + listaAtual);
+        
 
         
-        //se estivermos dentro da tela de saving, vai mostrar os dados salvos dentro do botao salvo.
-        saving1TMP = GameObject.Find("TMPteste").GetComponent<TMP_Text>();
-        saving1TMP.text = "Save 1: " + PlayerPrefs.GetString(slot, "Nenhum save encontrado") + ". Slot: " + slot;
+
         
         
 

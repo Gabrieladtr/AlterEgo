@@ -10,7 +10,7 @@ Capítulo 1.2
 				->Conseguiu passar o puzzle: (Melinda viva e com drones)
 					->Capitulo_2_3_1
 					->Capitulo_2_4_1
-						->Ler livro ou não?
+						->Ler livro ou não? v1
 
 					->Capitulo_3
 						->//Escolha A: Usar o Código: 7898 (extraído do diário de Asimovitsky)
@@ -28,7 +28,7 @@ Capítulo 1.2
 				->Não conseguiu passar o puzzle: 
 					->Capitulo_2_3_2 (Melinda morre/Sem drones)
 					->Capitulo_2_4_1_v2
-						->Ler livro ou não?
+						->Ler livro ou não? 2.4.1 v2
 					->Capitulo_3_2
 						->//Final 5 - Malev Sobrevive.
 					->Capitulo_5_Creditos
@@ -37,7 +37,7 @@ Capítulo 1.2
 				->Não fez o puzzle: (todos os personagens vivos, sem os drones)
 					->Capitulo_2_3_3
 					->Capitulo_2_4_1_V3
-						->Ler livro ou não?
+						->Ler livro ou não? v3
 									
 					->Capitulo_3_3
 						//Escolha C: Usar o Código: 7594 (Jones Morre (Linda sobrevive))
