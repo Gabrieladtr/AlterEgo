@@ -272,7 +272,7 @@ public class Game : MonoBehaviour
 
         
         //Rota acrescentando dialogo com o botao esquerdo do mouse
-        if (PauseGame.pauseActive == false && Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.RightControl) && GameScene.name == "Game")
+        if (PauseGame.pauseActive == false && Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl) && GameScene.name == "Game")
         {
 
 

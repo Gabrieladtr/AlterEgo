@@ -12,39 +12,56 @@ public class AvatarSystem : MonoBehaviour
     //public static TMP_Text TMP_tela;
 
 
-
-
-
+    public static bool avatarBoolCao = false, avatarBoolRaposa = false, avatarBoolPassaro = false,avatarBoolCoruja = false;
 
     public static void AvatarsOnScreen()
     {
         //Deve mostrar um avatar na tela, de acordo com o TMP_dialogo.
-        //Se o dialogo começar com um nome, deve mostrar o avatar desse nome e desativar os outros.
+        //Se o dialogo comeï¿½ar com um nome, deve mostrar o avatar desse nome e desativar os outros.
 
-        //Pega o texto que está na tela e adiciona em 'TMP_tela2'
+        //Pega o texto que estï¿½ na tela e adiciona em 'TMP_tela2'
         
 
 
         //Faz uma comparacao, se o dialogo na tela comecar com algum desses nomes, deve mostrar o avatar desse nome.
-        if (Game.textMeshProTela.text.Contains("Cão (Yael)") && SceneManager.GetActiveScene().name == "Game")
+        if (Game.textMeshProTela.text.Contains("CÃ£o (Yael)") && SceneManager.GetActiveScene().name == "Game" && avatarBoolCao == false)
         {
-            Debug.Log("Cão (Yael) está na tela");
+            Debug.Log("CÃ£o (Yael) esta na tela");
+            avatarBoolCao = true;
+            avatarBoolRaposa = false;
+            avatarBoolPassaro = false;
+            avatarBoolCoruja = false;
+
+
         
-        }else if (Game.textMeshProTela.text.Contains("Raposa (Melinda)") && SceneManager.GetActiveScene().name == "Game")
+        }else if (Game.textMeshProTela.text.Contains("Raposa (Melinda)") && SceneManager.GetActiveScene().name == "Game"&& avatarBoolRaposa == false)
         {
-            Debug.Log("Raposa (Melinda) está na tela");
+            Debug.Log("Raposa (Melinda) esta na tela");
+            avatarBoolCao = false;
+            avatarBoolRaposa = true;
+            avatarBoolPassaro = false;
+            avatarBoolCoruja = false;
 
         }
 
-        else if (Game.textMeshProTela.text.Contains("Pássaro (Wing)") && SceneManager.GetActiveScene().name == "Game")
+        else if (Game.textMeshProTela.text.Contains("PÃ¡ssaro (Wing)") && SceneManager.GetActiveScene().name == "Game"&& avatarBoolPassaro == false)
         {
-            Debug.Log("Pássaro (Wing) está na tela");
+            
+            Debug.Log("PÃ¡ssaro (Wing) esta na tela");
+            avatarBoolCao = false;
+            avatarBoolRaposa = false;
+            avatarBoolPassaro = true;
+            avatarBoolCoruja = false;
 
         }
 
-        else if (Game.textMeshProTela.text.Contains("Coruja (Jones)") && SceneManager.GetActiveScene().name == "Game")
+        else if (Game.textMeshProTela.text.Contains("Coruja (Jones)") && SceneManager.GetActiveScene().name == "Game"&& avatarBoolCoruja == false)
         {
-            Debug.Log("Coruja (Jones) está na tela");
+            Debug.Log("Coruja (Jones) esta na tela");
+            avatarBoolCao = false;
+            avatarBoolRaposa = false;
+            avatarBoolPassaro = false;
+            avatarBoolCoruja = true;
 
         }
 
