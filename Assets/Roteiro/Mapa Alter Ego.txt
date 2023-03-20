@@ -22,6 +22,7 @@ Capítulo 1.2
 					        ->//Escolha B: Usar o Código: 7562 (código aleatório)
 							->Capitulo_3_1_2: Linda morre.
 							->Capitulo_4_B
+							->//final 2 v2
 							->Capitulo_5_Creditos
 
 				->Não conseguiu passar o puzzle: 
