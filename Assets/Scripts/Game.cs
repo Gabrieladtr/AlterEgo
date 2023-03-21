@@ -267,14 +267,14 @@ public class Game : MonoBehaviour
         Scene GameScene = SceneManager.GetActiveScene();
 
 
-        //Vai controlar o sistema de avatares na tela
         AvatarSystem.AvatarsOnScreen();
 
-        
+
         //Rota acrescentando dialogo com o botao esquerdo do mouse
         if (PauseGame.pauseActive == false && Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.RightControl) || Input.GetKeyDown(KeyCode.LeftControl) && GameScene.name == "Game")
         {
-
+            //Vai controlar o sistema de avatares na tela
+                
 
             //Esse sistema vai impedir o jogador de ultrapassar/retroceder o numero de frases dentro de uma lista
             //E vai come@ar a contar cada frase, permitindo a exibi@@o na tela
@@ -300,7 +300,7 @@ public class Game : MonoBehaviour
                 //contador = contador + 1 == acrescenta valores
                 //contador = contador - 1== diminui valores
                 //contador = DecisaoDialogicaList(escolhaDialogica).Count == trava o contador na contagem final da frase.
-
+                
             }
 
 

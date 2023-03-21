@@ -1,0 +1,42 @@
+Lista com todos os cenários para criar:
+
+Acampamento - ok
+Campo próximo ao lado OK
+Distrito de testes OK
+Barraca no acampamento ok
+Apartamento Jones - OK
+Cybercity - OK
+Prédio da LIFE - ok
+Estação 13-8
+Estação 14-7
+Mapa da cidade/metrô - ok
+Diário do Asimovtisky
+Welcome to SOV - OK
+
+-----
+
+Personagens para Criar:
+LIA
+Cão
+Fox
+Linda
+Birdman
+Ownman
+Asimov
+Malev
+Androids/Robôs
+Amotines
+
+
+Personagens para animar:
+LIA
+Cão
+Fox
+Linda
+Birdman
+Ownman
+Asimov
+Malev
+Androids/Robôs
+Amotines
+
