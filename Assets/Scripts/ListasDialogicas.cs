@@ -74,7 +74,7 @@ Capítulo 1.2
     */
 
     
-    public List<string> Prologo;
+    public List<string> prologo;
     public List<string> Capitulo_1, Capitulo_1_1, Capitulo_1_2, Capitulo_1_3_1, Capitulo_1_3_2, Capitulo_1_4, Capitulo_2;
     public List<string> Capitulo_2_1, Capitulo_2_2, Capitulo_2_3_1, Capitulo_2_3_2, Capitulo_2_3_3, Capitulo_2_4;
     public List<string> Capitulo_2_4_1, Capitulo_3, Capitulo_3_1_1, Capitulo_3_1_2, Capitulo_3_2, Capitulo_3_3, Capitulo_3_3_1, Capitulo_3_3_2;
@@ -85,9 +85,9 @@ Capítulo 1.2
     
     public List<string> GetPrologo()
     {
-        Prologo = new List<string>();
+        prologo = new List<string>();
     
-        return Prologo;
+        return prologo;
     }
     
      
@@ -96,36 +96,34 @@ Capítulo 1.2
 
     public List<string> GetPrologo()
     {
-        Prologo = new List<string>();
+        prologo = new List<string>();
 
         // adicionar itens em listaDialogos
-        Prologo.Add("Cliquei novamente para continuar!");
-        Prologo.Add("Alter Ego - Prólogo:");
-        Prologo.Add("CyberCity... a cidade dos sonhos.");
-        Prologo.Add("A cidade onde você não morre, não possui doenças, pobreza, guerra ou qualquer outro problema que há na realidade. ");
-        Prologo.Add("Tudo isso graças ao SOV - Sistema Operacional Virtual e seu complemento, o Amotine. ");
-        Prologo.Add("Ambas as tecnologias da corporação LIFE.");
-        Prologo.Add("Dentro do SOV, na CyberCity as pessoas podem viver em paz.");
-        Prologo.Add("Enquanto estava a caminho de seu trabalho, como engenheiro de computação, Yael passa por uma máquina de refrigerantes e vê ela dando glitch.");
-        Prologo.Add("Yael decide ir verificar a máquina e acaba descobrindo uma forma de sair do SOV.");
-        Prologo.Add("Ao digitar um valor menor do que qualquer produto, ele acorda fora da CyberCity na cidade de Omskvi, na antiga Petrov, país que ficava localizado no leste europeu e vê toda a mata tomando conta da cidade. ");
-        Prologo.Add("Tinha descoberto pela primeira vez, que houve uma guerra nuclear, pois havia sido uma das primeiras cobaias a ser imputada dentro do SOV, pois havia sido um prisioneiro americo-cairano no Leste Europeu.");
-        Prologo.Add("Antes de desmaiar, devido seu debilitado corpo, vê um homem com uma máscara de pássaro e apaga.");
-        Prologo.Add("Acorda em um acampamento desconhecido e frio, começa então a buscar respostas para todas as suas dúvidas.");
+        prologo.Add("Cliquei novamente para iniciar");
+
+        prologo.Add("CyberCity... a cidade dos sonhos.");
+        prologo.Add("A cidade onde você não morre, não possui doenças, pobreza, guerra ou qualquer outro problema que há na realidade. ");
+        prologo.Add("Tudo isso graças ao SOV - Sistema Operacional Virtual e seu complemento, o Amotine. ");
+        prologo.Add("Ambas as tecnologias da corporação LIFE.");
+        prologo.Add("Dentro do SOV, na CyberCity as pessoas podem viver em paz.");
+        prologo.Add("Enquanto estava a caminho de seu trabalho, como engenheiro de computação, Yael passa por uma máquina de refrigerantes e vê ela dando glitch.");
+        prologo.Add("Yael decide ir verificar a máquina e acaba descobrindo uma forma de sair do SOV.");
+        prologo.Add("Ao digitar um valor menor do que qualquer produto, ele acorda fora da CyberCity na cidade de Omskvi, na antiga Petrov, país que ficava localizado no leste europeu e vê toda a mata tomando conta da cidade. ");
+        prologo.Add("Tinha descoberto pela primeira vez, que houve uma guerra nuclear, pois havia sido uma das primeiras cobaias a ser imputada dentro do SOV, pois havia sido um prisioneiro americo-cairano no Leste Europeu.");
+        prologo.Add("Antes de desmaiar, devido seu debilitado corpo, vê um homem com uma máscara de pássaro e apaga.");
+        prologo.Add("Acorda em um acampamento desconhecido e frio, começa então a buscar respostas para todas as suas dúvidas.");
     
         
         
         //msg no console
-        Debug.Log("Dados adicionados em ListasDialogicas.Prologo.");
+        Debug.Log("Dados adicionados em ListasDialogicas.prologo.");
 
-        return Prologo;
+        return prologo;
     }
 
     public List<string> GetCapitulo_1 (){
         Capitulo_1 = new List<string>();
-
-        Capitulo_1.Add("Cliquei novamente para continuar!");
-        Capitulo_1.Add("Capítulo: 1");
+        
         Capitulo_1.Add("Pássaro – Ei ei, não precisa se levantar agora, seu corpo precisa de mais algumas horas até se adaptar novamente à realidade.");
         Capitulo_1.Add("Yael – Eu... eu não sei o que houve...");
         Capitulo_1.Add("Pássaro – Você acordou, é isso que houve.");
@@ -156,7 +154,7 @@ Capítulo 1.2
         Capitulo_1_1 = new List<string>();
 
         Capitulo_1_1.Add("Clique para continuar!");
-        Capitulo_1_1.Add("Capítulo 1-1 – A Origem Do Cão");
+        Capitulo_1_1.Add("CAPÍTULO 1-1 – A ORIGEM DO CÃO");
 
         Capitulo_1_1.Add("Prólogo do capítulo: Os dias continuavam frios, pois nevava bastante ainda. ");
         Capitulo_1_1.Add("Os ventos sopravam forte e não se ouvia nada além da neve caindo e dos ventos.");
@@ -217,8 +215,7 @@ Capítulo 1.2
     {
         Capitulo_1_2 = new List<string>();
 
-        Capitulo_1_2.Add("Cliquei novamente para continuar!");
-        Capitulo_1_2.Add("Capítulo 1-2 – A Decisão Do Cão");
+        Capitulo_1_2.Add("CAPÍTULO 1-2 – A DECISÃO DO CÃO");
 
         Capitulo_1_2.Add("Yael – Então essa é a Carlya, realmente um ótimo material para uma máscara. Eu vi um cão mais cedo. Sempre me imaginei sendo quem eu realmente quis ser, meu alter ego. Penso em ser como um cão, sem dono, que apenas sobrevive. Muitas vezes expressado nas atitudes do dia a dia, hoje posso comtemplar o que é ser o que sempre fui, de forma oculta. Hoje, através dessa máscara, posso ser eu de verdade. Além de poder me manter a salvo, dos drones da LIFE.");
         Capitulo_1_2.Add("Pássaro – Todos nós possuímos lados e até mesmo personalidades diferentes dentro de nós, muitas vezes ocultas. A máscara nos torna reais, nos traz para essa verdade. Principalmente por termos passado tanto tempo com vendas nos olhos e não percebemos o que a LIFE fez com tudo e todos, inclusive eu. Você é um dos poucos cidadãos cairence que conheci que não lutei contra. Vocês são boas pessoas. O que Petrov pregava era diferente.");
@@ -237,19 +234,19 @@ Capítulo 1.2
         Capitulo_1_2.Add("Yael – O que quer que eu faça?");
         Capitulo_1_2.Add("Pássaro – Quero que se junte à gente. Quero que faça parte dos Animals. Uma máscara de animal pode te ajudar a sobreviver, mas suas atitudes dizem o que o seu alter ego realmente é. Você tem que escolher, quer fazer parte dessa luta ou quer enfrentar esse mundo sozinho? Você decide, você é quem faz as suas escolhas. Lembre-se, todas as suas escolhas no SOV eram irrelevantes, mas aqui... aqui elas possuem consequências. Escolha com sabedoria.");
         Capitulo_1_2.Add("Decisão:");
-
+        
         //Escolha 1: Fazer parte dos Animals, com o Alter Ego “Cão”.
         //Escolha 2: Não fazer parte dos Animals, decidir apenas seguir seu caminho em busca dos cacos de vidro que um dia foram a vidraça de sua vida. Lutar contra os fantasmas do passado e lidar com o mundo caótico que se vive. Viver com o peso nas suas costas que é saber, que você deixou de lado salvar a humanidade por querer descobrir quem é você e qual é seu papel nesse mundo, sozinho.
 
         return Capitulo_1_2;
+        
     }
 
     public List<string> GetCapitulo_1_3_1()
     {
         Capitulo_1_3_1 = new List<string>();
 
-        Capitulo_1_3_1.Add("Cliquei novamente para continuar!");
-        Capitulo_1_3_1.Add("Capítulo 1-3-1 – O Cão Se Decidiu – Escolha 1");
+        Capitulo_1_3_1.Add("CAPÍTULO 1-3-1 – O CÃO SE DECIDIU – ESCOLHA 1");
 
         Capitulo_1_3_1.Add("Cão (Yael) – Eu não sei o que pode me aguardar lá fora. Mas sei que posso contar com vocês. Vocês me salvaram uma vez e sinto que devo retribuir o favor que me fizeram. Eu também desejo descobrir quem é o criador da LIFE e quem mandou matou meu amigo em , quando eu fiquei preso em Krestymov.");
         Capitulo_1_3_1.Add("Pássaro – Ótimo! Com você do nosso lado, poderemos enfrentar a LIFE. Agora que decidiu ficar, devo apresentar o nome de cada um dos outros membros. O Coruja é meu irmão, Jones. E a Raposa é Melinda. Foi ela quem salvou a minha vida e a do meu irmão, quando conseguimos sair do SOV.");
@@ -267,8 +264,7 @@ Capítulo 1.2
         //Final 1 - Yael decide NÃO fazer parte dos Animals
         Capitulo_1_3_2 = new List<string>();
 
-        Capitulo_1_3_2.Add("Cliquei novamente para continuar!");
-        Capitulo_1_3_2.Add("Capítulo 1-3-2 'Final 1' – O Cão Se Decidiu – Escolha 2 (Não Fazer Parte Dos Animals)");
+        Capitulo_1_3_2.Add("CAPÍTULO 1-3-2 'FINAL 1' – O CÃO SE DECIDIU – ESCOLHA 2 (NÃO FAZER PARTE DOS ANIMALS)");
 
         Capitulo_1_3_2.Add("Wing - Ontem eu vi um homem único, com uma personalidade maravilhosa. Cada detalhe era único, hoje eu o vi. Mas hoje, é apenas uma cópia barata de homens. Você é esse homem Yael. Você não serve para ser um herói. ");
         Capitulo_1_3_2.Add("Yael – Sinto muito Wing, mas sei que devo seguir meu caminho sozinho. Boa sorte com seus planos de salvar a humanidade.");
@@ -283,17 +279,16 @@ Capítulo 1.2
     {
         Capitulo_1_4 = new List<string>();
         //Yeal decide fazer parte dos Animals.
-        Capitulo_1_4.Add("Cliquei novamente para continuar!");
-        Capitulo_1_4.Add("Capítulo 1-4 – De Volta Ao Acampamento – Escolha 1");
+        Capitulo_1_4.Add("CAPÍTULO 1-4 – DE VOLTA AO ACAMPAMENTO – ESCOLHA 1");
 
         Capitulo_1_4.Add("Wing - Pessoal, Yael já possui a máscara dele. E ele decidiu ficar conosco e lutar contra a LIFE. Ele comentou que quer retribuir o favor que fizemos a ele, por salvá-lo. ");
         Capitulo_1_4.Add("Coruja (Jones) – Bem-vindo Yael, você é um de nós agora.");
         Capitulo_1_4.Add("Raposa (Melinda) – Bem-vindo Yael, sinta-se em casa. Você nos ajudará em muitas coisas, pode ficar com aquele trailer para você. A partir de agora aqui será sua casa. Lutaremos juntos nessa guerra contra a LIFE.");
         Capitulo_1_4.Add("Cão (Yael) – Obrigado, mais uma vez... Podem me chamar de Cão. Será meu alter ego, minha nova forma de ser nesse mundo. Minha nova versão.");
-        Capitulo_1_4.Add("Pássaro (Wing) – Certo, Cão. Já está escurecendo, e está nevando. Acho bom irmos descansar, amanhã quero apresentar meu plano de ataque à LIFE. Tenho certeza de que irão gostar!");
+        Capitulo_1_4.Add("Wing (Pássaro) – Certo, Cão. Já está escurecendo, e está nevando. Acho bom irmos descansar, amanhã quero apresentar meu plano de ataque à LIFE. Tenho certeza de que irão gostar!");
         Capitulo_1_4.Add("Coruja (Jones) – Ótimo Wing, estaremos juntos nessa!");
         Capitulo_1_4.Add("Raposa (Melinda) – Podem ir rapazes, mas antes preciso conversar com o Cão.");
-        Capitulo_1_4.Add("Pássaro (Wing) – Vejo vocês amanhã!");
+        Capitulo_1_4.Add("Wing (Pássaro) – Vejo vocês amanhã!");
         Capitulo_1_4.Add("Coruja (Jones) – Até!");
         Capitulo_1_4.Add("Cão (Yael) – Você tem algo pra me dizer?!");
         Capitulo_1_4.Add("Raposa (Melinda) – Sim, tenho. Tenho ficada paranoica com a ideia de que a Linda está atrás de nós, principalmente eu. ");
@@ -322,23 +317,22 @@ Capítulo 1.2
     {
         Capitulo_2 = new List<string>();
 
-        Capitulo_2.Add("Cliquei novamente para continuar!");
-        Capitulo_2.Add("Capítulo 2 – O Plano De Ataque À Life – Escolha 1");
+        Capitulo_2.Add("CAPÍTULO 2 – O PLANO DE ATAQUE À LIFE – ESCOLHA 1");
 
-        Capitulo_2.Add("Pássaro (Wing) – Enfim, estamos aqui. Diante do nosso plano de ataque à LIFE. Vamos nos vingar pela guerra, pela destruição. Vamos nos vingar por tudo o que houve com nossa terra. O Criador da LIFE e quem estiver no caminho vai pagar caro.");
-        Capitulo_2.Add("Pássaro (Wing) – O meu plano é o seguinte, vamos até o distrito onde achei Yael. Lá vamos encontrar o equipamento necessário para entrar no Sistema Operacional Virtual, o SOV. ");
-        Capitulo_2.Add("Pássaro (Wing) – Quando entrarmos no SOV, vamos pegar o transporte até a LIFE. Vamos até o edifício deles, entraremos no edifício e encontraremos o criador. Quando encontrarmos ele, vamos forçá-lo a restaurar as células dos Amotines ou o que der para fazer. ");
+        Capitulo_2.Add("Wing (Pássaro) – Enfim, estamos aqui. Diante do nosso plano de ataque à LIFE. Vamos nos vingar pela guerra, pela destruição. Vamos nos vingar por tudo o que houve com nossa terra. O Criador da LIFE e quem estiver no caminho vai pagar caro.");
+        Capitulo_2.Add("Wing (Pássaro) – O meu plano é o seguinte, vamos até o distrito onde achei Yael. Lá vamos encontrar o equipamento necessário para entrar no Sistema Operacional Virtual, o SOV. ");
+        Capitulo_2.Add("Wing (Pássaro) – Quando entrarmos no SOV, vamos pegar o transporte até a LIFE. Vamos até o edifício deles, entraremos no edifício e encontraremos o criador. Quando encontrarmos ele, vamos forçá-lo a restaurar as células dos Amotines ou o que der para fazer. ");
         Capitulo_2.Add("Cão (Yael) – Entrar lá não deve ser difícil, o problema é que não temos armas para nos defender. É suicídio fazer isso.");
         Capitulo_2.Add("Coruja (Jones) – Vamos precisar de armas.");
-        Capitulo_2.Add("Pássaro (Wing) – Eu fui do exército, não há fornecimento de armas atualmente para nenhum local. Nada.");
+        Capitulo_2.Add("Wing (Pássaro) – Eu fui do exército, não há fornecimento de armas atualmente para nenhum local. Nada.");
         Capitulo_2.Add("Raposa (Melinda) – E que tal os drones? ");
         Capitulo_2.Add("Cão (Yael) – É verdade! Os drones!");
         Capitulo_2.Add("Coruja (Jones) – Podemos usar os drones como armas. Eles possuem metralhadoras acopladas em sua fuselagem. Mas... como podemos usar os drones ao nosso favor?");
         Capitulo_2.Add("Raposa (Melinda) – Simples, hackeamos. Se não conseguirmos hackear um simples drone, então devemos desistir por aqui. Mas sei que vamos conseguir!");
-        Capitulo_2.Add("Pássaro (Wing) – Temos dois engenheiros de software que viveram dentro do SOV. Vamos conseguir hackear esses drones sim. Não é, homens?");
+        Capitulo_2.Add("Wing (Pássaro) – Temos dois engenheiros de software que viveram dentro do SOV. Vamos conseguir hackear esses drones sim. Não é, homens?");
         Capitulo_2.Add("Cão (Yael) – Vou fazer o meu melhor para a resistência.");
         Capitulo_2.Add("Coruja (Jones) – Vamos hackear esses drones!");
-        Capitulo_2.Add("Pássaro (Wing) – Temos uma longa caminhada até o distrito de testes da LIFE. Vamos nos organizar e partimos daqui a vinte minutos.");
+        Capitulo_2.Add("Wing (Pássaro) – Temos uma longa caminhada até o distrito de testes da LIFE. Vamos nos organizar e partimos daqui a vinte minutos.");
 
         return Capitulo_2;
     }
@@ -347,13 +341,12 @@ Capítulo 1.2
     {
         Capitulo_2_1 = new List<string>();
 
-        Capitulo_2_1.Add("Cliquei novamente para continuar!");
-        Capitulo_2_1.Add("Capítulo 2-1 – Distrito De Testes Da Life – Escolha 1");
+        Capitulo_2_1.Add("CAPÍTULO 2.1 – DISTRITO DE TESTES DA LIFE – ESCOLHA 1");
 
         Capitulo_2_1.Add("Coruja (Jones) – Estamos aqui. Distrito de testes da LIFE. Eu tenho um apartamento dentro do SOV. Vou configurar para o sistema nos enviar para lá quando ficarmos online.");
-        Capitulo_2_1.Add("Pássaro (Wing) – Foi aqui onde achei Yael. ");
+        Capitulo_2_1.Add("Wing (Pássaro) – Foi aqui onde achei Yael. ");
         Capitulo_2_1.Add("Cão (Yael) – Eu estava tão doente que nem lembrava desse lugar.");
-        Capitulo_2_1.Add("Pássaro (Wing) – Nós devemos nos conectar ao SOV através dos amotines, lembrem-se disso. No momento que nos conectarmos ao SOV, a Linda ficará sabendo de nós. Através daquele software de monitoramento que eu nem sei o nome!");
+        Capitulo_2_1.Add("Wing (Pássaro) – Nós devemos nos conectar ao SOV através dos amotines, lembrem-se disso. No momento que nos conectarmos ao SOV, a Linda ficará sabendo de nós. Através daquele software de monitoramento que eu nem sei o nome!");
         Capitulo_2_1.Add("Raposa (Melinda) – Vamos ter que correr para evitarmos um confronto direto. ");
         Capitulo_2_1.Add("Cão (Yael) – Nós precisamos hackear alguns drones antes de entrarmos no SOV.");
         Capitulo_2_1.Add("Coruja (Jones) – Se quisermos armas dentro do SOV, vamos precisar hackear os drones e conectá-los ao sistema. O que acha Yael?");
@@ -374,21 +367,14 @@ Capítulo 1.2
         Capitulo_2_2 = new List<string>();
         //Escolha 1.1 – Hackear os drones e conectá-los ao SOV (mais segurança no SOV) = puzzle
 
-        Capitulo_2_2.Add("Cliquei novamente para continuar!");
-        Capitulo_2_2.Add("Capítulo: 2-2");
-        Capitulo_2_2.Add("Resolva o puzzle para prosseguir:");
         Capitulo_2_2.Add("O valor do segundo é a quantidade de prédios no ambiente");
         Capitulo_2_2.Add("O valor do terceiro é o dobro do segundo");
         Capitulo_2_2.Add("O valor terceiro menos o segundo, é o primeiro");
         Capitulo_2_2.Add("O quarto é o primeiro mais o primeiro");
 
-        //4488
-
         //Consequência 1: Caso o código seja inserido corretamente: os drones foram hackeados e conseguem ajudar dentro do SOV.
         //Consequência 2: Caso o código seja inserido incorretamente: Os drones não foram hackeados e os drones foram alertados durante o hack. Melinda morre devido a um tiroteio.
         //Consequência 3: O puzzle foi pulado. Não foi hackeado os drones e não foram conectados ao SOV (menos segurança no SOV). Wing ou Jones podem morrer 
-
-        //Preciso de 3 escolhas possiveis pra esse puzzle.
 
         return Capitulo_2_2;
     }
@@ -398,19 +384,18 @@ Capítulo 1.2
         Capitulo_2_3_1 = new List<string>();
 
         //Cenário: Dentro do Distrito de Testes.
-        Capitulo_2_3_1.Add("Cliquei novamente para continuar!");
-        Capitulo_2_3_1.Add("Capítulo 2.3.1 – Invadindo O SOV – (Escolha 1.1) – Consequência 1 (Os Drones Estão Junto Na Invasão À Life, Todos Os Personagens Vivos)");
+        Capitulo_2_3_1.Add("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
 
         Capitulo_2_3_1.Add("Coruja (Jones) – Boa Yael! Quero dizer, agora você é um de nós! Então devemos te chamar de Cão. Boa Cão! Você conseguiu hackear o sistema dos drones, agora eles estão programados para nos ajudar em caso de conflito!");
-        Capitulo_2_3_1.Add("Pássaro (Wing) – Ainda bem que Yael conseguiu hackeá-los, nem imagino o que poderia acontecer se ele errasse o código.");
+        Capitulo_2_3_1.Add("Wing (Pássaro) – Ainda bem que Yael conseguiu hackeá-los, nem imagino o que poderia acontecer se ele errasse o código.");
         Capitulo_2_3_1.Add("Cão (Yael) – (sentindo-se agradecido) – Obrigado Animals!");
         Capitulo_2_3_1.Add("Raposa (Melinda) – O que importa é que vamos conseguir acessar o SOV. ");
         Capitulo_2_3_1.Add("Raposa (Melinda) – O SOV será um universo novo pra mim. Nunca estive lá, mas minha irmã, Linda, provavelmente estará nos esperando lá. Mal posso esperar pelo o que vamos encontrar no caminho.");
         Capitulo_2_3_1.Add("Cão (Yael) – (confiante): Vamos conseguir salvar toda a humanidade. Tudo será restaurado. Mas nós precisamos ser fortes. Vamos lutar pra valer lá dentro!");
-        Capitulo_2_3_1.Add("Pássaro (Wing) – Vamos conseguir!");
+        Capitulo_2_3_1.Add("Wing (Pássaro) – Vamos conseguir!");
         Capitulo_2_3_1.Add("Coruja (Jones) – Vai dar tudo certo!");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Eu confio em vocês rapazes! Vamos conseguir sim!");
-        Capitulo_2_3_1.Add("Pássaro (Wing) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
+        Capitulo_2_3_1.Add("Wing (Pássaro) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
         Capitulo_2_3_1.Add("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.");
 
 
@@ -451,7 +436,7 @@ Capítulo 1.2
 
         Capitulo_2_3_1.Add("Cão (Yael) – Uau, a LIA também apareceu para vocês? Agora entendi tudo sobre a história da LIFE.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Ela também apareceu pra mim. Estou feliz em ouvir um pouco sobre o meu criador, Asimovitsky.");
-        Capitulo_2_3_1.Add("Pássaro (Wing) – Bem, pelo menos a LIFE agradeceu ele por ter contribuído.");
+        Capitulo_2_3_1.Add("Wing (Pássaro) – Bem, pelo menos a LIFE agradeceu ele por ter contribuído.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Malev matou meu pai! Essa é a verdade. ");
         Capitulo_2_3_1.Add("Coruja (Jones) – (Surpreso) - Não pode ser verdade! Ele deve ter ocultado de todos.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – (cabisbaixa) - Depois que Asimovitsky me reativou, no seu leito de morte, após Malev ter o esfaqueado, ele me deu um livro. Esse livro é um diário de toda a sua vida.");
@@ -465,7 +450,7 @@ Capítulo 1.2
         //Cenário: Mapa da CyberCity.
         Capitulo_2_3_1.Add("Cão (Yael) – Essa é a CyberCity. Que pena que não viemos para nos divertir, há muitos locais interessantes que gostava de ir...");
         Capitulo_2_3_1.Add("Coruja (Jones) – Não se engane, a LIFE te dá a faca e o queijo, mas você está preso dentro de uma jaula. Sem liberdade. O mundo já é habitável lá fora, mas Malev quer continuar dominando o mundo. ");
-        Capitulo_2_3_1.Add("Pássaro (Wing) – Eu concordo com o Coruja. Sem contar que os amotines estão desligando. Isso significa que devemos reativar as células dos amotines antes que seja tarde.");
+        Capitulo_2_3_1.Add("Wing (Pássaro) – Eu concordo com o Coruja. Sem contar que os amotines estão desligando. Isso significa que devemos reativar as células dos amotines antes que seja tarde.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Para onde vamos Coruja? ");
         Capitulo_2_3_1.Add("Coruja (Jones) – Vamos pegar o transporte na Estação 14-7.");
         Capitulo_2_3_1.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 25-6");
@@ -479,57 +464,56 @@ Capítulo 1.2
     {
         Capitulo_2_3_2 = new List<string>();
 
-        Capitulo_2_3_2.Add("Cliquei novamente para continuar!");
-        Capitulo_2_3_2.Add("Capítulo 2.3.2 – Invadindo O SOV – (Escolha 1.1) – Consequência 2");
+        Capitulo_2_3_2.Add("CAPÍTULO 2.3.2 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 2");
 
         //Cenário: Dentro do Distrito de Testes. Após um tiroteio Melinda é alvejada, morre lutando contra a LIFE.
 
-        Capitulo_2_3_2.Add("Pássaro (Wing) (Surpreso) – Nãoooooo!!!! Raposaaaa!!!!");
+        Capitulo_2_3_2.Add("Wing (Pássaro) (Surpreso) – Nãoooooo!!!! Raposaaaa!!!!");
         Capitulo_2_3_2.Add("Coruja (Jones) – Os drones atiraram na Raposa... Como você pôde deixar isso acontecer Cão?? Melinda!!!");
         Capitulo_2_3_2.Add("Raposa (Melinda) – (Suspiro melancólico) - ...");
         Capitulo_2_3_2.Add("Cão (Yael) (assustado) – Eu... acho que errei o código... Cuidado! Os drones estão atirando ainda! Se abaixem!");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – (Se abaixa) -...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – (Se abaixa) -...");
         Capitulo_2_3_2.Add("Coruja (Jones) (assustado) – Os drones escaparam, quando eles detectam perigo eles fogem ou atiram...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) (desesperado)– Melinda? Consegue me ouvir?...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) (desesperado)– Melinda? Consegue me ouvir?...");
         Capitulo_2_3_2.Add("Raposa (Melinda) – (Suspiro melancólico) – Eu acho que não vou conseguir continuar com vocês rapazes... Vocês devem ser fortes – cuspindo sangue -, vinguem minha morte... Yael, pegue esse livro... Você busca respostas, meu pai Asimovitsky me deu no seu leito de morte... quero que você o guarde... Adeus... Animals...");
         Capitulo_2_3_2.Add("Coruja (Jones) (escorrendo algumas lágrimas através da máscara) – Adeus raposinha... Sentirei sua falta...");
         Capitulo_2_3_2.Add("Coruja (Jones) (silêncio) - ...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Adeus Melinda, descanse em paz... Traremos vitória para os Animals...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) - (silêncio) – ...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Adeus Melinda, descanse em paz... Traremos vitória para os Animals...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) - (silêncio) – ...");
         Capitulo_2_3_2.Add("Cão (Yael) –(silêncio) – Eu aceito o livro... vingarei sua morte Melinda, Adeus... ");
         Capitulo_2_3_2.Add("Cão (Yael) – ...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – ...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – ...");
         Capitulo_2_3_2.Add("Coruja (Jones) – ...");
         Capitulo_2_3_2.Add("Cão (Yael) – Eu sinto muito pela perda pessoal. Eu juro, foi um acidente...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) - (Raivoso)– QUANDO EU TE TROUXE PARA OS ANIMALS, EU ACHAVA QUE VOCÊ IRIA NOS AJUDAR E NÃO NOS MATAR, CÃO. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Acabamos de perder quem mais nos importávamos. Olha o que você fez!");
+        Capitulo_2_3_2.Add("Wing (Pássaro) - (Raivoso)– QUANDO EU TE TROUXE PARA OS ANIMALS, EU ACHAVA QUE VOCÊ IRIA NOS AJUDAR E NÃO NOS MATAR, CÃO. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Acabamos de perder quem mais nos importávamos. Olha o que você fez!");
         Capitulo_2_3_2.Add("Cão (Yael) – (Assustado) – FOI UM ACIDENTE!! POR FAVOR, NÃO ME TIREM DOS ANIMALS! Eu não sei o que pode acontecer comigo sem vocês...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – A vida pra você é fácil não é?...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Deixa-me contar uma história. O nome do meu pelotão era os Asas de Águia.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu e meu irmão, Jones nos separamos durante o início da guerra, eu, como um militar fui servir na guerra de Petrov contra os inimigos americo-cairano. Porém meu irmão, Jones, engenheiro de software foi obrigado a ser conectado ao SOV junto com diversos outros cidadãos da cidade de Omskvi através de um programa de sobrevivência da LIFE.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Quando a guerra acabou, eu, como líder e um alguns dos poucos sobreviventes de um pelotão chamado Asas de águia, pôde finalmente ir atrás da nossa família e descobrir o que houve.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – O meu pelotão de apenas 4 homens, estava em viagem da costa de Petrov para a cidade de Omskvi, onde havia sido a última vez que tinha visto seu irmão. Todos naquele grupo queriam rever seus familiares, ninguém imaginava que tudo estaria acabado.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Quando chegamos à cidade, perceberam folhetos anunciando a transição do off-line para o online, na CyberCity através do Amotine na prisão de Krestymov. Esse era um dos pontos da cidade de transição, onde muitos engenheiros foram imputados no SOV.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu, ao chegar em Krestymov decidi procurar o local onde os humanos estavam.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eis que o meu pelotão acha os corpos de seus familiares, percebem que estão muito debilitados, mas ainda vivos. Todos plugados aos amotines, jogados dentro do SOV pelo governo petrove e pela LIFE.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu também havia conseguido achar o Jones, ele estava a beira da morte. Eu precisava desconectá-lo do sistema, antes que morresse.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Nós encontramos um armazenamento de Amotines da LIFE, perto da região e nos conectamos ao SOV.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Naquele tempo, havia um software que conseguia identificar novos membros do SOV, usado tanto por engenheiros de software como pela própria LIFE, chamado SystemSoft. O SystemSoft é usado também para localizar pessoas, como se fosse um GPS.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Foi aí que meu irmão, Jones, percebeu que eu, seu irmão havia voltado da guerra e que estava indo atrás dele. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Naquele tempo, Jones já estava habituado com a CyberCity e percebeu que aquele seria o momento ideal para executar seu mais novo software, que o colocaria para fora do SOV.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Quando entrei no SOV, todos no SOV obtém o SmartClock, que é um computador de braço dentro da CyberCity. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Jones começou a se comunicar comigo e enviou a sua localização dentro do SOV através do seu SmartClock.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu descobri sua localização e decidi me separar do pelotão e ir atrás de meu irmão.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – O local combinado era uma praça, na região central de CyberCity.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) –...");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Quando os dois chegaram lá, nos abraçamos e ficamos felizes por nos encontrarem. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Mas não tivemos muito tempo, até Linda ter descoberto toda a história e ido atrás da gente. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Linda também monitorava o SystemSoft, então explica ela saber exatamente quem havia entrado no SOV e onde essa pessoa estava.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Jones já conhecia a Linda, por ser uma famosa vigia de CyberCity, idolatrada como uma guarda e exército de uma pessoa só. Havia cartazes e outdoors com a divulgação de seu serviço.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Nós decidimos correr, fugindo da Linda, em direção à máquina de refrigerantes, aonde Jones iria hackea-la para escaparem do SOV.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Enquanto Jones hackeava a máquina, eu lutei contra Linda para tentarmos ganhar algum tempo. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu consegui derrubar ela, embora ela tivesse me dado um golpe na minha perna... Como dentro do SOV não sentimos dor, todos os golpes que levei não eram sentidos... Por isso consegui derrubá-la.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Enquanto isso, Jones tinha conseguido desbloquear a máquina. Naquele momento, conseguimos acordar fora do SOV.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – A vida pra você é fácil não é?...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Deixa-me contar uma história. O nome do meu pelotão era os Asas de Águia.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu e meu irmão, Jones nos separamos durante o início da guerra, eu, como um militar fui servir na guerra de Petrov contra os inimigos americo-cairano. Porém meu irmão, Jones, engenheiro de software foi obrigado a ser conectado ao SOV junto com diversos outros cidadãos da cidade de Omskvi através de um programa de sobrevivência da LIFE.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Quando a guerra acabou, eu, como líder e um alguns dos poucos sobreviventes de um pelotão chamado Asas de águia, pôde finalmente ir atrás da nossa família e descobrir o que houve.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – O meu pelotão de apenas 4 homens, estava em viagem da costa de Petrov para a cidade de Omskvi, onde havia sido a última vez que tinha visto seu irmão. Todos naquele grupo queriam rever seus familiares, ninguém imaginava que tudo estaria acabado.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Quando chegamos à cidade, perceberam folhetos anunciando a transição do off-line para o online, na CyberCity através do Amotine na prisão de Krestymov. Esse era um dos pontos da cidade de transição, onde muitos engenheiros foram imputados no SOV.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu, ao chegar em Krestymov decidi procurar o local onde os humanos estavam.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eis que o meu pelotão acha os corpos de seus familiares, percebem que estão muito debilitados, mas ainda vivos. Todos plugados aos amotines, jogados dentro do SOV pelo governo petrove e pela LIFE.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu também havia conseguido achar o Jones, ele estava a beira da morte. Eu precisava desconectá-lo do sistema, antes que morresse.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Nós encontramos um armazenamento de Amotines da LIFE, perto da região e nos conectamos ao SOV.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Naquele tempo, havia um software que conseguia identificar novos membros do SOV, usado tanto por engenheiros de software como pela própria LIFE, chamado SystemSoft. O SystemSoft é usado também para localizar pessoas, como se fosse um GPS.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Foi aí que meu irmão, Jones, percebeu que eu, seu irmão havia voltado da guerra e que estava indo atrás dele. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Naquele tempo, Jones já estava habituado com a CyberCity e percebeu que aquele seria o momento ideal para executar seu mais novo software, que o colocaria para fora do SOV.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Quando entrei no SOV, todos no SOV obtém o SmartClock, que é um computador de braço dentro da CyberCity. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Jones começou a se comunicar comigo e enviou a sua localização dentro do SOV através do seu SmartClock.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu descobri sua localização e decidi me separar do pelotão e ir atrás de meu irmão.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – O local combinado era uma praça, na região central de CyberCity.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) –...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Quando os dois chegaram lá, nos abraçamos e ficamos felizes por nos encontrarem. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Mas não tivemos muito tempo, até Linda ter descoberto toda a história e ido atrás da gente. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Linda também monitorava o SystemSoft, então explica ela saber exatamente quem havia entrado no SOV e onde essa pessoa estava.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Jones já conhecia a Linda, por ser uma famosa vigia de CyberCity, idolatrada como uma guarda e exército de uma pessoa só. Havia cartazes e outdoors com a divulgação de seu serviço.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Nós decidimos correr, fugindo da Linda, em direção à máquina de refrigerantes, aonde Jones iria hackea-la para escaparem do SOV.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Enquanto Jones hackeava a máquina, eu lutei contra Linda para tentarmos ganhar algum tempo. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu consegui derrubar ela, embora ela tivesse me dado um golpe na minha perna... Como dentro do SOV não sentimos dor, todos os golpes que levei não eram sentidos... Por isso consegui derrubá-la.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Enquanto isso, Jones tinha conseguido desbloquear a máquina. Naquele momento, conseguimos acordar fora do SOV.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Quando acordamos fora do SOV, eu desmaiei por conta de meu corpo debilitado.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Wing decidiu me levar para fora da cidade onde encontramos, por acaso o acampamento de Melinda.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Vimos de longe uma bandeira, por isso pensamos que poderia haver alguém pra ajudar...");
@@ -537,15 +521,15 @@ Capítulo 1.2
         Capitulo_2_3_2.Add("Coruja (Jones) – Melinda havia construído um acampamento, longe de Omskvi e dos Drones, para se manter em segurança. Mas ela não lutava de forma nenhuma contra a LIFE.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Quando a Melinda viu esses dois homens, à beira da morte próximo de seu abrigo, ela decidiu nos ajudar, nos acolher no seu acampamento.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Após um período juntos, com Melinda me cuidando, Wing pergunta quem é ela e como conseguiu sair do SOV.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Ela diz que nunca pertenceu ao SOV, e que na verdade é uma Androtine (Android + Amotine), gerada pela LIFE para criar o caos no mundo, gerando guerras. Mas, seu criador, Asimovitsky, implantou um software chamado EmotionSoftware.exe, onde a tornava praticamente uma humana, pois a partir disso emularia emoções humanas.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Então ela era a versão “boa” da Linda, por isso não causava mal à ninguém e vivia fugindo da LIFE.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu questionei o porquê de fugir, sendo que podem lutar contra a LIFE. ");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Eu era capitão de um pelotão do exército Petrov, lutou na guerra contra CairoHill, estava decidido a tentar salvar o pouco da humanidade que ainda restava.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – E Melinda se sentiu atraída pela ideia e lembrou que no apartamento de seu criador, Asimovitsky, havia o início de uma iniciativa que nunca havia se tornado realidade, a iniciativa Animals. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Ela diz que nunca pertenceu ao SOV, e que na verdade é uma Androtine (Android + Amotine), gerada pela LIFE para criar o caos no mundo, gerando guerras. Mas, seu criador, Asimovitsky, implantou um software chamado EmotionSoftware.exe, onde a tornava praticamente uma humana, pois a partir disso emularia emoções humanas.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Então ela era a versão “boa” da Linda, por isso não causava mal à ninguém e vivia fugindo da LIFE.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu questionei o porquê de fugir, sendo que podem lutar contra a LIFE. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Eu era capitão de um pelotão do exército Petrov, lutou na guerra contra CairoHill, estava decidido a tentar salvar o pouco da humanidade que ainda restava.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – E Melinda se sentiu atraída pela ideia e lembrou que no apartamento de seu criador, Asimovitsky, havia o início de uma iniciativa que nunca havia se tornado realidade, a iniciativa Animals. ");
         Capitulo_2_3_2.Add("Coruja (Jones) – Naqueles documentos, Asimovitsky dizia que os animais da natureza não seriam atacados pelos drones da LIFE e que máscaras poderiam ser usadas para despistar os Drones, podendo dar acesso à locais ou serem hackeados para atacar a LIFE.");
         Capitulo_2_3_2.Add("Coruja (Jones) – E Melinda deu a ideia de eles começarmos a usar máscaras de Animais e iniciarem a Animals de Asimovitsky, começando uma resistência à LIFE, para salvar a humanidade.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Em homenagem ao Asas de águia, eu e meu irmão construímos máscaras de pássaros e nos juntamos à Melinda para formar a resistência de Asimovitsky, os Animals, contra a LIFE e seu criador.");
-        Capitulo_2_3_2.Add("Pássaro (Wing) – Nos juntamos a Melinda em uma causa, para salvar as pessoas de seus amotines desligarem. Precisamos dar um jeito nisso. Ela não está mais entre nós, mas a Animals ainda existe. Vamos invadir o SOV agora.");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – Nos juntamos a Melinda em uma causa, para salvar as pessoas de seus amotines desligarem. Precisamos dar um jeito nisso. Ela não está mais entre nós, mas a Animals ainda existe. Vamos invadir o SOV agora.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Acabei de configurar para ao logarmos, entrarmos direto no meu apartamento. Vamos!");
 
         return Capitulo_2_3_2;
@@ -555,17 +539,16 @@ Capítulo 1.2
     {
         Capitulo_2_3_3 = new List<string>();
 
-        Capitulo_2_3_3.Add("Cliquei novamente para continuar!");
-        Capitulo_2_3_3.Add("Capítulo 2.3.3 – Invadindo O SOV – Escolha 1.2 - Consequência 3 - (Puzzle Pulado – Todos Os Personagens Vivos – Sem Drones)");
+        Capitulo_2_3_3.Add("CAPÍTULO 2.3.3 – INVADINDO O SOV – ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)");
 
         //Cenário: Dentro do Distrito de Testes.
 
         Capitulo_2_3_3.Add("Raposa (Melinda) – O SOV será um universo novo pra mim. Nunca estive lá, mas minha irmã, Linda, provavelmente estará nos esperando lá. Mal posso esperar pelo o que vamos encontrar no caminho.");
         Capitulo_2_3_3.Add("Cão (Yael) – (confiante): Vamos conseguir salvar toda a humanidade. Tudo será restaurado. Mas nós precisamos ser fortes. Vamos lutar pra valer lá dentro!");
-        Capitulo_2_3_3.Add("Pássaro (Wing) – Vamos conseguir!");
+        Capitulo_2_3_3.Add("Wing (Pássaro) – Vamos conseguir!");
         Capitulo_2_3_3.Add("Coruja (Jones) – Vai dar tudo certo!");
         Capitulo_2_3_3.Add("Raposa (Melinda) – Eu confio em vocês rapazes! Vamos conseguir sim!");
-        Capitulo_2_3_3.Add("Pássaro (Wing) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
+        Capitulo_2_3_3.Add("Wing (Pássaro) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
         Capitulo_2_3_3.Add("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.");
 
 
@@ -587,13 +570,13 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("Cão (Yael) – Uau! Vai ajudar muito esse livro, obrigado Raposa.");
         Capitulo_2_3_3.Add("Raposa (Melinda) – (Feliz) – Vai ser mais útil com você. ");
         Capitulo_2_3_3.Add("Cão (Yael) – Mas como enfrentaremos a LIFE? Sem drones?");
-        Capitulo_2_3_3.Add("Pássaro (Wing) – Jones modificou nosso sistema, podemos gerar dano e sofrer danos dentro desse servidor. Isso significa que podemos bater com nossas mãos, mas podemos morrer da mesma forma.");
+        Capitulo_2_3_3.Add("Wing (Pássaro) – Jones modificou nosso sistema, podemos gerar dano e sofrer danos dentro desse servidor. Isso significa que podemos bater com nossas mãos, mas podemos morrer da mesma forma.");
         Capitulo_2_3_3.Add("Cão (Yael) – Conseguimos chegar até aqui vivos, acredito que vamos conseguir. E então, para onde vamos?");
         Capitulo_2_3_3.Add("Cenário: Mapa da CyberCity.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Vamos pegar o transporte na Estação 14-7.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 25-6");
         Capitulo_2_3_3.Add("Coruja (Jones) – De lá vamos descer na frente da LIFE.");
-        Capitulo_2_3_3.Add("Pássaro (Wing) – Vamos?");
+        Capitulo_2_3_3.Add("Wing (Pássaro) – Vamos?");
         Capitulo_2_3_3.Add("Coruja (Jones) – Vamos!");
 
         return Capitulo_2_3_3;
@@ -604,8 +587,6 @@ Capítulo 1.2
     {
         Capitulo_2_4 = new List<string>();
 
-        Capitulo_2_4.Add("Cliquei novamente para continuar!");
-        Capitulo_2_4.Add("Capítulo: 2.4 - Livro de Asimovitsky");
         Capitulo_2_4.Add("Cão(Yael) – Será que leio esse livro, que Melinda deixou pra mim?");
         Capitulo_2_4.Add("Decisão:");
 
@@ -621,8 +602,7 @@ Capítulo 1.2
 
         //Trecho muito longo (cerca de 8 páginas)
 
-        Capitulo_2_4_1.Add("Cliquei novamente para continuar!");
-        Capitulo_2_4_1.Add("Capítulo 2.4.1 – O Diário De Asimovitsky");
+        Capitulo_2_4_1.Add("CAPÍTULO 2.4.1 – O DIÁRIO DE ASIMOVITSKY");
         Capitulo_2_4_1.Add("- Página 1 – O diário é descoberto");
         Capitulo_2_4_1.Add("Certo dia em uma biblioteca na escola pública da cidade de cidade de Sévero, havia uma entrega de um carregamento de livros na porta.");
         Capitulo_2_4_1.Add("Entregador - Bom dia! Entrega!");
@@ -760,12 +740,11 @@ Capítulo 1.2
         Capitulo_3 = new List<string>();
 
         //Cenário: Estação 14-7.
-        Capitulo_3.Add("Cliquei novamente para continuar!");
-        Capitulo_3.Add("Capítulo 3 – Conflitos Na Cybercity - Escolha 1.1 – Consequência 1 (Os Drones Estão Junto Na Invasão À Life, Todos Os Personagens Vivos)");
+        Capitulo_3.Add("CAPÍTULO 3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
         Capitulo_3.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
-        Capitulo_3.Add("Pássaro (Wing) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
-        Capitulo_3.Add("Pássaro (Wing) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
         Capitulo_3.Add("Raposa (Melinda) – Acredite, ela sabe onde estamos. Tenho certeza de que temos muitas chances de encontrarmos ela aqui mesmo nessa estação.");
         Capitulo_3.Add("Coruja (Jones) – Sorte que temos os drones, programei eles para que consigam atirar e causar dano mesmo dentro do SOV. Então, estamos seguros.");
         Capitulo_3.Add("Cão (Yael) – Vamos apreciar a viagem então!");
@@ -773,7 +752,7 @@ Capítulo 1.2
         Capitulo_3.Add("Cão (Yael) – Vocês também estão ouvindo um som estranho... acho que o trem bateu em alguma coisa!");
         Capitulo_3.Add("Raposa (Melinda) – Acho que sei o que está acontecendo... Linda, ela chegou.");
         Capitulo_3.Add("Coruja (Jones) – Estamos preparados para o que vier...");
-        Capitulo_3.Add("Pássaro (Wing) – Linda! Temos um assunto para resolver, e sim, é pessoal!");
+        Capitulo_3.Add("Wing (Pássaro) – Linda! Temos um assunto para resolver, e sim, é pessoal!");
         Capitulo_3.Add("Linda – Vocês falam demais... Hahaha!");
         Capitulo_3.Add("Linda – Nem parecem que sabem que vão morrer...");
         Capitulo_3.Add("Raposa (Melinda) – Podemos resolver isso de outras formas Linda... ");
@@ -783,7 +762,7 @@ Capítulo 1.2
         Capitulo_3.Add("Coruja (Jones) – Drones! Atirem!!");
         Capitulo_3.Add("Drones – Atirando");
         Capitulo_3.Add("Linda – (Suspirando, muito debilitada) – Não... Como vocês conseguiram fazer isso?... Eu sou indestrutível...");
-        Capitulo_3.Add("Pássaro (Wing) – Jones, acabe com ela! Faça-a pagar!");
+        Capitulo_3.Add("Wing (Pássaro) – Jones, acabe com ela! Faça-a pagar!");
         Capitulo_3.Add("Raposa (Melinda) – Espera, Cão, o você quer?");
 
         Capitulo_3.Add("Decisão:");
@@ -798,8 +777,7 @@ Capítulo 1.2
     {
         Capitulo_3_1_1 = new List<string>();
 
-        Capitulo_3_1_1.Add("Cliquei novamente para continuar!");
-        Capitulo_3_1_1.Add("Capítulo 3.1.1 – O Cão Decide O Destino De Linda - Escolha 1.1 – Consequência 1 (Os Drones Estão Junto Na Invasão À Life, Todos Os Personagens Vivos) - Escolha A (Linda Se Torna Aliada)");
+        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
         //Código 7898 usado, Linda entra para os Animals.
 
         //Cenário: Estação 14-7.
@@ -807,7 +785,7 @@ Capítulo 1.2
         Capitulo_3_1_1.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
         Capitulo_3_1_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
         Capitulo_3_1_1.Add("Raposa (Melinda) – (feliz) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Finalmente posso te abraçar. Conseguimos te salvar.");
-        Capitulo_3_1_1.Add("Pássaro (Wing) – Nem acredito que conseguimos salvar a “temida assassina” haha.");
+        Capitulo_3_1_1.Add("Wing (Pássaro) – Nem acredito que conseguimos salvar a “temida assassina” haha.");
         Capitulo_3_1_1.Add("Coruja (Jones) – Conseguimos! Graças a Yael, o nosso Cão!");
         Capitulo_3_1_1.Add("Linda (confusa) – Obrigada Yael ou Cão, como quiser... Eu estava surtada. Agora sou uma pessoa normal. Quero ajudar vocês no que for preciso. ");
         Capitulo_3_1_1.Add("Raposa (Melinda) – Estamos a caminho da LIFE. Vamos derrotar Malev, o seu criador e vamos restaurar as baterias dos Amotines... As pessoas devem poder escolher qual caminho devem seguir. Mas serem escravizadas, isso é demais.");
@@ -822,8 +800,7 @@ Capítulo 1.2
     {
         Capitulo_3_1_2 = new List<string>();
         //Código 7562 usado, Linda entra para os Animals.
-        Capitulo_3_1_2.Add("Cliquei novamente para continuar!");
-        Capitulo_3_1_2.Add("Capítulo 3.1.2 – O Cão Decide O Destino De Linda - Escolha 1.1 – Consequência 1 (Os Drones Estão Junto Na Invasão À Life, Todos Os Personagens Vivos) - Escolha B (Linda É Destruída)");
+        Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
 
         //Cenário: Estação 14-7.
         Capitulo_3_1_2.Add("Cão (Yael) – Eu não li o diário, mas sei o que estou fazendo... Linda, ativar código 7562.");
@@ -832,7 +809,7 @@ Capítulo 1.2
         Capitulo_3_1_2.Add("Linda – (L.I.A): ... Puffff");
         Capitulo_3_1_2.Add("Raposa (Melinda) – Ela era minha irmã, mas sei que tomou a melhor decisão para os Animals Cão. Confio na sua decisão. Sei que fará sentido...");
         Capitulo_3_1_2.Add("Coruja (Jones) – Conseguimos vencer a Linda... Sinto muito por isso Raposinha.");
-        Capitulo_3_1_2.Add("Pássaro (Wing) – Estamos quase concluindo nosso objetivo. Falta pouco para salvarmos toda a humanidade. Estamos meio caminho andado.");
+        Capitulo_3_1_2.Add("Wing (Pássaro) – Estamos quase concluindo nosso objetivo. Falta pouco para salvarmos toda a humanidade. Estamos meio caminho andado.");
         Capitulo_3_1_2.Add("Coruja (Jones) – Chegamos na Estação 25-6. Aqui descemos, a LIFE fica logo adiante.");
 
 
@@ -844,26 +821,26 @@ Capítulo 1.2
     {
         Capitulo_3_2 = new List<string>();
 
-        Capitulo_3_2.Add("Cliquei novamente para continuar!");
-        Capitulo_3_2.Add("Capítulo 3.2 Final 5– Conflitos Na Cybercity - Escolha 1.1 – Consequência 2 (Melinda Morre Devido Um Dos Drones Ser Alertado Durante O Hackeamento. Jones, Wing E Yael Permanecem Vivos. Eles Não Conseguem A Ajuda Dos Drones.)");
+
+        Capitulo_3_2.Add("CAPÍTULO 3.2 FINAL 5– CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 2 (MELINDA MORRE DEVIDO UM DOS DRONES SER ALERTADO DURANTE O HACKEAMENTO. JONES, WING E YAEL PERMANECEM VIVOS. ELES NÃO CONSEGUEM A AJUDA DOS DRONES.)");
 
         //Cenário: Estação 14-7.
         Capitulo_3_2.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
-        Capitulo_3_2.Add("Pássaro (Wing) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3_2.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3_2.Add("Cão (Yael) – Pode ser que encontremos perigo?");
-        Capitulo_3_2.Add("Pássaro (Wing) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3_2.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
         Capitulo_3_2.Add("Cão (Yael) – Vocês também estão ouvindo esse barulho? Parece que o trem bateu em alguma coisa...");
-        Capitulo_3_2.Add("Pássaro (Wing) – Acho que a Linda nos encontrou!");
-        Capitulo_3_2.Add("Pássaro (Wing) –...");
+        Capitulo_3_2.Add("Wing (Pássaro) – Acho que a Linda nos encontrou!");
+        Capitulo_3_2.Add("Wing (Pássaro) –...");
         Capitulo_3_2.Add("Linda – Vocês falam muito pouco... Hahaha!");
         Capitulo_3_2.Add("Linda – Ué, onde está minha irmãzinha?");
         Capitulo_3_2.Add("Coruja (Jones) – Chegou tarde, a raposinha se foi... ");
         Capitulo_3_2.Add("Linda – É assim que vocês chamam Melinda? Raposa? Por quê? Aliás, por que vocês estão usando máscara de animais??");
-        Capitulo_3_2.Add("Pássaro (Wing) – Nós usamos máscaras para despistar os drones da LIFE, dessa forma eles não nos atacam e conseguimos domesticá-los. Ela escolheu o Alter Ego dela, como sendo uma raposa. Raposa porque era um animal que ela admirava.");
+        Capitulo_3_2.Add("Wing (Pássaro) – Nós usamos máscaras para despistar os drones da LIFE, dessa forma eles não nos atacam e conseguimos domesticá-los. Ela escolheu o Alter Ego dela, como sendo uma raposa. Raposa porque era um animal que ela admirava.");
         Capitulo_3_2.Add("Linda – Parece que não deu muito certo o plano de vocês... Melinda deveria ver isso, a morte de vocês. Quem sabe em outra vida, não é?!");
         Capitulo_3_2.Add("Linda – Quem irá morrer primeiro? O Cãozinho? Ou a Corujinha?");
-        Capitulo_3_2.Add("Pássaro (Wing) – Você vai pagar por tudo!!!!");
-        Capitulo_3_2.Add("Pássaro (Wing) (Wing tenta golpear Linda, mas é atingido no coração, caindo automaticamente)");
+        Capitulo_3_2.Add("Wing (Pássaro) – Você vai pagar por tudo!!!!");
+        Capitulo_3_2.Add("Wing (Pássaro) (Wing tenta golpear Linda, mas é atingido no coração, caindo automaticamente)");
         Capitulo_3_2.Add("Coruja (Jones) – Meu irmão!! Você o matou!!! Você me paga!!");
         Capitulo_3_2.Add("Coruja (Jones) (Jones tenta dar uma investida na Linda, porém com suas mãos de aço, ela o mata com apenas um golpe).");
         Capitulo_3_2.Add("Cão (Yael) (chocado) – Você... você matou meus amigos, quem me salvaram.");
@@ -888,14 +865,13 @@ Capítulo 1.2
     {
         Capitulo_3_3 = new List<string>();
 
-        Capitulo_3_3.Add("Cliquei novamente para continuar!");
-        Capitulo_3_3.Add("Capítulo 3.3 – Conflitos Na Cybercity - Escolha 1.2 - Consequência 3 - (Puzzle Pulado – Todos Os Personagens Vivos – Sem Drones)");
+        Capitulo_3_3.Add("CAPÍTULO 3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)");
         //Cenário: Estação 14-7.
 
         Capitulo_3_3.Add("Coruja (Jones) – Devemos pegar esse trem para a Estação 25-6. De lá vamos descer na frente da LIFE.");
-        Capitulo_3_3.Add("Pássaro (Wing) – Mal posso pressentir o que pode nos aguardar nessa estação.");
+        Capitulo_3_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
-        Capitulo_3_3.Add("Pássaro (Wing) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
+        Capitulo_3_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
         Capitulo_3_3.Add("Raposa (Melinda) – Acho que estou ouvindo algum barulho... Pode ser que o trem tenha batido em algo ou...");
         Capitulo_3_3.Add("Coruja (Jones) – Ou ela chegou... Linda deve estar nos caçando...");
         Capitulo_3_3.Add("Cão (Yael) – Eu não duvido dessa possibilidade.");
@@ -927,8 +903,7 @@ Capítulo 1.2
         Capitulo_3_3_1 = new List<string>();
 
         //Escolha C
-        Capitulo_3_3_1.Add("Cliquei novamente para continuar!");
-        Capitulo_3_3_1.Add("Capítulo 3.3.1 – Conflitos Na Cybercity - Escolha 1.2 - Consequência 3 - (Puzzle Pulado – Todos Os Personagens Vivos – Sem Drones) - Escolha C - Jones Morre (Linda Sobrevive)");
+        Capitulo_3_3_1.Add("CAPÍTULO 3.3.1 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA C - JONES MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
         Capitulo_3_3_1.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
         Capitulo_3_3_1.Add("Cão (Yael) – L.I.A.! Ativar código 7594!");
@@ -936,11 +911,11 @@ Capítulo 1.2
         Capitulo_3_3_1.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
         Capitulo_3_3_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
         Capitulo_3_3_1.Add("Raposa (Melinda) – (feliz e confusa) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Conseguimos te salvar.");
-        Capitulo_3_3_1.Add("Pássaro (Wing) -...");
+        Capitulo_3_3_1.Add("Wing (Pássaro) -...");
         Capitulo_3_3_1.Add("Coruja (Jones) (Últimos suspiros) – Wing, missão cumprida meu irmão... Você é o melhor!");
-        Capitulo_3_3_1.Add("Pássaro (Wing) – Mas a que custo? Jones morreu...");
+        Capitulo_3_3_1.Add("Wing (Pássaro) – Mas a que custo? Jones morreu...");
         Capitulo_3_3_1.Add("Cão (Yael) – Sinto muito Wing, fiz o meu melhor...");
-        Capitulo_3_3_1.Add("Pássaro (Wing) – Eu vou te vingar irmão... Malev pagará.");
+        Capitulo_3_3_1.Add("Wing (Pássaro) – Eu vou te vingar irmão... Malev pagará.");
 
 
 
@@ -954,8 +929,7 @@ Capítulo 1.2
         Capitulo_3_3_2 = new List<string>();
 
         //Escolha D
-        Capitulo_3_3_2.Add("Cliquei novamente para continuar!");
-        Capitulo_3_3_2.Add("Capítulo 3.3.2 – Conflitos Na Cybercity - Escolha 1.2 - Consequência 3 - (Puzzle Pulado – Todos Os Personagens Vivos – Sem Drones) - Escolha D - Wing Morre (Linda Sobrevive)");
+        Capitulo_3_3_2.Add("CAPÍTULO 3.3.2 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA D - WING MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
         Capitulo_3_3_2.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
         Capitulo_3_3_2.Add("Cão (Yael) – L.I.A.! Ativar código 7491!");
@@ -963,7 +937,7 @@ Capítulo 1.2
         Capitulo_3_3_2.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
         Capitulo_3_3_2.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
         Capitulo_3_3_2.Add("Coruja (Jones) (desesperado)– Wing!!! Meu irmão...");
-        Capitulo_3_3_2.Add("Pássaro (Wing) (Últimos suspiros) – Jones... Me escuta, projeta os outros... Você deve cuidar dos Animals, nossa missão ainda não terminou... Você é meu irmãozinho, eu te amo.");
+        Capitulo_3_3_2.Add("Wing (Pássaro) (Últimos suspiros) – Jones... Me escuta, projeta os outros... Você deve cuidar dos Animals, nossa missão ainda não terminou... Você é meu irmãozinho, eu te amo.");
         Capitulo_3_3_2.Add("Raposa (Melinda) – O Cão fez o que pôde para salvar a todos nós Jones. Wing lutou como um guerreiro, desde a guerra nuclear até agora lutou para ajudar as pessoas. Devemos nossas vidas a ele. Ele é um grande herói. Os Asas de Águia e os Animals serão eternamente gratos à ele.");
         Capitulo_3_3_2.Add("Cão (Yael) – Wing lutou bravamente Jones, agora ele deve descansar.");
         Capitulo_3_3_2.Add("Linda – Eu devo desculpas por isso Jones, agora eu estou do lado dos Animals... Derrotaremos a LIFE juntos.");
@@ -980,13 +954,12 @@ Capítulo 1.2
         //Cenário: Estação 14-7.
 
         //Escolha E
-        Capitulo_3_3_3.Add("Cliquei novamente para continuar!");
-        Capitulo_3_3_3.Add("Capítulo 3.3.3 – Conflitos Na Cybercity - Escolha 1.2 - Consequência 3 - (Puzzle Pulado – Sem Drones) - Escolha E- Wing E Jones Morrem (Linda Morre)");
+        Capitulo_3_3_3.Add("CAPÍTULO 3.3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – SEM DRONES) - ESCOLHA E- WING E JONES MORREM (LINDA MORRE)");
         Capitulo_3_3_3.Add("Cão (Yael) – Qualquer código, desde que salve a gente!");
         Capitulo_3_3_3.Add("Cão (Yael) – L.I.A.! Ativar código 5897!");
         Capitulo_3_3_3.Add("Linda (Desnorteada, ataca Wing e Jones ao mesmo tempo, com dois golpes em seus corações)");
         Capitulo_3_3_3.Add("Coruja (Jones) (suspiro final) -...");
-        Capitulo_3_3_3.Add("Pássaro (Wing) (suspiro final) -...");
+        Capitulo_3_3_3.Add("Wing (Pássaro) (suspiro final) -...");
         Capitulo_3_3_3.Add("Cão (Yael) – Nãoooo!!! ");
         Capitulo_3_3_3.Add("Linda (L.I.A.) – Sistema sendo destruído em 3... 2... 1...");
         Capitulo_3_3_3.Add("Linda (L.I.A.) – puff...");
@@ -1010,13 +983,12 @@ Capítulo 1.2
 
         //Escolha A
         //Cenário: Edifício da LIFE.
-        Capitulo_4_A.Add("Cliquei novamente para continuar!");
-        Capitulo_4_A.Add("Capítulo 4 (Final 2 V1) – O Criador, A Life E O Destino Da Humanidade - Escolha A – Com Os Drones Melinda, Wing E Jones Sobrevivem, Linda Se Torna Aliada E Malev Capturado. A Life É Destruída.");
+        Capitulo_4_A.Add("CAPÍTULO 4 (FINAL 2 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA A – COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA SE TORNA ALIADA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
         Capitulo_4_A.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
         Capitulo_4_A.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
         Capitulo_4_A.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
         Capitulo_4_A.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
-        Capitulo_4_A.Add("Pássaro (Wing) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_A.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
         Capitulo_4_A.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
         Capitulo_4_A.Add("Linda – Você me obrigou a matar pessoas inocentes, para criar o caos no mundo... ");
         Capitulo_4_A.Add("Coruja (Jones) – Seu plano falhou Malev. Os amotines estão sendo descarregados, as pessoas precisam acordar do SOV antes que seja tarde, antes que elas morram. Não se pode prender ninguém contra sua vontade. ");
@@ -1038,17 +1010,34 @@ Capítulo 1.2
     public List<string> GetCapitulo_4_B()
     {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         Capitulo_4_B = new List<string>();
 
         //Cenário: Edifício da LIFE.
 
-        Capitulo_4_B.Add("Cliquei novamente para continuar!");
-        Capitulo_4_B.Add("Capítulo 4 (Final 2 V2) – O Criador, A Life E O Destino Da Humanidade - Escolha B - Com Os Drones Melinda, Wing E Jones Sobrevivem, Linda É Destruída E Malev Capturado. A Life É Destruída.");
+        Capitulo_4_B.Add("CAPÍTULO 4 (FINAL 2 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA B - COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA É DESTRUÍDA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
         Capitulo_4_B.Add("Coruja (Jones) - Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
         Capitulo_4_B.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
         Capitulo_4_B.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
         Capitulo_4_B.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
-        Capitulo_4_B.Add("Pássaro (Wing) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_B.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
         Capitulo_4_B.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
         Capitulo_4_B.Add("Coruja (Jones) – Seu plano falhou Malev. Os amotines estão sendo descarregados, as pessoas precisam acordar do SOV antes que seja tarde, antes que elas morram. Não se pode prender ninguém contra sua vontade. ");
         Capitulo_4_B.Add("Coruja (Jones) – Conseguimos escapar do SOV graças a uma falha no sistema, ele não é perfeito.");
@@ -1071,14 +1060,13 @@ Capítulo 1.2
     {
         Capitulo_4_C = new List<string>();
 
-        Capitulo_4_C.Add("Cliquei novamente para continuar!");
-        Capitulo_4_C.Add("Capítulo 4 (Final 3 V1) – O Criador, A Life E O Destino Da Humanidade - Escolha C - Sem Os Drones Melinda E Wing Sobrevivem, Jones Morre, Linda Se Torna Aliada E Malev É Destruído. A Life É Destruída.");
+        Capitulo_4_C.Add("CAPÍTULO 4 (FINAL 3 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA C - SEM OS DRONES MELINDA E WING SOBREVIVEM, JONES MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
         //Cenário: Edifício da LIFE.
         Capitulo_4_C.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
         Capitulo_4_C.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
         Capitulo_4_C.Add("Raposa (Melinda) – Viemos aqui para cobrar tudo o que você fez.");
         Capitulo_4_C.Add("Cão (Yael) – Não tem escapatória Malev. Você matou meu melhor amigo, quando eu estava preso em Krestymov. Me obrigou a ser plugado junto com os presos no SOV. ");
-        Capitulo_4_C.Add("Pássaro (Wing) – Eu lutei nas guerras, matei homens bons por sua causa...");
+        Capitulo_4_C.Add("Wing (Pássaro) – Eu lutei nas guerras, matei homens bons por sua causa...");
         Capitulo_4_C.Add("Raposa (Melinda) – Você matou Asimovitsky, meu criador.");
         Capitulo_4_C.Add("Linda – Você me obrigou a matar pessoas inocentes, para criar o caos no mundo... Eu mesma vou te matar Malev. Vou vingar a morte de Jones, das pessoas inocentes.");
         Capitulo_4_C.Add("Malev – Vocês lutaram para chegar até aqui, saíram do meio do mato para tentar ajudar a humanidade. Foi o que eu fiz para proteger meu povo na época.");
@@ -1086,11 +1074,11 @@ Capítulo 1.2
         Capitulo_4_C.Add("Raposa (Melinda) – Linda, termine com isso.");
         Capitulo_4_C.Add("Linda (Com apenas um golpe, Linda mata Malev)");
         Capitulo_4_C.Add("Malev (Suspiro final) -...");
-        Capitulo_4_C.Add("Pássaro (Wing) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
+        Capitulo_4_C.Add("Wing (Pássaro) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
         Capitulo_4_C.Add("Raposa (Melinda) – Estão sendo restaurados agora.");
         Capitulo_4_C.Add("Linda – É isso? ");
         Capitulo_4_C.Add("Raposa (Melinda) – Acho que terminamos... Que jornada. ");
-        Capitulo_4_C.Add("Pássaro (Wing) – Perdemos Jones, mas conseguimos cumprir nosso dever.");
+        Capitulo_4_C.Add("Wing (Pássaro) – Perdemos Jones, mas conseguimos cumprir nosso dever.");
         Capitulo_4_C.Add("Raposa (Melinda) – Então, até a próxima Animals... ");
 
 
@@ -1104,8 +1092,8 @@ Capítulo 1.2
     {
         Capitulo_4_D = new List<string>();
 
-        Capitulo_4_D.Add("Cliquei novamente para continuar!");
-        Capitulo_4_D.Add("Capítulo 4 (Final 3 V2) – O Criador, A Life E O Destino Da Humanidade - Escolha D - Sem Os Drones Melinda E Jones Sobrevivem, Wing Morre, Linda Se Torna Aliada E Malev É Destruído. A Life É Destruída.");
+
+        Capitulo_4_D.Add("CAPÍTULO 4 (FINAL 3 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA D - SEM OS DRONES MELINDA E JONES SOBREVIVEM, WING MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
         //Cenário: Edifício da LIFE.
         Capitulo_4_D.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
         Capitulo_4_D.Add("Malev – Até que enfim nos encontramos Animals... Estava ansioso para vê-los.");
@@ -1134,8 +1122,7 @@ Capítulo 1.2
     {
         Capitulo_4_E = new List<string>();
 
-        Capitulo_4_E.Add("Cliquei novamente para continuar!");
-        Capitulo_4_E.Add("Capítulo 4 (Final 4) – O Criador, A Life E O Destino Da Humanidade - Escolha E - Sem Os Drones Melinda Sobrevive, Wing E Jones Morrem, Linda Morre E Malev É Destruído. A Life É Destruída Mas Não Conseguem Salvar A Humanidade.");
+        Capitulo_4_E.Add("CAPÍTULO 4 (FINAL 4) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA E - SEM OS DRONES MELINDA SOBREVIVE, WING E JONES MORREM, LINDA MORRE E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA MAS NÃO CONSEGUEM SALVAR A HUMANIDADE.");
         //Cenário: Edifício da LIFE.
         Capitulo_4_E.Add("Raposa (Melinda) – Chegamos.");
         Capitulo_4_E.Add("Malev – Animals... Finalmente posso conhecê-los pessoalmente...");
@@ -1172,8 +1159,6 @@ Capítulo 1.2
 
         //Cenário: créditos
 
-        Capitulo_5_Creditos.Add("Cliquei novamente para continuar!");
-        Capitulo_5_Creditos.Add("Capítulo 5: Créditos do Alter Ego");
         Capitulo_5_Creditos.Add("Muito obrigado por jogar! Sem você não conseguiríamos! Foram quase 2 anos" +
             " escrevendo o roteiro até desenvolver todos os personagens, a ideia em si. E depois decidi " +
             "reconstruir o jogo inteiro e melhorado na engine Unity o que me gerou mais alguns meses de estudo e de muito trabalho.");
@@ -1183,21 +1168,21 @@ Capítulo 1.2
 
         Capitulo_5_Creditos.Add("Agradecimentos especiais a:");
         Capitulo_5_Creditos.Add("Franciele Rocha (Tatinha) & Vitor");
-        Capitulo_5_Creditos.Add("Marivone Rocha");
+        Capitulo_5_Creditos.Add("Mari Rocha");
         Capitulo_5_Creditos.Add("Luan Pereira");
         Capitulo_5_Creditos.Add("Italo Lopes");
         Capitulo_5_Creditos.Add("Luisa Lopes");
         Capitulo_5_Creditos.Add("Lucas Debone");
         Capitulo_5_Creditos.Add("Santos Reis");
 
-        Capitulo_5_Creditos.Add("Desenvolvedores: (Primeira versão entrega na Universidade FATEC no curso de Jogos Digitais, sendo a demo da Engine Renpy) " +
+        Capitulo_5_Creditos.Add("Desenvolvedores: (Primeira versão entre na Universidade, demo do Renpy) " +
             "Game Designer/roteirista/artista: Gabriel Rocha, Programador: Lucas Debone, Artista/sonoplasta: Santos Reis ");
 
         Capitulo_5_Creditos.Add("Desenvolvedores: (Unity, versão final)");
         Capitulo_5_Creditos.Add("Gabriel Rocha: Programador Unity (C#), UI Designer, Roteirista e Artista.");
 
         Capitulo_5_Creditos.Add("Softwares utilizados:");
-        Capitulo_5_Creditos.Add("Visual Studio, VS Code, .net SDK, Unity Engine, Krita, Photoshop e Premiere!");
+        Capitulo_5_Creditos.Add("Visual Studio, VS Code, .net SDK, Unity Engine, Krita, Photoshop e Premiere!.");
 
         Capitulo_5_Creditos.Add("Siga-nos no instagram:");
         Capitulo_5_Creditos.Add("@Saphire_game_studio.");
