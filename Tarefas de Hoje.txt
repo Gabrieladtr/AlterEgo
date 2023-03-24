@@ -1,49 +1,18 @@
 -----------------------------------Tarefas de Hoje----------------------------
 
-->Comecei a trazer todos os diálogos para o sistema. Criei um método que armazena todas as listas de frases e cria um método de acesso para todas elas. Dessa forma, consigo acessar todos os diálogos de forma simples. 
-	-->Como antes eu usava as listas na classe Game e agora eu acesso elas por ListasDialogicas, acontece um problema. Para que eu automatizasse a contagem de quantas linhas possuem na lista que estamos atualmete, escrevi o método "DecisaoDialogicaList(string nomeDaLista)" que retorna uma lista com o nome	passado como parâmetro (que é a decisão dialógica). Então, fazíamos o seguinte: 
-	
-            if (contador > DecisaoDialogicaList(escolhaDialogica).Count)
-	    {
-                contador = DecisaoDialogicaList(escolhaDialogica).Count;
-                //Paro na última ou a primeira frase da lista.
-            }
-            else 
-            {
-                contador++;
-		//Inicialmente o contador é zero. E vamos percorrer exatamente a quantidade
-		//de valores dentro da lista repassada.
-            }
+->Perguntar ao jogador quando ele iniciar pelo botão "Iniciar" em qual modo de jogo ele deseja jogar? (Clássico ou Remake)
+-Clássico: Todas as artes do jogo foram feitas à mão e vetorizadas pelos programadores. É a verão original do Alter Ego, como ela foi criada. Recomendado para uma primeira jogada, para conhecer a história e os personagens. Após um final ou mais, recomendamos jogar a versão Remake.
+-Remake: Todas as artes foram refeitas por intelifência Artificial e consertadas/melhoradas pelos programadores. É um dos motivos de eu ter recriado esse jogo inteiro, para dar uma nova vida à ele. Recomendo jogar esse modo após fazer qualquer um dos finais do primeiro jogo ou platinar (fazer todos os finais) o jogo no modo clássico, embora somente as artes mudem você terá uma nova experiência de jogo.
 
-Isso funciona muito bem, se estivermo usando as listas dentro de Game mas agora não podemos fazer mais isso. Se eu tentar acessar as listas dentro de ListasDialogicas, vamos estar limitados à qtd de valores adicionados na lista local (que ainda existe, por causa de testes.) Então em um cenário sem esses valores, daria erro. Então, posso reutilizar o mesmo método DecisaoDialogicaList(), repassando o nome das listas possíveis juntamente com as rotas e a EscolhaDialogica. Dessa forma, acredito eu que vamos conseguir transportar o jogador para todas as rotas possíves.
+->Modo da Trilha Sonora: Você deseja ouvir as músicas que foram escolhidas especialmente para o Alter Ego, o  Alter Álbum (são músicas com direitos autorais, que reproduzimos via API do Spotify através do nosso software interno: SpotEgo) ou ouvir apenas as músicas ambiente (uma boa experiência, mas menos empolgante para o jogador [recomendado para streamers e youtubers])? 
 
-
-Resumindo. 
-->A escolhaDialogica precisa ter uma lista dentro de DecisaoDialogicaList().Dessa forma, consigo utilizar a mesma lógica mudando apenas os valores utilizados.
-->Preciso colocar a opcao de escolhaDialogica dentro da minha lógica de escolha de capítulos, no meu switch
-->Preciso colocar uma vez acrescentando diálogo e outra vez decrescendo o diálogo.
-->Para salvamentos, preciso colocar essa opcao de escolhaDialogica dentro dele tmb.
-Resolvido.
-
-
-->Bug que continuava rodando os diálogos dentro dos menus (Resolvido).
-->Todas as escolhas possíveis e todos os diálogos do jogo adicionados (Resolvido).
-->Todos os capítulos do jogo adicionados em SaveProgress, agora podemos salvar o jogo de qualquer capítulo (resolvido).
-->Prólogo do jogo adicionado
-->Menu Debug escondido do jogador (resolvido)
-->Adicionei o ctrl direito e o backspace para avançar ou retroceder o diálogo(resolvido)
-
-->Comecei a criar o sistema de Avatares;
-
-
-
-
-
-
+->A sua resolução e idioma atual é escolhida automaticamente através das configurações do seu computador. Caso você queira alterar essas configurações, você pode fazer isso no menu de configurações.
 
 
 
 -------------------------Concluídos de hoje----------------------
+
+->Sistema de avatares funcional (resolvido);
 
 
 
@@ -51,17 +20,6 @@ Resolvido.
 
 ->Ideia de tradução do Idioma: quando eu conseguir corrigir e inputar todos os diálogos na classe de ListasDialogicas, tudo já vai estar no padrão correto. Dessa forma, pra eu conseguir traduzir tudo é muito mais rápido e fácil. E aí, com um switch no início do código eu consigo selecionar para qual idioma devemos entrar e utilizamos exatamente os mesmos nomes de métodos, mudamos apenas o objeto da classe para acesso. Dessa forma, o sistema de idiomas estará completo.
 
-->Sistema de avatares: o sistema de avateres funcionará de forma muito simples. Se o TMP de diálogo de game começar com um nome "Yael" ou "Pássaro", então esse avatar deve aparecer e todos os outros devem ser ocultados.
-
-
-->Quando eu entro no pause ou em outra tela, e clico em qualquer coisa o jogo identifica como se eu estivesse jogando e avança os diálogos. Eu não posso deixar isso acontecer. Eu já pesquisei, existe um metodo que pausa o que estiver rolando em uma cena. Eu devo deixar isso ser aplicado quando eu entro no pause. Pra resolver isso, tenho que adicionar a clausula que nao deixa eu clicar se o estiver fora de qualque cena que nao seja game desde que o o pause esteja ativado
-
-->Começar a construir o sistema de Avatares. Dependendo do Texto que for aparecer na tela, haverá um nome inicial. Esse nome será usado para definir qual avatar deve aparecer na tela. Dependendo do nome, aparecerá um avatar e os outros devem ser ocultados. 
-
-->Começar a construir a nova Demo
-
-->A meta hoje é entregar o sistema de save, load, pause e notificação prontos no commit 7.
-Dps disso, vou começar a trabalhar dentro do sistema de avatares. E quando esse sistema estiver pronto, aí poderei começar a trazer os meus assets para dentro do Alter Ego e aí, construir a primeira Demo. Se hoje eu não conseguir fazer o commit 7, então deixo essas tarefas para amanhã.
 
 ->Se eu começar a trazer os assets e construir o sistema de avatares, entao eu devo mexer com resoluções. Acho que a forma mais fácil e simples de fazer isso é criando interruptores que dizem em qual resolução deve ser jogado e um outro sistema que identifica automaticamente a resolução para o jogador não ter dor de cabeça com a tela quebrada.
 
