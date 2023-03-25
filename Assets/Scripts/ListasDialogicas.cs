@@ -168,40 +168,40 @@ Capítulo 1.2
         Capitulo_1_1.Add("Próximo dos trailers, há uma bandeira que representa a resistência Animals. Horário: 20:00.");
         Capitulo_1_1.Add("Pássaro – Pessoal, ele já se recuperou. Esse é Yael, conseguiu escapar do SOV assim como nós. Encontrei ele perto do distrito de testes da LIFE, durante uma varredura. ");
         Capitulo_1_1.Add("Yael – Olá... obrigado por me receberem, sem vocês eu teria morrido...");
-        Capitulo_1_1.Add("Raposa – Nós estávamos em outra missão e quando retornamos, Wing havia trazido você para cá. Deixo bem claro que você é bem-vindo, desde que responda algumas perguntas. A propósito, somos Raposa e Coruja.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Nós estávamos em outra missão e quando retornamos, Wing havia trazido você para cá. Deixo bem claro que você é bem-vindo, desde que responda algumas perguntas. A propósito, somos Raposa e Coruja.");
         Capitulo_1_1.Add("Coruja – Eu não sei se devemos aceitar ele... não o conhecemos ainda, pode ser um espião do governo ou da LIFE.");
-        Capitulo_1_1.Add("Raposa – Não existem mais governos... E acredite, não tem mais espiões.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Não existem mais governos... E acredite, não tem mais espiões.");
         Capitulo_1_1.Add("Coruja – Mas existe a LIFE.");
-        Capitulo_1_1.Add("Raposa – A LIFE está em todos os lugares, vigiando todos. As máscaras são importantes para evitarmos sermos descobertos. ");
+        Capitulo_1_1.Add("Raposa (Melinda) – A LIFE está em todos os lugares, vigiando todos. As máscaras são importantes para evitarmos sermos descobertos. ");
         Capitulo_1_1.Add("Pássaro – Com as máscaras e mantendo distância da cidade, estaremos seguros.");
         Capitulo_1_1.Add("Coruja – Até acabarem nossos recursos e termos que voltar lá.");
         Capitulo_1_1.Add("Yael –  Uhmmm, acredito que deva construir uma máscara também, certo? Eu vi um cachorro selvagem hoje mais cedo.... que tal um cão?");
-        Capitulo_1_1.Add("Raposa – Desde que você esteja mascarado, pode ser qualquer animal!");
+        Capitulo_1_1.Add("Raposa (Melinda) – Desde que você esteja mascarado, pode ser qualquer animal!");
         Capitulo_1_1.Add("Pássaro – Por que você não conta sua história para a gente Yael? ");
         Capitulo_1_1.Add("Coruja – Vai ser bom saber a história desse espião haha.");
-        Capitulo_1_1.Add("Raposa – Silêncio, por favor nos conte sua história Yael.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Silêncio, por favor nos conte sua história Yael.");
         Capitulo_1_1.Add("Yael – Bem, para começo de conversa eu não sou cidadão petrove. Nasci em Cairohill, na América. Todos sabem que Cairohill é um país pequeno na américa do norte, então não havia muitas oportunidades por lá. Eu estudava engenharia de software e consegui um intercâmbio para o leste europeu, aqui no país de vocês, Petrov");
         Capitulo_1_1.Add("Coruja – (desconfiado) - Sério que você não é um espião?");
         Capitulo_1_1.Add("Yael – Não sou. Fui confundido com vândalos na capital, há alguns anos. Fui preso em Krestymov. Para sair da pena, fui cobaia da LIFE para o Amotine e SOV. ");
-        Capitulo_1_1.Add("Raposa – (surpresa) – Você foi um dos primeiros a entrar no SOV?");
+        Capitulo_1_1.Add("Raposa (Melinda) – (surpresa) – Você foi um dos primeiros a entrar no SOV?");
         Capitulo_1_1.Add("Yael – (Cabisbaixo) – Sim. Eu fui cobaia, acabei que segui minha vida online. Não sabia nada que estava acontecendo aqui fora. Nem da guerra, nem das bombas, nada.");
         Capitulo_1_1.Add("Pássaro – (Triste e convencido) - Sorte sua. Eu lutei na guerra. Vi coisas que jamais gostariam de ver. Vi cidades sendo explodidas, vi crianças perdidas e sem rumo... Vi tudo o que nunca jamais deveria acontecer.");
         Capitulo_1_1.Add("Coruja – Eu também não vi a guerra. Eu tinha uma vida normal dentro do SOV, mas quando saí, pude ver que nada daquilo era real. Era só uma distração.");
-        Capitulo_1_1.Add("Raposa – Linda.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Linda.");
         Capitulo_1_1.Add("Yael – O quê?");
-        Capitulo_1_1.Add("Raposa – Linda. Minha irmã. Ela foi uma das causas dessa guerra. Foi ela quem destruiu tudo que vocês conheciam.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Linda. Minha irmã. Ela foi uma das causas dessa guerra. Foi ela quem destruiu tudo que vocês conheciam.");
         Capitulo_1_1.Add("Pássaro – Nunca vou entender. Como uma mulher pode ajudar a causar uma guerra?");
-        Capitulo_1_1.Add("Raposa – Não se engane, ela não é apenas uma mulher. É uma espiã enviada pela LIFE... - ");
+        Capitulo_1_1.Add("Raposa (Melinda) – Não se engane, ela não é apenas uma mulher. É uma espiã enviada pela LIFE... - ");
         Capitulo_1_1.Add("Coruja – Nós a encontramos uma vez antes.... Foi ela quem nos atacou dentro do SOV, não é mesmo Wing?");
         Capitulo_1_1.Add("Pássaro – Sim, ela estava atrás de nós porque sabia que queríamos sair de lá.");
         Capitulo_1_1.Add("Yael – Se ela estava atrás de vocês, então ela provavelmente ainda está localizando a gente. ");
-        Capitulo_1_1.Add("Raposa – Wing, será que algum drone chegou a ver o rosto de Yael? ");
+        Capitulo_1_1.Add("Raposa (Melinda) – Wing, será que algum drone chegou a ver o rosto de Yael? ");
         Capitulo_1_1.Add("Pássaro – Não que eu saiba..., mas talvez alguma câmera de segurança.");
-        Capitulo_1_1.Add("Raposa – Precisamos urgente construir a máscara do Yael. Próximo do rio, descendo nossa base há um material chamado Carlya, maleável e leve você consegue conseguir uma máscara formidável.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Precisamos urgente construir a máscara do Yael. Próximo do rio, descendo nossa base há um material chamado Carlya, maleável e leve você consegue conseguir uma máscara formidável.");
         Capitulo_1_1.Add("Coruja – Eu encontrei algumas tintas em uma maleta abandonada próximo da estrada 886. Você pode usá-las.");
         Capitulo_1_1.Add("Yael – Irei fazer isso agora.");
         Capitulo_1_1.Add("Pássaro – Vou com ele.");
-        Capitulo_1_1.Add("Raposa – Ótimo.");
+        Capitulo_1_1.Add("Raposa (Melinda) – Ótimo.");
 
         //Proximo capitulo: 3.6	Capitulo_1_2
 
@@ -266,7 +266,7 @@ Capítulo 1.2
 
         Capitulo_1_3_2.Add("CAPÍTULO 1-3-2 'FINAL 1' – O CÃO SE DECIDIU – ESCOLHA 2 (NÃO FAZER PARTE DOS ANIMALS)");
 
-        Capitulo_1_3_2.Add("Wing - Ontem eu vi um homem único, com uma personalidade maravilhosa. Cada detalhe era único, hoje eu o vi. Mas hoje, é apenas uma cópia barata de homens. Você é esse homem Yael. Você não serve para ser um herói. ");
+        Capitulo_1_3_2.Add("Pássaro –Ontem eu vi um homem único, com uma personalidade maravilhosa. Cada detalhe era único, hoje eu o vi. Mas hoje, é apenas uma cópia barata de homens. Você é esse homem Yael. Você não serve para ser um herói. ");
         Capitulo_1_3_2.Add("Yael – Sinto muito Wing, mas sei que devo seguir meu caminho sozinho. Boa sorte com seus planos de salvar a humanidade.");
         Capitulo_1_3_2.Add("Wing – Adeus.");
         Capitulo_1_3_2.Add("Yael – Adeus.");
@@ -281,7 +281,7 @@ Capítulo 1.2
         //Yeal decide fazer parte dos Animals.
         Capitulo_1_4.Add("CAPÍTULO 1-4 – DE VOLTA AO ACAMPAMENTO – ESCOLHA 1");
 
-        Capitulo_1_4.Add("Wing - Pessoal, Yael já possui a máscara dele. E ele decidiu ficar conosco e lutar contra a LIFE. Ele comentou que quer retribuir o favor que fizemos a ele, por salvá-lo. ");
+        Capitulo_1_4.Add("Pássaro –Pessoal, Yael já possui a máscara dele. E ele decidiu ficar conosco e lutar contra a LIFE. Ele comentou que quer retribuir o favor que fizemos a ele, por salvá-lo. ");
         Capitulo_1_4.Add("Coruja (Jones) – Bem-vindo Yael, você é um de nós agora.");
         Capitulo_1_4.Add("Raposa (Melinda) – Bem-vindo Yael, sinta-se em casa. Você nos ajudará em muitas coisas, pode ficar com aquele trailer para você. A partir de agora aqui será sua casa. Lutaremos juntos nessa guerra contra a LIFE.");
         Capitulo_1_4.Add("Cão (Yael) – Obrigado, mais uma vez... Podem me chamar de Cão. Será meu alter ego, minha nova forma de ser nesse mundo. Minha nova versão.");
@@ -400,34 +400,34 @@ Capítulo 1.2
 
 
         //Cenário: Logotipo do SOV by LIFE iniciando
-        Capitulo_2_3_1.Add("L.I.A. - Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
-        Capitulo_2_3_1.Add("L.I.A. - Em breve você estará em um mundo inteiramente virtual. ");
-        Capitulo_2_3_1.Add("L.I.A. - A nossa cidade no nosso mundo se chama CyberCity.");
-        Capitulo_2_3_1.Add("L.I.A. - Haha... Eu nem me apresentei. Meu nome é L.I.A., Lua, Inteligência Artificial da LIFE. Mas pode me chamar só de LIA, ok? 😊");
-        Capitulo_2_3_1.Add("L.I.A. - A propósito... você conhece a nossa história? Que tal nos conhecer melhor enquanto te inserimos em nosso mundo?");
-        Capitulo_2_3_1.Add("L.I.A. - O SOV foi criado para que Petrov sobrevivesse à guerra nuclear.  Nós criamos drones para cuidarem das pessoas conectadas aos amotines, dentro dos abrigos nucleares. Mas... acontece que não há registros de vida humana, além desses fora do SOV ☹");
-        Capitulo_2_3_1.Add("L.I.A. - Então o SOV foi um sucesso, não é? Isso me deixa feliz. ");
-        Capitulo_2_3_1.Add("L.I.A. - Continuando nossa história");
-        Capitulo_2_3_1.Add("L.I.A. - Durante a década de 1980 Malev, o criador, havia crescido em uma era de conflitos políticos, onde via durante todos os dias a dor e o sofrimento das pessoas de Petrov. Toda essa dor era sentida pelo mundo todo. ");
-        Capitulo_2_3_1.Add("L.I.A. - Petrov estava enfrentando uma guerra contra seus inimigos do Leste Europeu e não possuía nenhum tipo de apoio dos americanos ou do oeste europeu, pois todos tinham medo de causar uma guerra ainda maior.");
-        Capitulo_2_3_1.Add("L.I.A. - Ele viu toda a sua cidade, seus sonhos, amigos e familiares sendo destruídos e mortos, e ninguém podia ajudar.");
-        Capitulo_2_3_1.Add("L.I.A. - Então, com suas habilidades em tecnologia, construiu a primeira versão do SOV. Onde poderia ter um ambiente online, contendo as almas das pessoas de quem gostava em segurança.");
-        Capitulo_2_3_1.Add("L.I.A. - Naquele tempo, um dos poucos abrigos subterrâneos para cientistas estava construindo armas para conseguir se defender de seus inimigos, o Sci-Petrov");
-        Capitulo_2_3_1.Add("L.I.A. - Ele, apenas com seu computador foi até o abrigo e ofereceu ajuda contra os inimigos.");
-        Capitulo_2_3_1.Add("L.I.A. - Malev foi aceito, por ter em mãos o que poderia ser uma nova forma de sobreviver aos ataques inimigos.");
-        Capitulo_2_3_1.Add("L.I.A. - Dentro do Sci-Petrov, ele conheceu o Asimovitsky, um cientista brilhante onde se tornaram grandes amigos, por compartilharem de crenças parecidas.");
-        Capitulo_2_3_1.Add("L.I.A. - Malev tinha um ódio interno, por conta de seus inimigos destruírem o seu país e um ódio ainda maior dos outros países que permitiram tudo acontecer.");
-        Capitulo_2_3_1.Add("L.I.A. - Malev colocou a primeira versão do SOV para funcionar e os cientistas perceberam que ele havia construído o que poderia ser uma nova forma de se viver.");
-        Capitulo_2_3_1.Add("L.I.A. - Asimovitsky, percebeu que o SOV não era suficiente para conseguirem sobreviverem desenvolveu a primeira versão do Amotine. ");
+        Capitulo_2_3_1.Add("L.I.A. – Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
+        Capitulo_2_3_1.Add("L.I.A. – Em breve você estará em um mundo inteiramente virtual. ");
+        Capitulo_2_3_1.Add("L.I.A. – A nossa cidade no nosso mundo se chama CyberCity.");
+        Capitulo_2_3_1.Add("L.I.A. – Haha... Eu nem me apresentei. Meu nome é L.I.A., Lua, Inteligência Artificial da LIFE. Mas pode me chamar só de LIA, ok? 😊");
+        Capitulo_2_3_1.Add("L.I.A. – A propósito... você conhece a nossa história? Que tal nos conhecer melhor enquanto te inserimos em nosso mundo?");
+        Capitulo_2_3_1.Add("L.I.A. – O SOV foi criado para que Petrov sobrevivesse à guerra nuclear.  Nós criamos drones para cuidarem das pessoas conectadas aos amotines, dentro dos abrigos nucleares. Mas... acontece que não há registros de vida humana, além desses fora do SOV ☹");
+        Capitulo_2_3_1.Add("L.I.A. – Então o SOV foi um sucesso, não é? Isso me deixa feliz. ");
+        Capitulo_2_3_1.Add("L.I.A. – Continuando nossa história");
+        Capitulo_2_3_1.Add("L.I.A. – Durante a década de 1980 Malev, o criador, havia crescido em uma era de conflitos políticos, onde via durante todos os dias a dor e o sofrimento das pessoas de Petrov. Toda essa dor era sentida pelo mundo todo. ");
+        Capitulo_2_3_1.Add("L.I.A. – Petrov estava enfrentando uma guerra contra seus inimigos do Leste Europeu e não possuía nenhum tipo de apoio dos americanos ou do oeste europeu, pois todos tinham medo de causar uma guerra ainda maior.");
+        Capitulo_2_3_1.Add("L.I.A. – Ele viu toda a sua cidade, seus sonhos, amigos e familiares sendo destruídos e mortos, e ninguém podia ajudar.");
+        Capitulo_2_3_1.Add("L.I.A. – Então, com suas habilidades em tecnologia, construiu a primeira versão do SOV. Onde poderia ter um ambiente online, contendo as almas das pessoas de quem gostava em segurança.");
+        Capitulo_2_3_1.Add("L.I.A. – Naquele tempo, um dos poucos abrigos subterrâneos para cientistas estava construindo armas para conseguir se defender de seus inimigos, o Sci-Petrov");
+        Capitulo_2_3_1.Add("L.I.A. – Ele, apenas com seu computador foi até o abrigo e ofereceu ajuda contra os inimigos.");
+        Capitulo_2_3_1.Add("L.I.A. – Malev foi aceito, por ter em mãos o que poderia ser uma nova forma de sobreviver aos ataques inimigos.");
+        Capitulo_2_3_1.Add("L.I.A. – Dentro do Sci-Petrov, ele conheceu o Asimovitsky, um cientista brilhante onde se tornaram grandes amigos, por compartilharem de crenças parecidas.");
+        Capitulo_2_3_1.Add("L.I.A. – Malev tinha um ódio interno, por conta de seus inimigos destruírem o seu país e um ódio ainda maior dos outros países que permitiram tudo acontecer.");
+        Capitulo_2_3_1.Add("L.I.A. – Malev colocou a primeira versão do SOV para funcionar e os cientistas perceberam que ele havia construído o que poderia ser uma nova forma de se viver.");
+        Capitulo_2_3_1.Add("L.I.A. – Asimovitsky, percebeu que o SOV não era suficiente para conseguirem sobreviverem desenvolveu a primeira versão do Amotine. ");
         Capitulo_2_3_1.Add("L.I.A. – É graças ao amotine que é possível que as pessoas sejam conectadas ao SOV. Ele consegue nutrir todas as necessidades do corpo humano e ao mesmo tempo, plugá-lo em um ambiente 100% virtual.");
         Capitulo_2_3_1.Add("L.I.A. – O finado Asimovitsky foi um grande gênio. Agradecemos a ele por toda a contribuição!");
-        Capitulo_2_3_1.Add("L.I.A. - ...");
-        Capitulo_2_3_1.Add("L.I.A. - Malev e Asimovitsky, juntos criaram a LIFE. Todos os cientistas da Sci-Petrov concordaram a passarem a fazer parte da LIFE e juntos começaram a criar servidores para conseguirem armazenar os sobreviventes de Petrov, para garantirem sua segurança. ");
-        Capitulo_2_3_1.Add("L.I.A. - Após o sistema da LIFE estar pronto, começaram a pegar prisioneiros na prisão de  Krestymov para testar seus sistemas. ");
-        Capitulo_2_3_1.Add("L.I.A. - Logo após os cientistas verem o sucesso do SOV, muitos foram enviados para construírem o que seria o novo lar das pessoas: A CyberCity.");
-        Capitulo_2_3_1.Add("L.I.A. - Malev passou a ser chamado de Criador, por ter salvado todas as pessoas de serem vítimas dos conflitos políticos e ter criado todo um sistema para isso.");
-        Capitulo_2_3_1.Add("L.I.A. - Embora o Criador tivesse feito algo bom, seu coração estava corrompido pela vingança contra seus inimigos.");
-        Capitulo_2_3_1.Add("L.I.A. - Após alguns anos, em seu cargo bem estabelecido, sendo o chefe da LIFE, ordenou que os cientistas que ainda estavam off-line começassem um projeto novo, para aniquilar toda a terra e trouxessem todos para o SOV, dessa forma todos os que não quiseram ajudar na guerra saberiam o que o povo petrove passou durante os anos de conflito e passariam a viver dentro do SOV. Seria uma nova forma de haver paz no mundo, sem fome, nem guerra, nem mortes...");
+        Capitulo_2_3_1.Add("L.I.A. – ...");
+        Capitulo_2_3_1.Add("L.I.A. – Malev e Asimovitsky, juntos criaram a LIFE. Todos os cientistas da Sci-Petrov concordaram a passarem a fazer parte da LIFE e juntos começaram a criar servidores para conseguirem armazenar os sobreviventes de Petrov, para garantirem sua segurança. ");
+        Capitulo_2_3_1.Add("L.I.A. – Após o sistema da LIFE estar pronto, começaram a pegar prisioneiros na prisão de  Krestymov para testar seus sistemas. ");
+        Capitulo_2_3_1.Add("L.I.A. – Logo após os cientistas verem o sucesso do SOV, muitos foram enviados para construírem o que seria o novo lar das pessoas: A CyberCity.");
+        Capitulo_2_3_1.Add("L.I.A. – Malev passou a ser chamado de Criador, por ter salvado todas as pessoas de serem vítimas dos conflitos políticos e ter criado todo um sistema para isso.");
+        Capitulo_2_3_1.Add("L.I.A. – Embora o Criador tivesse feito algo bom, seu coração estava corrompido pela vingança contra seus inimigos.");
+        Capitulo_2_3_1.Add("L.I.A. – Após alguns anos, em seu cargo bem estabelecido, sendo o chefe da LIFE, ordenou que os cientistas que ainda estavam off-line começassem um projeto novo, para aniquilar toda a terra e trouxessem todos para o SOV, dessa forma todos os que não quiseram ajudar na guerra saberiam o que o povo petrove passou durante os anos de conflito e passariam a viver dentro do SOV. Seria uma nova forma de haver paz no mundo, sem fome, nem guerra, nem mortes...");
         Capitulo_2_3_1.Add("L.I.A. – ...");
         Capitulo_2_3_1.Add("L.I.A. – Espero que você tenha gostado da nossa história. ");
         Capitulo_2_3_1.Add("L.I.A. – Em breve nos encontraremos de novo! Até logo 😊");
@@ -479,13 +479,13 @@ Capítulo 1.2
         Capitulo_2_3_2.Add("Coruja (Jones) (escorrendo algumas lágrimas através da máscara) – Adeus raposinha... Sentirei sua falta...");
         Capitulo_2_3_2.Add("Coruja (Jones) (silêncio) - ...");
         Capitulo_2_3_2.Add("Wing (Pássaro) – Adeus Melinda, descanse em paz... Traremos vitória para os Animals...");
-        Capitulo_2_3_2.Add("Wing (Pássaro) - (silêncio) – ...");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – (silêncio) – ...");
         Capitulo_2_3_2.Add("Cão (Yael) –(silêncio) – Eu aceito o livro... vingarei sua morte Melinda, Adeus... ");
         Capitulo_2_3_2.Add("Cão (Yael) – ...");
         Capitulo_2_3_2.Add("Wing (Pássaro) – ...");
         Capitulo_2_3_2.Add("Coruja (Jones) – ...");
         Capitulo_2_3_2.Add("Cão (Yael) – Eu sinto muito pela perda pessoal. Eu juro, foi um acidente...");
-        Capitulo_2_3_2.Add("Wing (Pássaro) - (Raivoso)– QUANDO EU TE TROUXE PARA OS ANIMALS, EU ACHAVA QUE VOCÊ IRIA NOS AJUDAR E NÃO NOS MATAR, CÃO. ");
+        Capitulo_2_3_2.Add("Wing (Pássaro) – (Raivoso)– QUANDO EU TE TROUXE PARA OS ANIMALS, EU ACHAVA QUE VOCÊ IRIA NOS AJUDAR E NÃO NOS MATAR, CÃO. ");
         Capitulo_2_3_2.Add("Wing (Pássaro) – Acabamos de perder quem mais nos importávamos. Olha o que você fez!");
         Capitulo_2_3_2.Add("Cão (Yael) – (Assustado) – FOI UM ACIDENTE!! POR FAVOR, NÃO ME TIREM DOS ANIMALS! Eu não sei o que pode acontecer comigo sem vocês...");
         Capitulo_2_3_2.Add("Wing (Pássaro) – A vida pra você é fácil não é?...");
@@ -553,10 +553,10 @@ Capítulo 1.2
 
 
         //Cenário: Logotipo do SOV by LIFE iniciando
-        Capitulo_2_3_3.Add("L.I.A. - Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
-        Capitulo_2_3_3.Add("L.I.A. - Em breve você estará em um mundo inteiramente virtual. ");
-        Capitulo_2_3_3.Add("L.I.A. - A nossa cidade no nosso mundo se chama CyberCity.");
-        Capitulo_2_3_3.Add("L.I.A. - Haha... Eu nem me apresentei. Meu nome é L.I.A., Lua, Inteligência Artificial da LIFE. Mas pode me chamar só de LIA, ok? 😊");
+        Capitulo_2_3_3.Add("L.I.A. – Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
+        Capitulo_2_3_3.Add("L.I.A. – Em breve você estará em um mundo inteiramente virtual. ");
+        Capitulo_2_3_3.Add("L.I.A. – A nossa cidade no nosso mundo se chama CyberCity.");
+        Capitulo_2_3_3.Add("L.I.A. – Haha... Eu nem me apresentei. Meu nome é L.I.A., Lua, Inteligência Artificial da LIFE. Mas pode me chamar só de LIA, ok? 😊");
         Capitulo_2_3_3.Add("L.I.A. – Percebi que você é novo... E não possui nenhuma segurança, interessante.");
         Capitulo_2_3_3.Add("Cão (Yael) – O que quer dizer com isso?");
         Capitulo_2_3_3.Add("L.I.A. – Nada! ");
@@ -706,7 +706,7 @@ Capítulo 1.2
 
         Capitulo_2_4_1.Add("Página 9 (Final) – Meu leito de morte, uma mensagem para você.");
         Capitulo_2_4_1.Add("“O livro era um diário em branco. Pertencia a um homem chamado Modrek Amorit. Eu, sendo um jovem e inexperiente, guardei aquele livro para mim. Anotei minhas lembranças mais pertinentes”.");
-        Capitulo_2_4_1.Add("Anotei os meus demônios e meus anjos. O darei para ela, minha querida filha não humana, Melinda. A minha querida androtine. A quem deve salvar esse mundo dele, o criador do SOV – Malev - e da escravidão virtual. ");
+        Capitulo_2_4_1.Add("Anotei os meus demônios e meus anjos. O darei para ela, minha querida filha não humana, Melinda. A minha querida androtine. A quem deve salvar esse mundo dele, o criador do SOV – Malev – e da escravidão virtual. ");
         Capitulo_2_4_1.Add("Melinda, salve o mundo. Use máscaras de animais, pois os drones da LIFE dificilmente verão você. Use os drones contra a LIFE, contra o Criador.");
         Capitulo_2_4_1.Add("Eu digo que não consigo e que está tudo tão difícil... sei que consigo. Sei que sou forte, sempre fui. Eu olho para o meu passado e vejo o quanto eu sofri e o quanto fui forte em aguentar tantas e tantas coisas. Sei que elas me machucaram. Sei que dói lembrar dessas coisas. Às vezes são fantasmas do passado que me cercam, não me permitindo evoluir.");
         Capitulo_2_4_1.Add("Ninguém disse que seria fácil, ninguém me disse que seria simples. ");
@@ -777,7 +777,7 @@ Capítulo 1.2
     {
         Capitulo_3_1_1 = new List<string>();
 
-        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
+        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DELinda – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
         //Código 7898 usado, Linda entra para os Animals.
 
         //Cenário: Estação 14-7.
@@ -800,7 +800,7 @@ Capítulo 1.2
     {
         Capitulo_3_1_2 = new List<string>();
         //Código 7562 usado, Linda entra para os Animals.
-        Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DE LINDA - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
+        Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DELinda – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
 
         //Cenário: Estação 14-7.
         Capitulo_3_1_2.Add("Cão (Yael) – Eu não li o diário, mas sei o que estou fazendo... Linda, ativar código 7562.");
@@ -884,7 +884,7 @@ Capítulo 1.2
         Capitulo_3_3.Add("Linda – Sim... E você veio me matar? Por que EU vou te matar! Ordens de meu criador, Malev.");
         Capitulo_3_3.Add("Linda (Golpeia Coruja e Pássaro, os dois caem no chão.)");
         Capitulo_3_3.Add("Raposa (Melinda) – Yael, faça alguma coisa!");
-        Capitulo_3_3.Add("Raposa (Melinda) - ...");
+        Capitulo_3_3.Add("Raposa (Melinda) – ...");
         Capitulo_3_3.Add("Cão (Yael) – L.I.A.! Ativar código!");
         Capitulo_3_3.Add("Linda (L.I.A.) – Qual código você deseja ativar?");
         Capitulo_3_3.Add("Linda – Como isso é possível?");
@@ -911,7 +911,7 @@ Capítulo 1.2
         Capitulo_3_3_1.Add("Linda – (L.I.A): Projeto Me-Linda desativado. Reconhecendo amigos... Carregando sistema.");
         Capitulo_3_3_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
         Capitulo_3_3_1.Add("Raposa (Melinda) – (feliz e confusa) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Conseguimos te salvar.");
-        Capitulo_3_3_1.Add("Wing (Pássaro) -...");
+        Capitulo_3_3_1.Add("Wing (Pássaro) –...");
         Capitulo_3_3_1.Add("Coruja (Jones) (Últimos suspiros) – Wing, missão cumprida meu irmão... Você é o melhor!");
         Capitulo_3_3_1.Add("Wing (Pássaro) – Mas a que custo? Jones morreu...");
         Capitulo_3_3_1.Add("Cão (Yael) – Sinto muito Wing, fiz o meu melhor...");
@@ -964,9 +964,9 @@ Capítulo 1.2
         Capitulo_3_3_3.Add("Linda (L.I.A.) – Sistema sendo destruído em 3... 2... 1...");
         Capitulo_3_3_3.Add("Linda (L.I.A.) – puff...");
         Capitulo_3_3_3.Add("Raposa (Melinda) – Nãooo!!!");
-        Capitulo_3_3_3.Add("Raposa (Melinda) - ...");
+        Capitulo_3_3_3.Add("Raposa (Melinda) – ...");
         Capitulo_3_3_3.Add("Raposa (Melinda) – Não acredito... Wing e Jones, eles se foram...");
-        Capitulo_3_3_3.Add("Cão (Yael) - ...");
+        Capitulo_3_3_3.Add("Cão (Yael) – ...");
         Capitulo_3_3_3.Add("Cão (Yael) – Eles se foram, Linda também... fizemos o que podíamos...");
         Capitulo_3_3_3.Add("Raposa (Melinda) – Vamos enfrentar Malev... Não temos tempo para luto Raposa.");
         Capitulo_3_3_3.Add("Cão (Yael) – Vamos enfrenta-lo.");
@@ -1000,7 +1000,7 @@ Capítulo 1.2
         Capitulo_4_A.Add("Malev – Eu não sou um Deus, sou apenas um homem comum...");
         Capitulo_4_A.Add("Malev – Vocês devem recomeçar, a partir daqui... Vocês devem reiniciar os amotines, acordar todas as pessoas antes da morte. Elas devem sim serem questionadas se querem ou não viver nesse mundo virtual.");
         Capitulo_4_A.Add("Malev – Mas eu... eu ficarei online, porque a Terra nunca foi um lugar pra mim. ");
-        Capitulo_4_A.Add("Malev - Eu pertenço ao meu próprio mundo....");
+        Capitulo_4_A.Add("Malev – Eu pertenço ao meu próprio mundo....");
 
         return Capitulo_4_A;
         //Final 2 v1
@@ -1049,7 +1049,7 @@ Capítulo 1.2
         Capitulo_4_B.Add("Malev – Eu não sou um Deus, sou apenas um homem comum...");
         Capitulo_4_B.Add("Malev – Vocês devem recomeçar, a partir daqui... Vocês devem reiniciar os amotines, acordar todas as pessoas antes da morte. Elas devem sim serem questionadas se querem ou não viver nesse mundo virtual.");
         Capitulo_4_B.Add("Malev – Mas eu... eu ficarei online, porque a Terra nunca foi um lugar pra mim. ");
-        Capitulo_4_B.Add("Malev - Eu pertenço ao meu próprio mundo....");
+        Capitulo_4_B.Add("Malev – Eu pertenço ao meu próprio mundo....");
 
 
         return Capitulo_4_B;
@@ -1073,7 +1073,7 @@ Capítulo 1.2
         Capitulo_4_C.Add("Malev – Linda, agora você tem acesso ao controle dos amotines. Salve a todos.");
         Capitulo_4_C.Add("Raposa (Melinda) – Linda, termine com isso.");
         Capitulo_4_C.Add("Linda (Com apenas um golpe, Linda mata Malev)");
-        Capitulo_4_C.Add("Malev (Suspiro final) -...");
+        Capitulo_4_C.Add("Malev – (Suspiro final) -...");
         Capitulo_4_C.Add("Wing (Pássaro) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
         Capitulo_4_C.Add("Raposa (Melinda) – Estão sendo restaurados agora.");
         Capitulo_4_C.Add("Linda – É isso? ");
@@ -1105,7 +1105,7 @@ Capítulo 1.2
         Capitulo_4_D.Add("Malev – Linda, agora você tem acesso ao controle dos amotines. Salve a todos.");
         Capitulo_4_D.Add("Raposa (Melinda) – Linda, termine com isso.");
         Capitulo_4_D.Add("Linda (Com apenas um golpe, Linda mata Malev)");
-        Capitulo_4_D.Add("Malev (Suspiro final) -...");
+        Capitulo_4_D.Add("Malev – (Suspiro final) -...");
         Capitulo_4_D.Add("Coruja (Jones) – Terminamos por aqui. Malev não será mais um problema. Agora, só falta restaurar os amotines.");
         Capitulo_4_D.Add("Raposa (Melinda) – Estão sendo restaurados agora.");
         Capitulo_4_D.Add("Linda – É isso? ");
@@ -1137,7 +1137,7 @@ Capítulo 1.2
         Capitulo_4_E.Add("Raposa (Melinda) – O que quer dizer com isso?");
         Capitulo_4_E.Add("Malev – Eu desliguei os amotines assim que descobri que Linda tinha sido destruída. Isso significa que toda a humanidade foi destruída. ");
         Capitulo_4_E.Add("Cão (Yael) (Assustado e surpreso) – O quê??!!! Você matou todos!!");
-        Capitulo_4_E.Add("Malev (Últimos suspiros) – Acabou Animals... Acabou Melinda e Cão...");
+        Capitulo_4_E.Add("Malev – (Últimos suspiros) – Acabou Animals... Acabou Melinda e Cão...");
         Capitulo_4_E.Add("Raposa (Melinda) – Seu maldito... você... você conseguiu o que queria, mas a que custo? Seu psicopata! Eu não sou humana, mas minhas atitudes são mais humanas que as suas!");
         Capitulo_4_E.Add("Malev – Vocês podem dar um jeito nisso...");
         Capitulo_4_E.Add("Cão (Yael) – Há uma salvação?");

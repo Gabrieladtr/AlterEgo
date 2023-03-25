@@ -1,0 +1,781 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.16f1 (4016570cf34f) revision 4200023'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'pt' Physical Memory: 16298 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+G:\Programas x64\Unity Engine\2021.3.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Projetos Unity/AlterEgoCloneV2/AlterEgo
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+57235
+Successfully changed project path to: C:/Projetos Unity/AlterEgoCloneV2/AlterEgo
+C:/Projetos Unity/AlterEgoCloneV2/AlterEgo
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12304] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2985611651 [EditorId] 2985611651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HGH87A3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12304] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 2985611651 [EditorId] 2985611651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-HGH87A3) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 97.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.16f1 (4016570cf34f)
+[Subsystems] Discovering subsystems at path G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Projetos Unity/AlterEgoCloneV2/AlterEgo/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     4074 MB
+    Driver:   31.0.14037.1007
+Initialize mono
+Mono path[0] = 'G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/Managed'
+Mono path[1] = 'G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: G:/Programas x64/Unity Engine/2021.3.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003611 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 85.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.898 seconds
+Domain Reload Profiling:
+	ReloadAssembly (898ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (603ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (260ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (266ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (85ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (121ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006219 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.998 seconds
+Domain Reload Profiling:
+	ReloadAssembly (999ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (792ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (222ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (412ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3252 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (56.3 KB). Loaded Objects now: 3711.
+Memory consumption went from 113.8 MB to 113.7 MB.
+Total: 2.891300 ms (FindLiveObjects: 0.239500 ms CreateObjectMapping: 0.172900 ms MarkObjects: 2.405300 ms  DeleteObjects: 0.072600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 346894.573310 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/O Criador - Malev.png
+  artifactKey: Guid(e193e89d47a75b94e86061de8840b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/O Criador - Malev.png using Guid(e193e89d47a75b94e86061de8840b053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02caeaa3f4b0424b9ea6bfdd1a5dc8a') in 0.293676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Selecionadas/Melinda v1.png
+  artifactKey: Guid(297e90239643a204282ce21ee8d3cc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Selecionadas/Melinda v1.png using Guid(297e90239643a204282ce21ee8d3cc1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a845d0147c78614223f7f6a1e559dff') in 0.372083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Artes cortadas/Malev - PNG - V3 - Cortado V1.png
+  artifactKey: Guid(af0e6d1764113404a9d608b434851cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Artes cortadas/Malev - PNG - V3 - Cortado V1.png using Guid(af0e6d1764113404a9d608b434851cd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52eba203e65763ef87e61ecbe1ec3780') in 0.064732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Malev - PNG - V3.png
+  artifactKey: Guid(452faa0954f4ca54ebfbc22ad84bbb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Malev - PNG - V3.png using Guid(452faa0954f4ca54ebfbc22ad84bbb3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1506f3dbec2f32f196cbe113fa293a') in 0.120971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Máscara raposa v1.png
+  artifactKey: Guid(a6c077672004ae544a4dfa101cee5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Máscara raposa v1.png using Guid(a6c077672004ae544a4dfa101cee5238) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c7b3c777ea67b6f4ebbec075951e3c') in 0.159137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Logos/Logo_v2.png
+  artifactKey: Guid(3e49255970a9ad440b0498a1677b5c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Logos/Logo_v2.png using Guid(3e49255970a9ad440b0498a1677b5c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37a978996713c163f6243a4a80a57ae') in 0.108483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/Melinda - Raposa.png
+  artifactKey: Guid(45eaa49250655db4d898890548add7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/Melinda - Raposa.png using Guid(45eaa49250655db4d898890548add7f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a19e1e461b6f8b023780595acda996') in 0.196024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Logos/Logo_v3.png
+  artifactKey: Guid(d5d6e70f396ebc141abca66e205f7566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Logos/Logo_v3.png using Guid(d5d6e70f396ebc141abca66e205f7566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48eba7074efaceb6b38be0c787ac3504') in 0.132412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Logo_game/Logo_v3.png
+  artifactKey: Guid(9ea32f49558eeee45a7a0f0d9abeb32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Logo_game/Logo_v3.png using Guid(9ea32f49558eeee45a7a0f0d9abeb32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777d53bfde14d1d6aa7560daa4327459') in 0.095113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Melinda v1.png
+  artifactKey: Guid(e07fd65cd52bb4641952e3bb7bfff9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Melinda v1.png using Guid(e07fd65cd52bb4641952e3bb7bfff9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830120b4aaa9b07c27a86ff876915b51') in 0.312769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Logos/Logo_v3.png
+  artifactKey: Guid(03e6d29e588faf94ca35106ee5bb9a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Logos/Logo_v3.png using Guid(03e6d29e588faf94ca35106ee5bb9a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7926a5073b15607245750ab728a59a85') in 0.130436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Concepts/Malev2.png
+  artifactKey: Guid(40b664d395e86d04dbc756ea6c3933c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Concepts/Malev2.png using Guid(40b664d395e86d04dbc756ea6c3933c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be3db974c2e4a330cec930861999d9c0') in 0.355841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Mapa da cidade-Metro V3.png
+  artifactKey: Guid(32865c866b0facb49b96891ceeb52737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Mapa da cidade-Metro V3.png using Guid(32865c866b0facb49b96891ceeb52737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6317d617a223fb2dec6e653c85735fe') in 0.118177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Máscara raposa v2.png
+  artifactKey: Guid(e3004e67d2c5b68469bff46a82b7769b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Personagens/Edições das Selecionadas/Máscara raposa v2.png using Guid(e3004e67d2c5b68469bff46a82b7769b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47b2c590423deeeb3cc5900b3f8f2f5') in 0.724216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Malev - PNG - V3 - Cortado V1.png
+  artifactKey: Guid(22fa0bb645eb9e24a9c94afe3ef779b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Malev - PNG - V3 - Cortado V1.png using Guid(22fa0bb645eb9e24a9c94afe3ef779b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265f032a5f7d305c53496fba24a2608a') in 0.053904 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Logo_game/Logo_v2.png
+  artifactKey: Guid(4f72b4b8569513b478bfcae0550dc565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Logo_game/Logo_v2.png using Guid(4f72b4b8569513b478bfcae0550dc565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d5da53314cc3b996c5740a1d125f751') in 0.097290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Malev - BACKGROUND - V2.png
+  artifactKey: Guid(33c306594de502a48b8d2a0f5dfb3166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Malev - BACKGROUND - V2.png using Guid(33c306594de502a48b8d2a0f5dfb3166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4b28c65072288f10c8bc42abef2f623') in 0.094065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Malev - PNG - V3 - Cortado V2.png
+  artifactKey: Guid(73f3f41ddadb83c499ccaba7f6ba8192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Malev - PNG - V3 - Cortado V2.png using Guid(73f3f41ddadb83c499ccaba7f6ba8192) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '941acedd4441184a93082b55042fbfbe') in 0.242043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Artes cortadas/Malev - PNG - V3 - Cortado V2.png
+  artifactKey: Guid(63ed0a505af20f245a82b36ea86564da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Malev - Versão final/Artes cortadas/Malev - PNG - V3 - Cortado V2.png using Guid(63ed0a505af20f245a82b36ea86564da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231757798d27e5f55a8d960b164a7154') in 0.506750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.115646 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/cenários/Selecionadas/Apartamento V2.png
+  artifactKey: Guid(2a2545df149c9244281172dcdf18d6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/cenários/Selecionadas/Apartamento V2.png using Guid(2a2545df149c9244281172dcdf18d6d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58af8bde358031fccde13bf86764793') in 0.110788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Artbook/Artes para o site/ArtBook Alter Ego v2.png
+  artifactKey: Guid(a9949a20be90d2a4c85815725febb2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Artbook/Artes para o site/ArtBook Alter Ego v2.png using Guid(a9949a20be90d2a4c85815725febb2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42fba12d25a5401caa13bd57437bbccc') in 0.245457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Imagens/Artes/Alter Ego - IA artes/Artbook/ArtBook Alter Ego.png
+  artifactKey: Guid(1630773f42893174597ece78846a8a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Alter Ego - IA artes/Artbook/ArtBook Alter Ego.png using Guid(1630773f42893174597ece78846a8a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc20d9a5e0e010c3b35adbfd7b452749') in 0.212137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Asimovstisky V1 - PNG.png
+  artifactKey: Guid(2e85cde69967c124fb982c52860a1224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Asimovstisky V1 - PNG.png using Guid(2e85cde69967c124fb982c52860a1224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780b384480f013a199731d1d03e013cb') in 0.107217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Blade FHD V1.png
+  artifactKey: Guid(8421912c51e7fca4b944a08f1fc99ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Blade FHD V1.png using Guid(8421912c51e7fca4b944a08f1fc99ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627e5dd9446c4c5c38da9ceebb3c4341') in 0.109896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Arte de créditos v1.png
+  artifactKey: Guid(8f87997dc0e73c84495ac69f0bd232ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Arte de créditos v1.png using Guid(8f87997dc0e73c84495ac69f0bd232ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5893680e50909251a37b30a2e3a01764') in 0.139810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Asimovstisky V1 - background.png
+  artifactKey: Guid(ad7296336a6914f489207787eabd1e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Asimovstisky V1 - background.png using Guid(ad7296336a6914f489207787eabd1e6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e22238ae4c9844c96648dc849d2f9b7') in 0.113022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/ASIMOVISTKY.png
+  artifactKey: Guid(8e84e388b9e3a56498beb3f6f1932921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Moodboards de personagens/ASIMOVISTKY.png using Guid(8e84e388b9e3a56498beb3f6f1932921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc1e326f3c6c1e4b56938080c4190a4f') in 0.116625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Cenários prontos/Barraca_correto.jpg
+  artifactKey: Guid(dec31f927edc7854c8ced100d66434db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Cenários prontos/Barraca_correto.jpg using Guid(dec31f927edc7854c8ced100d66434db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bc3ce0ba4a77b51c0778182db27ad1') in 0.114105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Arte cortada/Asimovstisky - PNG - Cortado V1.png
+  artifactKey: Guid(5fc1e63fa805c7549a156f4bff1dc76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Arte cortada/Asimovstisky - PNG - Cortado V1.png using Guid(5fc1e63fa805c7549a156f4bff1dc76e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd22784b6602a992a7896f1709b5dbb') in 0.034335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Barraca novo v1.png
+  artifactKey: Guid(e3df18f5fc0dd2c46af4b57d49e4a4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Barraca novo v1.png using Guid(e3df18f5fc0dd2c46af4b57d49e4a4d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779886362ace63258f6e9b06f1b6a02b') in 0.112351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Cenários atuais do game (HD)/cabana.png
+  artifactKey: Guid(778b1e07ba890a340b5849ea09d4fcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Cenários atuais do game (HD)/cabana.png using Guid(778b1e07ba890a340b5849ea09d4fcb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '202a7e5e0dd63257776d5181586e3674') in 0.067068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Cenários em 720p (HD)/Barraca_correto.png
+  artifactKey: Guid(5cc682693a3da62468454c83f6bd4642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Cenários em 720p (HD)/Barraca_correto.png using Guid(5cc682693a3da62468454c83f6bd4642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad7f81290db9ef32c3ef4fe7c6549b7') in 0.061873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Asimovstisky - PNG - Cortado V1.png
+  artifactKey: Guid(3418c99263bb24443b495b6195b98b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Personagens principais/Asimovstisky - PNG - Cortado V1.png using Guid(3418c99263bb24443b495b6195b98b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8902b4ce3bb0f457a1f4b1e650e45af') in 0.034823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Arte da Capa do Game - Dia FHD.png
+  artifactKey: Guid(7de34db995e525b43b2408dad31dc7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Pacote de novos cenários FHD/Arte da Capa do Game - Dia FHD.png using Guid(7de34db995e525b43b2408dad31dc7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee23aa285fbb1e6128b0319ab8b8786b') in 0.134369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Arte cortada/Asimovstisky - PNG - Cortado V2.png
+  artifactKey: Guid(ceb8b79d91fa6754ba31f3e72a69b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Personagens/Asimovtisky/Arte cortada/Asimovstisky - PNG - Cortado V2.png using Guid(ceb8b79d91fa6754ba31f3e72a69b49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c37fda474eb1a665cef184b874075c') in 0.053685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Imagens/Artes/Artes antigas/Cenários/Cenários em 720p (HD)/Blade.jpg
+  artifactKey: Guid(4c9d4d00a1033054f8b23aebd59a3d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Imagens/Artes/Artes antigas/Cenários/Cenários em 720p (HD)/Blade.jpg using Guid(4c9d4d00a1033054f8b23aebd59a3d74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09000765aad548e5a73bde4bc97ad9bd') in 0.062885 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005856 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.996 seconds
+Domain Reload Profiling:
+	ReloadAssembly (996ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (788ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (365ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.6 KB). Loaded Objects now: 3755.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 3.944100 ms (FindLiveObjects: 0.267700 ms CreateObjectMapping: 0.355200 ms MarkObjects: 3.296900 ms  DeleteObjects: 0.023100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005633 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.197 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1198ms)
+		BeginReloadAssembly (248ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (5ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (681ms)
+			LoadAssemblies (149ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (333ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (235ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3758.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 2.819300 ms (FindLiveObjects: 0.224900 ms CreateObjectMapping: 0.137500 ms MarkObjects: 2.437400 ms  DeleteObjects: 0.018400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.468 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1469ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1174ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (400ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (519ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (365ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.6 KB). Loaded Objects now: 3761.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 2.861800 ms (FindLiveObjects: 0.219700 ms CreateObjectMapping: 0.144300 ms MarkObjects: 2.477400 ms  DeleteObjects: 0.019200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005921 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.979 seconds
+Domain Reload Profiling:
+	ReloadAssembly (980ms)
+		BeginReloadAssembly (128ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (687ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (234ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (292ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3764.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 2.732000 ms (FindLiveObjects: 0.222100 ms CreateObjectMapping: 0.148300 ms MarkObjects: 2.338200 ms  DeleteObjects: 0.022400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006022 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.209 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1209ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (713ms)
+			LoadAssemblies (164ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (255ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.89 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.5 KB). Loaded Objects now: 3767.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 2.554300 ms (FindLiveObjects: 0.232500 ms CreateObjectMapping: 0.139300 ms MarkObjects: 2.159900 ms  DeleteObjects: 0.021500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005535 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1026ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (817ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (383ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3770.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 3.089500 ms (FindLiveObjects: 0.244500 ms CreateObjectMapping: 0.336000 ms MarkObjects: 2.486900 ms  DeleteObjects: 0.021300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006001 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Projetos Unity\AlterEgoCloneV2\AlterEgo\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.037 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1038ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (363ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (237ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3233 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (24.7 KB). Loaded Objects now: 3773.
+Memory consumption went from 116.7 MB to 116.7 MB.
+Total: 3.689700 ms (FindLiveObjects: 0.335600 ms CreateObjectMapping: 0.177200 ms MarkObjects: 3.092100 ms  DeleteObjects: 0.083600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
