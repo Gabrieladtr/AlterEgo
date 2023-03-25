@@ -23,9 +23,8 @@ public class AvatarSystem : MonoBehaviour
         //Deve mostrar um avatar na tela, de acordo com o TMP_dialogo.
         //Se o dialogo come�ar com um nome, deve mostrar o avatar desse nome e desativar os outros.
 
-        //Pega o texto que est� na tela e adiciona em 'TMP_tela2'
 
-
+        
         avatarlCao = GameObject.Find("Cão (Yael)").GetComponent<Image>();
         avatarlRaposa = GameObject.Find("Raposa (Melinda)").GetComponent<Image>();
         avatarlPassaro = GameObject.Find("Wing (Pássaro)").GetComponent<Image>();

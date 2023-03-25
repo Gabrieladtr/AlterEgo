@@ -96,9 +96,12 @@ Capítulo 1.2
 
     public List<string> GetPrologo()
     {
+        BackgroundSystem.ShowBackgroundScene("bladeFHD", true);
         prologo = new List<string>();
 
         // adicionar itens em listaDialogos
+        //cenario: blade
+        
         prologo.Add("Cliquei novamente para iniciar");
 
         prologo.Add("CyberCity... a cidade dos sonhos.");
@@ -123,7 +126,9 @@ Capítulo 1.2
 
     public List<string> GetCapitulo_1 (){
         Capitulo_1 = new List<string>();
-        
+        //cenario: barraca
+
+        BackgroundSystem.ShowBackgroundScene("acampamentoBarracaFHD", true);
         Capitulo_1.Add("Pássaro – Ei ei, não precisa se levantar agora, seu corpo precisa de mais algumas horas até se adaptar novamente à realidade.");
         Capitulo_1.Add("Yael – Eu... eu não sei o que houve...");
         Capitulo_1.Add("Pássaro – Você acordou, é isso que houve.");
@@ -153,6 +158,9 @@ Capítulo 1.2
     {
         Capitulo_1_1 = new List<string>();
 
+
+        //cenario: acampamento de noite
+        BackgroundSystem.ShowBackgroundScene("acampamentoNoiteFHD", true);
         Capitulo_1_1.Add("Clique para continuar!");
         Capitulo_1_1.Add("CAPÍTULO 1-1 – A ORIGEM DO CÃO");
 
@@ -214,9 +222,10 @@ Capítulo 1.2
     public List<string> GetCapitulo_1_2()
     {
         Capitulo_1_2 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("campoFHD", true);
         Capitulo_1_2.Add("CAPÍTULO 1-2 – A DECISÃO DO CÃO");
-
+        
+        //cenario: campo
         Capitulo_1_2.Add("Yael – Então essa é a Carlya, realmente um ótimo material para uma máscara. Eu vi um cão mais cedo. Sempre me imaginei sendo quem eu realmente quis ser, meu alter ego. Penso em ser como um cão, sem dono, que apenas sobrevive. Muitas vezes expressado nas atitudes do dia a dia, hoje posso comtemplar o que é ser o que sempre fui, de forma oculta. Hoje, através dessa máscara, posso ser eu de verdade. Além de poder me manter a salvo, dos drones da LIFE.");
         Capitulo_1_2.Add("Pássaro – Todos nós possuímos lados e até mesmo personalidades diferentes dentro de nós, muitas vezes ocultas. A máscara nos torna reais, nos traz para essa verdade. Principalmente por termos passado tanto tempo com vendas nos olhos e não percebemos o que a LIFE fez com tudo e todos, inclusive eu. Você é um dos poucos cidadãos cairence que conheci que não lutei contra. Vocês são boas pessoas. O que Petrov pregava era diferente.");
         Capitulo_1_2.Add("Yael – Eu sinto muito pelo que passou. Não temos culpa se um maluco causou tudo isso. Somos apenas seres humanos que estamos sobrevivendo, em meio à uma era desértica e caótica. Mas me sinto triste mesmo assim, por termos tido guerras entre nossos povos.");
@@ -245,9 +254,9 @@ Capítulo 1.2
     public List<string> GetCapitulo_1_3_1()
     {
         Capitulo_1_3_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("campoFHD", true);
         Capitulo_1_3_1.Add("CAPÍTULO 1-3-1 – O CÃO SE DECIDIU – ESCOLHA 1");
-
+        //cenario: campo
         Capitulo_1_3_1.Add("Cão (Yael) – Eu não sei o que pode me aguardar lá fora. Mas sei que posso contar com vocês. Vocês me salvaram uma vez e sinto que devo retribuir o favor que me fizeram. Eu também desejo descobrir quem é o criador da LIFE e quem mandou matou meu amigo em , quando eu fiquei preso em Krestymov.");
         Capitulo_1_3_1.Add("Pássaro – Ótimo! Com você do nosso lado, poderemos enfrentar a LIFE. Agora que decidiu ficar, devo apresentar o nome de cada um dos outros membros. O Coruja é meu irmão, Jones. E a Raposa é Melinda. Foi ela quem salvou a minha vida e a do meu irmão, quando conseguimos sair do SOV.");
         Capitulo_1_3_1.Add("Cão (Yael) – É muito bom saber os nomes deles... Eles estavam com aquelas máscaras, gostaria de perguntar antes, mas agora sei.");
@@ -263,7 +272,8 @@ Capítulo 1.2
     {
         //Final 1 - Yael decide NÃO fazer parte dos Animals
         Capitulo_1_3_2 = new List<string>();
-
+        //cenario: acampamento
+        BackgroundSystem.ShowBackgroundScene("acampamentoNoiteFHD", true);
         Capitulo_1_3_2.Add("CAPÍTULO 1-3-2 'FINAL 1' – O CÃO SE DECIDIU – ESCOLHA 2 (NÃO FAZER PARTE DOS ANIMALS)");
 
         Capitulo_1_3_2.Add("Pássaro –Ontem eu vi um homem único, com uma personalidade maravilhosa. Cada detalhe era único, hoje eu o vi. Mas hoje, é apenas uma cópia barata de homens. Você é esse homem Yael. Você não serve para ser um herói. ");
@@ -278,9 +288,10 @@ Capítulo 1.2
     public List<string> GetCapitulo_1_4()
     {
         Capitulo_1_4 = new List<string>();
+        BackgroundSystem.ShowBackgroundScene("acampamentoNoiteFHD", true);
         //Yeal decide fazer parte dos Animals.
         Capitulo_1_4.Add("CAPÍTULO 1-4 – DE VOLTA AO ACAMPAMENTO – ESCOLHA 1");
-
+        //cenario: acampamento
         Capitulo_1_4.Add("Pássaro –Pessoal, Yael já possui a máscara dele. E ele decidiu ficar conosco e lutar contra a LIFE. Ele comentou que quer retribuir o favor que fizemos a ele, por salvá-lo. ");
         Capitulo_1_4.Add("Coruja (Jones) – Bem-vindo Yael, você é um de nós agora.");
         Capitulo_1_4.Add("Raposa (Melinda) – Bem-vindo Yael, sinta-se em casa. Você nos ajudará em muitas coisas, pode ficar com aquele trailer para você. A partir de agora aqui será sua casa. Lutaremos juntos nessa guerra contra a LIFE.");
@@ -316,9 +327,9 @@ Capítulo 1.2
     public List<string> GetCapitulo_2()
     {
         Capitulo_2 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("acampamentoDiaFHD", true);
         Capitulo_2.Add("CAPÍTULO 2 – O PLANO DE ATAQUE À LIFE – ESCOLHA 1");
-
+        //cenario: Acampamento de manhã
         Capitulo_2.Add("Wing (Pássaro) – Enfim, estamos aqui. Diante do nosso plano de ataque à LIFE. Vamos nos vingar pela guerra, pela destruição. Vamos nos vingar por tudo o que houve com nossa terra. O Criador da LIFE e quem estiver no caminho vai pagar caro.");
         Capitulo_2.Add("Wing (Pássaro) – O meu plano é o seguinte, vamos até o distrito onde achei Yael. Lá vamos encontrar o equipamento necessário para entrar no Sistema Operacional Virtual, o SOV. ");
         Capitulo_2.Add("Wing (Pássaro) – Quando entrarmos no SOV, vamos pegar o transporte até a LIFE. Vamos até o edifício deles, entraremos no edifício e encontraremos o criador. Quando encontrarmos ele, vamos forçá-lo a restaurar as células dos Amotines ou o que der para fazer. ");
@@ -340,9 +351,9 @@ Capítulo 1.2
     public List<string> GetCapitulo_2_1()
     {
         Capitulo_2_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
         Capitulo_2_1.Add("CAPÍTULO 2.1 – DISTRITO DE TESTES DA LIFE – ESCOLHA 1");
-
+        //cenario: distrito de testes
         Capitulo_2_1.Add("Coruja (Jones) – Estamos aqui. Distrito de testes da LIFE. Eu tenho um apartamento dentro do SOV. Vou configurar para o sistema nos enviar para lá quando ficarmos online.");
         Capitulo_2_1.Add("Wing (Pássaro) – Foi aqui onde achei Yael. ");
         Capitulo_2_1.Add("Cão (Yael) – Eu estava tão doente que nem lembrava desse lugar.");
@@ -365,13 +376,15 @@ Capítulo 1.2
     public List<string> GetCapitulo_2_2()
     {
         Capitulo_2_2 = new List<string>();
+        BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
         //Escolha 1.1 – Hackear os drones e conectá-los ao SOV (mais segurança no SOV) = puzzle
-
+        //cenario: distrito de testes
         Capitulo_2_2.Add("O valor do segundo é a quantidade de prédios no ambiente");
         Capitulo_2_2.Add("O valor do terceiro é o dobro do segundo");
         Capitulo_2_2.Add("O valor terceiro menos o segundo, é o primeiro");
         Capitulo_2_2.Add("O quarto é o primeiro mais o primeiro");
 
+        BackgroundSystem.ShowBackgroundScene("WTS_PasswordFHD", true);
         //Consequência 1: Caso o código seja inserido corretamente: os drones foram hackeados e conseguem ajudar dentro do SOV.
         //Consequência 2: Caso o código seja inserido incorretamente: Os drones não foram hackeados e os drones foram alertados durante o hack. Melinda morre devido a um tiroteio.
         //Consequência 3: O puzzle foi pulado. Não foi hackeado os drones e não foram conectados ao SOV (menos segurança no SOV). Wing ou Jones podem morrer 
@@ -382,7 +395,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_2_3_1()
     {
         Capitulo_2_3_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
         //Cenário: Dentro do Distrito de Testes.
         Capitulo_2_3_1.Add("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
 
@@ -399,6 +412,7 @@ Capítulo 1.2
         Capitulo_2_3_1.Add("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.");
 
 
+        BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
         //Cenário: Logotipo do SOV by LIFE iniciando
         Capitulo_2_3_1.Add("L.I.A. – Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
         Capitulo_2_3_1.Add("L.I.A. – Em breve você estará em um mundo inteiramente virtual. ");
@@ -432,6 +446,8 @@ Capítulo 1.2
         Capitulo_2_3_1.Add("L.I.A. – Espero que você tenha gostado da nossa história. ");
         Capitulo_2_3_1.Add("L.I.A. – Em breve nos encontraremos de novo! Até logo 😊");
 
+
+        BackgroundSystem.ShowBackgroundScene("apJonesLightOnFHD", true);
         //Cenário: Lobby do SOV – Apartamento de Jones.
 
         Capitulo_2_3_1.Add("Cão (Yael) – Uau, a LIA também apareceu para vocês? Agora entendi tudo sobre a história da LIFE.");
@@ -447,13 +463,15 @@ Capítulo 1.2
         Capitulo_2_3_1.Add("Raposa (Melinda) – (Feliz).");
         Capitulo_2_3_1.Add("Coruja (Jones) – Bem, se queremos invadir a LIFE e derrotar a Linda e o criador, digo... Malev, vamos precisar pegar o transporte público para o edifício dele.");
 
+
+        BackgroundSystem.ShowBackgroundScene("mapaFHD", true);
         //Cenário: Mapa da CyberCity.
         Capitulo_2_3_1.Add("Cão (Yael) – Essa é a CyberCity. Que pena que não viemos para nos divertir, há muitos locais interessantes que gostava de ir...");
         Capitulo_2_3_1.Add("Coruja (Jones) – Não se engane, a LIFE te dá a faca e o queijo, mas você está preso dentro de uma jaula. Sem liberdade. O mundo já é habitável lá fora, mas Malev quer continuar dominando o mundo. ");
         Capitulo_2_3_1.Add("Wing (Pássaro) – Eu concordo com o Coruja. Sem contar que os amotines estão desligando. Isso significa que devemos reativar as células dos amotines antes que seja tarde.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Para onde vamos Coruja? ");
         Capitulo_2_3_1.Add("Coruja (Jones) – Vamos pegar o transporte na Estação 14-7.");
-        Capitulo_2_3_1.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 25-6");
+        Capitulo_2_3_1.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 13-8");
         Capitulo_2_3_1.Add("Coruja (Jones) – De lá vamos descer na frente da LIFE.");
         Capitulo_2_3_1.Add("Raposa (Melinda) – Então vamos!");
 
@@ -463,7 +481,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_2_3_2()
     {
         Capitulo_2_3_2 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
         Capitulo_2_3_2.Add("CAPÍTULO 2.3.2 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 2");
 
         //Cenário: Dentro do Distrito de Testes. Após um tiroteio Melinda é alvejada, morre lutando contra a LIFE.
@@ -539,6 +557,7 @@ Capítulo 1.2
     {
         Capitulo_2_3_3 = new List<string>();
 
+        BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
         Capitulo_2_3_3.Add("CAPÍTULO 2.3.3 – INVADINDO O SOV – ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)");
 
         //Cenário: Dentro do Distrito de Testes.
@@ -551,7 +570,7 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("Wing (Pássaro) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
         Capitulo_2_3_3.Add("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.");
 
-
+        BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
         //Cenário: Logotipo do SOV by LIFE iniciando
         Capitulo_2_3_3.Add("L.I.A. – Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
         Capitulo_2_3_3.Add("L.I.A. – Em breve você estará em um mundo inteiramente virtual. ");
@@ -564,6 +583,7 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("L.I.A. – Em breve nos encontraremos de novo! Até logo 😊");
         Capitulo_2_3_3.Add("Cão (Yael) – OK...");
 
+        BackgroundSystem.ShowBackgroundScene("apJonesLightOffFHD", true);
         //Cenário: Lobby do SOV – Apartamento de Jones.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Enfim, conseguimos entrar no SOV. Agora podemos continuar nossa luta.");
         Capitulo_2_3_3.Add("Raposa (Melinda) – Cão, tenho um presente para você. Quando deixei a LIFE, na época em que ainda nem tudo era dentro do SOV e vi meu pai, meu criador morrer, ele deixou isso pra mim. É um diário, ele conta tudo o que viveu. Você busca respostas para saber quem matou seu amigo em Krestymov. Talvez esse livro te ajude a entender esse universo misterioso.");
@@ -574,7 +594,7 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("Cão (Yael) – Conseguimos chegar até aqui vivos, acredito que vamos conseguir. E então, para onde vamos?");
         Capitulo_2_3_3.Add("Cenário: Mapa da CyberCity.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Vamos pegar o transporte na Estação 14-7.");
-        Capitulo_2_3_3.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 25-6");
+        Capitulo_2_3_3.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 13-8");
         Capitulo_2_3_3.Add("Coruja (Jones) – De lá vamos descer na frente da LIFE.");
         Capitulo_2_3_3.Add("Wing (Pássaro) – Vamos?");
         Capitulo_2_3_3.Add("Coruja (Jones) – Vamos!");
@@ -587,6 +607,7 @@ Capítulo 1.2
     {
         Capitulo_2_4 = new List<string>();
 
+        BackgroundSystem.ShowBackgroundScene("diarioFHD", true);
         Capitulo_2_4.Add("Cão(Yael) – Será que leio esse livro, que Melinda deixou pra mim?");
         Capitulo_2_4.Add("Decisão:");
 
@@ -599,7 +620,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_2_4_1()
     {
         Capitulo_2_4_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("diarioFHD", true);
         //Trecho muito longo (cerca de 8 páginas)
 
         Capitulo_2_4_1.Add("CAPÍTULO 2.4.1 – O DIÁRIO DE ASIMOVITSKY");
@@ -739,9 +760,10 @@ Capítulo 1.2
     {
         Capitulo_3 = new List<string>();
 
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         //Cenário: Estação 14-7.
         Capitulo_3.Add("CAPÍTULO 3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)");
-        Capitulo_3.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 13-8. De lá vamos descer na frente da LIFE.");
         Capitulo_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
         Capitulo_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
@@ -776,7 +798,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_1_1()
     {
         Capitulo_3_1_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DELinda – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
         //Código 7898 usado, Linda entra para os Animals.
 
@@ -786,11 +808,14 @@ Capítulo 1.2
         Capitulo_3_1_1.Add("Linda (confusa) – Ahhh que dor de cabeça... O que houve?!");
         Capitulo_3_1_1.Add("Raposa (Melinda) – (feliz) – Ela foi restaurada. Ela é uma androtine normal agora! Irmã!! Finalmente posso te abraçar. Conseguimos te salvar.");
         Capitulo_3_1_1.Add("Wing (Pássaro) – Nem acredito que conseguimos salvar a “temida assassina” haha.");
+
+        BackgroundSystem.ShowBackgroundScene("estacao13_8FHD", true);
         Capitulo_3_1_1.Add("Coruja (Jones) – Conseguimos! Graças a Yael, o nosso Cão!");
         Capitulo_3_1_1.Add("Linda (confusa) – Obrigada Yael ou Cão, como quiser... Eu estava surtada. Agora sou uma pessoa normal. Quero ajudar vocês no que for preciso. ");
         Capitulo_3_1_1.Add("Raposa (Melinda) – Estamos a caminho da LIFE. Vamos derrotar Malev, o seu criador e vamos restaurar as baterias dos Amotines... As pessoas devem poder escolher qual caminho devem seguir. Mas serem escravizadas, isso é demais.");
         Capitulo_3_1_1.Add("Linda – Podem contar comigo. Vamos salvar a humanidade e destruir a LIFE.");
-        Capitulo_3_1_1.Add("Coruja (Jones) – Chegamos na Estação 25-6. Aqui descemos, a LIFE fica logo adiante.");
+
+        Capitulo_3_1_1.Add("Coruja (Jones) – Chegamos na Estação 13-8. Aqui descemos, a LIFE fica logo adiante.");
 
 
         return Capitulo_3_1_1;
@@ -799,6 +824,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_1_2()
     {
         Capitulo_3_1_2 = new List<string>();
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         //Código 7562 usado, Linda entra para os Animals.
         Capitulo_3_1_2.Add("CAPÍTULO 3.1.2 – O CÃO DECIDE O DESTINO DELinda – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA B (LINDA É DESTRUÍDA)");
 
@@ -807,10 +833,11 @@ Capítulo 1.2
         Capitulo_3_1_2.Add("Linda – (L.I.A): Projeto Me-Linda sendo autodestruído. Iniciando contagem regressiva para destruição total... 5... 4... 3... 2... 1...");
         Capitulo_3_1_2.Add("Linda – (L.I.A): Destruindo sistema.");
         Capitulo_3_1_2.Add("Linda – (L.I.A): ... Puffff");
+        BackgroundSystem.ShowBackgroundScene("estacao13_8FHD", true);
         Capitulo_3_1_2.Add("Raposa (Melinda) – Ela era minha irmã, mas sei que tomou a melhor decisão para os Animals Cão. Confio na sua decisão. Sei que fará sentido...");
         Capitulo_3_1_2.Add("Coruja (Jones) – Conseguimos vencer a Linda... Sinto muito por isso Raposinha.");
         Capitulo_3_1_2.Add("Wing (Pássaro) – Estamos quase concluindo nosso objetivo. Falta pouco para salvarmos toda a humanidade. Estamos meio caminho andado.");
-        Capitulo_3_1_2.Add("Coruja (Jones) – Chegamos na Estação 25-6. Aqui descemos, a LIFE fica logo adiante.");
+        Capitulo_3_1_2.Add("Coruja (Jones) – Chegamos na Estação 13-8. Aqui descemos, a LIFE fica logo adiante.");
 
 
 
@@ -820,12 +847,12 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_2()
     {
         Capitulo_3_2 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
 
         Capitulo_3_2.Add("CAPÍTULO 3.2 FINAL 5– CONFLITOS NA CYBERCITY - ESCOLHA 1.1 – CONSEQUÊNCIA 2 (MELINDA MORRE DEVIDO UM DOS DRONES SER ALERTADO DURANTE O HACKEAMENTO. JONES, WING E YAEL PERMANECEM VIVOS. ELES NÃO CONSEGUEM A AJUDA DOS DRONES.)");
 
         //Cenário: Estação 14-7.
-        Capitulo_3_2.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3_2.Add("Coruja (Jones) – Devemos pegar esse trem para a avenida 13-8. De lá vamos descer na frente da LIFE.");
         Capitulo_3_2.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3_2.Add("Cão (Yael) – Pode ser que encontremos perigo?");
         Capitulo_3_2.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
@@ -864,11 +891,11 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_3()
     {
         Capitulo_3_3 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         Capitulo_3_3.Add("CAPÍTULO 3.3 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)");
         //Cenário: Estação 14-7.
 
-        Capitulo_3_3.Add("Coruja (Jones) – Devemos pegar esse trem para a Estação 25-6. De lá vamos descer na frente da LIFE.");
+        Capitulo_3_3.Add("Coruja (Jones) – Devemos pegar esse trem para a Estação 13-8. De lá vamos descer na frente da LIFE.");
         Capitulo_3_3.Add("Wing (Pássaro) – Mal posso pressentir o que pode nos aguardar nessa estação.");
         Capitulo_3_3.Add("Cão (Yael) – Pode ser que encontremos perigo?");
         Capitulo_3_3.Add("Wing (Pássaro) – Nem me fale, tenho certeza de que Linda tem monitorado todos os nossos passos.");
@@ -901,7 +928,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_3_1()
     {
         Capitulo_3_3_1 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         //Escolha C
         Capitulo_3_3_1.Add("CAPÍTULO 3.3.1 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA C - JONES MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
@@ -927,7 +954,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_3_2()
     {
         Capitulo_3_3_2 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         //Escolha D
         Capitulo_3_3_2.Add("CAPÍTULO 3.3.2 – CONFLITOS NA CYBERCITY - ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES) - ESCOLHA D - WING MORRE (LINDA SOBREVIVE)");
         //Cenário: Estação 14-7.
@@ -950,7 +977,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_3_3_3()
     {
         Capitulo_3_3_3 = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
         //Cenário: Estação 14-7.
 
         //Escolha E
@@ -980,7 +1007,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_4_A()
     {
         Capitulo_4_A = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("predioLifeFHD", true);
         //Escolha A
         //Cenário: Edifício da LIFE.
         Capitulo_4_A.Add("CAPÍTULO 4 (FINAL 2 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA A – COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA SE TORNA ALIADA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
@@ -1009,27 +1036,8 @@ Capítulo 1.2
 
     public List<string> GetCapitulo_4_B()
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         Capitulo_4_B = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("predioLifeFHD", true);
         //Cenário: Edifício da LIFE.
 
         Capitulo_4_B.Add("CAPÍTULO 4 (FINAL 2 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA B - COM OS DRONES MELINDA, WING E JONES SOBREVIVEM, LINDA É DESTRUÍDA E MALEV CAPTURADO. A LIFE É DESTRUÍDA.");
@@ -1059,7 +1067,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_4_C()
     {
         Capitulo_4_C = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("predioLifeFHD", true);
         Capitulo_4_C.Add("CAPÍTULO 4 (FINAL 3 V1) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA C - SEM OS DRONES MELINDA E WING SOBREVIVEM, JONES MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
         //Cenário: Edifício da LIFE.
         Capitulo_4_C.Add("Linda – Enfim, chegamos... Aqui é onde devemos encontrar Malev.");
@@ -1091,7 +1099,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_4_D()
     {
         Capitulo_4_D = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("predioLifeFHD", true);
 
         Capitulo_4_D.Add("CAPÍTULO 4 (FINAL 3 V2) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA D - SEM OS DRONES MELINDA E JONES SOBREVIVEM, WING MORRE, LINDA SE TORNA ALIADA E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA.");
         //Cenário: Edifício da LIFE.
@@ -1121,7 +1129,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_4_E()
     {
         Capitulo_4_E = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("predioLifeFHD", true);
         Capitulo_4_E.Add("CAPÍTULO 4 (FINAL 4) – O CRIADOR, A LIFE E O DESTINO DA HUMANIDADE - ESCOLHA E - SEM OS DRONES MELINDA SOBREVIVE, WING E JONES MORREM, LINDA MORRE E MALEV É DESTRUÍDO. A LIFE É DESTRUÍDA MAS NÃO CONSEGUEM SALVAR A HUMANIDADE.");
         //Cenário: Edifício da LIFE.
         Capitulo_4_E.Add("Raposa (Melinda) – Chegamos.");
@@ -1156,7 +1164,7 @@ Capítulo 1.2
     public List<string> GetCapitulo_5_Creditos()
     {
         Capitulo_5_Creditos = new List<string>();
-
+        BackgroundSystem.ShowBackgroundScene("WTS_backgroundFHD", true);
         //Cenário: créditos
 
         Capitulo_5_Creditos.Add("Muito obrigado por jogar! Sem você não conseguiríamos! Foram quase 2 anos" +
