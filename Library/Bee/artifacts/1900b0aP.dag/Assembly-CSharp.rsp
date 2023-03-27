@@ -306,6 +306,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/AvatarSystem.cs"
+"Assets/Scripts/BackgroundSystem.cs"
 "Assets/Scripts/ExitButton.cs"
 "Assets/Scripts/Game.cs"
 "Assets/Scripts/Inicialize.cs"

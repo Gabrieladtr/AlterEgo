@@ -1084,8 +1084,8 @@ public class Game : MonoBehaviour
                         textMeshProTela.text = "Clique em algum botão para continuar.";
                         Debug.Log("Estamos no contador == frases.Count e os botoes devem aparecer");
                         //Vai mostrar os botoes na tela
-                        ButtonsOnScreen(true);
-                        //ButtonUM_OnScreen(true);
+                        //ButtonsOnScreen(true);
+                        ButtonUM_OnScreen(true);
                         //ButtonDOIS_OnScreen(true);
 
                         //Vai definir uma mensagem para cada botao na tela.
