@@ -411,35 +411,16 @@ Capítulo 1.2
         //BackgroundSystem.ShowBackgroundScene("", true);
         
         //vai controlar os cenarios que devem aparecer de acordo com algumas frases especificas
-        if (Game.textMeshProTela.text.Contains("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)") || Game.textMeshProTela.text.Contains("Wing (Pássaro) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?"))
+        if (Game.textMeshProTela.text.Contains("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)"))
         {
             BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
 
         }
 
         
-        if (Game.textMeshProTela.text.Contains("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.") || Game.textMeshProTela.text.Contains("L.I.A. – Espero que você tenha gostado da nossa história. "))
+        if (Game.textMeshProTela.text.Contains("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro."))
         {
             BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
-
-        }
-
-        //Caso o jogador queira voltar o dialogo, deve retornar para esse background caso o texto na tela seja esse:
-        if (Game.textMeshProTela.text.Contains("L.I.A. – Espero que você tenha gostado da nossa história. "))
-        {
-            BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
-
-        }
-
-        if (Game.textMeshProTela.text.Contains("L.I.A. – Em breve nos encontraremos de novo! Até logo e seja bem vindo à CyberCity 😊"))
-        {
-            BackgroundSystem.ShowBackgroundScene("apJonesLightOnFHD", true);
-
-        }
-
-        if (Game.textMeshProTela.text.Contains("Cão (Yael) – Essa é a CyberCity. Que pena que não viemos para nos divertir, há muitos locais interessantes que gostava de ir..."))
-        {
-            BackgroundSystem.ShowBackgroundScene("mapaFHD", true);
 
         }
 
@@ -449,6 +430,17 @@ Capítulo 1.2
 
         }
 
+        if (Game.textMeshProTela.text.Contains("L.I.A. – Em breve nos encontraremos de novo! Até logo e seja bem vindo à CyberCity 😊"))
+        {
+            BackgroundSystem.ShowBackgroundScene("apJonesLightOnFHD", true);
+
+        }
+
+                if (Game.textMeshProTela.text.Contains("Cão (Yael) – Essa é a CyberCity. Que pena que não viemos para nos divertir, há muitos locais interessantes que gostava de ir..."))
+        {
+            BackgroundSystem.ShowBackgroundScene("mapaFHD", true);
+
+        }
 
         //Cenário: Dentro do Distrito de Testes.
         Capitulo_2_3_1.Add("Clique para continuar!");
@@ -611,7 +603,7 @@ Capítulo 1.2
         Capitulo_2_3_2.Add("Coruja (Jones) – E Melinda deu a ideia de eles começarmos a usar máscaras de Animais e iniciarem a Animals de Asimovitsky, começando uma resistência à LIFE, para salvar a humanidade.");
         Capitulo_2_3_2.Add("Coruja (Jones) – Em homenagem ao Asas de águia, eu e meu irmão construímos máscaras de pássaros e nos juntamos à Melinda para formar a resistência de Asimovitsky, os Animals, contra a LIFE e seu criador.");
         Capitulo_2_3_2.Add("Wing (Pássaro) – Nos juntamos a Melinda em uma causa, para salvar as pessoas de seus amotines desligarem. Precisamos dar um jeito nisso. Ela não está mais entre nós, mas a Animals ainda existe. Vamos invadir o SOV agora.");
-        Capitulo_2_3_2.Add("Coruja (Jones) – Acabei de configurar para ao logarmos, entrarmos direto no meu apartamento. Vamos!");
+        Capitulo_2_3_2.Add("Coruja (Jones) – Acabei de configurar para logarmos. Tentarei nos levar direto para a estação de trem diretamente no SOV. Vamos!");
 
         return Capitulo_2_3_2;
     }
@@ -621,11 +613,16 @@ Capítulo 1.2
         Capitulo_2_3_3 = new List<string>();
 
         //vai controlar os cenarios que devem aparecer de acordo com algumas frases especificas
-        if (Game.textMeshProTela.text.Contains("CAPÍTULO 2.3.1 – INVADINDO O SOV – (ESCOLHA 1.1) – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS)"))
+
+
+        
+        
+        if (Game.textMeshProTela.text.Contains("CAPÍTULO 2.3.3 – INVADINDO O SOV – ESCOLHA 1.2 - CONSEQUÊNCIA 3 - (PUZZLE PULADO – TODOS OS PERSONAGENS VIVOS – SEM DRONES)"))
         {
             BackgroundSystem.ShowBackgroundScene("distritoTestesFHD", true);
 
         }
+
 
         if (Game.textMeshProTela.text.Contains("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro."))
         {
@@ -633,23 +630,19 @@ Capítulo 1.2
 
         }
 
-        if (Game.textMeshProTela.text.Contains("L.I.A. – Em breve nos encontraremos de novo! Até logo e seja bem vindo à CyberCity 😊"))
+        if (Game.textMeshProTela.text.Contains("Cão (Yael) – OK..."))
         {
             BackgroundSystem.ShowBackgroundScene("apJonesLightOnFHD", true);
 
         }
 
-        if (Game.textMeshProTela.text.Contains("Cão (Yael) – Essa é a CyberCity. Que pena que não viemos para nos divertir, há muitos locais interessantes que gostava de ir..."))
+        if (Game.textMeshProTela.text.Contains("Cão (Yael) – Conseguimos chegar até aqui vivos, acredito que vamos conseguir. E então, para onde vamos?"))
         {
             BackgroundSystem.ShowBackgroundScene("mapaFHD", true);
 
         }
 
-        if (Game.textMeshProTela.text.Contains("L.I.A. – Espero que você tenha gostado da nossa história. "))
-        {
-            BackgroundSystem.ShowBackgroundScene("cybercityFHD", true);
-
-        }
+        
 
 
         Capitulo_2_3_3.Add("Clique para continuar!");
@@ -665,7 +658,7 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("Wing (Pássaro) – Coruja, o que devemos fazer para nos conectarmos dentro do SOV e irmos direto para seu apartamento lá na CyberCity?");
         Capitulo_2_3_3.Add("Coruja (Jones) – Enquanto a gente conversava eu já configurava tudo. O que vamos fazer é conectar os alimentadores em nós. Nós só precisamos segurar os Amotines, e o SOV será inicializado automaticamente. Não se preocupem, vamos todos para o mesmo lugar. Meu apartamento é seguro.");
 
-        BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
+        //BackgroundSystem.ShowBackgroundScene("WTS_FHD", true);
         //Cenário: Logotipo do SOV by LIFE iniciando
         Capitulo_2_3_3.Add("L.I.A. – Inicializando SOV... Bem-vindo ao Sistema Operacional Virtual! Desenvolvido pela corporação LIFE. ");
         Capitulo_2_3_3.Add("L.I.A. – Em breve você estará em um mundo inteiramente virtual. ");
@@ -678,7 +671,7 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("L.I.A. – Em breve nos encontraremos de novo! Até logo 😊");
         Capitulo_2_3_3.Add("Cão (Yael) – OK...");
 
-        BackgroundSystem.ShowBackgroundScene("apJonesLightOffFHD", true);
+        //BackgroundSystem.ShowBackgroundScene("apJonesLightOffFHD", true);
         //Cenário: Lobby do SOV – Apartamento de Jones.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Enfim, conseguimos entrar no SOV. Agora podemos continuar nossa luta.");
         Capitulo_2_3_3.Add("Raposa (Melinda) – Cão, tenho um presente para você. Quando deixei a LIFE, na época em que ainda nem tudo era dentro do SOV e vi meu pai, meu criador morrer, ele deixou isso pra mim. É um diário, ele conta tudo o que viveu. Você busca respostas para saber quem matou seu amigo em Krestymov. Talvez esse livro te ajude a entender esse universo misterioso.");
@@ -687,7 +680,9 @@ Capítulo 1.2
         Capitulo_2_3_3.Add("Cão (Yael) – Mas como enfrentaremos a LIFE? Sem drones?");
         Capitulo_2_3_3.Add("Wing (Pássaro) – Jones modificou nosso sistema, podemos gerar dano e sofrer danos dentro desse servidor. Isso significa que podemos bater com nossas mãos, mas podemos morrer da mesma forma.");
         Capitulo_2_3_3.Add("Cão (Yael) – Conseguimos chegar até aqui vivos, acredito que vamos conseguir. E então, para onde vamos?");
-        Capitulo_2_3_3.Add("Cenário: Mapa da CyberCity.");
+        //Capitulo_2_3_3.Add("Cenário: Mapa da CyberCity.");
+
+        //Transporte
         Capitulo_2_3_3.Add("Coruja (Jones) – Vamos pegar o transporte na Estação 14-7.");
         Capitulo_2_3_3.Add("Coruja (Jones) – Depois vamos pegar o trem para a Estação 13-8");
         Capitulo_2_3_3.Add("Coruja (Jones) – De lá vamos descer na frente da LIFE.");

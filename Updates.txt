@@ -9,29 +9,29 @@ Updates:
 
 mais importantes:
 
-->Menu de pause parou de funcionar quando os backgrounds foram adicionados. Resolvido.
-->Sistema de notificacao tmb parou de funcionar (sistema que fica dentro da tela de confirmação de saída). Resolvido.
-
-->Adicionar os drones no jogo.
-
-->Em algumas partes onde o background muda de acordo com o diálogo, o sistema de background não está trabalhando de forma certa com o sistema de click do mouse. Então preciso ver isso.
+->Adicionar os drones no jogo. 
 
 ->Suporte para outras resoluções: HD e full HD (se possível outras resoluções). Colocar todas as artes nas resoluções menores na tela. E criar um chamador para elas. Se esse bool estiver ligado nessa config, entao todos os outros devem estar desligados e em seguida todas as artes passam a ser essas configuradas. Posso criar um campo de tipo: Hd, fHD etc. Mantenho todos os parametros, mas se esse tipo for esse ou outro, entao o sistema deve identificar a config automaticamente.
 
+->Modo Remake. Esse modo de jogo substituirá todas as artes por artes feitas por IA. Essas artes foram escolhidas a dedo e editadas à mão para que ficassem do jeito que os criadores queriam. Esse modo de jogo deverá ser escolhido na tela de iniciar ou na tela de configurações. É uma configuração salva que por padrão o jogador terá o modo clássico. Mas poderá jogar o modo remake quando quiser.
+
 ->Corrigir os exceptions que o console está avisando constantemente
+
 ->Idiomas: inglês, Italiano e Espanhol.
 
 Menos importantes:
-->Ocultar o botao "voltar" do jogo. Resolvido.
-->Melhorar a interface gráfica do tutorial.
-->Terminar de construir a tela dos Extras e de configurações
 
-->Sistema de som: áudio do spotify rodando de fundo as músicas da minha playlist.
+->Melhorar a interface gráfica do tutorial. Colocar o CTRL, Backspace, Esc, Mouse como comandos disponíveis.
 
-->64 e 32bit support
-->Suporte para Android, Linux e Mac
-->Tela cheia ou não
-->Configuração de ícones
+->Terminar de construir a tela dos Extras e de configurações. Basicamente teremos a função de tela cheia ou janela, detecção de resolução automática e idioma, tmb com detecção automática.
+
+->Nos extras teremos algumas opções como artes: processo de criação, moodboards, artes dos personagens, backgrounds etc. Textos: alguns textos contando como foi o processo de criação do jogo. 
+
+->Criar uma tela de notificação quando o jogador iniciar o jogo, mostrando todas as novidades da build. Essas novidades terão todas as atualizações, todos os recursos disponíveis etc.
+
+->Sistema de som: áudio do spotify rodando de fundo as músicas da minha playlist. Esse será o último sistema que estarei construindo no jogo. O sistema de música via spotify deve funcionar de uma forma bem simples. Se o jogador possuir acesso à internet, então o o jogo rodará uma playlist aleatória que foi feita especialmente para o jogo. A ideia é que o jogo "burle" o sistema usando uma conta do spotify genérica. Com login e senha, ele deve conseguir acessar a playlist pública e rodar as músicas dentro do jogo. Caso não haja internet, a playlist será baixada ou rodará outras músicas.
+
+->Suporte para Android, Linux e Mac, 64 e 32bit support, Configuração de ícones, Tela cheia ou não
 
 ------------------------------------------
 Capitulos para arrumar a ordem dos backgrounds:
@@ -40,5 +40,15 @@ Capitulo_2_3_2
 
 
 
+------------------------------------------------
 
+Concluídos:
+
+->Menu de pause parou de funcionar quando os backgrounds foram adicionados. Resolvido.
+
+->Sistema de notificacao tmb parou de funcionar (sistema que fica dentro da tela de confirmação de saída). Resolvido.
+
+->Ocultar o botao "voltar" do jogo. Resolvido.
+
+->Em algumas partes onde o background muda de acordo com o diálogo, o sistema de background não está trabalhando de forma certa com o sistema de click do mouse. Então preciso ver isso. Resolvido.
 
