@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class AvatarSystem : MonoBehaviour
 {
 
+    //Essa classe controla o sistema de avatar.
+
     //Image Cao, Raposa, Coruja, Passaro, Linda, LIA, Malev, Asimov;
     //public static TMP_Text TMP_tela;
 

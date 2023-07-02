@@ -21,27 +21,23 @@ public class PauseGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Debug.Log("O Esc foi pressionado, pauseActive: " + pauseActive + ", Cena atual: " + SceneManager.GetActiveScene().name +
                 ", StartGame.CenaAditivaAtual: " + StartGame.CenaAditivaAtual);
-        }
 
-        //Controla o sistema de pause na tela de "Game"
-        if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == false && SceneManager.GetActiveScene().name == "Game" && StartGame.CenaAditivaAtual == null)
-        {
-            Debug.Log("O menu de pausa deve ser aberto.");
-            SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
-            Debug.Log("Cena atual: " + SceneManager.GetActiveScene().name);
-            pauseActive = true;
+            if(pauseActive == false && SceneManager.GetActiveScene().name != "MainMenu" && StartGame.CenaAditivaAtual == null){
+                    Debug.Log("O menu de pausa deve ser aberto.");
+                    SceneManager.LoadScene("PauseMenu", LoadSceneMode.Additive);
+                    Debug.Log("Cena atual: " + SceneManager.GetActiveScene().name);
+                    pauseActive = true;
 
-        } else if (Input.GetKeyDown(KeyCode.Escape) && pauseActive == true && SceneManager.GetActiveScene().name == "Game" && StartGame.CenaAditivaAtual == null)
-        {
-
-            Debug.Log("O menu de pausa deve ser fechado.");
-            SceneManager.UnloadSceneAsync("PauseMenu", UnloadSceneOptions.None);
-            
-            pauseActive = false;
+            }else if(pauseActive == true && SceneManager.GetActiveScene().name != "MainMenu" && StartGame.CenaAditivaAtual == null){
+                    Debug.Log("O menu de pausa deve ser fechado.");
+                    SceneManager.UnloadSceneAsync("PauseMenu", UnloadSceneOptions.None);
+                    pauseActive = false;
+            }
 
 
         }
 
+        
         
 
     }

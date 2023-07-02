@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    //Essa classe serve pra controlar os processos de links, abertura de cenas e fechamento de cenas.
+    //Essa classe serve pra controlar os processos de links
+    // abertura de cenas e fechamento de cenas.
 
     public static string CenaAtual;
     public static string cenaAnteriorString, CenaAtualString;
@@ -60,7 +61,7 @@ public class StartGame : MonoBehaviour
             //desligamos o pause, para ele poder ser acessado
             PauseGame.pauseActive = false;
             CenaAditivaAtual = null;
-        }
+        } 
 
 
     }

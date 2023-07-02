@@ -10,7 +10,9 @@ using UnityEngine.SceneManagement;
 
 public class ExitButton : MonoBehaviour
 {
-
+    //Controla as funcoes de sair da aplicacao
+    //Isso inclui o sistema de notificacao
+    
     public Button ficarButton,SairMesmoButton;
     public Image sairBackground;
     public TMP_Text tituloGame;

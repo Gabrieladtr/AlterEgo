@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ListasDialogicas : MonoBehaviour
 {
+    //Armazena todas as listas de dialogo do jogo.
+    //Cada lista possui alguma config como background especifico, entao
+    //Cada lista acessa diversos metodos de outras classes para 
+    //Conseguir fazer a config do jeito certo.
+
 
     //28 capitulos
 
@@ -102,7 +107,7 @@ Capítulo 1.2
         // adicionar itens em listaDialogos
         //cenario: blade
         
-        prologo.Add("Cliquei novamente para iniciar");
+        prologo.Add("Clique novamente para iniciar");
 
         prologo.Add("CyberCity... a cidade dos sonhos.");
         prologo.Add("A cidade onde você não morre, não possui doenças, pobreza, guerra ou qualquer outro problema que há na realidade. ");

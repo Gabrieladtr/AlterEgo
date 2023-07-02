@@ -26,6 +26,8 @@ Resumindo.
 Resolvido.
 
 
+Concluídos:
+
 ->Bug que continuava rodando os diálogos dentro dos menus (Resolvido).
 ->Todas as escolhas possíveis e todos os diálogos do jogo adicionados (Resolvido).
 ->Todos os capítulos do jogo adicionados em SaveProgress, agora podemos salvar o jogo de qualquer capítulo (resolvido).

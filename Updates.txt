@@ -1,0 +1,44 @@
+Atualizações Alter Ego - 01/07/23
+
+Essas atualizações eu estarei começando a construir para finalizar a construção do Alter Ego. O jogo já possui todas as interfaces gráficas, roteiro, personagens e finais disponíveis na última build. Além do sistem de save/load que está perfeito. Agora o sistema de pause está 100% finalizado. Está funcionando tranquilamente.
+
+Mas preciso corrigir alguns bugs para finalizar 100% o game e poder lançar ele em todas as plataformas.
+
+
+Updates:
+
+mais importantes:
+
+->Menu de pause parou de funcionar quando os backgrounds foram adicionados. Resolvido.
+->Sistema de notificacao tmb parou de funcionar (sistema que fica dentro da tela de confirmação de saída). Resolvido.
+
+->Adicionar os drones no jogo.
+
+->Em algumas partes onde o background muda de acordo com o diálogo, o sistema de background não está trabalhando de forma certa com o sistema de click do mouse. Então preciso ver isso.
+
+->Suporte para outras resoluções: HD e full HD (se possível outras resoluções). Colocar todas as artes nas resoluções menores na tela. E criar um chamador para elas. Se esse bool estiver ligado nessa config, entao todos os outros devem estar desligados e em seguida todas as artes passam a ser essas configuradas. Posso criar um campo de tipo: Hd, fHD etc. Mantenho todos os parametros, mas se esse tipo for esse ou outro, entao o sistema deve identificar a config automaticamente.
+
+->Corrigir os exceptions que o console está avisando constantemente
+->Idiomas: inglês, Italiano e Espanhol.
+
+Menos importantes:
+->Ocultar o botao "voltar" do jogo. Resolvido.
+->Melhorar a interface gráfica do tutorial.
+->Terminar de construir a tela dos Extras e de configurações
+
+->Sistema de som: áudio do spotify rodando de fundo as músicas da minha playlist.
+
+->64 e 32bit support
+->Suporte para Android, Linux e Mac
+->Tela cheia ou não
+->Configuração de ícones
+
+------------------------------------------
+Capitulos para arrumar a ordem dos backgrounds:
+2.3.3
+Capitulo_2_3_2
+
+
+
+
+

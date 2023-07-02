@@ -14,10 +14,13 @@ public class Game : MonoBehaviour
 {
 
     /*Nesse script vamos trabalhar em:
-     * -escolha de di@logo
-     * -escolha de decis@es
-     * -sistema de save
-     * -sistema de loading
+    -Basicamente o jogo funciona como base nesse script
+     -escolha de dialogo - Escolhe as listas dialogicas para rodar nos tmps
+     -TMP de dialogo e dos botoes.
+     -escolha de decisoes - o que a rota fara
+     -botoes, suas mensagens e nomes possiveis
+     -rotas possiveis dos botoes
+     -listas de testes
     
     O sistema de gameplay @ relativamente simples.*/
 

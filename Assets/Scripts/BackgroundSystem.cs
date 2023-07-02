@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class BackgroundSystem : MonoBehaviour
 {
-    /*
-    //Nome de todas as artes no modo clássico de jogo:
+    //Essa classe controla o sistema de background.
 
-    Arte da Capa do Game FHD_V2.1 - céu mais forte-FHD
+    /*
+    //Nome de todas as artes no modo clï¿½ssico de jogo:
+
+    Arte da Capa do Game FHD_V2.1 - cï¿½u mais forte-FHD
     Arte da Capa do Game - Dia FHD V2-FHD
     Barraca novo v1-FHD
     Distrito de Testes - Arquivo FHD v2-FHD
@@ -18,16 +20,16 @@ public class BackgroundSystem : MonoBehaviour
 
     Apartamento do Jones - V4 - Light off-FH
     Apartamento do Jones - V4 - Light on-FHD
-    Diário v3-FHD
-    Estação v12 - 13-8-FHD
-    Estação v12 - 14-7 v2-FHD
+    Diï¿½rio v3-FHD
+    Estaï¿½ï¿½o v12 - 13-8-FHD
+    Estaï¿½ï¿½o v12 - 14-7 v2-FHD
     Mapa da cidade-Metro V3-FHD
 
-    Prédio LIFE v4 - Final-FHD
+    Prï¿½dio LIFE v4 - Final-FHD
     Welcome to SOV - linhas - Background - fundo-FHD
     Welcome to SOV - Password-FHD
     Welcome to SOV-FHD
-    Arte de créditos v1-FHD     
+    Arte de crï¿½ditos v1-FHD     
      */
 
 
