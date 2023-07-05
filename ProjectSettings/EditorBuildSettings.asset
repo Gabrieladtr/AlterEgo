@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QuerMesmoSairToMainMenu.unity
     guid: 22f94a759612d0247b045b27988c57e6
+  - enabled: 1
+    path: Assets/Scenes/Atualizacoes.unity
+    guid: c701704c66592254d8f0d4340aecc3dc
+  - enabled: 1
+    path: Assets/Scenes/Atualizacoes2.unity
+    guid: 8c7e1582ba97b7b45a2e337f0e36f09d
   m_configObjects: {}

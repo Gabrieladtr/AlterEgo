@@ -9,8 +9,6 @@ Updates:
 
 mais importantes:
 
-->Melhorar a interface gráfica do tutorial. Colocar o CTRL, Backspace, Esc, Mouse como comandos disponíveis.
-
 
 ->Suporte para outras resoluções: HD e full HD (se possível outras resoluções). Colocar todas as artes nas resoluções menores na tela. E criar um chamador para elas. Se esse bool estiver ligado nessa config, entao todos os outros devem estar desligados e em seguida todas as artes passam a ser essas configuradas. Posso criar um campo de tipo: Hd, fHD etc. Mantenho todos os parametros, mas se esse tipo for esse ou outro, entao o sistema deve identificar a config automaticamente.
 
@@ -59,22 +57,8 @@ Capítulos que os drones devem aparecer atirando: Capitulo 3 (drones verdes atir
 ->Adicionar os drones no jogo. Resolvido.
 
 
-O quarto é o primeiro mais o primeiro
+->Melhorar a interface gráfica do tutorial. Colocar o CTRL, Backspace, Esc, Mouse como comandos disponíveis. Resolvido.
 
-//Drones certos: verdes
-2.3.1
-//Drones vermelhos - 8844
-2.3.2 - consequência 1
-//Drones vermelhos - outro código
-2.3.2 - consequência 2
-
-
-
-//-----------------
-dronesVerdesAtirando.enabled = chaveGeral; 
-dronesVermelhoAtirando.enabled = chaveGeral;
-dronesVerdes.enabled = chaveGeral; ok 
-dronesAzuis.enabled = true; ok
 
 
 
