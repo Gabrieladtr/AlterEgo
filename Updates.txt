@@ -9,7 +9,8 @@ Updates:
 
 mais importantes:
 
-->Adicionar os drones no jogo. 
+->Melhorar a interface gráfica do tutorial. Colocar o CTRL, Backspace, Esc, Mouse como comandos disponíveis.
+
 
 ->Suporte para outras resoluções: HD e full HD (se possível outras resoluções). Colocar todas as artes nas resoluções menores na tela. E criar um chamador para elas. Se esse bool estiver ligado nessa config, entao todos os outros devem estar desligados e em seguida todas as artes passam a ser essas configuradas. Posso criar um campo de tipo: Hd, fHD etc. Mantenho todos os parametros, mas se esse tipo for esse ou outro, entao o sistema deve identificar a config automaticamente.
 
@@ -21,7 +22,7 @@ mais importantes:
 
 Menos importantes:
 
-->Melhorar a interface gráfica do tutorial. Colocar o CTRL, Backspace, Esc, Mouse como comandos disponíveis.
+
 
 ->Terminar de construir a tela dos Extras e de configurações. Basicamente teremos a função de tela cheia ou janela, detecção de resolução automática e idioma, tmb com detecção automática.
 
@@ -51,4 +52,31 @@ Concluídos:
 ->Ocultar o botao "voltar" do jogo. Resolvido.
 
 ->Em algumas partes onde o background muda de acordo com o diálogo, o sistema de background não está trabalhando de forma certa com o sistema de click do mouse. Então preciso ver isso. Resolvido.
+
+->Momentos que os drones devem aparecer de forma neutra: Capítulo 2.1. Para cada resposta uma versão dos drones devem aparecer. Os drones devem estar azuis inicialmente, se o jogador acertar o código então 
+Capítulos que os drones devem aparecer atirando: Capitulo 3 (drones verdes atirando)
+
+->Adicionar os drones no jogo. Resolvido.
+
+
+O quarto é o primeiro mais o primeiro
+
+//Drones certos: verdes
+2.3.1
+//Drones vermelhos - 8844
+2.3.2 - consequência 1
+//Drones vermelhos - outro código
+2.3.2 - consequência 2
+
+
+
+//-----------------
+dronesVerdesAtirando.enabled = chaveGeral; 
+dronesVermelhoAtirando.enabled = chaveGeral;
+dronesVerdes.enabled = chaveGeral; ok 
+dronesAzuis.enabled = true; ok
+
+
+
+
 

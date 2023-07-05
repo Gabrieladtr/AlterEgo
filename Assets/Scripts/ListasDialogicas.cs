@@ -876,6 +876,8 @@ Capítulo 1.2
         Capitulo_3.Add("Linda – Naquele momento eu coloquei você em primeiro lugar na minha lista de mortes... O projeto Me-Linda só pode ter uma Linda, eu.");
         Capitulo_3.Add("Raposa (Melinda) – Você é quem sabe...");
         Capitulo_3.Add("Coruja (Jones) – Drones! Atirem!!");
+        
+        //Entra os drones verdes atirando.
         Capitulo_3.Add("Drones – Atirando");
         Capitulo_3.Add("Linda – (Suspirando, muito debilitada) – Não... Como vocês conseguiram fazer isso?... Eu sou indestrutível...");
         Capitulo_3.Add("Wing (Pássaro) – Jones, acabe com ela! Faça-a pagar!");
@@ -895,7 +897,7 @@ Capítulo 1.2
         BackgroundSystem.ShowBackgroundScene("estacao14_7FHD", true);
 
         Capitulo_3_1_1.Add("Clique para continuar!");
-        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DELinda – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
+        Capitulo_3_1_1.Add("CAPÍTULO 3.1.1 – O CÃO DECIDE O DESTINO DE LINDA – ESCOLHA 1.1 – CONSEQUÊNCIA 1 (OS DRONES ESTÃO JUNTO NA INVASÃO À LIFE, TODOS OS PERSONAGENS VIVOS) - ESCOLHA A (LINDA SE TORNA ALIADA)");
         //Código 7898 usado, Linda entra para os Animals.
 
         //Cenário: Estação 14-7.
